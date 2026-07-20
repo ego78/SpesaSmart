@@ -1,0 +1,1 @@
+{"name":"Spesa Smart","short_name":"SpesaSmart","description":"Monitora prodotti e offerte","start_url":"./","scope":"./","display":"standalone","background_color":"#f4f7f5","theme_color":"#157347","icons":[{"src":"assets/icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
