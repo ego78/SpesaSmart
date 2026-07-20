@@ -22,7 +22,10 @@ function centsToEuro(value) {
 }
 
 function buildFormat(product) {
-  if (product.descriptionShort) {
+  if (
+    typeof product.descriptionShort === "string" &&
+    product.descriptionShort.trim()
+  ) {
     return product.descriptionShort.trim();
   }
 
@@ -43,59 +46,56 @@ function buildFormat(product) {
 function getPriceData(product) {
   const price = product.price || {};
 
-  /*
-   * Prezzo normale/promozionale visibile a tutti.
-   * Nel JSON PENNY è price.regular.value.
-   */
-  let currentPrice = centsToEuro(price.regular?.value);
+  const regularPrice = centsToEuro(
+    price.regular?.value
+  );
 
-  /*
-   * Alcuni prodotti hanno un prezzo riservato PENNYCard.
-   * Lo teniamo separato per non confonderlo con il prezzo normale.
-   */
-  const loyaltyPrice = centsToEuro(price.loyalty?.value);
+  const loyaltyPrice = centsToEuro(
+    price.loyalty?.value
+  );
 
-  /*
-   * Prezzo precedente barrato.
-   * Può essere presente in crossed oppure standard.value.
-   */
   const oldPrice = centsToEuro(
     price.crossed ?? price.standard?.value
   );
 
-  /*
-   * Prezzo al kg, litro o pezzo.
-   */
-  let unitPrice = centsToEuro(
+  const regularUnitPrice = centsToEuro(
     price.regular?.perStandardizedQuantity
   );
 
+  const loyaltyUnitPrice = centsToEuro(
+    price.loyalty?.perStandardizedQuantity
+  );
+
   /*
-   * Se esiste soltanto il prezzo PENNYCard, lo usiamo come prezzo
-   * principale e prendiamo anche il relativo prezzo unitario.
+   * Se esiste un prezzo PENNYCard, viene usato come prezzo principale.
+   * Il prezzo normale resta salvato in regularPrice.
    */
-  let requiresLoyaltyCard = false;
-
   if (loyaltyPrice !== null) {
-    currentPrice = loyaltyPrice;
-    requiresLoyaltyCard = true;
-
-    unitPrice = centsToEuro(
-      price.loyalty?.perStandardizedQuantity
-    );
+    return {
+      currentPrice: loyaltyPrice,
+      regularPrice,
+      oldPrice,
+      unitPrice:
+        loyaltyUnitPrice !== null
+          ? loyaltyUnitPrice
+          : regularUnitPrice,
+      requiresLoyaltyCard: true
+    };
   }
 
   return {
-    currentPrice,
+    currentPrice: regularPrice,
+    regularPrice,
     oldPrice,
-    unitPrice,
-    requiresLoyaltyCard
+    unitPrice: regularUnitPrice,
+    requiresLoyaltyCard: false
   };
 }
 
 function mapProduct(product) {
   const {
     currentPrice,
+    regularPrice,
     oldPrice,
     unitPrice,
     requiresLoyaltyCard
@@ -105,8 +105,15 @@ function mapProduct(product) {
     return null;
   }
 
-  const brand = product.brand?.name?.trim() || "";
-  const name = product.name?.trim() || "";
+  const name =
+    typeof product.name === "string"
+      ? product.name.trim()
+      : "";
+
+  const brand =
+    typeof product.brand?.name === "string"
+      ? product.brand.name.trim()
+      : "";
 
   if (!name) {
     return null;
@@ -120,6 +127,7 @@ function mapProduct(product) {
     format: buildFormat(product),
 
     price: currentPrice,
+    regularPrice,
     oldPrice,
     unitPrice,
 
@@ -128,14 +136,25 @@ function mapProduct(product) {
       product.volumeLabelShort ||
       "",
 
-    validFrom: product.price?.validityStart || "",
-    validUntil: product.price?.validityEnd || "",
+    validFrom:
+      product.price?.validityStart || "",
 
-    image: product.images?.[0] || "",
+    validUntil:
+      product.price?.validityEnd || "",
 
-    category: product.category || "",
-    sku: product.sku || "",
-    productId: product.productId || "",
+    image:
+      Array.isArray(product.images)
+        ? product.images[0] || ""
+        : "",
+
+    category:
+      product.category || "",
+
+    sku:
+      product.sku || "",
+
+    productId:
+      product.productId || "",
 
     requiresLoyaltyCard,
 
@@ -148,27 +167,43 @@ async function fetchPennyPage(offset = 0) {
   const url = new URL(PENNY_API);
 
   url.searchParams.set("offset", String(offset));
-  url.searchParams.set("limit", String(PAGE_SIZE));
+  url.searchParams.set("count", String(PAGE_SIZE));
+  url.searchParams.set("sortBy", "price");
+  url.searchParams.set("sortOrder", "asc");
+
+  console.log(`PENNY richiesta: ${url.toString()}`);
 
   const response = await fetch(url, {
     headers: {
       Accept: "application/json",
-      "User-Agent":
-        "Mozilla/5.0 (compatible; SpesaSmart/1.0)"
+      "User-Agent": "Mozilla/5.0"
     }
   });
 
   if (!response.ok) {
+    const errorText = await response.text();
+
     throw new Error(
-      `Errore API PENNY: ${response.status} ${response.statusText}`
+      `Errore API PENNY: HTTP ${response.status} - ` +
+      errorText.slice(0, 300)
     );
   }
 
-  return response.json();
+  const data = await response.json();
+
+  console.log(
+    `PENNY pagina: offset=${data.offset ?? offset}, ` +
+    `count=${data.count ?? "?"}, ` +
+    `ricevuti=${data.results?.length || 0}, ` +
+    `totale=${data.total ?? "?"}`
+  );
+
+  return data;
 }
 
 export async function scanPenny() {
   const offers = [];
+  const seenPages = new Set();
 
   let offset = 0;
   let total = Infinity;
@@ -180,9 +215,61 @@ export async function scanPenny() {
       ? data.results
       : [];
 
-    total = Number(data.total) || products.length;
+    const parsedTotal = Number(data.total);
+
+    if (Number.isFinite(parsedTotal)) {
+      total = parsedTotal;
+    } else {
+      total = offset + products.length;
+    }
+
+    if (products.length === 0) {
+      console.log(
+        `PENNY: nessun prodotto ricevuto all'offset ${offset}`
+      );
+
+      break;
+    }
+
+    /*
+     * Evita un ciclo infinito nel caso in cui il server
+     * restituisca sempre la stessa pagina.
+     */
+    const pageSignature = products
+      .map(product =>
+        product.sku ||
+        product.productId ||
+        product.name ||
+        ""
+      )
+      .join("|");
+
+    if (seenPages.has(pageSignature)) {
+      console.warn(
+        `PENNY: pagina ripetuta all'offset ${offset}. ` +
+        "Scansione interrotta."
+      );
+
+      break;
+    }
+
+    seenPages.add(pageSignature);
 
     for (const product of products) {
+      console.log(
+        `PENNY prodotto: ${product.name || "senza nome"}`
+      );
+
+      if (
+        product.name
+          ?.toLowerCase()
+          .includes("cipolline")
+      ) {
+        console.log(
+          "✅ PENNY: CIPOLLINE TROVATE NELLA RISPOSTA API"
+        );
+      }
+
       const offer = mapProduct(product);
 
       if (offer) {
@@ -190,15 +277,11 @@ export async function scanPenny() {
       }
     }
 
-    if (products.length === 0) {
-      break;
-    }
-
     offset += products.length;
   }
 
   /*
-   * Elimina eventuali duplicati usando SKU o productId.
+   * Elimina eventuali duplicati.
    */
   const unique = new Map();
 
@@ -211,9 +294,30 @@ export async function scanPenny() {
     unique.set(key, offer);
   }
 
+  const finalOffers = [...unique.values()];
+
   console.log(
-    `PENNY: ${unique.size} offerte lette dall'API ufficiale`
+    `PENNY: ${finalOffers.length} offerte lette dall'API ufficiale`
   );
 
-  return [...unique.values()];
+  const cipolline = finalOffers.find(offer =>
+    offer.product
+      ?.toLowerCase()
+      .includes("cipolline")
+  );
+
+  if (cipolline) {
+    console.log(
+      `✅ CIPOLLINE SALVATE: ` +
+      `prezzo=${cipolline.price}, ` +
+      `vecchio=${cipolline.oldPrice}, ` +
+      `unitario=${cipolline.unitPrice}`
+    );
+  } else {
+    console.warn(
+      "❌ CIPOLLINE NON PRESENTI NEL RISULTATO DI scanPenny()"
+    );
+  }
+
+  return finalOffers;
 }
