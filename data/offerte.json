@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "product": "CONTORNO GRIGLIATO",
+    "brand": "DELIZIE DAL SOLE",
+    "store": "Eurospin",
+    "format": "",
+    "price": 3.98,
+    "oldPrice": 1.79,
+    "validFrom": "16.07",
+    "validUntil": "26.07",
+    "sourceUrl": "https://www.eurospin.it/promozioni/",
+    "source": "official"
+  },
+  {
+    "product": "PEPERONCINI FARCITI AL TONNO",
+    "brand": "DELIZIE DAL SOLE",
+    "store": "Eurospin",
+    "format": "",
+    "price": 10.48,
+    "oldPrice": 1.99,
+    "validFrom": "16.07",
+    "validUntil": "26.07",
+    "sourceUrl": "https://www.eurospin.it/promozioni/",
+    "source": "official"
+  },
+  {
+    "product": "TONNO AL NATURALE",
+    "brand": "ATHENA",
+    "store": "Eurospin",
+    "format": "",
+    "price": 7.42,
+    "oldPrice": 0.83,
+    "validFrom": "16.07",
+    "validUntil": "26.07",
+    "sourceUrl": "https://www.eurospin.it/promozioni/",
+    "source": "official"
+  },
+  {
+    "product": "TONNO PINNA GIALLA ALL'OLIO DI OLIVA",
+    "brand": "ONDINA",
+    "store": "Eurospin",
+    "format": "",
+    "price": 12.17,
+    "oldPrice": 2.19,
+    "validFrom": "16.07",
+    "validUntil": "26.07",
+    "sourceUrl": "https://www.eurospin.it/promozioni/",
+    "source": "official"
+  },
+  {
+    "product": "Coppa del nonno • Motta",
+    "brand": "",
+    "store": "PENNY",
+    "format": "Coppa del nonno • Motta0,26 kg",
+    "price": 0.92,
+    "oldPrice": 3.39,
+    "validFrom": "",
+    "validUntil": "",
+    "sourceUrl": "https://www.penny.it/categorie/tutte-le-offerte-99000000",
+    "source": "official"
+  }
+]
