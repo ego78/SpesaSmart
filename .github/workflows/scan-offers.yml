@@ -1,0 +1,13 @@
+name: Aggiorna offerte
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 5 * * *'
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo 'Connettori automatici da aggiungere successivamente.'
