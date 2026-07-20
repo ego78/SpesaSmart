@@ -5,7 +5,11 @@ const PENNY_API =
 const PENNY_PAGE =
   "https://www.penny.it/categorie/tutte-le-offerte-99000000";
 
-const PAGE_SIZE = 20;
+/*
+ * Usiamo un limite alto per provare a ricevere tutte le offerte
+ * PENNY in una sola richiesta.
+ */
+const PAGE_SIZE = 100;
 
 function centsToEuro(value) {
   if (value === null || value === undefined || value === "") {
@@ -67,8 +71,8 @@ function getPriceData(product) {
   );
 
   /*
-   * Se esiste un prezzo PENNYCard, viene usato come prezzo principale.
-   * Il prezzo normale resta salvato in regularPrice.
+   * Se è presente un prezzo PENNYCard, lo salviamo
+   * come prezzo principale dell'offerta.
    */
   if (loyaltyPrice !== null) {
     return {
@@ -167,7 +171,7 @@ async function fetchPennyPage(offset = 0) {
   const url = new URL(PENNY_API);
 
   url.searchParams.set("offset", String(offset));
-  url.searchParams.set("count", String(PAGE_SIZE));
+  url.searchParams.set("limit", String(PAGE_SIZE));
   url.searchParams.set("sortBy", "price");
   url.searchParams.set("sortOrder", "asc");
 
@@ -176,7 +180,8 @@ async function fetchPennyPage(offset = 0) {
   const response = await fetch(url, {
     headers: {
       Accept: "application/json",
-      "User-Agent": "Mozilla/5.0"
+      "User-Agent":
+        "Mozilla/5.0 (compatible; SpesaSmart/1.0)"
     }
   });
 
@@ -192,10 +197,10 @@ async function fetchPennyPage(offset = 0) {
   const data = await response.json();
 
   console.log(
-    `PENNY pagina: offset=${data.offset ?? offset}, ` +
-    `count=${data.count ?? "?"}, ` +
-    `ricevuti=${data.results?.length || 0}, ` +
-    `totale=${data.total ?? "?"}`
+    `PENNY risposta: ` +
+    `offset=${data.offset ?? offset}, ` +
+    `ricevuti=${data.count ?? data.results?.length ?? 0}, ` +
+    `totale=${data.total ?? "sconosciuto"}`
   );
 
   return data;
@@ -227,13 +232,12 @@ export async function scanPenny() {
       console.log(
         `PENNY: nessun prodotto ricevuto all'offset ${offset}`
       );
-
       break;
     }
 
     /*
-     * Evita un ciclo infinito nel caso in cui il server
-     * restituisca sempre la stessa pagina.
+     * Evita cicli infiniti se PENNY restituisce due volte
+     * la stessa pagina.
      */
     const pageSignature = products
       .map(product =>
@@ -249,27 +253,12 @@ export async function scanPenny() {
         `PENNY: pagina ripetuta all'offset ${offset}. ` +
         "Scansione interrotta."
       );
-
       break;
     }
 
     seenPages.add(pageSignature);
 
     for (const product of products) {
-      console.log(
-        `PENNY prodotto: ${product.name || "senza nome"}`
-      );
-
-      if (
-        product.name
-          ?.toLowerCase()
-          .includes("cipolline")
-      ) {
-        console.log(
-          "✅ PENNY: CIPOLLINE TROVATE NELLA RISPOSTA API"
-        );
-      }
-
       const offer = mapProduct(product);
 
       if (offer) {
@@ -281,7 +270,7 @@ export async function scanPenny() {
   }
 
   /*
-   * Elimina eventuali duplicati.
+   * Elimina eventuali prodotti duplicati.
    */
   const unique = new Map();
 
@@ -299,25 +288,6 @@ export async function scanPenny() {
   console.log(
     `PENNY: ${finalOffers.length} offerte lette dall'API ufficiale`
   );
-
-  const cipolline = finalOffers.find(offer =>
-    offer.product
-      ?.toLowerCase()
-      .includes("cipolline")
-  );
-
-  if (cipolline) {
-    console.log(
-      `✅ CIPOLLINE SALVATE: ` +
-      `prezzo=${cipolline.price}, ` +
-      `vecchio=${cipolline.oldPrice}, ` +
-      `unitario=${cipolline.unitPrice}`
-    );
-  } else {
-    console.warn(
-      "❌ CIPOLLINE NON PRESENTI NEL RISULTATO DI scanPenny()"
-    );
-  }
 
   return finalOffers;
 }
