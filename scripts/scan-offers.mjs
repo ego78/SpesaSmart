@@ -70,7 +70,8 @@ const results = await Promise.all([
 ]);
 
 const allOffers = uniqueOffers(results.flat());
-const matchedOffers = allOffers;
+const matchedOffers = allOffers
+  .filter(offer => matchesWantedProduct(offer, products))
   .sort((a, b) => a.store.localeCompare(b.store, "it") || a.product.localeCompare(b.product, "it"));
 
 await fs.writeFile(OUTPUT, JSON.stringify(matchedOffers, null, 2) + "\n", "utf8");
