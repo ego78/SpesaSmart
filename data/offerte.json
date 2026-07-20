@@ -13,6 +13,19 @@
     "source": "official"
   },
   {
+    "product": "OLIO DI SEMI DI ARACHIDE",
+    "brand": "COLLINA D'ORO",
+    "store": "Eurospin",
+    "format": "",
+    "price": 1.99,
+    "oldPrice": 2.89,
+    "unitPrice": null,
+    "validFrom": "16.07",
+    "validUntil": "26.07",
+    "sourceUrl": "https://www.eurospin.it/promozioni/",
+    "source": "official"
+  },
+  {
     "product": "PEPERONCINI FARCITI AL TONNO",
     "brand": "DELIZIE DAL SOLE",
     "store": "Eurospin",
@@ -49,6 +62,31 @@
     "validFrom": "16.07",
     "validUntil": "26.07",
     "sourceUrl": "https://www.eurospin.it/promozioni/",
+    "source": "official"
+  },
+  {
+    "product": "YOGURT CREMOSO ALLA VANIGLIA CON PALLINE AL CIOCCOLATO FONDENTE",
+    "brand": "LAND",
+    "store": "Eurospin",
+    "format": "",
+    "price": 0.59,
+    "oldPrice": 0.75,
+    "unitPrice": 3.94,
+    "validFrom": "16.07",
+    "validUntil": "26.07",
+    "sourceUrl": "https://www.eurospin.it/promozioni/",
+    "source": "official"
+  },
+  {
+    "product": "Cipolline acetelli • Saclà",
+    "brand": "",
+    "store": "PENNY",
+    "format": "Cipolline acetelli • Saclà0,18 kg",
+    "price": 4.39,
+    "oldPrice": 260.79,
+    "validFrom": "16.07.2026",
+    "validUntil": "16.07.2026",
+    "sourceUrl": "https://www.penny.it/categorie/tutte-le-offerte-99000000",
     "source": "official"
   },
   {
