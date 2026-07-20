@@ -1,0 +1,8 @@
+const SHEET_NAME='Prodotti';
+function doGet(e){const a=e.parameter.action||'health';return out(a==='listProducts'?list(e.parameter.familyCode||'default'):{ok:true,service:'Spesa Smart'})}
+function doPost(e){try{const b=JSON.parse(e.postData.contents||'{}');if(b.action==='upsertProduct')return out(upsert(b.familyCode||'default',b.product));if(b.action==='deleteProduct')return out(remove(b.familyCode||'default',b.productId));return out({ok:false,error:'Azione non riconosciuta'})}catch(err){return out({ok:false,error:String(err)})}}
+function sheet(){const ss=SpreadsheetApp.getActiveSpreadsheet();let s=ss.getSheetByName(SHEET_NAME);if(!s)s=ss.insertSheet(SHEET_NAME);if(s.getLastRow()===0)s.appendRow(['familyCode','id','name','brand','format','category','maximumPrice','favorite','updatedAt']);return s}
+function list(code){const v=sheet().getDataRange().getValues(),h=v.shift();return v.map(r=>Object.fromEntries(h.map((x,i)=>[x,r[i]]))).filter(x=>x.familyCode===code)}
+function upsert(code,p){const s=sheet(),v=s.getDataRange().getValues();let n=-1;for(let i=1;i<v.length;i++)if(v[i][0]===code&&v[i][1]===p.id){n=i+1;break}const r=[code,p.id,p.name,p.brand,p.format,p.category,p.maximumPrice,p.favorite,p.updatedAt];n>0?s.getRange(n,1,1,r.length).setValues([r]):s.appendRow(r);return{ok:true,productId:p.id}}
+function remove(code,id){const s=sheet(),v=s.getDataRange().getValues();for(let i=v.length-1;i>=1;i--)if(v[i][0]===code&&v[i][1]===id)s.deleteRow(i+1);return{ok:true,productId:id}}
+function out(x){return ContentService.createTextOutput(JSON.stringify(x)).setMimeType(ContentService.MimeType.JSON)}
