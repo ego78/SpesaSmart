@@ -5,12 +5,10 @@ const PENNY_API =
 const PENNY_PAGE =
   "https://www.penny.it/categorie/tutte-le-offerte-99000000";
 
-/*
- * Usiamo un limite alto per provare a ricevere tutte le offerte
- * PENNY in una sola richiesta.
+/**
+ * PENNY restituisce i prezzi in centesimi.
+ * Esempio: 199 = 1,99 euro.
  */
-const PAGE_SIZE = 100;
-
 function centsToEuro(value) {
   if (value === null || value === undefined || value === "") {
     return null;
@@ -26,11 +24,13 @@ function centsToEuro(value) {
 }
 
 function buildFormat(product) {
-  if (
-    typeof product.descriptionShort === "string" &&
-    product.descriptionShort.trim()
-  ) {
-    return product.descriptionShort.trim();
+  const description =
+    typeof product.descriptionShort === "string"
+      ? product.descriptionShort.trim()
+      : "";
+
+  if (description) {
+    return description;
   }
 
   const amount = Number(product.amount);
@@ -50,13 +50,8 @@ function buildFormat(product) {
 function getPriceData(product) {
   const price = product.price || {};
 
-  const regularPrice = centsToEuro(
-    price.regular?.value
-  );
-
-  const loyaltyPrice = centsToEuro(
-    price.loyalty?.value
-  );
+  const regularPrice = centsToEuro(price.regular?.value);
+  const loyaltyPrice = centsToEuro(price.loyalty?.value);
 
   const oldPrice = centsToEuro(
     price.crossed ?? price.standard?.value
@@ -70,15 +65,14 @@ function getPriceData(product) {
     price.loyalty?.perStandardizedQuantity
   );
 
-  /*
-   * Se è presente un prezzo PENNYCard, lo salviamo
-   * come prezzo principale dell'offerta.
-   */
   if (loyaltyPrice !== null) {
     return {
       currentPrice: loyaltyPrice,
       regularPrice,
-      oldPrice,
+      oldPrice:
+        oldPrice !== null
+          ? oldPrice
+          : regularPrice,
       unitPrice:
         loyaltyUnitPrice !== null
           ? loyaltyUnitPrice
@@ -97,6 +91,15 @@ function getPriceData(product) {
 }
 
 function mapProduct(product) {
+  const name =
+    typeof product.name === "string"
+      ? product.name.trim()
+      : "";
+
+  if (!name) {
+    return null;
+  }
+
   const {
     currentPrice,
     regularPrice,
@@ -106,22 +109,17 @@ function mapProduct(product) {
   } = getPriceData(product);
 
   if (currentPrice === null) {
+    console.log(
+      `PENNY scartato senza prezzo: ${name}`
+    );
+
     return null;
   }
-
-  const name =
-    typeof product.name === "string"
-      ? product.name.trim()
-      : "";
 
   const brand =
     typeof product.brand?.name === "string"
       ? product.brand.name.trim()
       : "";
-
-  if (!name) {
-    return null;
-  }
 
   return {
     product: name,
@@ -151,14 +149,10 @@ function mapProduct(product) {
         ? product.images[0] || ""
         : "",
 
-    category:
-      product.category || "",
+    category: product.category || "",
 
-    sku:
-      product.sku || "",
-
-    productId:
-      product.productId || "",
+    sku: product.sku || "",
+    productId: product.productId || "",
 
     requiresLoyaltyCard,
 
@@ -167,15 +161,18 @@ function mapProduct(product) {
   };
 }
 
-async function fetchPennyPage(offset = 0) {
+/**
+ * Non impostiamo limit o count.
+ * L'API PENNY restituisce normalmente 20 risultati per pagina.
+ */
+async function fetchPennyPage(offset) {
   const url = new URL(PENNY_API);
 
   url.searchParams.set("offset", String(offset));
-  url.searchParams.set("limit", String(PAGE_SIZE));
-  url.searchParams.set("sortBy", "price");
-  url.searchParams.set("sortOrder", "asc");
 
-  console.log(`PENNY richiesta: ${url.toString()}`);
+  console.log(
+    `PENNY richiesta pagina: ${url.toString()}`
+  );
 
   const response = await fetch(url, {
     headers: {
@@ -186,21 +183,25 @@ async function fetchPennyPage(offset = 0) {
   });
 
   if (!response.ok) {
-    const errorText = await response.text();
+    const text = await response.text();
 
     throw new Error(
       `Errore API PENNY: HTTP ${response.status} - ` +
-      errorText.slice(0, 300)
+      text.slice(0, 300)
     );
   }
 
   const data = await response.json();
 
+  const received = Array.isArray(data.results)
+    ? data.results.length
+    : 0;
+
   console.log(
-    `PENNY risposta: ` +
-    `offset=${data.offset ?? offset}, ` +
-    `ricevuti=${data.count ?? data.results?.length ?? 0}, ` +
-    `totale=${data.total ?? "sconosciuto"}`
+    `PENNY risposta: offset=${offset}, ` +
+    `ricevuti=${received}, ` +
+    `count=${data.count ?? "n/d"}, ` +
+    `totale=${data.total ?? "n/d"}`
   );
 
   return data;
@@ -211,34 +212,34 @@ export async function scanPenny() {
   const seenPages = new Set();
 
   let offset = 0;
-  let total = Infinity;
+  let total = null;
+  let pageNumber = 1;
 
-  while (offset < total) {
+  while (total === null || offset < total) {
+    console.log(
+      `PENNY: scarico pagina ${pageNumber}, offset ${offset}`
+    );
+
     const data = await fetchPennyPage(offset);
 
     const products = Array.isArray(data.results)
       ? data.results
       : [];
 
-    const parsedTotal = Number(data.total);
+    const apiTotal = Number(data.total);
 
-    if (Number.isFinite(parsedTotal)) {
-      total = parsedTotal;
-    } else {
-      total = offset + products.length;
+    if (Number.isFinite(apiTotal)) {
+      total = apiTotal;
     }
 
     if (products.length === 0) {
       console.log(
-        `PENNY: nessun prodotto ricevuto all'offset ${offset}`
+        `PENNY: pagina vuota all'offset ${offset}`
       );
+
       break;
     }
 
-    /*
-     * Evita cicli infiniti se PENNY restituisce due volte
-     * la stessa pagina.
-     */
     const pageSignature = products
       .map(product =>
         product.sku ||
@@ -250,15 +251,44 @@ export async function scanPenny() {
 
     if (seenPages.has(pageSignature)) {
       console.warn(
-        `PENNY: pagina ripetuta all'offset ${offset}. ` +
-        "Scansione interrotta."
+        `PENNY: pagina duplicata all'offset ${offset}. ` +
+        "Interrompo per evitare un ciclo infinito."
       );
+
       break;
     }
 
     seenPages.add(pageSignature);
 
     for (const product of products) {
+      const productName =
+        typeof product.name === "string"
+          ? product.name
+          : "";
+
+      console.log(
+        `PENNY prodotto API: ${productName}`
+      );
+
+      if (productName.toLowerCase().includes("tonno")) {
+        console.log(
+          "========== TONNO TROVATO NELLE API PENNY =========="
+        );
+
+        console.log(
+          JSON.stringify(
+            {
+              name: product.name,
+              brand: product.brand?.name || "",
+              sku: product.sku || "",
+              price: product.price || {}
+            },
+            null,
+            2
+          )
+        );
+      }
+
       const offer = mapProduct(product);
 
       if (offer) {
@@ -266,28 +296,52 @@ export async function scanPenny() {
       }
     }
 
+    /*
+     * PENNY indica count=20, ma è più affidabile
+     * avanzare usando il numero reale di risultati ricevuti.
+     */
     offset += products.length;
+    pageNumber += 1;
   }
 
-  /*
-   * Elimina eventuali prodotti duplicati.
-   */
-  const unique = new Map();
+  const uniqueOffers = new Map();
 
   for (const offer of offers) {
     const key =
       offer.sku ||
       offer.productId ||
-      `${offer.product}-${offer.brand}-${offer.price}`;
+      [
+        offer.product,
+        offer.brand,
+        offer.format,
+        offer.price
+      ].join("|");
 
-    unique.set(key, offer);
+    uniqueOffers.set(key, offer);
   }
 
-  const finalOffers = [...unique.values()];
+  const finalOffers = [...uniqueOffers.values()];
+
+  const tunaOffers = finalOffers.filter(offer =>
+    `${offer.product} ${offer.brand}`
+      .toLowerCase()
+      .includes("tonno")
+  );
 
   console.log(
-    `PENNY: ${finalOffers.length} offerte lette dall'API ufficiale`
+    `PENNY: ${finalOffers.length} offerte totali lette`
   );
+
+  console.log(
+    `PENNY: ${tunaOffers.length} offerte di tonno trovate`
+  );
+
+  if (tunaOffers.length > 0) {
+    console.log(
+      "PENNY TONNO DOPO LA CONVERSIONE:",
+      JSON.stringify(tunaOffers, null, 2)
+    );
+  }
 
   return finalOffers;
 }
