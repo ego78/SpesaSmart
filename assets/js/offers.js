@@ -1,0 +1,2 @@
+export async function loadOffers(){const r=await fetch('data/offerte.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('Errore offerte');const d=await r.json();return Array.isArray(d)?d:[]}
+export function relevant(products,offers){const n=products.map(p=>String(p.name||'').toLowerCase()).filter(Boolean);return offers.filter(o=>!n.length||n.some(x=>String(o.product||'').toLowerCase().includes(x)||x.includes(String(o.product||'').toLowerCase())))}
