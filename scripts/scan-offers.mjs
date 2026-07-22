@@ -2,7 +2,6 @@ import fs from 'node:fs/promises';
 import { scanEurospin } from '../connectors/eurospin.mjs';
 import { scanPenny } from '../connectors/penny.mjs';
 import { scanPennyLocal } from '../connectors/penny-local.mjs';
-import { scanFlyerPdf } from '../connectors/flyer-ai.mjs';
 import { chainFor } from '../connectors/registry.mjs';
 import { uniqueOffers } from '../connectors/common.mjs';
 
@@ -38,7 +37,16 @@ console.log(`Punti vendita selezionati: ${stores.length}`);
 if(!stores.length)throw new Error(`Nessun supermercato selezionato per ${familyCode}. Controlla FAMILY_CODE e APPS_SCRIPT_URL.`);
 const pennyStores=stores.filter(s=>chainFor(s.brand||s.name)?.id==='penny');
 const pennyJobs=pennyStores.map(store=>safe(`PENNY locale ${store.name||store.brand}`,()=>scanPennyLocal(store)));
-const pdfJobs=stores.filter(s=>chainFor(s.brand||s.name)?.id!=='penny'&&String(s.flyerUrl||'').trim()).map(store=>safe(`Volantino locale ${store.name||store.brand}`,()=>scanFlyerPdf(store,String(store.flyerUrl).trim())));
+const pdfStores=stores.filter(s=>chainFor(s.brand||s.name)?.id!=='penny'&&String(s.flyerUrl||'').trim());
+let pdfJobs=[];
+if(pdfStores.length){
+  if(!process.env.OPENAI_API_KEY){
+    console.warn(`Ignoro ${pdfStores.length} volantini PDF: secret OPENAI_API_KEY non configurato.`);
+  }else{
+    const { scanFlyerPdf }=await import('../connectors/flyer-ai.mjs');
+    pdfJobs=pdfStores.map(store=>safe(`Volantino locale ${store.name||store.brand}`,()=>scanFlyerPdf(store,String(store.flyerUrl).trim())));
+  }
+}
 const localResults=(await Promise.all([...pennyJobs,...pdfJobs])).flat();
 const verifiedStoreIds=new Set(localResults.map(o=>String(o.flyerStoreId||'')).filter(Boolean));
 const chains=[...new Set(stores.map(s=>chainFor(s.brand||s.name)?.id).filter(Boolean))];
