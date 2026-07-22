@@ -1,182 +1,100 @@
-import { cleanText, parsePrice } from './common.mjs';
+import { cleanText, numberValue } from './common.mjs';
 
-const LANDING_URL = 'https://www.penny.it/sfoglia-il-volantino-mobile';
-const API_ROOT = 'https://next.doveconviene.it/api/flyer';
-const FALLBACK_FLYER_ID = '1635909';
-const MAX_PRODUCTS = 500;
-const MAX_SECTIONS = 12;
+const API='https://next.doveconviene.it/api/flyer';
+const LANDING='https://www.penny.it/sfoglia-il-volantino-mobile';
+const DEFAULT_FLYER_ID='1635909';
 
-function numberOrNull(value) {
-  const n = Number(value);
-  return Number.isFinite(n) ? n : null;
+async function getJson(url,{allow404=false}={}){
+  const r=await fetch(url,{headers:{accept:'application/json,text/plain,*/*','user-agent':'SpesaSmart/3.0 (+GitHub Actions)'},cache:'no-store'});
+  if(allow404&&r.status===404)return null;
+  if(!r.ok)throw new Error(`HTTP ${r.status} su ${url}`);
+  return r.json();
 }
 
-function absoluteImage(basePath, source = '') {
-  const src = String(source || '').trim();
-  if (!src) return '';
-  if (/^https?:\/\//i.test(src)) return src;
-  return `${String(basePath || '').replace(/\/$/, '')}/${src.replace(/^\//, '')}`;
-}
-
-async function getJson(url, { allowNotFound = false } = {}) {
-  const response = await fetch(url, {
-    headers: {
-      accept: 'application/json,text/plain,*/*',
-      'accept-language': 'it-IT,it;q=0.9',
-      'user-agent': 'Mozilla/5.0 (compatible; SpesaSmart/2.2; +GitHub Actions)'
-    },
-    redirect: 'follow'
-  });
-
-  if (allowNotFound && response.status === 404) return null;
-  if (!response.ok) throw new Error(`${url}: HTTP ${response.status}`);
-  return response.json();
-}
-
-async function discoverFlyerId() {
-  if (process.env.PENNY_FLYER_ID) return String(process.env.PENNY_FLYER_ID).trim();
-
-  try {
-    const response = await fetch(LANDING_URL, {
-      headers: {
-        'accept-language': 'it-IT,it;q=0.9',
-        'user-agent': 'Mozilla/5.0 (compatible; SpesaSmart/2.2; +GitHub Actions)'
-      },
-      redirect: 'follow'
-    });
-    const html = await response.text();
-    const patterns = [
-      /api\/flyer\/(\d{5,})/i,
-      /["']flyerId["']\s*[:=]\s*["']?(\d{5,})/i,
-      /[?&](?:flyer|flyerId|id)=(\d{5,})/i
-    ];
-    for (const pattern of patterns) {
-      const match = html.match(pattern);
-      if (match?.[1]) return match[1];
+async function discoverFlyerId(){
+  const forced=String(process.env.PENNY_FLYER_ID||'').trim();
+  if(forced)return forced;
+  try{
+    const r=await fetch(LANDING,{headers:{'user-agent':'Mozilla/5.0 SpesaSmart/3.0'},cache:'no-store'});
+    if(r.ok){
+      const html=await r.text();
+      const patterns=[
+        /next\.doveconviene\.it[^"'\s]*\/flyer\/(\d+)/i,
+        /\/api\/flyer\/(\d+)/i,
+        /[?&](?:flyerId|flyer_id|idFlyer)=(\d+)/i,
+        /"(?:flyerId|flyer_id|idFlyer)"\s*:\s*"?(\d+)"?/i
+      ];
+      for(const p of patterns){const m=html.match(p);if(m?.[1])return m[1]}
     }
-  } catch (error) {
-    console.warn(`PENNY: identificazione automatica volantino non riuscita: ${error.message}`);
-  }
-
-  console.warn(`PENNY: uso ID volantino di riserva ${FALLBACK_FLYER_ID}`);
-  return FALLBACK_FLYER_ID;
+  }catch(e){console.warn(`PENNY: rilevamento volantino non riuscito (${e.message})`)}
+  return DEFAULT_FLYER_ID;
 }
 
-function coordinates(store) {
-  const lat = numberOrNull(store.lat ?? store.latitude);
-  const lon = numberOrNull(store.lon ?? store.lng ?? store.longitude);
-  if (lat === null || lon === null) throw new Error('Punto vendita PENNY senza coordinate GPS');
-  return { lat, lon };
+function haversine(a,b,c,d){
+  const R=6371,toRad=x=>x*Math.PI/180;
+  const x=toRad(c-a),y=toRad(d-b);
+  const z=Math.sin(x/2)**2+Math.cos(toRad(a))*Math.cos(toRad(c))*Math.sin(y/2)**2;
+  return 2*R*Math.asin(Math.sqrt(z));
 }
 
-async function resolvePennyStore(flyerId, selectedStore) {
-  const { lat, lon } = coordinates(selectedStore);
-  const url = `${API_ROOT}/${flyerId}/stores?ll=${encodeURIComponent(`${lat},${lon}`)}&cb=${Date.now()}`;
-  const data = await getJson(url);
-  const stores = Array.isArray(data?.value) ? data.value : [];
-  if (!stores.length) throw new Error('Nessun punto vendita PENNY associato al volantino');
-  return stores
-    .map(store => ({ ...store, distance: numberOrNull(store.distance) }))
-    .sort((a, b) => (a.distance ?? 999999) - (b.distance ?? 999999))[0];
+function nearestStore(rows,store){
+  const lat=Number(store.lat),lon=Number(store.lon);
+  return [...rows].sort((a,b)=>haversine(lat,lon,Number(a.lat),Number(a.lon))-haversine(lat,lon,Number(b.lat),Number(b.lon)))[0]||null;
 }
 
-function mapProduct(payload, metadata, selectedStore, officialStore, flyerId) {
-  const item = payload?.product;
-  if (!item || item.type === 'image') return null;
+function imageUrl(basePath,path){
+  if(!path)return'';
+  if(/^https?:\/\//i.test(path))return path;
+  return String(basePath||'')+String(path).replace(/^\//,'');
+}
 
-  const product = cleanText(item.name);
-  const price = parsePrice(item.price?.discounted ?? item.price?.full);
-  if (!product || !price) return null;
-
-  const oldPrice = parsePrice(item.price?.full);
-  const storeName = cleanText(selectedStore.name || selectedStore.brand || `PENNY ${officialStore.city || ''}`) || 'PENNY';
-  const address = cleanText(selectedStore.address || officialStore.address);
-  const distance = numberOrNull(selectedStore.distance ?? officialStore.distance);
-
+function toOffer(raw,meta,store,officialStore,section,index){
+  const p=raw?.product||raw;
+  if(!p||p.type==='image'||!p.name)return null;
+  const discounted=numberValue(p.price?.discounted??p.price?.full);
+  if(!Number.isFinite(discounted))return null;
+  const full=numberValue(p.price?.full);
+  const officialId=String(officialStore?.id||''),appId=String(store.id||'');
   return {
-    product,
-    brand: '',
-    store: 'PENNY',
-    format: cleanText(item.subName),
-    price,
-    oldPrice: oldPrice && oldPrice > price ? oldPrice : null,
-    unitPrice: null,
-    unit: '',
-    validFrom: metadata.dateFrom || '',
-    validUntil: metadata.dateTo || '',
-    image: absoluteImage(metadata.basePath, item.productImage),
-    category: cleanText(item.categoryName),
-    productId: item.id || item.externalId || '',
-    requiresLoyaltyCard: String(item.selectedBadge || '').toLowerCase().includes('pennycard'),
-    sourceUrl: LANDING_URL,
-    source: 'penny-local-flyer-api',
-    flyerId: String(flyerId),
-    flyerStoreId: String(selectedStore.id || ''),
-    officialStoreId: String(officialStore.id || ''),
-    localValidityVerified: true,
-    offerScope: 'selected-store',
-    nearestStore: {
-      id: String(selectedStore.id || ''),
-      officialStoreId: String(officialStore.id || ''),
-      name: storeName,
-      brand: 'PENNY',
-      address,
-      distance,
-      lat: numberOrNull(selectedStore.lat ?? officialStore.lat),
-      lon: numberOrNull(selectedStore.lon ?? selectedStore.lng ?? officialStore.lon)
-    },
-    locations: [{
-      id: String(selectedStore.id || ''),
-      officialStoreId: String(officialStore.id || ''),
-      name: storeName,
-      brand: 'PENNY',
-      address,
-      distance,
-      lat: numberOrNull(selectedStore.lat ?? officialStore.lat),
-      lon: numberOrNull(selectedStore.lon ?? selectedStore.lng ?? officialStore.lon)
-    }]
+    id:`penny-${meta.id}-${officialId||appId}-${p.id||p.externalId||`${section}-${index}`}`,
+    store:'PENNY',chain:'PENNY',product:cleanText(p.name),brand:'',format:cleanText(p.subName||''),category:cleanText(p.categoryName||''),
+    price:discounted,oldPrice:Number.isFinite(full)&&full>discounted?full:null,discount:cleanText(p.price?.discount||''),
+    description:cleanText(p.description||''),image:imageUrl(meta.basePath,p.productImage||p.props?.src),
+    validFrom:meta.dateFrom||'',validTo:meta.dateTo||'',sourceUrl:LANDING,source:'PENNY / DoveConviene',
+    localValidityVerified:true,offerScope:'local-store',flyerId:String(meta.id||''),flyerStoreId:appId,officialStoreId:officialId,
+    nearestStore:{id:appId,name:store.name||'PENNY',brand:store.brand||'PENNY',address:store.address||'',lat:Number(store.lat),lon:Number(store.lon),distance:Number(store.distance)||null},
+    locations:[{id:appId,name:store.name||'PENNY',brand:store.brand||'PENNY',address:store.address||'',lat:Number(store.lat),lon:Number(store.lon),distance:Number(store.distance)||null,officialStoreId:officialId}],
+    fetchedAt:new Date().toISOString()
   };
 }
 
-async function readProducts(flyerId, metadata, selectedStore, officialStore) {
-  const offers = [];
-  let emptySections = 0;
-
-  for (let section = 0; section < MAX_SECTIONS && emptySections < 2; section += 1) {
-    let foundInSection = 0;
-    let consecutiveMissing = 0;
-
-    for (let productIndex = 0; productIndex < MAX_PRODUCTS && consecutiveMissing < 4; productIndex += 1) {
-      const url = `${API_ROOT}/${flyerId}/section/${section}/product/${productIndex}?cb=${Date.now()}`;
-      const payload = await getJson(url, { allowNotFound: true });
-      if (!payload) {
-        consecutiveMissing += 1;
-        continue;
-      }
-      consecutiveMissing = 0;
-      foundInSection += 1;
-      const offer = mapProduct(payload, metadata, selectedStore, officialStore, flyerId);
-      if (offer) offers.push(offer);
-    }
-
-    if (foundInSection === 0) emptySections += 1;
-    else emptySections = 0;
+async function scanSection(flyerId,section,meta,store,officialStore){
+  const out=[],batchSize=20,maxProducts=240;
+  for(let start=0;start<maxProducts;start+=batchSize){
+    const batch=await Promise.all(Array.from({length:batchSize},(_,j)=>{
+      const index=start+j;
+      return getJson(`${API}/${flyerId}/section/${section}/product/${index}`,{allow404:true}).then(raw=>({raw,index})).catch(()=>({raw:null,index}));
+    }));
+    let found=0;
+    for(const {raw,index} of batch){if(raw){found++;const offer=toOffer(raw,meta,store,officialStore,section,index);if(offer)out.push(offer)}}
+    if(found===0)break;
   }
-
-  return offers;
+  return out;
 }
 
-export async function scanPennyLocal(selectedStore) {
-  const flyerId = await discoverFlyerId();
-  const metadata = await getJson(`${API_ROOT}/${flyerId}?cb=${Date.now()}`);
-  const officialStore = await resolvePennyStore(flyerId, selectedStore);
-  const offers = await readProducts(flyerId, metadata, selectedStore, officialStore);
-
-  if (!offers.length) throw new Error(`Volantino PENNY ${flyerId}: nessun prodotto leggibile`);
-
-  console.log(
-    `PENNY locale: ${officialStore.city}, ${officialStore.address} ` +
-    `(store ${officialStore.id}, volantino ${flyerId}, ${offers.length} offerte)`
-  );
+export async function scanPennyLocal(store){
+  if(!Number.isFinite(Number(store?.lat))||!Number.isFinite(Number(store?.lon)))throw new Error('Coordinate PENNY mancanti');
+  const flyerId=await discoverFlyerId();
+  const meta=await getJson(`${API}/${flyerId}`);
+  const storeData=await getJson(`${API}/${flyerId}/stores?ll=${encodeURIComponent(`${store.lat},${store.lon}`)}`);
+  const officialStore=nearestStore(Array.isArray(storeData?.value)?storeData.value:[],store);
+  if(!officialStore)throw new Error(`Nessun punto vendita PENNY associato al volantino ${flyerId}`);
+  console.log(`PENNY: ${store.name||store.address} → store ufficiale ${officialStore.id}, volantino ${flyerId}, valido fino al ${meta.dateTo||'n/d'}`);
+  const offers=[];let emptySections=0;
+  for(let section=0;section<40&&emptySections<3;section++){
+    const sectionOffers=await scanSection(flyerId,section,meta,store,officialStore);
+    if(sectionOffers.length){offers.push(...sectionOffers);emptySections=0}else emptySections++;
+  }
+  if(!offers.length)throw new Error(`Volantino ${flyerId} raggiunto, ma nessun prodotto con prezzo estratto`);
   return offers;
 }
