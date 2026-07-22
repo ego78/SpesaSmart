@@ -14,6 +14,17 @@ function getDates(text) {
   ) || [];
 }
 
+function isDateLikeAt(text, start, end) {
+  const windows = [
+    text.slice(Math.max(0, start - 3), Math.min(text.length, end + 6)),
+    text.slice(Math.max(0, start - 6), Math.min(text.length, end + 3))
+  ];
+
+  return windows.some(value =>
+    /(?:^|\s)\d{1,2}[./-]\d{1,2}(?:[./-]\d{2,4})?(?:\s|$)/.test(value)
+  );
+}
+
 function extractPrices(node, text) {
   /*
    * Esempio Eurospin:
@@ -90,9 +101,15 @@ function extractPrices(node, text) {
       )
     ];
 
-    if (precedingNumbers.length) {
+    const validPreviousPrices = precedingNumbers.filter(match => {
+      const start = match.index + match[0].indexOf(match[1]);
+      const end = start + match[1].length;
+      return !isDateLikeAt(textBeforeCurrentPrice, start, end);
+    });
+
+    if (validPreviousPrices.length) {
       oldPrice = parsePrice(
-        precedingNumbers[precedingNumbers.length - 1][1]
+        validPreviousPrices[validPreviousPrices.length - 1][1]
       );
     }
   }
@@ -100,7 +117,12 @@ function extractPrices(node, text) {
   /*
    * Evita che il prezzo al kg venga utilizzato come vecchio prezzo.
    */
-  if (oldPrice === unitPrice) {
+  if (
+    oldPrice === unitPrice ||
+    !Number.isFinite(oldPrice) ||
+    oldPrice <= price ||
+    oldPrice > 10 * price
+  ) {
     oldPrice = null;
   }
 
