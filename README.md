@@ -1,3 +1,9 @@
+## Versione 4.2.1
+
+- PENNY ed Eurospin con offerte disponibili vengono mostrati come “Volantino locale collegato”.
+- Il pulsante “Collega PDF” resta nascosto per le catene automatiche.
+- Corretto il confronto tra identificativi del punto vendita.
+
 # Spesa Smart v4.2.0
 
 Novità: collegamento automatico e persistente dei volantini locali PENNY/Eurospin, stato in `data/volantini-locali.json`, interfaccia senza richiesta PDF per le catene automatiche e log GitHub Actions compatto.
