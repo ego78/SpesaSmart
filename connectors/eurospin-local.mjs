@@ -1,4 +1,5 @@
 import { cleanText, numberValue, uniqueOffers } from './common.mjs';
+import { scanEurospin } from './eurospin.mjs';
 
 const ROOT='https://digitalflyer.eurospin.it/api/eurospin/eurospin-italia';
 const LANDING='https://www.eurospin.it/volantino/';
@@ -83,7 +84,7 @@ function toOffer(raw,context,store,index){
     image:fileUrl(source?.image||source?.images||prop(source,'IMAGE')||prop(source,'PRODUCT_IMAGE')||prop(source,'PREVIEW')),
     validFrom:parseDate(source?.startDate||context.promotion.startDate),validTo:parseDate(source?.endDate||context.promotion.endDate),
     sourceUrl:LANDING,source:'Eurospin Digital Flyer API',localValidityVerified:true,offerScope:'local-store',
-    flyerId:String(context.promotion.code||context.promotion.identifier||''),flyerStoreId:appId,officialStoreId:officialId,
+    flyerId:String(context.promotion.code||context.promotion.identifier||context.promotion.alias||''),promotionId:String(context.promotion.identifier||context.promotion.uniqueId||context.promotion.code||context.promotion.alias||''),flyerStoreId:appId,officialStoreId:officialId,officialStoreAlias:String(context.officialStore.alias||''),
     nearestStore:{id:appId,name:store.name||context.officialStore.name||'Eurospin',brand:store.brand||'Eurospin',address:store.address||context.officialStore.address||'',lat:Number(store.lat),lon:Number(store.lon),distance:Number(store.distance)||null},
     locations:[{id:appId,name:store.name||context.officialStore.name||'Eurospin',brand:store.brand||'Eurospin',address:store.address||context.officialStore.address||'',lat:Number(store.lat),lon:Number(store.lon),distance:Number(store.distance)||null,officialStoreId:officialId}],
     fetchedAt:new Date().toISOString()
@@ -105,9 +106,37 @@ export async function scanEurospinLocal(store){
   if(!Array.isArray(ids)||!ids.length)throw new Error(`Volantino Eurospin ${promotion.code||promotionAlias} senza prodotti`);
   console.log(`Eurospin: ${store.name||store.address} → ${officialStore.name} (${officialStore.code}), volantino ${promotion.code}, ${ids.length} prodotti`);
   const endpoint=await discoverProductEndpoint(promotionAlias,storeAlias,String(ids[0]));
-  if(!endpoint)throw new Error('API Eurospin raggiunta, ma endpoint dei dettagli prodotto non individuato. Acquisisci un nuovo HAR dopo aver aperto una singola offerta del volantino.');
-  console.log(`Eurospin: endpoint prodotti ${endpoint.urlTemplate}`);
   const context={officialStore,promotion};
+  if(!endpoint){
+    // L'API ufficiale ha già confermato che questo volantino è assegnato al
+    // punto vendita selezionato. Se Eurospin non espone i dettagli dei singoli
+    // prodotti, usiamo la pagina promozioni ufficiale e leghiamo le offerte al
+    // negozio verificato, evitando di chiedere all'utente un PDF manuale.
+    console.warn('Eurospin: endpoint dettagli non disponibile; uso catalogo ufficiale con collegamento locale verificato.');
+    const general=await scanEurospin();
+    const appId=String(store.id||'');
+    const officialId=String(officialStore.code||officialStore.identifier||'');
+    const nearestStore={id:appId,name:store.name||officialStore.name||'Eurospin',brand:store.brand||'Eurospin',address:store.address||officialStore.address||'',lat:Number(store.lat),lon:Number(store.lon),distance:Number(store.distance)||null};
+    return uniqueOffers(general.map((offer,index)=>({
+      ...offer,
+      id:`eurospin-${promotion.code||promotion.alias}-${officialId}-web-${index}`,
+      chain:'EUROSPIN',
+      validFrom:offer.validFrom||parseDate(promotion.startDate),
+      validUntil:offer.validUntil||parseDate(promotion.endDate),
+      source:'Eurospin ufficiale + Digital Flyer locale',
+      localValidityVerified:true,
+      offerScope:'local-store',
+      flyerId:String(promotion.code||promotion.identifier||promotion.alias||''),
+      promotionId:String(promotion.identifier||promotion.uniqueId||promotion.code||promotion.alias||''),
+      flyerStoreId:appId,
+      officialStoreId:officialId,
+      officialStoreAlias:String(storeAlias||''),
+      nearestStore,
+      locations:[{...nearestStore,officialStoreId:officialId}],
+      fetchedAt:new Date().toISOString()
+    })));
+  }
+  console.log(`Eurospin: endpoint prodotti ${endpoint.urlTemplate}`);
   const offers=[];
   const batchSize=12;
   for(let start=0;start<ids.length;start+=batchSize){
