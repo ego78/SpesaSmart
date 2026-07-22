@@ -1,0 +1,8 @@
+{
+  "version": "3.0.0",
+  "defaultFamilyCode": "FAMIGLIA-EGO78",
+  "penny": {
+    "fallbackFlyerId": "1635909",
+    "landingUrl": "https://www.penny.it/sfoglia-il-volantino-mobile"
+  }
+}
