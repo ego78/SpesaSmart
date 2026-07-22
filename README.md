@@ -86,3 +86,11 @@ Catene con collegamento ufficiale già predisposto: PENNY, Eurospin, Lidl, MD, C
 
 ## Versione 3.0.1 — Correzione avvio senza OpenAI
 Il connettore PDF viene caricato solo quando esiste un volantino PDF collegato e la chiave OPENAI_API_KEY è configurata. PENNY locale può quindi funzionare senza dipendenza OpenAI.
+
+## Versione 4.0.0
+
+- PENNY locale tramite API strutturata.
+- Eurospin locale tramite Digital Flyer API.
+- Il punto vendita Eurospin di Sava viene associato al codice ufficiale `603860`.
+- È possibile impostare un altro negozio con `officialStoreId` nei dati del supermercato oppure con il secret GitHub `EUROSPIN_STORE_CODE`.
+- Nessun OCR/OpenAI è necessario per PENNY ed Eurospin quando le API prodotto sono disponibili.
