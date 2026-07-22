@@ -78,3 +78,7 @@ Catene con collegamento ufficiale già predisposto: PENNY, Eurospin, Lidl, MD, C
 - Associa PENNY al negozio ufficiale più vicino tramite coordinate.
 - PENNY non richiede OpenAI, OCR o PDF.
 - Il secret opzionale `PENNY_FLYER_ID` permette di forzare un volantino.
+
+
+## Versione 3.0.1 — Correzione avvio senza OpenAI
+Il connettore PDF viene caricato solo quando esiste un volantino PDF collegato e la chiave OPENAI_API_KEY è configurata. PENNY locale può quindi funzionare senza dipendenza OpenAI.
