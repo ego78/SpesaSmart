@@ -31,16 +31,51 @@ async function loadProducts() {
   return Array.isArray(data.products) ? data.products : [];
 }
 
-async function loadSelectedChains() {
+async function loadSelectedStores() {
   if (!appsScriptUrl) return [];
   const data = await loadRemote("listSupermarkets", {});
   const stores = Array.isArray(data.supermarkets) ? data.supermarkets : [];
-  return [...new Set(
-    stores
-      .filter(store => store.selected === true)
-      .map(store => String(store.brand || store.name || "").trim().toUpperCase())
-      .filter(Boolean)
-  )];
+  return stores.filter(store => store && store.selected === true);
+}
+
+function normalizedChain(store) {
+  return String(store?.brand || store?.name || "").trim().toUpperCase();
+}
+
+function selectedChainsFrom(stores) {
+  return [...new Set(stores.map(normalizedChain).filter(Boolean))];
+}
+
+function locationsForOffer(offer, selectedStores) {
+  const offerChain = String(offer.store || offer.chain || "").toUpperCase();
+  return selectedStores
+    .filter(store => {
+      const chain = normalizedChain(store);
+      return chain && (offerChain.includes(chain) || chain.includes(offerChain));
+    })
+    .map(store => ({
+      id: store.id || "",
+      name: store.name || store.brand || offer.store || "",
+      brand: store.brand || store.name || offer.store || "",
+      address: store.address || "",
+      distance: Number.isFinite(Number(store.distance)) ? Number(store.distance) : null,
+      lat: Number.isFinite(Number(store.lat)) ? Number(store.lat) : null,
+      lon: Number.isFinite(Number(store.lon)) ? Number(store.lon) : null
+    }))
+    .sort((a, b) => (a.distance ?? 9999) - (b.distance ?? 9999));
+}
+
+function attachSelectedLocations(offers, selectedStores) {
+  return offers.map(offer => {
+    const locations = locationsForOffer(offer, selectedStores);
+    return {
+      ...offer,
+      locations,
+      nearestStore: locations[0] || null,
+      offerScope: locations.length ? "selected-chain" : "national-chain",
+      localValidityVerified: false
+    };
+  });
 }
 
 function matchesWantedProduct(offer, products) {
@@ -78,11 +113,13 @@ async function safeScan(name, scanner) {
   }
 }
 
-const [products, selectedChains] = await Promise.all([
+const [products, selectedStores] = await Promise.all([
   loadProducts(),
-  loadSelectedChains()
+  loadSelectedStores()
 ]);
+const selectedChains = selectedChainsFrom(selectedStores);
 console.log(`Prodotti monitorati: ${products.length}`);
+console.log(`Punti vendita selezionati: ${selectedStores.length}`);
 console.log(`Catene selezionate: ${selectedChains.length ? selectedChains.join(", ") : "nessun filtro"}`);
 
 const scanners = [
@@ -98,7 +135,7 @@ const results = await Promise.all(
   enabledScanners.map(item => safeScan(item.name, item.scan))
 );
 
-const allOffers = uniqueOffers(results.flat());
+const allOffers = attachSelectedLocations(uniqueOffers(results.flat()), selectedStores);
 
 const matchedOffers = [...allOffers]
   .sort((a, b) =>
