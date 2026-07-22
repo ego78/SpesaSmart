@@ -69,3 +69,12 @@ Questa versione distingue tra offerte generali della catena e offerte estratte d
 Le offerte estratte dal PDF vengono marcate `localValidityVerified: true`. Le offerte PENNY/Eurospin recuperate dalle fonti generali restano disponibili come fallback, ma sono indicate come non verificate per il singolo negozio.
 
 Catene con collegamento ufficiale già predisposto: PENNY, Eurospin, Lidl, MD, Conad, Despar/Eurospar/Interspar, Famila, Coop/Ipercoop, Carrefour, ALDI, Todis e DOK.
+
+
+## Versione 3.0.0 — Motore punti vendita
+
+- Usa `config/app.json` come codice famiglia di riserva.
+- Interrompe il workflow se Apps Script restituisce zero negozi o zero offerte.
+- Associa PENNY al negozio ufficiale più vicino tramite coordinate.
+- PENNY non richiede OpenAI, OCR o PDF.
+- Il secret opzionale `PENNY_FLYER_ID` permette di forzare un volantino.
