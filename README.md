@@ -1,3 +1,7 @@
+# Spesa Smart v4.2.0
+
+Novità: collegamento automatico e persistente dei volantini locali PENNY/Eurospin, stato in `data/volantini-locali.json`, interfaccia senza richiesta PDF per le catene automatiche e log GitHub Actions compatto.
+
 ## Versione 3.0.2
 
 Corretto il caricamento del connettore PENNY locale: aggiunta la funzione `numberValue` usata per convertire i prezzi.
