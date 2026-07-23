@@ -331,71 +331,163 @@ function pricesFromText(text = '') {
   return [...new Set(values)];
 }
 
-function isPdfNoise(text = '') {
-  const value = cleanText(text);
-  if (!value || value.length < 3) return true;
-  return /^(luned[iì]|marted[iì]|mercoled[iì]|gioved[iì]|venerd[iì]|sabato|domenica|prezzi validi|fino ad esaurimento|salvo errori|lidl plus|scopri di più|pagina \d+)$/i.test(value);
+function exactPriceFromItem(text = '') {
+  const value = cleanText(text).replace(',', '.');
+  const match = value.match(/^€?\s*(\d{1,3}\.\d{2})\s*€?\*?$/);
+  if (!match) return null;
+  const price = Number(match[1]);
+  return Number.isFinite(price) && price >= 0.05 && price <= 499.99 ? price : null;
 }
 
-function productTitleFromPdfLines(lines, index) {
-  const candidates = [];
-  for (let offset = -4; offset <= 2; offset += 1) {
-    if (offset === 0) continue;
-    const text = cleanText(lines[index + offset]?.text || '');
-    if (!text || isPdfNoise(text) || pricesFromText(text).length) continue;
-    if (/^(al kg|al litro|cad\.|confezione|vaschetta|bottiglia|pezzi|ml|cl|kg|g|l)$/i.test(text)) continue;
-    if (text.length > 150) continue;
-    candidates.push(text);
-  }
+function isUnitPriceText(text = '') {
+  const value = cleanText(text);
+  return /(?:^|\s)(?:1\s*(?:kg|l|lt)|100\s*g|€\/\s*(?:kg|l|lt|100\s*g))\s*(?:=|:)?/i.test(value) ||
+    /\b(?:al\s+kg|al\s+litro|per\s+kg|per\s+litro)\b/i.test(value);
+}
 
-  const joined = cleanText(candidates.slice(-3).join(' '));
-  return joined
-    .replace(/\b(?:confezione|vaschetta|bottiglia)\s+da\s+\d.*$/i, '')
+function isPdfNoise(text = '') {
+  const value = cleanText(text);
+  if (!value || value.length < 2) return true;
+  if (/^[\d\s/.-]+$/.test(value)) return true;
+  return /^(?:dal nostro assortimento|perfetta|vale davvero\.?|luned[iì]|marted[iì]|mercoled[iì]|gioved[iì]|venerd[iì]|sabato|domenica|prezzi validi.*|prodotti disponibili.*|fino ad esaurimento.*|salvo errori.*|lidl plus|scopri di più|pagina \d+|\d+\/2026)$/i.test(value);
+}
+
+function formatFromPdfContext(text = '') {
+  const patterns = [
+    /\b\d+\s*x\s*\d+(?:[.,]\d+)?\s*(?:kg|g|l|ml|cl)\b/i,
+    /\b\d+(?:[.,]\d+)?(?:\/\d+(?:[.,]\d+)?)?\s*(?:kg|g|l|ml|cl)\b/i,
+    /\b\d+\s*(?:pz|pezzi)\b/i
+  ];
+  for (const pattern of patterns) {
+    const match = cleanText(text).match(pattern);
+    if (match) return cleanText(match[0]);
+  }
+  return '';
+}
+
+function cleanPdfTitleParts(parts = []) {
+  const cleaned = [];
+  for (const raw of parts) {
+    let text = cleanText(raw);
+    if (!text || isPdfNoise(text) || isUnitPriceText(text)) continue;
+    if (exactPriceFromItem(text) !== null) continue;
+    if (/^(?:confezione|vaschetta|bottiglia)$/i.test(text)) continue;
+    if (/^\d+(?:[.,]\d+)?(?:\/\d+(?:[.,]\d+)?)?\s*(?:kg|g|l|ml|cl)(?:\s+confezione)?$/i.test(text)) continue;
+    text = text.replace(/\s+confezione$/i, '').trim();
+    if (!text || cleaned.at(-1)?.toLowerCase() === text.toLowerCase()) continue;
+    cleaned.push(text);
+  }
+  return cleanText(cleaned.join(' '))
+    .replace(/\b(?:confezione|vaschetta|bottiglia)\b\s*$/i, '')
     .replace(/\s{2,}/g, ' ')
     .trim();
 }
 
-function formatFromPdfContext(text = '') {
-  return cleanText(text.match(/\b\d+(?:[.,]\d+)?\s*(?:kg|g|l|ml|cl|pz|pezzi)\b/i)?.[0] || '');
+function inferOfferFromPriceItem(page, priceItem, flyer = {}) {
+  const price = exactPriceFromItem(priceItem.text);
+  if (!Number.isFinite(price)) return null;
+
+  const allItems = (page.lines || []).flatMap(line => line.items || []);
+  const left = priceItem.x - 175;
+  const right = priceItem.x + 42;
+
+  const nearby = allItems.filter(item =>
+    item !== priceItem &&
+    item.x >= left && item.x <= right &&
+    item.y >= priceItem.y + 4 && item.y <= priceItem.y + 145
+  );
+
+  const formatCandidates = nearby
+    .filter(item => formatFromPdfContext(item.text))
+    .filter(item => !isUnitPriceText(item.text))
+    .filter(item => item.x <= priceItem.x + 12)
+    .sort((a, b) => b.x - a.x || Math.abs(a.y - priceItem.y) - Math.abs(b.y - priceItem.y));
+  const formatItem = formatCandidates[0] || null;
+  const format = formatFromPdfContext(formatItem?.text || '');
+
+  const titleFloor = formatItem ? formatItem.y + 1 : priceItem.y + 12;
+  const titleLeft = formatItem ? formatItem.x - 8 : left;
+  const titleRight = formatItem ? Math.max(priceItem.x + 35, formatItem.x + 185) : right;
+  const titleItems = nearby
+    .filter(item => item.x >= titleLeft && item.x <= titleRight)
+    .filter(item => item.y >= titleFloor)
+    .filter(item => !formatFromPdfContext(item.text))
+    .filter(item => !isPdfNoise(item.text))
+    .filter(item => !pricesFromText(item.text).length)
+    .sort((a, b) => b.y - a.y || a.x - b.x);
+
+  // Limita il titolo al blocco più vicino al prezzo: evita di inglobare il prodotto sopra.
+  const compact = [];
+  let lastY = null;
+  for (const item of titleItems) {
+    if (lastY !== null && lastY - item.y > 32) break;
+    compact.push(item.text);
+    lastY = item.y;
+    if (compact.length >= 6) break;
+  }
+
+  let title = cleanPdfTitleParts(compact);
+  if (!titleIsUsable(title)) {
+    const fallback = nearby
+      .filter(item => !formatFromPdfContext(item.text))
+      .filter(item => !pricesFromText(item.text).length)
+      .sort((a, b) => Math.abs(a.y - priceItem.y) - Math.abs(b.y - priceItem.y))
+      .slice(0, 4)
+      .sort((a, b) => b.y - a.y || a.x - b.x)
+      .map(item => item.text);
+    title = cleanPdfTitleParts(fallback);
+  }
+
+  if (!titleIsUsable(title) || isPdfNoise(title) || !/[a-zàèéìòù]{3}/i.test(title)) return null;
+
+  const neighborhood = cleanText(
+    nearby
+      .sort((a, b) => b.y - a.y || a.x - b.x)
+      .map(item => item.text)
+      .join(' ')
+  );
+
+  return {
+    title,
+    text: neighborhood,
+    price,
+    oldPrice: null,
+    unitPrice: null,
+    format,
+    discount: cleanText(neighborhood.match(/-\s*\d{1,2}\s*%/)?.[0] || ''),
+    image: flyer.pages?.find(item => Number(item.number) === Number(page.number))?.thumbnail || '',
+    sourceUrl: flyer.flyerUrlAbsolute || flyer.hiResPdfUrl || flyer.pdfUrl || '',
+    description: `Volantino Lidl, pagina ${page.number}`,
+    pdfPage: page.number,
+    extractionMethod: 'pdf-coordinate-v2'
+  };
+}
+
+function dedupePdfOffers(offers = []) {
+  const seen = new Map();
+  for (const offer of offers) {
+    const key = `${offer.pdfPage}|${cleanText(offer.title).toLowerCase().replace(/[^a-z0-9àèéìòù]+/gi, ' ')}|${offer.price.toFixed(2)}`;
+    const existing = seen.get(key);
+    if (!existing || (offer.format && !existing.format)) seen.set(key, offer);
+  }
+  return [...seen.values()];
 }
 
 function extractPdfOffersFromLines(pages = [], flyer = {}) {
   const output = [];
 
   for (const page of pages) {
-    const lines = page.lines || [];
-    for (let index = 0; index < lines.length; index += 1) {
-      const line = lines[index];
-      const values = pricesFromText(line.text);
-      if (!values.length) continue;
+    const priceItems = (page.lines || [])
+      .flatMap(line => line.items || [])
+      .filter(item => exactPriceFromItem(item.text) !== null);
 
-      const neighborhood = cleanText(lines.slice(Math.max(0, index - 4), Math.min(lines.length, index + 4)).map(item => item.text).join(' '));
-      const title = productTitleFromPdfLines(lines, index);
-      if (!titleIsUsable(title)) continue;
-      if (!/[a-zàèéìòù]{3}/i.test(title)) continue;
-
-      const plausible = values.filter(value => value > 0 && value < 500);
-      if (!plausible.length) continue;
-      const price = plausible[plausible.length - 1];
-      const oldCandidates = plausible.filter(value => value > price);
-
-      output.push({
-        title,
-        text: neighborhood,
-        price,
-        oldPrice: oldCandidates.length ? Math.min(...oldCandidates) : null,
-        unitPrice: null,
-        format: formatFromPdfContext(neighborhood),
-        discount: cleanText(neighborhood.match(/-\s*\d{1,2}\s*%/)?.[0] || ''),
-        image: flyer.pages?.find(item => Number(item.number) === Number(page.number))?.thumbnail || '',
-        sourceUrl: flyer.flyerUrlAbsolute || flyer.hiResPdfUrl || flyer.pdfUrl || '',
-        description: `Volantino Lidl, pagina ${page.number}`,
-        pdfPage: page.number
-      });
+    for (const priceItem of priceItems) {
+      const offer = inferOfferFromPriceItem(page, priceItem, flyer);
+      if (offer) output.push(offer);
     }
   }
 
-  return output;
+  return dedupePdfOffers(output);
 }
 
 async function extractPdfOffers(flyer) {
@@ -992,6 +1084,9 @@ export const __test = {
   titleIsUsable,
   normalizeOffer,
   pricesFromText,
+  exactPriceFromItem,
+  isUnitPriceText,
+  inferOfferFromPriceItem,
   groupPdfLines,
   extractPdfOffersFromLines,
   flyerIdentifierFromUrl
