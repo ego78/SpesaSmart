@@ -10,14 +10,14 @@ function tokens(value=''){
   return normalize(value).split(/\s+/).filter(x=>x.length>1&&!STOP_WORDS.has(x));
 }
 
-function textOfOffer(o){return [o.product,o.brand,o.format,o.category].filter(Boolean).join(' ')}
+function textOfOffer(o){return [o.product,o.canonicalName,...(o.canonicalTokens||[]),o.brand,o.format,o.category].filter(Boolean).join(' ')}
 
 function matchScore(product,offer){
-  const pn=normalize(product?.name),on=normalize(offer?.product);
+  const pn=normalize(product?.name),on=normalize(offer?.canonicalName||offer?.product),rawOn=normalize(offer?.product);
   if(!pn||!on)return 0;
   let score=0;
-  if(on===pn)score+=100;
-  else if(on.includes(pn)||pn.includes(on))score+=70;
+  if(on===pn||rawOn===pn)score+=100;
+  else if(on.includes(pn)||pn.includes(on)||rawOn.includes(pn)||pn.includes(rawOn))score+=70;
   const pt=[...new Set(tokens([product.name,product.brand,product.format].filter(Boolean).join(' ')))];
   const ot=new Set(tokens(textOfOffer(offer)));
   const nameTokens=tokens(product.name);
