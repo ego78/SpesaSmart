@@ -4,6 +4,7 @@ import { scanEurospinLocal } from '../connectors/eurospin-local.mjs';
 import { scanPenny } from '../connectors/penny.mjs';
 import { scanPennyLocal } from '../connectors/penny-local.mjs';
 import { resolveLidlFlyer } from '../connectors/lidl-local.mjs';
+import { scanLidlOffers } from '../connectors/lidl-offers.mjs';
 import { chainFor } from '../connectors/registry.mjs';
 import { uniqueOffers } from '../connectors/common.mjs';
 import { enrichOffersWithCatalog, buildCatalog } from '../connectors/catalog.mjs';
@@ -86,7 +87,8 @@ if(pdfStores.length){
     pdfJobs=pdfStores.map(store=>safe(`Volantino locale ${store.name||store.brand}`,()=>scanFlyerPdf(store,String(store.flyerUrl).trim())));
   }
 }
-const localResults=(await Promise.all([...pennyJobs,...eurospinJobs,...pdfJobs])).flat();
+const lidlJobs=lidlStores.map(store=>safe(`Lidl offerte ${store.name||store.brand}`,()=>scanLidlOffers(store)));
+const localResults=(await Promise.all([...pennyJobs,...eurospinJobs,...lidlJobs,...pdfJobs])).flat();
 const lidlLinks=(await Promise.all(lidlStores.map(async store=>{
   try{const link=await resolveLidlFlyer(store);console.log(`Lidl volantino: ${link.flyerUrl}`);return {...link,storeId:String(store.id||'')}}
   catch(e){console.error(`Lidl ${store.name||store.brand}: ${e.message}`);return {storeId:String(store.id||''),connected:false}}
