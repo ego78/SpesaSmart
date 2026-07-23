@@ -1,3 +1,6 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import crypto from 'node:crypto';
 import { cleanText, numberValue, uniqueOffers } from './common.mjs';
 import { resolveLidlFlyer } from './lidl-local.mjs';
 
@@ -303,19 +306,285 @@ async function extractCards(page) {
   });
 }
 
+
+const DEBUG_DIR = path.resolve('debug/lidl');
+
+function safeFileName(value = '') {
+  return cleanText(value)
+    .toLowerCase()
+    .replace(/^https?:\/\//, '')
+    .replace(/[^a-z0-9._-]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 110) || 'response';
+}
+
+function shortHash(value = '') {
+  return crypto.createHash('sha1').update(String(value)).digest('hex').slice(0, 10);
+}
+
+async function prepareDebugDirectory() {
+  await fs.rm(DEBUG_DIR, { recursive: true, force: true });
+  await fs.mkdir(path.join(DEBUG_DIR, 'responses'), { recursive: true });
+}
+
+async function writeJson(filePath, value) {
+  await fs.writeFile(filePath, JSON.stringify(value, null, 2), 'utf8');
+}
+
+function isInterestingJson(url, body) {
+  const haystack = `${url}\n${body}`.toLowerCase();
+  return /(offer|offers|product|products|promotion|promotions|campaign|catalog|catalogue|leaflet|flyer|article|articles|tile|tiles|price|weekly|week|kw-|graphql)/.test(haystack);
+}
+
+function summarizeJson(value) {
+  const summary = {
+    type: Array.isArray(value) ? 'array' : typeof value,
+    topLevelKeys: [],
+    arrays: [],
+    probableProducts: 0
+  };
+
+  if (value && typeof value === 'object' && !Array.isArray(value)) {
+    summary.topLevelKeys = Object.keys(value).slice(0, 60);
+  }
+
+  const seen = new Set();
+  const stack = [{ value, path: '$' }];
+  let inspected = 0;
+
+  while (stack.length && inspected < 30000) {
+    const current = stack.pop();
+    const item = current.value;
+    inspected += 1;
+
+    if (!item || typeof item !== 'object' || seen.has(item)) continue;
+    seen.add(item);
+
+    if (Array.isArray(item)) {
+      summary.arrays.push({ path: current.path, length: item.length });
+      for (let i = 0; i < Math.min(item.length, 1500); i += 1) {
+        stack.push({ value: item[i], path: `${current.path}[${i}]` });
+      }
+      continue;
+    }
+
+    const keys = Object.keys(item);
+    const lower = keys.map(key => key.toLowerCase());
+    const hasName = lower.some(key => ['name', 'title', 'productname', 'product_name', 'headline'].includes(key));
+    const hasPrice = lower.some(key => key.includes('price') || key.includes('amount'));
+    const hasImage = lower.some(key => key.includes('image') || key.includes('media'));
+
+    if (hasName && (hasPrice || hasImage)) summary.probableProducts += 1;
+
+    for (const key of keys.slice(0, 120)) {
+      stack.push({ value: item[key], path: `${current.path}.${key}` });
+    }
+  }
+
+  summary.arrays = summary.arrays
+    .sort((a, b) => b.length - a.length)
+    .slice(0, 40);
+
+  return summary;
+}
+
+async function attachNetworkDebug(page, debugState) {
+  page.on('console', message => {
+    debugState.console.push({
+      type: message.type(),
+      text: message.text(),
+      location: message.location()
+    });
+  });
+
+  page.on('pageerror', error => {
+    debugState.pageErrors.push({
+      message: error.message,
+      stack: error.stack || ''
+    });
+  });
+
+  page.on('requestfailed', request => {
+    debugState.failedRequests.push({
+      url: request.url(),
+      method: request.method(),
+      resourceType: request.resourceType(),
+      failure: request.failure()
+    });
+  });
+
+  page.on('response', async response => {
+    const request = response.request();
+    const headers = response.headers();
+    const contentType = headers['content-type'] || '';
+    const url = response.url();
+
+    const entry = {
+      url,
+      method: request.method(),
+      status: response.status(),
+      resourceType: request.resourceType(),
+      contentType,
+      fromServiceWorker: response.fromServiceWorker(),
+      timing: request.timing()
+    };
+
+    debugState.network.push(entry);
+
+    const jsonLike =
+      contentType.includes('application/json') ||
+      contentType.includes('+json') ||
+      request.resourceType() === 'xhr' ||
+      request.resourceType() === 'fetch';
+
+    if (!jsonLike) return;
+
+    try {
+      const body = await response.text();
+      entry.bodyBytes = Buffer.byteLength(body, 'utf8');
+
+      if (!body || body.length > 20_000_000) return;
+
+      let parsed = null;
+      try {
+        parsed = JSON.parse(body);
+      } catch {
+        return;
+      }
+
+      const fileName = `${String(debugState.jsonResponses.length + 1).padStart(3, '0')}-${safeFileName(url)}-${shortHash(url)}.json`;
+      const filePath = path.join(DEBUG_DIR, 'responses', fileName);
+      await writeJson(filePath, parsed);
+
+      const summary = summarizeJson(parsed);
+      const responseInfo = {
+        url,
+        status: response.status(),
+        method: request.method(),
+        resourceType: request.resourceType(),
+        contentType,
+        bodyBytes: entry.bodyBytes,
+        file: `responses/${fileName}`,
+        interesting: isInterestingJson(url, body),
+        summary
+      };
+
+      debugState.jsonResponses.push(responseInfo);
+    } catch (error) {
+      entry.captureError = error.message;
+    }
+  });
+}
+
+async function saveDebugArtifacts(page, debugState, details = {}) {
+  try {
+    await fs.mkdir(DEBUG_DIR, { recursive: true });
+    await fs.writeFile(path.join(DEBUG_DIR, 'page.html'), await page.content(), 'utf8');
+    await page.screenshot({
+      path: path.join(DEBUG_DIR, 'final-page.png'),
+      fullPage: true
+    });
+  } catch (error) {
+    debugState.artifactErrors.push(error.message);
+  }
+
+  const counts = {};
+  for (const item of debugState.network) {
+    counts[item.resourceType] = (counts[item.resourceType] || 0) + 1;
+  }
+
+  const interestingResponses = debugState.jsonResponses
+    .filter(item => item.interesting || item.summary.probableProducts > 0)
+    .sort((a, b) =>
+      b.summary.probableProducts - a.summary.probableProducts ||
+      b.bodyBytes - a.bodyBytes
+    );
+
+  const report = {
+    generatedAt: new Date().toISOString(),
+    details,
+    totals: {
+      networkRequests: debugState.network.length,
+      jsonResponses: debugState.jsonResponses.length,
+      interestingJsonResponses: interestingResponses.length,
+      browserConsoleMessages: debugState.console.length,
+      pageErrors: debugState.pageErrors.length,
+      failedRequests: debugState.failedRequests.length
+    },
+    requestsByResourceType: counts,
+    topJsonCandidates: interestingResponses.slice(0, 30)
+  };
+
+  await Promise.all([
+    writeJson(path.join(DEBUG_DIR, 'network.json'), debugState.network),
+    writeJson(path.join(DEBUG_DIR, 'json-index.json'), debugState.jsonResponses),
+    writeJson(path.join(DEBUG_DIR, 'console.json'), debugState.console),
+    writeJson(path.join(DEBUG_DIR, 'page-errors.json'), debugState.pageErrors),
+    writeJson(path.join(DEBUG_DIR, 'failed-requests.json'), debugState.failedRequests),
+    writeJson(path.join(DEBUG_DIR, 'report.json'), report)
+  ]);
+
+  const textReport = [
+    'SPESA SMART — DEBUG LIDL',
+    `Generato: ${report.generatedAt}`,
+    '',
+    `Pagina offerte: ${details.offersUrl || '-'}`,
+    `Titolo pagina: ${details.pageTitle || '-'}`,
+    `Card candidate: ${details.rawCards ?? '-'}`,
+    `Offerte valide: ${details.validOffers ?? '-'}`,
+    '',
+    `Richieste HTTP: ${report.totals.networkRequests}`,
+    `Risposte JSON salvate: ${report.totals.jsonResponses}`,
+    `JSON interessanti: ${report.totals.interestingJsonResponses}`,
+    `Errori pagina: ${report.totals.pageErrors}`,
+    `Richieste fallite: ${report.totals.failedRequests}`,
+    '',
+    'MIGLIORI CANDIDATI JSON',
+    ...interestingResponses.slice(0, 20).flatMap((item, index) => [
+      `${index + 1}. ${item.url}`,
+      `   file: ${item.file}`,
+      `   byte: ${item.bodyBytes}`,
+      `   prodotti probabili: ${item.summary.probableProducts}`,
+      `   array principali: ${item.summary.arrays.slice(0, 5).map(array => `${array.path}=${array.length}`).join(', ') || '-'}`
+    ])
+  ].join('\n');
+
+  await fs.writeFile(path.join(DEBUG_DIR, 'report.txt'), textReport, 'utf8');
+}
+
 export async function scanLidlOffers(store = {}) {
   const { chromium } = await import('playwright');
   const context = await resolveLidlFlyer(store);
+  await prepareDebugDirectory();
+
+  const debugState = {
+    network: [],
+    jsonResponses: [],
+    console: [],
+    pageErrors: [],
+    failedRequests: [],
+    artifactErrors: []
+  };
+
   const browser = await chromium.launch({ headless: true });
+  let page = null;
+  let details = {};
 
   try {
     const browserContext = await browser.newContext({
       locale: 'it-IT',
       timezoneId: 'Europe/Rome',
       viewport: { width: 1440, height: 1100 },
-      userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131 Safari/537.36'
+      userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131 Safari/537.36',
+      recordHar: {
+        path: path.join(DEBUG_DIR, 'lidl-session.har'),
+        mode: 'full',
+        content: 'embed'
+      }
     });
-    const page = await browserContext.newPage();
+
+    page = await browserContext.newPage();
+    await attachNetworkDebug(page, debugState);
 
     const offersUrl = await findOffersUrl(page);
     if (!offersUrl) {
@@ -324,7 +593,12 @@ export async function scanLidlOffers(store = {}) {
 
     await page.goto(offersUrl, { waitUntil: 'networkidle', timeout: 90000 });
     await dismissConsent(page);
-    await expandOffers(page);
+
+    // Più cicli per osservare caricamenti progressivi, tab e lazy loading.
+    for (let cycle = 0; cycle < 3; cycle += 1) {
+      await expandOffers(page);
+      await page.waitForTimeout(1500);
+    }
 
     const rawCards = await extractCards(page);
     const offers = uniqueOffers(
@@ -335,15 +609,42 @@ export async function scanLidlOffers(store = {}) {
         .filter(Boolean)
     );
 
+    details = {
+      offersUrl,
+      pageTitle: await page.title(),
+      rawCards: rawCards.length,
+      validOffers: offers.length,
+      flyerUrl: context.flyerUrl || '',
+      flyerId: context.flyerId || '',
+      storeId: String(store.id || ''),
+      storeName: store.name || store.brand || 'Lidl'
+    };
+
+    await saveDebugArtifacts(page, debugState, details);
+    await browserContext.close();
+
     console.log(`Lidl: pagina ${offersUrl}; ${rawCards.length} card candidate; ${offers.length} offerte valide`);
+    console.log(`Lidl debug: ${debugState.network.length} richieste; ${debugState.jsonResponses.length} JSON salvati in debug/lidl`);
 
     if (!offers.length) {
       throw new Error(
-        'Lidl: nessuna offerta estratta. Il sito potrebbe aver modificato il markup.'
+        'Lidl: nessuna offerta estratta. Consultare l’artefatto lidl-debug.'
       );
     }
 
     return offers;
+  } catch (error) {
+    details.error = error.message;
+    if (page) {
+      await saveDebugArtifacts(page, debugState, details);
+    } else {
+      await writeJson(path.join(DEBUG_DIR, 'fatal-error.json'), {
+        generatedAt: new Date().toISOString(),
+        error: error.message,
+        stack: error.stack || ''
+      });
+    }
+    throw error;
   } finally {
     await browser.close();
   }
