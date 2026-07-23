@@ -142,7 +142,33 @@ async function dismissConsent(page) {
   }
 }
 
-async function resolveViewerUrl(page) {
+function flyerLabel(item = {}) {
+  return cleanText([
+    item.name,
+    item.title,
+    item.subtitle,
+    item.description,
+    item.category,
+    item.group,
+    item.url
+  ].filter(Boolean).join(' '));
+}
+
+function isTravelFlyer(item = {}) {
+  return /(?:lidl\s*)?viaggi|vacanze|tour|hotel|villaggi|crociere|voli|travel/i.test(flyerLabel(item));
+}
+
+function isIncludedFlyer(item = {}) {
+  const url = String(item?.url || '');
+  if (!url || isTravelFlyer(item)) return false;
+
+  // Include sia il volantino settimanale sia tutti i volantini speciali.
+  // Lidl può cambiare i nomi delle sezioni, quindi escludiamo esplicitamente
+  // soltanto i volantini Viaggi invece di usare un filtro troppo restrittivo.
+  return true;
+}
+
+async function resolveViewerFlyers(page) {
   try {
     const response = await page.request.get(WIDGET_URL, {
       timeout: 30000,
@@ -152,16 +178,20 @@ async function resolveViewerUrl(page) {
       }
     });
 
-    if (!response.ok()) return '';
+    if (!response.ok()) return [];
     const payload = await response.json();
-    const flyers = payload?.widget?.flyers || [];
-    const weekly = flyers.find(item =>
-      /offerte\s+valide|settimana|gusti|estate|convenienza/i.test(`${item?.name || ''} ${item?.title || ''}`)
-    ) || flyers[0];
+    const flyers = Array.isArray(payload?.widget?.flyers) ? payload.widget.flyers : [];
 
-    return String(weekly?.url || '');
+    return flyers
+      .filter(isIncludedFlyer)
+      .map((item, index) => ({
+        ...item,
+        url: String(item?.url || ''),
+        label: flyerLabel(item) || `Volantino ${index + 1}`,
+        index
+      }));
   } catch {
-    return '';
+    return [];
   }
 }
 
@@ -973,9 +1003,9 @@ export async function scanLidlOffers(store = {}) {
     await attachNetworkDebug(page, debugState);
 
     const offersUrl = await findOffersUrl(page);
-    const viewerUrl = await resolveViewerUrl(page);
-    if (!offersUrl && !viewerUrl) {
-      throw new Error('Lidl: né pagina offerte né visualizzatore del volantino individuati');
+    const viewerFlyers = await resolveViewerFlyers(page);
+    if (!offersUrl && !viewerFlyers.length) {
+      throw new Error('Lidl: né pagina offerte né volantini individuati');
     }
 
     // Prima apre la pagina offerte: mantiene le card già funzionanti.
@@ -990,21 +1020,34 @@ export async function scanLidlOffers(store = {}) {
       pageCards = await extractCards(page);
     }
 
-    // Apre il visualizzatore per mantenere il debug delle API interne.
+    // Elabora tutti i volantini settimanali e speciali. Sono esclusi soltanto
+    // i volantini Lidl Viaggi.
     let viewerCards = [];
-    let flyerMetadata = null;
-    let pdfResult = { offers: [], pages: [], pdfUrl: '', bytes: 0 };
-    if (viewerUrl) {
-      flyerMetadata = await fetchFlyerMetadata(page, viewerUrl);
-      await page.goto(viewerUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
-      await dismissConsent(page);
-      await interactWithViewer(page);
-      viewerCards = await extractViewerCards(page);
+    let pdfOffers = [];
+    const processedFlyers = [];
 
-      if (flyerMetadata?.hiResPdfUrl || flyerMetadata?.pdfUrl) {
-        try {
+    for (const flyerEntry of viewerFlyers) {
+      const viewerUrl = flyerEntry.url;
+      let flyerMetadata = null;
+      let flyerViewerCards = [];
+      let pdfResult = { offers: [], pages: [], pdfUrl: '', bytes: 0 };
+
+      try {
+        flyerMetadata = await fetchFlyerMetadata(page, viewerUrl);
+        await page.goto(viewerUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
+        await dismissConsent(page);
+        await interactWithViewer(page);
+        flyerViewerCards = await extractViewerCards(page);
+        viewerCards.push(...flyerViewerCards);
+
+        if (flyerMetadata?.hiResPdfUrl || flyerMetadata?.pdfUrl) {
           pdfResult = await extractPdfOffers(flyerMetadata);
-          await writeJson(path.join(DEBUG_DIR, 'pdf-extraction.json'), {
+          pdfOffers.push(...pdfResult.offers);
+
+          const safeIndex = String(processedFlyers.length + 1).padStart(2, '0');
+          await writeJson(path.join(DEBUG_DIR, `pdf-extraction-${safeIndex}.json`), {
+            flyerLabel: flyerEntry.label,
+            viewerUrl,
             pdfUrl: pdfResult.pdfUrl,
             bytes: pdfResult.bytes,
             pages: pdfResult.pages.map(item => ({
@@ -1014,13 +1057,41 @@ export async function scanLidlOffers(store = {}) {
             })),
             offers: pdfResult.offers
           });
-        } catch (pdfError) {
-          debugState.artifactErrors.push(`PDF: ${pdfError.message}`);
         }
+
+        processedFlyers.push({
+          label: flyerEntry.label,
+          viewerUrl,
+          flyerIdentifier: flyerIdentifierFromUrl(viewerUrl),
+          pdfUrl: pdfResult.pdfUrl,
+          pdfBytes: pdfResult.bytes,
+          pdfPages: pdfResult.pages.length,
+          viewerCards: flyerViewerCards.length,
+          pdfCards: pdfResult.offers.length,
+          status: 'ok'
+        });
+      } catch (flyerError) {
+        debugState.artifactErrors.push(`Volantino ${flyerEntry.label}: ${flyerError.message}`);
+        processedFlyers.push({
+          label: flyerEntry.label,
+          viewerUrl,
+          flyerIdentifier: flyerIdentifierFromUrl(viewerUrl),
+          viewerCards: flyerViewerCards.length,
+          pdfCards: 0,
+          status: 'error',
+          error: flyerError.message
+        });
       }
     }
 
-    const rawCards = [...pageCards, ...viewerCards, ...pdfResult.offers];
+    await writeJson(path.join(DEBUG_DIR, 'flyers-summary.json'), {
+      generatedAt: new Date().toISOString(),
+      totalFromWidget: viewerFlyers.length,
+      excludedRule: 'Lidl Viaggi / vacanze / travel',
+      processedFlyers
+    });
+
+    const rawCards = [...pageCards, ...viewerCards, ...pdfOffers];
     const offers = uniqueOffers(
       rawCards
         .map((raw, index) =>
@@ -1031,14 +1102,16 @@ export async function scanLidlOffers(store = {}) {
 
     details = {
       offersUrl,
-      viewerUrl,
+      viewerUrls: viewerFlyers.map(item => item.url),
+      includedFlyers: viewerFlyers.length,
+      processedFlyers,
       pageTitle: await page.title(),
       pageCards: pageCards.length,
       viewerCards: viewerCards.length,
-      pdfCards: pdfResult.offers.length,
-      pdfPages: pdfResult.pages.length,
-      pdfUrl: pdfResult.pdfUrl,
-      pdfBytes: pdfResult.bytes,
+      pdfCards: pdfOffers.length,
+      pdfPages: processedFlyers.reduce((sum, item) => sum + Number(item.pdfPages || 0), 0),
+      pdfUrls: processedFlyers.map(item => item.pdfUrl).filter(Boolean),
+      pdfBytes: processedFlyers.reduce((sum, item) => sum + Number(item.pdfBytes || 0), 0),
       rawCards: rawCards.length,
       validOffers: offers.length,
       flyerUrl: context.flyerUrl || '',
@@ -1050,7 +1123,7 @@ export async function scanLidlOffers(store = {}) {
     await saveDebugArtifacts(page, debugState, details);
     await browserContext.close();
 
-    console.log(`Lidl: pagina offerte ${offersUrl || '-'}; viewer ${viewerUrl || '-'}; ${pageCards.length} card pagina; ${viewerCards.length} card viewer; ${pdfResult.offers.length} card PDF; ${offers.length} offerte valide`);
+    console.log(`Lidl: pagina offerte ${offersUrl || '-'}; ${viewerFlyers.length} volantini inclusi; ${pageCards.length} card pagina; ${viewerCards.length} card viewer; ${pdfOffers.length} card PDF; ${offers.length} offerte valide`);
     console.log(`Lidl debug: ${debugState.network.length} richieste; ${debugState.jsonResponses.length} JSON salvati in debug/lidl`);
 
     if (!offers.length) {
@@ -1089,5 +1162,8 @@ export const __test = {
   inferOfferFromPriceItem,
   groupPdfLines,
   extractPdfOffersFromLines,
-  flyerIdentifierFromUrl
+  flyerIdentifierFromUrl,
+  flyerLabel,
+  isTravelFlyer,
+  isIncludedFlyer
 };
