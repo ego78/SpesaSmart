@@ -18,11 +18,27 @@ jobs:
       image: mcr.microsoft.com/playwright:v1.61.0-noble
       options: --ipc=host
 
+    defaults:
+      run:
+        shell: bash
+        working-directory: ${{ github.workspace }}
+
     steps:
       - name: Scarica repository
         uses: actions/checkout@v5
         with:
           fetch-depth: 0
+
+      - name: Verifica cartella repository
+        run: |
+          echo "Cartella corrente:"
+          pwd
+
+          echo "Contenuto:"
+          ls -la
+
+          echo "Repository Git:"
+          git rev-parse --show-toplevel
 
       - name: Mostra versione Node.js
         run: |
@@ -64,6 +80,7 @@ jobs:
           if [ -f data/offerte.json ]; then
             node -e "
               const fs = require('fs');
+
               const offerte = JSON.parse(
                 fs.readFileSync('data/offerte.json', 'utf8')
               );
@@ -95,6 +112,7 @@ jobs:
           if [ -f data/catalogo.json ]; then
             node -e "
               const fs = require('fs');
+
               const catalogo = JSON.parse(
                 fs.readFileSync('data/catalogo.json', 'utf8')
               );
@@ -129,10 +147,20 @@ jobs:
 
       - name: Salva offerte aggiornate
         if: success()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          cd "$GITHUB_WORKSPACE"
+
+          echo "Cartella usata per il salvataggio:"
+          pwd
+
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git config user.name "github-actions[bot]"
           git config user.email \
             "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git status
 
           git add \
             data/offerte.json \
@@ -143,5 +171,5 @@ jobs:
             echo "Nessun aggiornamento da salvare."
           else
             git commit -m "Aggiorna offerte automatiche"
-            git push
+            git push origin HEAD:${{ github.ref_name }}
           fi
