@@ -1,11 +1,14 @@
-# Spesa Smart v5.4.0 — Estrazione PDF Lidl
+# Spesa Smart v5.5.0 — Parser PDF Lidl migliorato
 
-Questa versione scarica automaticamente il PDF ad alta risoluzione indicato dall’API ufficiale del volantino Lidl.
+Questa versione usa le coordinate del testo nel PDF per distinguere il prezzo di vendita dal prezzo al kg/litro.
 
-Il motore usa il testo incorporato nel PDF, senza OCR, per individuare nomi, prezzi, formati e pagine. I risultati vengono uniti alle offerte della pagina web e deduplicati.
+## Miglioramenti
 
-## Diagnostica
+- considera prezzi principali solo gli elementi isolati come `2.99`;
+- ignora righe come `1 kg = 9.34 €`, `1 l = ...` e prezzi unitari;
+- associa titolo e formato usando la stessa colonna grafica del prezzo;
+- elimina titoli di servizio e testo legale;
+- evita duplicati identici per pagina, titolo e prezzo;
+- mantiene il parser HTML come sorgente aggiuntiva.
 
-Il workflow crea l’artefatto `lidl-pdf-debug-NUMERO`. Il file `pdf-extraction.json` contiene il testo estratto pagina per pagina e le offerte candidate.
-
-La prima esecuzione è ancora sperimentale: il layout del PDF può associare alcuni prezzi al prodotto sbagliato. Dopo il test reale, il file diagnostico permette di perfezionare il parser.
+Il file diagnostico `pdf-extraction.json` continua a essere incluso nell'artefatto GitHub.

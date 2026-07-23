@@ -130,3 +130,10 @@ Aggiunto catalogo prodotti unificato. Vedi `README-CATALOGO.md`.
 - estrazione del testo incorporato con PDF.js;
 - unione e deduplicazione con le offerte HTML;
 - diagnostica `pdf-extraction.json`.
+
+
+### Novità v5.5.0
+
+- esclusione dei prezzi al kg/litro dal parser PDF Lidl;
+- associazione spaziale tra prezzo, formato e titolo;
+- titoli più puliti e deduplicazione più prudente.
