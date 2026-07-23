@@ -1,4 +1,4 @@
-# Lidl automatico — v5.1.0 sperimentale
+# Lidl automatico — v5.2.0 sperimentale
 
 Questa versione aggiunge l'estrazione automatica delle offerte dalla pagina
 ufficiale Lidl Italia tramite Playwright.
@@ -47,3 +47,8 @@ Lidl: nessuna offerta estratta. Il sito potrebbe aver modificato il markup.
 
 In quel caso PENNY ed Eurospin continuano a essere salvati, mentre Lidl resta
 temporaneamente a zero grazie alla funzione `safe()` già presente.
+
+
+## Diagnostica v5.2.0
+
+Il workflow carica sempre l'artefatto `lidl-debug-NUMERO`, anche se il connettore genera un errore.

@@ -106,7 +106,7 @@ Il connettore PDF viene caricato solo quando esiste un volantino PDF collegato e
 - Nessun OCR/OpenAI è necessario per PENNY ed Eurospin quando le API prodotto sono disponibili.
 
 
-## Versione 5.1.0
+## Versione 5.2.0
 Aggiunto catalogo prodotti unificato. Vedi `README-CATALOGO.md`.
 
 
@@ -115,3 +115,10 @@ Aggiunto catalogo prodotti unificato. Vedi `README-CATALOGO.md`.
 - estrazione sperimentale delle offerte Lidl con Playwright;
 - installazione automatica di Chromium in GitHub Actions;
 - test dedicato `npm run test:lidl`.
+
+
+### Novità v5.2.0
+
+- diagnostica completa Lidl;
+- HAR, DOM, screenshot e risposte JSON;
+- artefatto GitHub automatico `lidl-debug-NUMERO`.
