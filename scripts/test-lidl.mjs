@@ -12,6 +12,12 @@ assert.equal(__test.titleIsUsable('Cetrioli'), true);
 assert.equal(__test.titleIsUsable('Mostra di più'), false);
 
 assert.deepEqual(__test.pricesFromText('Yogurt 1,49 €'), [1.49]);
+
+assert.equal(__test.isTravelFlyer({ title: 'Lidl Viaggi - Vacanze da sogno' }), true);
+assert.equal(__test.isTravelFlyer({ title: 'Volantino settimanale' }), false);
+assert.equal(__test.isIncludedFlyer({ title: 'Tutti i gusti dell’estate', url: 'https://example.test/flyer' }), true);
+assert.equal(__test.isIncludedFlyer({ title: 'Lidl Viaggi', url: 'https://example.test/travel' }), false);
+
 assert.equal(
   __test.flyerIdentifierFromUrl('https://www.lidl.it/l/it/volantini/offerte-estate/ar/0'),
   'offerte-estate'
