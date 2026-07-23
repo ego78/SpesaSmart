@@ -14,53 +14,109 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
+    container:
+      image: mcr.microsoft.com/playwright:v1.61.0-noble
+      options: --ipc=host
+
     steps:
       - name: Scarica repository
         uses: actions/checkout@v5
-
-      - name: Configura Node.js
-        uses: actions/setup-node@v5
         with:
-          node-version: "24"
+          fetch-depth: 0
 
-      - name: Installa dipendenze
-        run: npm install
+      - name: Mostra versione Node.js
+        run: |
+          node --version
+          npm --version
 
-      - name: Controlla cache Chromium
-        id: playwright-cache
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/ms-playwright
-          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+      - name: Installa dipendenze progetto
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
 
-      - name: Installa Chromium per Lidl
-        if: steps.playwright-cache.outputs.cache-hit != 'true'
-        run: npx playwright install chromium
-        timeout-minutes: 5
+      - name: Allinea Playwright al container
+        run: |
+          npm install \
+            --no-save \
+            --package-lock=false \
+            playwright@1.61.0
+
+          echo "Versione Playwright:"
+          npx playwright --version
 
       - name: Cerca offerte dei supermercati selezionati
+        timeout-minutes: 8
         env:
           APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
           FAMILY_CODE: ${{ secrets.FAMILY_CODE }}
           MINIMUM_MATCH_SCORE: "0.62"
           PENNY_FLYER_ID: ${{ secrets.PENNY_FLYER_ID }}
+          LIDL_DEBUG: "true"
+          PLAYWRIGHT_BROWSERS_PATH: "/ms-playwright"
         run: npm run scan-offers
 
       - name: Riepilogo offerte trovate
+        if: always()
         run: |
-          node -e "const fs=require('fs');const a=JSON.parse(fs.readFileSync('data/offerte.json'));const g=Object.groupBy(a,x=>x.store||x.chain||'Altro');console.log('Totale:',a.length);for(const [k,v] of Object.entries(g))console.log(k+':',v.length,'- locali verificati:',v.filter(x=>x.localValidityVerified).length);"
-          node -e "const c=JSON.parse(require('fs').readFileSync('data/catalogo.json'));console.log('Catalogo unificato:',c.items.length,'voci');"
-          echo "Stato collegamenti locali:"
-          cat data/volantini-locali.json
+          if [ -f data/offerte.json ]; then
+            node -e "
+              const fs = require('fs');
+              const offerte = JSON.parse(
+                fs.readFileSync('data/offerte.json', 'utf8')
+              );
 
-      - name: Salva offerte aggiornate
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/offerte.json data/volantini-locali.json data/catalogo.json
-          git diff --cached --quiet || git commit -m "Aggiorna offerte automatiche"
-          git push
+              const gruppi = Object.groupBy(
+                offerte,
+                offerta => offerta.store || offerta.chain || 'Altro'
+              );
 
+              console.log('Totale offerte:', offerte.length);
+
+              for (const [catena, elementi] of Object.entries(gruppi)) {
+                const locali = elementi.filter(
+                  elemento => elemento.localValidityVerified
+                ).length;
+
+                console.log(
+                  catena + ':',
+                  elementi.length,
+                  '- locali verificati:',
+                  locali
+                );
+              }
+            "
+          else
+            echo "File data/offerte.json non trovato."
+          fi
+
+          if [ -f data/catalogo.json ]; then
+            node -e "
+              const fs = require('fs');
+              const catalogo = JSON.parse(
+                fs.readFileSync('data/catalogo.json', 'utf8')
+              );
+
+              console.log(
+                'Catalogo unificato:',
+                catalogo.items?.length || 0,
+                'voci'
+              );
+            "
+          else
+            echo "File data/catalogo.json non trovato."
+          fi
+
+          echo ""
+          echo "=== Stato collegamenti locali ==="
+
+          if [ -f data/volantini-locali.json ]; then
+            cat data/volantini-locali.json
+          else
+            echo "File data/volantini-locali.json non trovato."
+          fi
 
       - name: Carica diagnostica Lidl
         if: always()
@@ -70,3 +126,22 @@ jobs:
           path: debug/lidl/
           if-no-files-found: warn
           retention-days: 14
+
+      - name: Salva offerte aggiornate
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            data/offerte.json \
+            data/volantini-locali.json \
+            data/catalogo.json
+
+          if git diff --cached --quiet; then
+            echo "Nessun aggiornamento da salvare."
+          else
+            git commit -m "Aggiorna offerte automatiche"
+            git push
+          fi
