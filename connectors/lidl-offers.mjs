@@ -359,40 +359,136 @@ async function clickLandingFlyerCards(page) {
   return discovered;
 }
 
+async function scrollLandingUntilStable(page) {
+  let previousHeight = 0;
+  let stableRounds = 0;
+  for (let round = 0; round < 18 && stableRounds < 3; round += 1) {
+    const height = await page.evaluate(() => Math.max(
+      document.body?.scrollHeight || 0,
+      document.documentElement?.scrollHeight || 0
+    ));
+    await page.evaluate(() => window.scrollTo(0, Math.max(
+      document.body?.scrollHeight || 0,
+      document.documentElement?.scrollHeight || 0
+    )));
+    await page.waitForTimeout(900);
+    const nextHeight = await page.evaluate(() => Math.max(
+      document.body?.scrollHeight || 0,
+      document.documentElement?.scrollHeight || 0
+    ));
+    stableRounds = nextHeight === previousHeight || nextHeight === height ? stableRounds + 1 : 0;
+    previousHeight = nextHeight;
+  }
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.waitForTimeout(700);
+}
+
+async function captureLandingDiagnostics(page, capturedResponses = []) {
+  const diagnostics = await page.evaluate(() => {
+    const clean = value => String(value || '').replace(/\u00a0/g, ' ').replace(/\s+/g, ' ').trim();
+    const attrs = node => Object.fromEntries([...node.attributes].map(item => [item.name, item.value]));
+    return {
+      url: location.href,
+      title: document.title,
+      readyState: document.readyState,
+      bodyText: clean(document.body?.innerText || ''),
+      headings: [...document.querySelectorAll('h1,h2,h3,h4,h5,h6')].map(node => ({
+        tag: node.tagName,
+        text: clean(node.textContent),
+        attrs: attrs(node)
+      })),
+      links: [...document.querySelectorAll('a[href]')].map(node => ({
+        text: clean(node.textContent),
+        href: node.href,
+        attrs: attrs(node)
+      })),
+      iframes: [...document.querySelectorAll('iframe')].map(node => ({
+        src: node.src,
+        title: node.title,
+        attrs: attrs(node)
+      })),
+      scripts: [...document.scripts].map(node => ({ src: node.src, type: node.type, textPreview: clean(node.textContent).slice(0, 500) })),
+      resources: performance.getEntriesByType('resource').map(entry => ({
+        name: entry.name,
+        initiatorType: entry.initiatorType,
+        duration: entry.duration,
+        transferSize: entry.transferSize
+      })),
+      localStorage: Object.fromEntries(Object.keys(localStorage).map(key => [key, localStorage.getItem(key)])),
+      sessionStorage: Object.fromEntries(Object.keys(sessionStorage).map(key => [key, sessionStorage.getItem(key)])),
+      htmlLength: document.documentElement.outerHTML.length,
+      scrollHeight: Math.max(document.body?.scrollHeight || 0, document.documentElement?.scrollHeight || 0)
+    };
+  });
+
+  await fs.mkdir(DEBUG_DIR, { recursive: true });
+  await fs.writeFile(path.join(DEBUG_DIR, 'landing-page.html'), await page.content(), 'utf8');
+  await page.screenshot({ path: path.join(DEBUG_DIR, 'landing-full-page.png'), fullPage: true });
+  await writeJson(path.join(DEBUG_DIR, 'landing-diagnostics.json'), diagnostics);
+  await writeJson(path.join(DEBUG_DIR, 'landing-keyword-responses.json'), capturedResponses);
+  return diagnostics;
+}
+
 async function resolveViewerFlyers(page) {
   const networkFlyers = [];
+  const capturedResponses = [];
+  const keywordPattern = /volantino settimanale|volantini settimanali|23[\\/. -]07|29[\\/. -]07|weekly|leaflet|flyer|volantini/i;
+
   const responseListener = async response => {
     const url = response.url();
-    if (!/endpoints\.leaflets\.schwarz\/v4\/(?:widget|flyer)/i.test(url)) return;
+    const contentType = String(response.headers()['content-type'] || '');
     try {
-      const payload = await response.json();
-      networkFlyers.push(...collectFlyersFromPayload(payload, 'landing-network'));
-    } catch {
-      // Alcune risposte possono essere compresse o non JSON.
+      let body = '';
+      const shouldInspect = /json|javascript|text|html/i.test(contentType) || ['xhr', 'fetch', 'script', 'document'].includes(response.request().resourceType());
+      if (shouldInspect) {
+        body = await response.text();
+        if (body.length > 6_000_000) body = body.slice(0, 6_000_000);
+      }
+
+      if (/endpoints\.leaflets\.schwarz\/v4\/(?:widget|flyer)/i.test(url) && body) {
+        try {
+          const payload = JSON.parse(body);
+          networkFlyers.push(...collectFlyersFromPayload(payload, 'landing-network'));
+        } catch {
+          // Non tutte le risposte sono JSON valido.
+        }
+      }
+
+      if (keywordPattern.test(url) || keywordPattern.test(body)) {
+        capturedResponses.push({
+          url,
+          status: response.status(),
+          resourceType: response.request().resourceType(),
+          contentType,
+          bodyBytes: Buffer.byteLength(body || '', 'utf8'),
+          bodyPreview: cleanText(body).slice(0, 25000)
+        });
+      }
+    } catch (error) {
+      capturedResponses.push({ url, status: response.status(), captureError: error.message });
     }
   };
 
   page.on('response', responseListener);
   let landingCards = [];
   let clickedCards = [];
+  let landingDiagnostics = null;
 
   try {
     await page.goto(LANDING_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
     await dismissConsent(page);
+    await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
+    await page.waitForTimeout(5000);
+    await scrollLandingUntilStable(page);
     await page.waitForTimeout(2500);
-    for (let index = 0; index < 6; index += 1) {
-      await page.mouse.wheel(0, 900);
-      await page.waitForTimeout(300);
-    }
-    await page.keyboard.press('Home').catch(() => {});
     landingCards = await extractLandingFlyerCards(page);
+    landingDiagnostics = await captureLandingDiagnostics(page, capturedResponses);
     clickedCards = await clickLandingFlyerCards(page);
-    await page.waitForTimeout(1200);
+    await page.waitForTimeout(1800);
   } finally {
     page.off('response', responseListener);
   }
 
-  // Il vecchio endpoint resta un fallback utile per i volantini speciali.
   let widgetFlyers = [];
   try {
     const response = await page.request.get(WIDGET_URL, {
@@ -422,7 +518,9 @@ async function resolveViewerFlyers(page) {
     landingCards,
     clickedCards,
     networkFlyers: dedupeFlyers(networkFlyers),
-    widgetFlyers: dedupeFlyers(widgetFlyers)
+    widgetFlyers: dedupeFlyers(widgetFlyers),
+    landingDiagnostics,
+    capturedResponses
   };
 }
 
@@ -1244,6 +1342,8 @@ export async function scanLidlOffers(store = {}) {
       clickedCards: discovery.clickedCards.length,
       networkFlyers: discovery.networkFlyers.length,
       widgetFlyers: discovery.widgetFlyers.length,
+      keywordResponses: discovery.capturedResponses?.length || 0,
+      landingTextContainsWeekly: /volantino settimanale|volantini settimanali/i.test(discovery.landingDiagnostics?.bodyText || ''),
       finalFlyers: viewerFlyers.length,
       sources: viewerFlyers.map(item => ({ label: item.label, url: item.url, category: item.category, source: item.source }))
     });
