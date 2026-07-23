@@ -26,6 +26,9 @@ jobs:
       - name: Installa dipendenze
         run: npm install
 
+      - name: Installa Chromium per Lidl
+        run: npx playwright install --with-deps chromium
+
       - name: Cerca offerte dei supermercati selezionati
         env:
           APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
