@@ -132,14 +132,14 @@ Aggiunto catalogo prodotti unificato. Vedi `README-CATALOGO.md`.
 - diagnostica `pdf-extraction.json`.
 
 
-### Novità v5.6.0
+### Novità v6.0.0
 
 - esclusione dei prezzi al kg/litro dal parser PDF Lidl;
 - associazione spaziale tra prezzo, formato e titolo;
 - titoli più puliti e deduplicazione più prudente.
 
 
-## Lidl v5.6.0 – tutti i volantini commerciali
+## Lidl v6.0.0 – tutti i volantini commerciali
 
 Il connettore Lidl ora elabora automaticamente:
 
@@ -153,3 +153,8 @@ Nel debug vengono creati:
 
 - `flyers-summary.json`, con l'elenco dei volantini inclusi;
 - `pdf-extraction-01.json`, `pdf-extraction-02.json`, ecc., uno per ogni volantino elaborato.
+
+
+## Lidl v6.0
+
+La scoperta dei volantini parte dalla pagina ufficiale **Volantini e Riviste**. Sono inclusi i volantini settimanali e speciali; Lidl Viaggi è escluso. Vedi `README-LIDL-DISCOVERY.md`.
