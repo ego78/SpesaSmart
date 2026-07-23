@@ -18,6 +18,24 @@ assert.equal(__test.isTravelFlyer({ title: 'Volantino settimanale' }), false);
 assert.equal(__test.isIncludedFlyer({ title: 'Tutti i gusti dell’estate', url: 'https://example.test/flyer' }), true);
 assert.equal(__test.isIncludedFlyer({ title: 'Lidl Viaggi', url: 'https://example.test/travel' }), false);
 
+
+assert.equal(
+  __test.canonicalFlyerUrl('https://www.lidl.it/l/it/volantini/offerte-settimanali/ar/0#pagina-2'),
+  'https://www.lidl.it/l/it/volantini/offerte-settimanali/ar/0'
+);
+const discoveredFromApi = __test.collectFlyersFromPayload({
+  flyer: {
+    flyer_identifier: 'offerte-valide-dal-23-07-al-29-07',
+    name: 'Volantino settimanale'
+  }
+});
+assert.equal(discoveredFromApi.length, 1);
+assert.match(discoveredFromApi[0].url, /offerte-valide-dal-23-07-al-29-07\/ar\/0$/);
+assert.equal(__test.dedupeFlyers([
+  discoveredFromApi[0],
+  { ...discoveredFromApi[0], source: 'duplicate' }
+]).length, 1);
+
 assert.equal(
   __test.flyerIdentifierFromUrl('https://www.lidl.it/l/it/volantini/offerte-estate/ar/0'),
   'offerte-estate'
