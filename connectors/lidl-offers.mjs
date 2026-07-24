@@ -8,7 +8,7 @@ const HOME_URL = 'https://www.lidl.it/';
 const LANDING_URL = 'https://www.lidl.it/c/volantino-lidl/s10018048';
 const WIDGET_URL = 'https://endpoints.leaflets.schwarz/v4/widget?widget_id=b72c9549-b8f0-11ed-b03c-fa163e81deca&store_id=0&region_id=0';
 const CACHE_DIR = path.resolve('.cache/lidl');
-const PDF_CACHE_VERSION = 3;
+const PDF_CACHE_VERSION = 5;
 const MAX_FLYER_CONCURRENCY = 2;
 const DEBUG_ENABLED = /^(1|true|yes)$/i.test(process.env.LIDL_DEBUG || '');
 const DEBUG_FULL = /^(1|true|yes)$/i.test(process.env.LIDL_DEBUG_FULL || '');
@@ -364,31 +364,74 @@ async function extractStructuredLandingCards(page) {
       if (/volantini?\s+lidl\s*viaggi|lidl\s*viaggi/i.test(text)) return 'Volantini Lidl Viaggi';
       return '';
     };
-    const headings = [...document.querySelectorAll('h1,h2,h3,h4,h5,h6,[class*="headline" i],[class*="heading" i]')]
+    const headings = [...document.querySelectorAll('.section-head,h1,h2,h3,h4,h5,h6,[class*="headline" i],[class*="heading" i]')]
       .map(node => ({ node, text: clean(node.textContent), section: sectionName(node.textContent), top: node.getBoundingClientRect().top + scrollY }))
       .filter(item => item.section)
       .sort((a, b) => a.top - b.top);
-    const cards = [...document.querySelectorAll('[id^="flyer-"]')]
-      .filter(node => node.matches('a,button,[role="button"]'))
-      .map((node, index) => {
-        const top = node.getBoundingClientRect().top + scrollY;
-        const heading = [...headings].reverse().find(item => item.top <= top + 4);
-        const img = node.querySelector('img');
-        return {
-          index,
-          id: node.id,
-          leafletId: clean(node.getAttribute('data-track-id') || node.id.replace(/^flyer-/, '')),
-          tag: node.tagName,
-          section: heading?.section || '',
-          title: clean(node.querySelector('.flyer__title')?.textContent || ''),
-          name: clean(node.querySelector('.flyer__name')?.textContent || ''),
-          text: clean(node.textContent),
-          href: absolute(node.getAttribute('href')),
-          image: img?.currentSrc || img?.src || '',
-          disabled: node.matches(':disabled') || node.classList.contains('flyer--disabled'),
-          top
-        };
-      });
+
+    const candidates = [];
+    const seen = new Set();
+    const add = (node, section = '') => {
+      if (!node || seen.has(node)) return;
+      const text = clean(node.textContent);
+      const href = absolute(node.getAttribute?.('href'));
+      const img = node.querySelector?.('img');
+      if (!text && !img) return;
+      if (/cookie|newsletter|contattaci|seleziona il tuo punto vendita/i.test(text)) return;
+      seen.add(node);
+      const uid = `spesa-smart-${candidates.length}`;
+      node.setAttribute('data-spesa-smart-card-id', uid);
+      candidates.push({ node, section, uid });
+    };
+
+    // Card native del widget volantini.
+    for (const node of document.querySelectorAll('[id^="flyer-"]')) {
+      if (!node.matches('a,button,[role="button"]')) continue;
+      const top = node.getBoundingClientRect().top + scrollY;
+      const heading = [...headings].reverse().find(item => item.top <= top + 4);
+      add(node, heading?.section || '');
+    }
+
+    // V7.2: la pagina visibile è la fonte primaria. Cerchiamo anche tile,
+    // banner e link promozionali collocati nelle sezioni target, non soltanto
+    // gli elementi con id flyer-*. È così che vengono inclusi i volantini
+    // speciali pubblicati dal CMS ma assenti dall'API overview.
+    for (const heading of headings) {
+      let container = heading.node.parentElement;
+      for (let depth = 0; container && depth < 5; depth += 1, container = container.parentElement) {
+        const links = [...container.querySelectorAll('a[href],button,[role="button"]')];
+        const useful = links.filter(node => {
+          const top = node.getBoundingClientRect().top + scrollY;
+          const nextHeading = headings.find(item => item.top > heading.top);
+          if (top < heading.top - 5 || (nextHeading && top >= nextHeading.top)) return false;
+          const text = clean(`${node.textContent || ''} ${node.getAttribute('aria-label') || ''}`);
+          const href = absolute(node.getAttribute('href'));
+          return /volantin|offert|prodott|estate|novit|mondi lidl/i.test(`${text} ${href}`) || node.querySelector('img');
+        });
+        useful.forEach(node => add(node, heading.section));
+        if (useful.length) break;
+      }
+    }
+
+    const cards = candidates.map(({ node, section, uid }, index) => {
+      const img = node.querySelector('img');
+      const nativeId = clean(node.id || '');
+      return {
+        index,
+        id: nativeId || uid,
+        leafletId: clean(node.getAttribute('data-track-id') || nativeId.replace(/^flyer-/, '')),
+        tag: node.tagName,
+        section,
+        title: clean(node.querySelector('.flyer__title,[class*="title" i]')?.textContent || img?.alt || ''),
+        name: clean(node.querySelector('.flyer__name,[class*="name" i],[class*="subtitle" i]')?.textContent || ''),
+        text: clean(node.textContent || img?.alt || ''),
+        href: absolute(node.getAttribute('href')),
+        image: img?.currentSrc || img?.src || '',
+        disabled: node.matches(':disabled') || node.classList.contains('flyer--disabled'),
+        selector: nativeId ? `#${CSS.escape(nativeId)}` : `[data-spesa-smart-card-id="${uid}"]`,
+        top: node.getBoundingClientRect().top + scrollY
+      };
+    });
     return { headings: headings.map(({ text, section, top }) => ({ text, section, top })), cards };
   });
 }
@@ -449,13 +492,26 @@ function collectFlyersFromPayload(payload, source = 'network') {
   return output;
 }
 
+function discoveryUrl(value = '') {
+  const canonical = canonicalFlyerUrl(value);
+  if (canonical) return canonical;
+  try {
+    const url = new URL(String(value || ''), LANDING_URL);
+    if (!/^(?:www\.)?lidl\.it$/i.test(url.hostname)) return '';
+    url.hash = '';
+    return url.href;
+  } catch {
+    return '';
+  }
+}
+
 function dedupeFlyers(items = []) {
   const map = new Map();
   for (const item of items) {
-    const url = canonicalFlyerUrl(item?.url);
+    const url = discoveryUrl(item?.url);
     if (!url || !isIncludedFlyer({ ...item, url })) continue;
     const identifier = flyerIdentifierFromUrl(url);
-    const key = identifier || url.replace(/\/$/, '');
+    const key = identifier ? `flyer:${identifier}` : `page:${url.replace(/\/$/, '')}`;
     const previous = map.get(key) || {};
     const sources = [...new Set(
       [previous.source, item.source]
@@ -467,6 +523,7 @@ function dedupeFlyers(items = []) {
       ...previous,
       ...item,
       url,
+      discoveryType: identifier ? 'leaflet' : 'landing-page',
       label: flyerLabel(item) || previous.label || 'Volantino Lidl',
       category: cleanText(item.category || previous.category || ''),
       source: sources.join(',')
@@ -803,13 +860,14 @@ async function resolveViewerFlyers(page, store = {}, context = {}) {
     // evitando header, body e contenitori generici che rallentavano la scansione.
     const clickCandidates = structuredLanding.cards
       .filter(card => {
-        if (card.section === 'Volantini Lidl Viaggi' || card.href || isTravelFlyer(card)) return false;
+        if (card.section === 'Volantini Lidl Viaggi' || isTravelFlyer(card)) return false;
+        if (canonicalFlyerUrl(card.href) || canonicalFlyerUrl(card.matchedOverviewUrl)) return false;
         return ['BUTTON', 'A'].includes(String(card.tag || '').toUpperCase());
       })
       .map(card => ({
         ...card,
-        selector: `#${card.id}`,
-        clickSelector: `#${card.id}`,
+        selector: card.selector || `#${card.id}`,
+        clickSelector: card.selector || `#${card.id}`,
         imageAlt: card.title,
         attributes: { href: card.href }
       }))
@@ -826,7 +884,7 @@ async function resolveViewerFlyers(page, store = {}, context = {}) {
 
   const directCards = structuredLanding.cards.flatMap(card => {
     if (card.section === 'Volantini Lidl Viaggi' || isTravelFlyer(card)) return [];
-    const url = canonicalFlyerUrl(card.href) || canonicalFlyerUrl(card.matchedOverviewUrl);
+    const url = canonicalFlyerUrl(card.href) || canonicalFlyerUrl(card.matchedOverviewUrl) || discoveryUrl(card.href);
     if (!url) return [];
     return [{
       ...(card.api || {}),
@@ -861,7 +919,9 @@ async function resolveViewerFlyers(page, store = {}, context = {}) {
   // Le card visibili restano la fonte di verità; i metadati API vengono
   // associati per ID/URL/titolo. Gli elementi API non abbinati vengono comunque
   // mantenuti, così il settimanale disabilitato non viene perso.
-  const primaryFlyers = dedupeFlyers([...apiFlyers, ...pageFlyers]);
+  const visibleKeys = new Set(pageFlyers.map(item => flyerIdentifierFromUrl(item.url) || discoveryUrl(item.url)));
+  const unmatchedApiFlyers = apiFlyers.filter(item => !visibleKeys.has(flyerIdentifierFromUrl(item.url) || discoveryUrl(item.url)));
+  const primaryFlyers = dedupeFlyers([...pageFlyers, ...unmatchedApiFlyers]);
   const flyers = (primaryFlyers.length ? primaryFlyers : fallbackFlyers)
     .map((item, index) => ({ ...item, index }));
 
@@ -1962,7 +2022,7 @@ export async function scanLidlOffers(store = {}) {
 
     await writeJson(path.join(DEBUG_DIR, 'flyers-summary.json'), {
       generatedAt: new Date().toISOString(),
-      discoverySource: "card visibili associate all'API overview per ID/URL/titolo + fallback rete/widget",
+      discoverySource: "tutte le card visibili nelle sezioni settimanali/speciali; API overview solo per arricchimento + fallback rete/widget",
       totalDiscovered: viewerFlyers.length,
       landingCards: discovery.landingCards.length,
       structuredCards: discovery.structuredLanding?.cards?.length || 0,
