@@ -158,3 +158,7 @@ Nel debug vengono creati:
 ## Lidl v6.0
 
 La scoperta dei volantini parte dalla pagina ufficiale **Volantini e Riviste**. Sono inclusi i volantini settimanali e speciali; Lidl Viaggi è escluso. Vedi `README-LIDL-DISCOVERY.md`.
+
+## Versione 10.0 — lista della spesa operativa
+
+La v10 aggiunge quantità, unità, prezzi unitari, costo reale della quantità richiesta e modalità spesa con articoli da spuntare. Vedi `README-V10.md` per i dettagli e per l'aggiornamento di Google Apps Script.
