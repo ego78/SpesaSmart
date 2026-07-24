@@ -183,10 +183,9 @@ function isIncludedFlyer(item = {}) {
   const url = String(item?.url || '');
   if (!url || isTravelFlyer(item)) return false;
 
-  // La pagina contiene tre gruppi distinti. Spesa Smart deve elaborare
-  // esclusivamente le card appartenenti a “Volantini settimanali” e
-  // “Volantini speciali”, senza scartare uno speciale perché non contiene
-  // prezzi o perché il titolo non include la parola “offerte”.
+  // V7.1: la regola di esclusione è intenzionalmente semplice. Tutte le
+  // card della pagina volantini sono ammesse, salvo quelle Lidl Viaggi.
+  // La sezione viene poi ricostruita associando card e API overview.
   const section = cleanText(item.category || item.section || item.group || '');
   return !section || isTargetFlyerSection(section);
 }
@@ -199,6 +198,74 @@ function targetSectionName(value = '') {
   if (/volantini?\s+speciali?/i.test(text)) return 'Volantini speciali';
   if (/lidl\s*viaggi|volantini?\s+lidl\s*viaggi/i.test(text)) return 'Volantini Lidl Viaggi';
   return '';
+}
+
+
+function normalizeMatchText(value = '') {
+  return cleanText(value)
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+}
+
+function classifyLandingCard(card = {}) {
+  if (isTravelFlyer(card)) return 'Volantini Lidl Viaggi';
+  const explicit = targetSectionName(card.section || '');
+  if (explicit) return explicit;
+  const text = normalizeMatchText(`${card.name || ''} ${card.title || ''} ${card.text || ''}`);
+  if (/volantino settimanale|offerte valide dal/.test(text) && (card.disabled || /settimanale/.test(text))) {
+    return 'Volantini settimanali';
+  }
+  // Sulla pagina Lidl ogni card non viaggio che non è settimanale appartiene
+  // alla sezione “Volantini speciali”. Questo include anche card informative
+  // senza prezzi o senza href diretto.
+  return 'Volantini speciali';
+}
+
+function flyerMatchScore(card = {}, flyer = {}) {
+  const cardId = cleanText(card.leafletId || card.id || '').replace(/^flyer-/, '');
+  const flyerId = cleanText(flyer.leafletId || flyer.id || '');
+  if (cardId && flyerId && cardId === flyerId) return 100;
+
+  const cardUrl = canonicalFlyerUrl(card.href || card.url || '');
+  const flyerUrl = canonicalFlyerUrl(flyer.url || '');
+  if (cardUrl && flyerUrl && flyerIdentifierFromUrl(cardUrl) === flyerIdentifierFromUrl(flyerUrl)) return 95;
+
+  const a = normalizeMatchText(`${card.name || ''} ${card.title || ''} ${card.text || ''}`);
+  const b = normalizeMatchText(`${flyer.name || ''} ${flyer.title || ''} ${flyer.label || ''}`);
+  if (!a || !b) return 0;
+  if (a.includes(b) || b.includes(a)) return 80;
+  const at = new Set(a.split(' ').filter(x => x.length > 2));
+  const bt = new Set(b.split(' ').filter(x => x.length > 2));
+  const common = [...at].filter(x => bt.has(x)).length;
+  return common ? Math.round(60 * common / Math.max(at.size, bt.size)) : 0;
+}
+
+function associateLandingCardsWithOverview(cards = [], flyers = []) {
+  const used = new Set();
+  const associations = cards.map(card => {
+    const section = classifyLandingCard(card);
+    const ranked = flyers
+      .map((flyer, index) => ({ flyer, index, score: flyerMatchScore(card, flyer) }))
+      .filter(x => !used.has(x.index) && x.score > 0)
+      .sort((a, b) => b.score - a.score);
+    const best = ranked[0];
+    if (best && best.score >= 40) used.add(best.index);
+    const api = best && best.score >= 40 ? best.flyer : null;
+    return {
+      ...card,
+      section,
+      category: section,
+      matchedOverview: Boolean(api),
+      matchScore: api ? best.score : 0,
+      matchedOverviewId: api?.leafletId || api?.id || '',
+      matchedOverviewUrl: api?.url || '',
+      api
+    };
+  });
+  return { associations, unmatchedOverview: flyers.filter((_, index) => !used.has(index)) };
 }
 
 function regionCandidates(store = {}, context = {}) {
@@ -727,6 +794,8 @@ async function resolveViewerFlyers(page, store = {}, context = {}) {
     cardsAnalysis = await analyzeLandingCardContainers(page);
     structuredLanding = await extractStructuredLandingCards(page).catch(() => ({ headings: [], cards: [] }));
     overviewResult = await fetchOverviewFlyers(page, store, context).catch(() => ({ flyers: [], attempts: [] }));
+    const association = associateLandingCardsWithOverview(structuredLanding.cards, overviewResult.flyers || []);
+    structuredLanding = { ...structuredLanding, cards: association.associations, unmatchedOverview: association.unmatchedOverview };
     frameAnalysis = await inspectFramesForFlyers(page);
 
     // Le card con href diretto non richiedono alcun click. Clicchiamo solo
@@ -734,7 +803,7 @@ async function resolveViewerFlyers(page, store = {}, context = {}) {
     // evitando header, body e contenitori generici che rallentavano la scansione.
     const clickCandidates = structuredLanding.cards
       .filter(card => {
-        if (!isTargetFlyerSection(card.section) || card.href || isTravelFlyer(card)) return false;
+        if (card.section === 'Volantini Lidl Viaggi' || card.href || isTravelFlyer(card)) return false;
         return ['BUTTON', 'A'].includes(String(card.tag || '').toUpperCase());
       })
       .map(card => ({
@@ -756,22 +825,24 @@ async function resolveViewerFlyers(page, store = {}, context = {}) {
   }
 
   const directCards = structuredLanding.cards.flatMap(card => {
-    if (!isTargetFlyerSection(card.section) || isTravelFlyer(card)) return [];
-    const url = canonicalFlyerUrl(card.href);
+    if (card.section === 'Volantini Lidl Viaggi' || isTravelFlyer(card)) return [];
+    const url = canonicalFlyerUrl(card.href) || canonicalFlyerUrl(card.matchedOverviewUrl);
     if (!url) return [];
     return [{
-      title: cleanText(`${card.name || ''} ${card.title || ''}`),
-      name: card.name,
+      ...(card.api || {}),
+      title: cleanText(card.title || card.api?.title || ''),
+      name: cleanText(card.name || card.api?.name || ''),
       category: card.section,
       section: card.section,
-      leafletId: card.leafletId,
-      image: card.image,
+      leafletId: card.leafletId || card.api?.leafletId || '',
+      image: card.image || card.api?.thumbnailUrl || '',
       url,
-      source: 'landing-structured'
+      source: card.matchedOverview ? 'landing+overview-associated' : 'landing-structured'
     }];
   });
   const clickedCards = cardClickResults.flatMap(result => result.discovered || [])
-    .filter(item => isTargetFlyerSection(item.category));
+    .filter(item => !isTravelFlyer(item))
+    .map(item => ({ ...item, category: targetSectionName(item.category) || 'Volantini speciali', section: targetSectionName(item.category) || 'Volantini speciali' }));
   const frameFlyers = frameAnalysis.flatMap(frame => (frame.flyerUrls || []).map(url => ({ title: frame.title, url, source: 'iframe' })));
 
   let widgetFlyers = [];
@@ -787,6 +858,9 @@ async function resolveViewerFlyers(page, store = {}, context = {}) {
   const pageFlyers = dedupeFlyers([...directCards, ...clickedCards]);
   const apiFlyers = dedupeFlyers(overviewResult.flyers || []);
   const fallbackFlyers = dedupeFlyers([...frameFlyers, ...networkFlyers, ...widgetFlyers]);
+  // Le card visibili restano la fonte di verità; i metadati API vengono
+  // associati per ID/URL/titolo. Gli elementi API non abbinati vengono comunque
+  // mantenuti, così il settimanale disabilitato non viene perso.
   const primaryFlyers = dedupeFlyers([...apiFlyers, ...pageFlyers]);
   const flyers = (primaryFlyers.length ? primaryFlyers : fallbackFlyers)
     .map((item, index) => ({ ...item, index }));
@@ -1888,7 +1962,7 @@ export async function scanLidlOffers(store = {}) {
 
     await writeJson(path.join(DEBUG_DIR, 'flyers-summary.json'), {
       generatedAt: new Date().toISOString(),
-      discoverySource: 'API overview ufficiale + struttura HTML per sezioni + fallback rete/widget',
+      discoverySource: "card visibili associate all'API overview per ID/URL/titolo + fallback rete/widget",
       totalDiscovered: viewerFlyers.length,
       landingCards: discovery.landingCards.length,
       structuredCards: discovery.structuredLanding?.cards?.length || 0,
@@ -1898,7 +1972,7 @@ export async function scanLidlOffers(store = {}) {
       networkFlyers: discovery.networkFlyers.length,
       widgetFlyers: discovery.widgetFlyers.length,
       includedRule: 'solo sezioni Volantini settimanali e Volantini speciali',
-      excludedRule: 'Volantini Lidl Viaggi e qualsiasi altra sezione',
+      excludedRule: 'solo Volantini Lidl Viaggi',
       processedFlyers
     });
 
