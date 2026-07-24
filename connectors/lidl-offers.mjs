@@ -8,7 +8,7 @@ const HOME_URL = 'https://www.lidl.it/';
 const LANDING_URL = 'https://www.lidl.it/c/volantino-lidl/s10018048';
 const WIDGET_URL = 'https://endpoints.leaflets.schwarz/v4/widget?widget_id=b72c9549-b8f0-11ed-b03c-fa163e81deca&store_id=0&region_id=0';
 const CACHE_DIR = path.resolve('.cache/lidl');
-const PDF_CACHE_VERSION = 2;
+const PDF_CACHE_VERSION = 3;
 const MAX_FLYER_CONCURRENCY = 2;
 const DEBUG_ENABLED = /^(1|true|yes)$/i.test(process.env.LIDL_DEBUG || '');
 const DEBUG_FULL = /^(1|true|yes)$/i.test(process.env.LIDL_DEBUG_FULL || '');
@@ -189,6 +189,141 @@ function isIncludedFlyer(item = {}) {
   // prezzi o perché il titolo non include la parola “offerte”.
   const section = cleanText(item.category || item.section || item.group || '');
   return !section || isTargetFlyerSection(section);
+}
+
+
+
+function targetSectionName(value = '') {
+  const text = cleanText(value);
+  if (/volantini?\s+settimanali?/i.test(text)) return 'Volantini settimanali';
+  if (/volantini?\s+speciali?/i.test(text)) return 'Volantini speciali';
+  if (/lidl\s*viaggi|volantini?\s+lidl\s*viaggi/i.test(text)) return 'Volantini Lidl Viaggi';
+  return '';
+}
+
+function regionCandidates(store = {}, context = {}) {
+  const raw = [
+    store.regionId, store.regionCode, store.id, store.storeCode, store.officialStoreId,
+    context.regionId, context.regionCode, context.storeId, context.officialStoreId
+  ];
+  const out = [];
+  for (const value of raw) {
+    const text = cleanText(value);
+    if (!text) continue;
+    out.push(text);
+    const digits = text.match(/\d+/g)?.join('');
+    if (digits) {
+      out.push(digits);
+      out.push(String(Number(digits)));
+    }
+  }
+  out.push('0');
+  return [...new Set(out.filter(Boolean))];
+}
+
+function overviewFlyersFromPayload(payload, source = 'overview-api') {
+  const output = [];
+  const categories = Array.isArray(payload?.categories) ? payload.categories : [];
+  for (const category of categories) {
+    const subcategories = Array.isArray(category?.subcategories) ? category.subcategories : [];
+    for (const subcategory of subcategories) {
+      const section = targetSectionName(subcategory?.name || subcategory?.title || subcategory?.label || '');
+      if (!section || section === 'Volantini Lidl Viaggi') continue;
+      for (const flyer of Array.isArray(subcategory?.flyers) ? subcategory.flyers : []) {
+        const rawUrl = flyer.flyerUrlAbsolute || flyer.flyerUrl || flyer.url || flyer.href || '';
+        let url = canonicalFlyerUrl(rawUrl);
+        if (!url && flyer.flyerJson) {
+          try {
+            const detail = new URL(flyer.flyerJson);
+            const identifier = detail.searchParams.get('flyer_identifier');
+            if (identifier) url = canonicalFlyerUrl(`https://www.lidl.it/l/it/volantini/${identifier}/ar/0`);
+          } catch {}
+        }
+        if (!url) continue;
+        output.push({
+          ...flyer,
+          url,
+          title: cleanText(flyer.title || ''),
+          name: cleanText(flyer.name || ''),
+          label: cleanText(`${flyer.title || ''} ${flyer.name || ''}`) || 'Volantino Lidl',
+          category: section,
+          section,
+          source,
+          leafletId: cleanText(flyer.id || ''),
+          pdfUrl: flyer.pdfUrl || '',
+          hiResPdfUrl: flyer.hiResPdfUrl || '',
+          regions: Array.isArray(flyer.regions) ? flyer.regions : []
+        });
+      }
+    }
+  }
+  return output;
+}
+
+async function fetchOverviewFlyers(page, store = {}, context = {}) {
+  const attempts = [];
+  const all = [];
+  for (const region of regionCandidates(store, context)) {
+    const endpoint = new URL('https://endpoints.leaflets.schwarz/v4/overview');
+    endpoint.searchParams.set('client_locale', 'lidl/it-IT');
+    endpoint.searchParams.set('region_id', region);
+    endpoint.searchParams.set('region_code', region);
+    try {
+      const response = await page.request.get(endpoint.href, {
+        timeout: 30000,
+        headers: { accept: 'application/json', 'accept-language': 'it-IT,it;q=0.9,en;q=0.7' }
+      });
+      attempts.push({ region, url: endpoint.href, status: response.status(), ok: response.ok() });
+      if (!response.ok()) continue;
+      const payload = await response.json();
+      const found = overviewFlyersFromPayload(payload, `overview-api-region-${region}`);
+      all.push(...found);
+      if (found.some(item => item.category === 'Volantini settimanali')) break;
+    } catch (error) {
+      attempts.push({ region, url: endpoint.href, status: 0, ok: false, error: error.message });
+    }
+  }
+  return { flyers: dedupeFlyers(all), attempts };
+}
+
+async function extractStructuredLandingCards(page) {
+  return page.evaluate(() => {
+    const clean = value => String(value || '').replace(/\u00a0/g, ' ').replace(/\s+/g, ' ').trim();
+    const absolute = value => { try { return new URL(value, location.href).href; } catch { return ''; } };
+    const sectionName = value => {
+      const text = clean(value);
+      if (/volantini?\s+settimanali?/i.test(text)) return 'Volantini settimanali';
+      if (/volantini?\s+speciali?/i.test(text)) return 'Volantini speciali';
+      if (/volantini?\s+lidl\s*viaggi|lidl\s*viaggi/i.test(text)) return 'Volantini Lidl Viaggi';
+      return '';
+    };
+    const headings = [...document.querySelectorAll('h1,h2,h3,h4,h5,h6,[class*="headline" i],[class*="heading" i]')]
+      .map(node => ({ node, text: clean(node.textContent), section: sectionName(node.textContent), top: node.getBoundingClientRect().top + scrollY }))
+      .filter(item => item.section)
+      .sort((a, b) => a.top - b.top);
+    const cards = [...document.querySelectorAll('[id^="flyer-"]')]
+      .filter(node => node.matches('a,button,[role="button"]'))
+      .map((node, index) => {
+        const top = node.getBoundingClientRect().top + scrollY;
+        const heading = [...headings].reverse().find(item => item.top <= top + 4);
+        const img = node.querySelector('img');
+        return {
+          index,
+          id: node.id,
+          leafletId: clean(node.getAttribute('data-track-id') || node.id.replace(/^flyer-/, '')),
+          tag: node.tagName,
+          section: heading?.section || '',
+          title: clean(node.querySelector('.flyer__title')?.textContent || ''),
+          name: clean(node.querySelector('.flyer__name')?.textContent || ''),
+          text: clean(node.textContent),
+          href: absolute(node.getAttribute('href')),
+          image: img?.currentSrc || img?.src || '',
+          disabled: node.matches(':disabled') || node.classList.contains('flyer--disabled'),
+          top
+        };
+      });
+    return { headings: headings.map(({ text, section, top }) => ({ text, section, top })), cards };
+  });
 }
 
 function canonicalFlyerUrl(value = '') {
@@ -537,7 +672,7 @@ async function scrollLandingUntilStable(page) {
   await page.waitForTimeout(500);
 }
 
-async function resolveViewerFlyers(page) {
+async function resolveViewerFlyers(page, store = {}, context = {}) {
   const networkFlyers = [];
   const networkAfterClick = [];
   const popupLog = [];
@@ -580,6 +715,8 @@ async function resolveViewerFlyers(page) {
   let cardsAnalysis = null;
   let cardClickResults = [];
   let frameAnalysis = [];
+  let structuredLanding = { headings: [], cards: [] };
+  let overviewResult = { flyers: [], attempts: [] };
 
   try {
     await page.goto(LANDING_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
@@ -588,28 +725,25 @@ async function resolveViewerFlyers(page) {
     await page.waitForTimeout(3500);
     await scrollLandingUntilStable(page);
     cardsAnalysis = await analyzeLandingCardContainers(page);
+    structuredLanding = await extractStructuredLandingCards(page).catch(() => ({ headings: [], cards: [] }));
+    overviewResult = await fetchOverviewFlyers(page, store, context).catch(() => ({ flyers: [], attempts: [] }));
     frameAnalysis = await inspectFramesForFlyers(page);
 
     // Le card con href diretto non richiedono alcun click. Clicchiamo solo
     // controlli compatti e plausibili (es. il pulsante del volantino settimanale),
     // evitando header, body e contenitori generici che rallentavano la scansione.
-    const clickCandidates = cardsAnalysis.containers
+    const clickCandidates = structuredLanding.cards
       .filter(card => {
-        const directUrls = [card.attributes?.href, ...(card.directFlyerUrls || [])]
-          .map(canonicalFlyerUrl)
-          .filter(Boolean);
-        const text = cleanText(`${card.text || ''} ${card.imageAlt || ''}`);
-        const tag = String(card.tag || '').toUpperCase();
-        const targetSection = isTargetFlyerSection(card.section);
-        if (!targetSection || directUrls.length || isTravelFlyer({ title: text })) return false;
-        if (!['BUTTON', 'A'].includes(tag)) return false;
-        if (!text || text.length > 700) return false;
-
-        // Clicchiamo tutte le card delle due sezioni richieste, compresi
-        // speciali come “I prodotti per la tua estate” che non contengono
-        // necessariamente le parole “volantino” o “offerte”.
-        return true;
+        if (!isTargetFlyerSection(card.section) || card.href || isTravelFlyer(card)) return false;
+        return ['BUTTON', 'A'].includes(String(card.tag || '').toUpperCase());
       })
+      .map(card => ({
+        ...card,
+        selector: `#${card.id}`,
+        clickSelector: `#${card.id}`,
+        imageAlt: card.title,
+        attributes: { href: card.href }
+      }))
       .slice(0, 20);
 
     clickPhase = true;
@@ -621,17 +755,20 @@ async function resolveViewerFlyers(page) {
     page.off('response', responseListener);
   }
 
-  const directCards = (cardsAnalysis?.containers || []).flatMap(card => {
-    if (!isTargetFlyerSection(card.section)) return [];
-    const urls = [card.attributes?.href, ...(card.directFlyerUrls || [])]
-      .map(canonicalFlyerUrl)
-      .filter(Boolean);
-    return [...new Set(urls)].map(url => ({
-      title: card.text || card.imageAlt,
+  const directCards = structuredLanding.cards.flatMap(card => {
+    if (!isTargetFlyerSection(card.section) || isTravelFlyer(card)) return [];
+    const url = canonicalFlyerUrl(card.href);
+    if (!url) return [];
+    return [{
+      title: cleanText(`${card.name || ''} ${card.title || ''}`),
+      name: card.name,
       category: card.section,
+      section: card.section,
+      leafletId: card.leafletId,
+      image: card.image,
       url,
-      source: 'card-container'
-    }));
+      source: 'landing-structured'
+    }];
   });
   const clickedCards = cardClickResults.flatMap(result => result.discovered || [])
     .filter(item => isTargetFlyerSection(item.category));
@@ -648,15 +785,19 @@ async function resolveViewerFlyers(page) {
   // speciali. Rete, iframe e widget restano un fallback esclusivamente se
   // Lidl cambia il markup e nessuna card della pagina viene risolta.
   const pageFlyers = dedupeFlyers([...directCards, ...clickedCards]);
+  const apiFlyers = dedupeFlyers(overviewResult.flyers || []);
   const fallbackFlyers = dedupeFlyers([...frameFlyers, ...networkFlyers, ...widgetFlyers]);
-  const flyers = (pageFlyers.length ? pageFlyers : fallbackFlyers)
+  const primaryFlyers = dedupeFlyers([...apiFlyers, ...pageFlyers]);
+  const flyers = (primaryFlyers.length ? primaryFlyers : fallbackFlyers)
     .map((item, index) => ({ ...item, index }));
 
   await Promise.all([
     writeJson(path.join(DEBUG_DIR, 'cards-analysis.json'), { ...cardsAnalysis, frames: frameAnalysis }),
     writeJson(path.join(DEBUG_DIR, 'card-click-results.json'), cardClickResults),
     writeJson(path.join(DEBUG_DIR, 'network-after-click.json'), networkAfterClick),
-    writeJson(path.join(DEBUG_DIR, 'popup-log.json'), popupLog)
+    writeJson(path.join(DEBUG_DIR, 'popup-log.json'), popupLog),
+    writeJson(path.join(DEBUG_DIR, 'landing-structure.json'), structuredLanding),
+    writeJson(path.join(DEBUG_DIR, 'overview-api.json'), overviewResult)
   ]);
 
   return {
@@ -670,7 +811,10 @@ async function resolveViewerFlyers(page) {
     cardClickResults,
     networkAfterClick,
     popupLog,
-    frameAnalysis
+    frameAnalysis,
+    structuredLanding,
+    overviewFlyers: overviewResult.flyers || [],
+    overviewAttempts: overviewResult.attempts || []
   };
 }
 
@@ -1616,13 +1760,16 @@ export async function scanLidlOffers(store = {}) {
 
     const discoveryStarted = nowMs();
     const offersUrl = await findOffersUrl(page);
-    const discovery = await resolveViewerFlyers(page);
+    const discovery = await resolveViewerFlyers(page, store, context);
     phaseTimings.discoveryMs = elapsedMs(discoveryStarted);
     const viewerFlyers = discovery.flyers;
     await writeJson(path.join(DEBUG_DIR, 'cards.json'), discovery.landingCards);
     await writeJson(path.join(DEBUG_DIR, 'flyers.json'), viewerFlyers);
     await writeJson(path.join(DEBUG_DIR, 'flyer-discovery.json'), {
       landingCards: discovery.landingCards.length,
+      structuredCards: discovery.structuredLanding?.cards?.length || 0,
+      overviewFlyers: discovery.overviewFlyers?.length || 0,
+      overviewAttempts: discovery.overviewAttempts || [],
       clickedCards: discovery.clickedCards.length,
       networkFlyers: discovery.networkFlyers.length,
       widgetFlyers: discovery.widgetFlyers.length,
@@ -1741,9 +1888,12 @@ export async function scanLidlOffers(store = {}) {
 
     await writeJson(path.join(DEBUG_DIR, 'flyers-summary.json'), {
       generatedAt: new Date().toISOString(),
-      discoverySource: 'pagina Volantini e Riviste + rete + widget fallback',
+      discoverySource: 'API overview ufficiale + struttura HTML per sezioni + fallback rete/widget',
       totalDiscovered: viewerFlyers.length,
       landingCards: discovery.landingCards.length,
+      structuredCards: discovery.structuredLanding?.cards?.length || 0,
+      overviewFlyers: discovery.overviewFlyers?.length || 0,
+      overviewAttempts: discovery.overviewAttempts || [],
       clickedCards: discovery.clickedCards.length,
       networkFlyers: discovery.networkFlyers.length,
       widgetFlyers: discovery.widgetFlyers.length,
