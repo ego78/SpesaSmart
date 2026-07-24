@@ -5,7 +5,7 @@ const OVERPASS=['https://overpass-api.de/api/interpreter','https://overpass.kumi
 const CHAINS=[
  {id:'penny',aliases:['PENNY'],landing:'https://www.penny.it/offerte'},
  {id:'eurospin',aliases:['EUROSPIN'],landing:'https://www.eurospin.it/volantino/'},
- {id:'lidl',aliases:['LIDL'],landing:'https://www.lidl.it/c/volantino/s10019218'},
+ {id:'lidl',aliases:['LIDL'],landing:'https://www.lidl.it/c/volantino-lidl/s10018048'},
  {id:'md',aliases:['MD','MD DISCOUNT'],landing:'https://www.mdspa.it/volantino/'},
  {id:'conad',aliases:['CONAD','CONAD CITY','CONAD SUPERSTORE'],landing:'https://www.conad.it/volantini-e-offerte'},
  {id:'despar',aliases:['DESPAR','EUROSPAR','INTERSPAR'],landing:'https://www.despar.it/it/volantini/'},
