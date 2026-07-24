@@ -37,12 +37,12 @@ jobs:
         uses: actions/cache@v4
         with:
           path: .cache/lidl
-          key: lidl-pdf-v5-${{ runner.os }}-${{ hashFiles('package-lock.json', 'package.json') }}
+          key: lidl-pdf-v6-${{ runner.os }}-${{ hashFiles('package-lock.json', 'package.json') }}
           restore-keys: |
-            lidl-pdf-v5-${{ runner.os }}-
+            lidl-pdf-v6-${{ runner.os }}-
 
       - name: Cerca offerte dei supermercati selezionati
-        timeout-minutes: 5
+        timeout-minutes: 8
         env:
           APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
           FAMILY_CODE: ${{ secrets.FAMILY_CODE }}
@@ -68,7 +68,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: spesa-smart-v7.2-lidl-debug-${{ github.run_number }}
+          name: spesa-smart-v8.0-lidl-debug-${{ github.run_number }}
           path: debug/lidl/
           if-no-files-found: warn
           retention-days: 14
