@@ -238,289 +238,366 @@ function dedupeFlyers(items = []) {
   return [...map.values()];
 }
 
-async function extractLandingFlyerCards(page) {
+async function analyzeLandingCardContainers(page) {
   return page.evaluate(() => {
     const clean = value => String(value || '').replace(/\u00a0/g, ' ').replace(/\s+/g, ' ').trim();
     const absolute = value => {
       try { return new URL(value, location.href).href; } catch { return ''; }
     };
-    const sectionNames = /volantini settimanali|volantini speciali|volantini lidl viaggi/i;
-    const cards = [];
-
+    const attrs = node => Object.fromEntries([...node.attributes].map(item => [item.name, item.value]));
+    const cssPath = node => {
+      if (!(node instanceof Element)) return '';
+      const parts = [];
+      let current = node;
+      while (current && current !== document.documentElement && parts.length < 8) {
+        let part = current.tagName.toLowerCase();
+        if (current.id) {
+          part += `#${CSS.escape(current.id)}`;
+          parts.unshift(part);
+          break;
+        }
+        const classes = [...current.classList].filter(Boolean).slice(0, 3);
+        if (classes.length) part += `.${classes.map(item => CSS.escape(item)).join('.')}`;
+        const siblings = current.parentElement ? [...current.parentElement.children].filter(item => item.tagName === current.tagName) : [];
+        if (siblings.length > 1) part += `:nth-of-type(${siblings.indexOf(current) + 1})`;
+        parts.unshift(part);
+        current = current.parentElement;
+      }
+      return parts.join(' > ');
+    };
+    const rect = node => {
+      const value = node.getBoundingClientRect();
+      return { x: value.x, y: value.y, width: value.width, height: value.height };
+    };
     const sectionFor = node => {
       let current = node;
-      for (let depth = 0; current && depth < 8; depth += 1, current = current.parentElement) {
+      for (let depth = 0; current && depth < 10; depth += 1, current = current.parentElement) {
         let sibling = current.previousElementSibling;
         while (sibling) {
-          const heading = sibling.matches?.('h1,h2,h3,h4') ? sibling : sibling.querySelector?.('h1,h2,h3,h4');
-          const text = clean(heading?.textContent || sibling.textContent);
-          const match = text.match(sectionNames);
-          if (match) return match[0];
+          const heading = sibling.matches?.('h1,h2,h3,h4,h5,h6') ? sibling : sibling.querySelector?.('h1,h2,h3,h4,h5,h6');
+          const text = clean(heading?.textContent || '');
+          if (text) return text;
           sibling = sibling.previousElementSibling;
         }
       }
       return '';
     };
+    const looksRelevant = node => {
+      const text = clean(`${node.textContent || ''} ${node.getAttribute('aria-label') || ''} ${node.getAttribute('title') || ''}`);
+      const html = node.outerHTML || '';
+      return /volantin|offerte valide|novità in negozio|leaflet|flyer|catalog/i.test(`${text} ${html}`) && !/lidl\s*viaggi|vacanze|hotel|crociere|voli/i.test(text);
+    };
 
-    const selectors = [
-      'a[href*="/l/it/volantini/"]', 'iframe[src*="/volantini/"]',
-      '[data-testid*="flyer"]', '[data-test*="flyer"]',
-      '[class*="flyer"]', '[class*="leaflet"]',
-      'button', '[role="button"]'
+    const seedSelectors = [
+      'a[href*="/l/it/volantini/"]',
+      '[data-testid*="flyer" i]', '[data-test*="flyer" i]', '[data-qa*="flyer" i]',
+      '[class*="flyer" i]', '[class*="leaflet" i]', '[class*="catalog" i]',
+      'article', 'li', '[role="listitem"]', '[role="button"]', 'button'
     ];
+    const seeds = [...new Set(seedSelectors.flatMap(selector => [...document.querySelectorAll(selector)]))]
+      .filter(looksRelevant);
+    const containers = [];
+    const seen = new Set();
 
-    const nodes = [...new Set(selectors.flatMap(selector => [...document.querySelectorAll(selector)]))];
-    for (const node of nodes) {
-      const text = clean(node.textContent || node.getAttribute('aria-label') || node.getAttribute('title'));
-      const image = node.querySelector?.('img');
-      const imageAlt = clean(image?.alt);
-      const combined = clean(`${text} ${imageAlt}`);
-      const hrefNode = node.matches?.('a[href]') ? node : node.closest?.('a[href]') || node.querySelector?.('a[href]');
-      const href = absolute(hrefNode?.getAttribute('href') || node.getAttribute?.('src') || node.getAttribute?.('data-href') || '');
-      const looksLikeFlyer = /volantino|offerte valide|novità in negozio|lidl viaggi|tutti i gusti|prodotti per la tua estate/i.test(combined)
-        || /\/l\/it\/volantini\//i.test(href);
-      if (!looksLikeFlyer || combined.length > 900) continue;
-
-      cards.push({
-        title: combined,
-        category: sectionFor(node),
-        url: /\/l\/it\/volantini\//i.test(href) ? href : '',
+    for (const seed of seeds) {
+      let container = seed;
+      for (let depth = 0; container && depth < 7; depth += 1, container = container.parentElement) {
+        if (!(container instanceof Element)) break;
+        const box = container.getBoundingClientRect();
+        const text = clean(container.textContent);
+        const links = [...container.querySelectorAll('a[href]')];
+        const images = [...container.querySelectorAll('img')];
+        const interactive = container.matches('a,button,[role="button"],[tabindex]') || Boolean(container.querySelector('a,button,[role="button"],[tabindex]'));
+        if (box.width >= 140 && box.height >= 100 && box.width <= innerWidth * 1.05 && box.height <= 900 && text.length <= 1800 && (interactive || links.length || images.length)) {
+          break;
+        }
+      }
+      if (!(container instanceof Element)) container = seed;
+      const selector = cssPath(container);
+      if (!selector || seen.has(selector)) continue;
+      seen.add(selector);
+      const links = [...container.querySelectorAll('a[href]')].map(node => absolute(node.getAttribute('href'))).filter(Boolean);
+      const image = container.querySelector('img');
+      const clickTarget = container.matches('a,button,[role="button"],[tabindex]')
+        ? container
+        : container.querySelector('a,button,[role="button"],[tabindex]') || seed;
+      containers.push({
+        index: containers.length,
+        selector,
+        seedSelector: cssPath(seed),
+        clickSelector: cssPath(clickTarget),
+        tag: container.tagName,
+        text: clean(container.textContent),
+        ariaLabel: clean(container.getAttribute('aria-label')),
+        title: clean(container.getAttribute('title')),
+        section: sectionFor(container),
+        attributes: attrs(container),
+        links,
+        directFlyerUrls: links.filter(url => /\/l\/it\/volantini\//i.test(url)),
         image: image?.currentSrc || image?.src || '',
-        tag: node.tagName,
-        clickable: node.matches?.('button,[role="button"],a') || Boolean(node.closest?.('button,[role="button"],a'))
+        imageAlt: clean(image?.alt),
+        rect: rect(container),
+        visible: Boolean(container.offsetWidth || container.offsetHeight || container.getClientRects().length),
+        interactiveDescendants: container.querySelectorAll('a,button,[role="button"],[tabindex]').length,
+        iframeDescendants: container.querySelectorAll('iframe').length,
+        htmlPreview: container.outerHTML.slice(0, 5000)
       });
     }
 
-    for (const entry of performance.getEntriesByType('resource')) {
-      const href = absolute(entry.name);
-      if (/\/l\/it\/volantini\//i.test(href)) {
-        cards.push({ title: '', category: '', url: href, image: '', tag: 'RESOURCE', clickable: false });
-      }
-    }
-
-    // Alcuni URL sono inseriti in attributi o script e non in normali link.
-    const html = document.documentElement.innerHTML;
-    const matches = html.match(/https?:\\?\/\\?\/www\.lidl\.it\\?\/l\\?\/it\\?\/volantini\\?\/[^"'<>\\s]+/gi) || [];
-    for (const raw of matches) {
-      const normalized = raw.replace(/\\\//g, '/').replace(/&amp;/g, '&');
-      cards.push({ title: '', category: '', url: absolute(normalized), image: '', tag: 'SCRIPT', clickable: false });
-    }
-
-    return cards;
+    return {
+      generatedAt: new Date().toISOString(),
+      url: location.href,
+      title: document.title,
+      totalSeeds: seeds.length,
+      totalContainers: containers.length,
+      containers,
+      iframes: [...document.querySelectorAll('iframe')].map((node, index) => ({
+        index,
+        selector: cssPath(node),
+        src: absolute(node.getAttribute('src')),
+        title: clean(node.title),
+        name: clean(node.name),
+        attributes: attrs(node),
+        rect: rect(node)
+      }))
+    };
   });
 }
 
-async function clickLandingFlyerCards(page) {
-  const discovered = [];
+async function dismissOverlays(page, popupLog, scope = 'main') {
   const patterns = [
-    /volantino settimanale/i,
-    /offerte valide dal/i,
-    /volantini speciali/i
+    /accetta tutto|accetta tutti|consenti tutto|accetta e continua/i,
+    /continua senza accettare|rifiuta tutto|solo necessari/i,
+    /chiudi|close|non ora|no grazie/i
   ];
-
   for (const pattern of patterns) {
-    const candidates = page.getByText(pattern, { exact: false });
-    const count = Math.min(await candidates.count(), 8);
+    const candidates = page.getByRole('button', { name: pattern });
+    const count = Math.min(await candidates.count().catch(() => 0), 12);
     for (let index = 0; index < count; index += 1) {
       const candidate = candidates.nth(index);
       try {
         if (!(await candidate.isVisible())) continue;
         const text = cleanText(await candidate.innerText().catch(() => ''));
-        if (isTravelFlyer({ title: text })) continue;
-
-        const before = page.url();
-        const popupPromise = page.context().waitForEvent('page', { timeout: 2500 }).catch(() => null);
-        await candidate.click({ timeout: 3000 });
-        const popup = await popupPromise;
-        await page.waitForTimeout(1800);
-
-        const target = popup || page;
-        const url = canonicalFlyerUrl(target.url());
-        if (url) discovered.push({ title: text, url, source: 'landing-click' });
-
-        const nested = await extractLandingFlyerCards(target).catch(() => []);
-        discovered.push(...nested.map(item => ({ ...item, source: 'landing-click-dom' })));
-
-        if (popup) {
-          await popup.close().catch(() => {});
-        } else if (page.url() !== before) {
-          await page.goto(LANDING_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
-          await dismissConsent(page);
-          await page.waitForTimeout(1200);
-        } else {
-          await page.keyboard.press('Escape').catch(() => {});
-        }
-      } catch {
-        // Le card possono essere duplicate o coperte dal banner cookie.
+        await candidate.click({ timeout: 1800 });
+        popupLog.push({ at: new Date().toISOString(), scope, type: 'overlay-dismissed', text, method: 'role-button' });
+        await page.waitForTimeout(300);
+      } catch (error) {
+        popupLog.push({ at: new Date().toISOString(), scope, type: 'overlay-dismiss-failed', pattern: String(pattern), error: error.message });
       }
     }
   }
+  await page.keyboard.press('Escape').catch(() => {});
+}
 
-  return discovered;
+function installPopupLogging(browserContext, popupLog) {
+  browserContext.on('page', popup => {
+    popupLog.push({ at: new Date().toISOString(), type: 'page-opened', url: popup.url(), opener: popup.opener()?.url?.() || '' });
+    popup.on('dialog', async dialog => {
+      popupLog.push({ at: new Date().toISOString(), type: 'dialog', dialogType: dialog.type(), message: dialog.message(), pageUrl: popup.url() });
+      await dialog.dismiss().catch(() => {});
+    });
+    popup.on('close', () => popupLog.push({ at: new Date().toISOString(), type: 'page-closed', url: popup.url() }));
+  });
+}
+
+async function clickCardWithMethods(page, card, popupLog) {
+  const methods = ['locator-click', 'force-click', 'dom-click', 'coordinates-click', 'keyboard-enter'];
+  const attempts = [];
+  const discovered = [];
+
+  for (const method of methods) {
+    const beforeUrl = page.url();
+    const beforePages = page.context().pages().length;
+    const networkStart = Date.now();
+    let popup = null;
+    let error = '';
+    try {
+      await dismissOverlays(page, popupLog, `card-${card.index}`);
+      const locator = page.locator(card.clickSelector || card.selector).first();
+      await locator.scrollIntoViewIfNeeded({ timeout: 2500 }).catch(() => {});
+      const popupPromise = page.context().waitForEvent('page', { timeout: 3000 }).catch(() => null);
+      if (method === 'locator-click') await locator.click({ timeout: 3000 });
+      if (method === 'force-click') await locator.click({ timeout: 3000, force: true });
+      if (method === 'dom-click') await locator.evaluate(node => node.click());
+      if (method === 'coordinates-click') {
+        const box = await locator.boundingBox();
+        if (!box) throw new Error('bounding box non disponibile');
+        await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
+      }
+      if (method === 'keyboard-enter') {
+        await locator.focus();
+        await page.keyboard.press('Enter');
+      }
+      popup = await popupPromise;
+      await page.waitForTimeout(1800);
+      const target = popup || page;
+      await dismissOverlays(target, popupLog, `card-${card.index}-${method}`).catch(() => {});
+      const finalUrl = target.url();
+      const canonical = canonicalFlyerUrl(finalUrl);
+      if (canonical) discovered.push({ title: card.text || card.imageAlt, category: card.section, url: canonical, source: `card-${method}` });
+      const nested = await analyzeLandingCardContainers(target).catch(() => null);
+      for (const nestedCard of nested?.containers || []) {
+        for (const url of nestedCard.directFlyerUrls || []) discovered.push({ title: nestedCard.text, category: nestedCard.section, url, source: `card-${method}-nested` });
+      }
+      attempts.push({
+        method,
+        success: true,
+        beforeUrl,
+        finalUrl,
+        popupOpened: Boolean(popup),
+        pagesBefore: beforePages,
+        pagesAfter: page.context().pages().length,
+        elapsedMs: Date.now() - networkStart
+      });
+    } catch (caught) {
+      error = caught.message;
+      attempts.push({ method, success: false, beforeUrl, finalUrl: page.url(), popupOpened: Boolean(popup), error, elapsedMs: Date.now() - networkStart });
+    } finally {
+      if (popup && !popup.isClosed()) await popup.close().catch(() => {});
+      if (page.url() !== beforeUrl) {
+        await page.goto(LANDING_URL, { waitUntil: 'domcontentloaded', timeout: 60000 }).catch(() => {});
+        await page.waitForTimeout(900);
+      } else {
+        await page.keyboard.press('Escape').catch(() => {});
+      }
+    }
+    if (discovered.length) break;
+  }
+
+  return { cardIndex: card.index, selector: card.selector, clickSelector: card.clickSelector, text: card.text, attempts, discovered };
+}
+
+async function inspectFramesForFlyers(page) {
+  const output = [];
+  for (const frame of page.frames()) {
+    if (frame === page.mainFrame()) continue;
+    try {
+      const data = await frame.evaluate(() => ({
+        url: location.href,
+        title: document.title,
+        text: String(document.body?.innerText || '').replace(/\s+/g, ' ').trim().slice(0, 12000),
+        links: [...document.querySelectorAll('a[href]')].map(node => node.href).filter(Boolean).slice(0, 500),
+        resources: performance.getEntriesByType('resource').map(entry => entry.name).slice(0, 1000)
+      }));
+      output.push({ ...data, flyerUrls: [...data.links, ...data.resources].filter(url => /\/l\/it\/volantini\//i.test(url)) });
+    } catch (error) {
+      output.push({ url: frame.url(), error: error.message, flyerUrls: [] });
+    }
+  }
+  return output;
 }
 
 async function scrollLandingUntilStable(page) {
   let previousHeight = 0;
   let stableRounds = 0;
-  for (let round = 0; round < 18 && stableRounds < 3; round += 1) {
-    const height = await page.evaluate(() => Math.max(
-      document.body?.scrollHeight || 0,
-      document.documentElement?.scrollHeight || 0
-    ));
-    await page.evaluate(() => window.scrollTo(0, Math.max(
-      document.body?.scrollHeight || 0,
-      document.documentElement?.scrollHeight || 0
-    )));
-    await page.waitForTimeout(900);
-    const nextHeight = await page.evaluate(() => Math.max(
-      document.body?.scrollHeight || 0,
-      document.documentElement?.scrollHeight || 0
-    ));
+  for (let round = 0; round < 20 && stableRounds < 3; round += 1) {
+    const height = await page.evaluate(() => Math.max(document.body?.scrollHeight || 0, document.documentElement?.scrollHeight || 0));
+    await page.evaluate(() => window.scrollTo(0, Math.max(document.body?.scrollHeight || 0, document.documentElement?.scrollHeight || 0)));
+    await page.waitForTimeout(800);
+    const nextHeight = await page.evaluate(() => Math.max(document.body?.scrollHeight || 0, document.documentElement?.scrollHeight || 0));
     stableRounds = nextHeight === previousHeight || nextHeight === height ? stableRounds + 1 : 0;
     previousHeight = nextHeight;
   }
   await page.evaluate(() => window.scrollTo(0, 0));
-  await page.waitForTimeout(700);
-}
-
-async function captureLandingDiagnostics(page, capturedResponses = []) {
-  const diagnostics = await page.evaluate(() => {
-    const clean = value => String(value || '').replace(/\u00a0/g, ' ').replace(/\s+/g, ' ').trim();
-    const attrs = node => Object.fromEntries([...node.attributes].map(item => [item.name, item.value]));
-    return {
-      url: location.href,
-      title: document.title,
-      readyState: document.readyState,
-      bodyText: clean(document.body?.innerText || ''),
-      headings: [...document.querySelectorAll('h1,h2,h3,h4,h5,h6')].map(node => ({
-        tag: node.tagName,
-        text: clean(node.textContent),
-        attrs: attrs(node)
-      })),
-      links: [...document.querySelectorAll('a[href]')].map(node => ({
-        text: clean(node.textContent),
-        href: node.href,
-        attrs: attrs(node)
-      })),
-      iframes: [...document.querySelectorAll('iframe')].map(node => ({
-        src: node.src,
-        title: node.title,
-        attrs: attrs(node)
-      })),
-      scripts: [...document.scripts].map(node => ({ src: node.src, type: node.type, textPreview: clean(node.textContent).slice(0, 500) })),
-      resources: performance.getEntriesByType('resource').map(entry => ({
-        name: entry.name,
-        initiatorType: entry.initiatorType,
-        duration: entry.duration,
-        transferSize: entry.transferSize
-      })),
-      localStorage: Object.fromEntries(Object.keys(localStorage).map(key => [key, localStorage.getItem(key)])),
-      sessionStorage: Object.fromEntries(Object.keys(sessionStorage).map(key => [key, sessionStorage.getItem(key)])),
-      htmlLength: document.documentElement.outerHTML.length,
-      scrollHeight: Math.max(document.body?.scrollHeight || 0, document.documentElement?.scrollHeight || 0)
-    };
-  });
-
-  await fs.mkdir(DEBUG_DIR, { recursive: true });
-  await fs.writeFile(path.join(DEBUG_DIR, 'landing-page.html'), await page.content(), 'utf8');
-  await page.screenshot({ path: path.join(DEBUG_DIR, 'landing-full-page.png'), fullPage: true });
-  await writeJson(path.join(DEBUG_DIR, 'landing-diagnostics.json'), diagnostics);
-  await writeJson(path.join(DEBUG_DIR, 'landing-keyword-responses.json'), capturedResponses);
-  return diagnostics;
+  await page.waitForTimeout(500);
 }
 
 async function resolveViewerFlyers(page) {
   const networkFlyers = [];
+  const networkAfterClick = [];
+  const popupLog = [];
   const capturedResponses = [];
-  const keywordPattern = /volantino settimanale|volantini settimanali|23[\\/. -]07|29[\\/. -]07|weekly|leaflet|flyer|volantini/i;
+  const browserContext = page.context();
+  installPopupLogging(browserContext, popupLog);
 
+  page.on('dialog', async dialog => {
+    popupLog.push({ at: new Date().toISOString(), type: 'dialog', dialogType: dialog.type(), message: dialog.message(), pageUrl: page.url() });
+    await dialog.dismiss().catch(() => {});
+  });
+
+  let clickPhase = false;
   const responseListener = async response => {
+    const request = response.request();
     const url = response.url();
     const contentType = String(response.headers()['content-type'] || '');
+    const entry = {
+      at: new Date().toISOString(), url, method: request.method(), status: response.status(),
+      resourceType: request.resourceType(), contentType, frameUrl: request.frame()?.url?.() || '', afterClick: clickPhase
+    };
+    if (clickPhase) networkAfterClick.push(entry);
     try {
-      let body = '';
-      const shouldInspect = /json|javascript|text|html/i.test(contentType) || ['xhr', 'fetch', 'script', 'document'].includes(response.request().resourceType());
-      if (shouldInspect) {
-        body = await response.text();
-        if (body.length > 6_000_000) body = body.slice(0, 6_000_000);
-      }
-
+      const inspect = /json|javascript|text|html/i.test(contentType) || ['xhr', 'fetch', 'script', 'document'].includes(request.resourceType());
+      if (!inspect) return;
+      let body = await response.text();
+      if (body.length > 6_000_000) body = body.slice(0, 6_000_000);
+      entry.bodyBytes = Buffer.byteLength(body, 'utf8');
+      entry.bodyPreview = cleanText(body).slice(0, 12000);
       if (/endpoints\.leaflets\.schwarz\/v4\/(?:widget|flyer)/i.test(url) && body) {
-        try {
-          const payload = JSON.parse(body);
-          networkFlyers.push(...collectFlyersFromPayload(payload, 'landing-network'));
-        } catch {
-          // Non tutte le risposte sono JSON valido.
-        }
+        try { networkFlyers.push(...collectFlyersFromPayload(JSON.parse(body), clickPhase ? 'click-network' : 'landing-network')); } catch {}
       }
-
-      if (keywordPattern.test(url) || keywordPattern.test(body)) {
-        capturedResponses.push({
-          url,
-          status: response.status(),
-          resourceType: response.request().resourceType(),
-          contentType,
-          bodyBytes: Buffer.byteLength(body || '', 'utf8'),
-          bodyPreview: cleanText(body).slice(0, 25000)
-        });
-      }
+      if (/volantin|leaflet|flyer|catalog|weekly/i.test(`${url}\n${body}`)) capturedResponses.push(entry);
     } catch (error) {
-      capturedResponses.push({ url, status: response.status(), captureError: error.message });
+      entry.captureError = error.message;
     }
   };
 
   page.on('response', responseListener);
-  let landingCards = [];
-  let clickedCards = [];
-  let landingDiagnostics = null;
+  let cardsAnalysis = null;
+  let cardClickResults = [];
+  let frameAnalysis = [];
 
   try {
     await page.goto(LANDING_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
-    await dismissConsent(page);
+    await dismissOverlays(page, popupLog, 'landing');
     await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
-    await page.waitForTimeout(5000);
+    await page.waitForTimeout(3500);
     await scrollLandingUntilStable(page);
-    await page.waitForTimeout(2500);
-    landingCards = await extractLandingFlyerCards(page);
-    landingDiagnostics = await captureLandingDiagnostics(page, capturedResponses);
-    clickedCards = await clickLandingFlyerCards(page);
-    await page.waitForTimeout(1800);
+    cardsAnalysis = await analyzeLandingCardContainers(page);
+    frameAnalysis = await inspectFramesForFlyers(page);
+
+    clickPhase = true;
+    for (const card of cardsAnalysis.containers.slice(0, 40)) {
+      cardClickResults.push(await clickCardWithMethods(page, card, popupLog));
+    }
+    clickPhase = false;
   } finally {
     page.off('response', responseListener);
   }
 
+  const directCards = (cardsAnalysis?.containers || []).flatMap(card =>
+    (card.directFlyerUrls || []).map(url => ({ title: card.text || card.imageAlt, category: card.section, url, source: 'card-container' }))
+  );
+  const clickedCards = cardClickResults.flatMap(result => result.discovered || []);
+  const frameFlyers = frameAnalysis.flatMap(frame => (frame.flyerUrls || []).map(url => ({ title: frame.title, url, source: 'iframe' })));
+
   let widgetFlyers = [];
   try {
-    const response = await page.request.get(WIDGET_URL, {
-      timeout: 30000,
-      headers: {
-        accept: 'application/json',
-        'accept-language': 'it-IT,it;q=0.9,en;q=0.7'
-      }
-    });
-    if (response.ok()) {
-      const payload = await response.json();
-      widgetFlyers = collectFlyersFromPayload(payload, 'widget-fallback');
-    }
-  } catch {
-    // La pagina visibile rimane la sorgente primaria.
-  }
+    const response = await page.request.get(WIDGET_URL, { timeout: 30000, headers: { accept: 'application/json', 'accept-language': 'it-IT,it;q=0.9,en;q=0.7' } });
+    if (response.ok()) widgetFlyers = collectFlyersFromPayload(await response.json(), 'widget-fallback');
+  } catch {}
 
-  const flyers = dedupeFlyers([
-    ...landingCards.map(item => ({ ...item, source: item.source || 'landing-dom' })),
-    ...clickedCards,
-    ...networkFlyers,
-    ...widgetFlyers
-  ]).map((item, index) => ({ ...item, index }));
+  const flyers = dedupeFlyers([...directCards, ...clickedCards, ...frameFlyers, ...networkFlyers, ...widgetFlyers])
+    .map((item, index) => ({ ...item, index }));
+
+  await Promise.all([
+    writeJson(path.join(DEBUG_DIR, 'cards-analysis.json'), { ...cardsAnalysis, frames: frameAnalysis }),
+    writeJson(path.join(DEBUG_DIR, 'card-click-results.json'), cardClickResults),
+    writeJson(path.join(DEBUG_DIR, 'network-after-click.json'), networkAfterClick),
+    writeJson(path.join(DEBUG_DIR, 'popup-log.json'), popupLog)
+  ]);
 
   return {
     flyers,
-    landingCards,
+    landingCards: cardsAnalysis?.containers || [],
     clickedCards,
     networkFlyers: dedupeFlyers(networkFlyers),
     widgetFlyers: dedupeFlyers(widgetFlyers),
-    landingDiagnostics,
-    capturedResponses
+    landingDiagnostics: cardsAnalysis,
+    capturedResponses,
+    cardClickResults,
+    networkAfterClick,
+    popupLog,
+    frameAnalysis
   };
 }
 
