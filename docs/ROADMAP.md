@@ -112,3 +112,9 @@ Le versioni seguenti devono aumentare l'utilità della spesa, non soltanto il nu
 ## Priorità immediata
 
 La prossima implementazione di codice deve essere **v11: normalizzazione centralizzata di formati e prezzi**. Senza questa base, matching e ottimizzazione produrrebbero risultati apparentemente precisi ma economicamente sbagliati.
+
+## v12.0 — Storico prezzi (completata)
+- snapshot giornalieri durante la scansione offerte;
+- conservazione 180 giorni;
+- caricamento lazy nel popup del prodotto;
+- minimo, media e valutazione del prezzo attuale.
