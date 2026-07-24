@@ -1,4 +1,8 @@
-# Spesa Smart v10.1.0 — Architettura e roadmap
+# Spesa Smart v11.0.0 — Smart Price Engine
+
+## Novità v11
+
+La v11 introduce un motore centralizzato per quantità, confezioni e prezzi unitari. L’app confronta ora il costo reale della quantità richiesta, riconosce i multipack e segnala formati non confrontabili. Vedi `README-V11.md`.
 
 Questa versione aggiunge la documentazione tecnica necessaria per far evolvere il progetto in modo ordinato, senza modificare il comportamento della v10.
 
