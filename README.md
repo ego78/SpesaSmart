@@ -1,3 +1,18 @@
+# Spesa Smart v10.1.0 — Architettura e roadmap
+
+Questa versione aggiunge la documentazione tecnica necessaria per far evolvere il progetto in modo ordinato, senza modificare il comportamento della v10.
+
+- Architettura: [`docs/ARCHITETTURA.md`](docs/ARCHITETTURA.md)
+- Modello dati: [`docs/MODELLO-DATI.md`](docs/MODELLO-DATI.md)
+- Contratto connettori: [`docs/CONNETTORI.md`](docs/CONNETTORI.md)
+- Roadmap: [`docs/ROADMAP.md`](docs/ROADMAP.md)
+- Test e rilasci: [`docs/TEST-E-RILASCI.md`](docs/TEST-E-RILASCI.md)
+- Decisioni: [`docs/DECISIONI.md`](docs/DECISIONI.md)
+
+La prossima implementazione prevista è la **v11: normalizzazione centralizzata di formati e prezzi**.
+
+---
+
 ## Versione 4.2.1
 
 - PENNY ed Eurospin con offerte disponibili vengono mostrati come “Volantino locale collegato”.
