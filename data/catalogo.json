@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-24T09:46:42.995Z",
+  "generatedAt": "2026-07-24T15:40:17.329Z",
   "items": [
     {
       "id": "12 cm livarno|2pz",
@@ -3703,6 +3703,312 @@
       "offersCount": 1,
       "minPrice": 3.69,
       "maxPrice": 3.69
+    },
+    {
+      "id": "coshida boccincini gourmet gatti pouch|400g",
+      "canonicalName": "coshida boccincini gourmet gatti pouch",
+      "canonicalKey": "coshida boccincini gourmet gatti pouch|400g",
+      "quantity": {
+        "value": 400,
+        "unit": "g",
+        "label": "400 g",
+        "multipack": null
+      },
+      "aliases": [
+        "COSHIDA Boccincini gourmet per gatti in pouch"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.59,
+      "maxPrice": 1.59
+    },
+    {
+      "id": "coshida bocconcini carne salsa|1200g",
+      "canonicalName": "coshida bocconcini carne salsa",
+      "canonicalKey": "coshida bocconcini carne salsa|1200g",
+      "quantity": {
+        "value": 1200,
+        "unit": "g",
+        "label": "1200 g",
+        "multipack": null
+      },
+      "aliases": [
+        "COSHIDA Bocconcini di carne in salsa"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.59,
+      "maxPrice": 3.59
+    },
+    {
+      "id": "coshida bocconcini gatto|415g",
+      "canonicalName": "coshida bocconcini gatto",
+      "canonicalKey": "coshida bocconcini gatto|415g",
+      "quantity": {
+        "value": 415,
+        "unit": "g",
+        "label": "415 g",
+        "multipack": null
+      },
+      "aliases": [
+        "COSHIDA Bocconcini gatto",
+        "COSHIDA Bocconcini per gatto"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 2,
+      "minPrice": 0.69,
+      "maxPrice": 0.69
+    },
+    {
+      "id": "coshida bocconcini gatto|1200g",
+      "canonicalName": "coshida bocconcini gatto",
+      "canonicalKey": "coshida bocconcini gatto|1200g",
+      "quantity": {
+        "value": 1200,
+        "unit": "g",
+        "label": "1200 g",
+        "multipack": null
+      },
+      "aliases": [
+        "COSHIDA Bocconcini per gatto"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.59,
+      "maxPrice": 3.59
+    },
+    {
+      "id": "coshida bocconcini gatto manzo pollo|415g",
+      "canonicalName": "coshida bocconcini gatto manzo pollo",
+      "canonicalKey": "coshida bocconcini gatto manzo pollo|415g",
+      "quantity": {
+        "value": 415,
+        "unit": "g",
+        "label": "415 g",
+        "multipack": null
+      },
+      "aliases": [
+        "COSHIDA Bocconcini gatto al manzo o pollo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.69,
+      "maxPrice": 0.69
+    },
+    {
+      "id": "coshida bocconcini gelatina|1200g",
+      "canonicalName": "coshida bocconcini gelatina",
+      "canonicalKey": "coshida bocconcini gelatina|1200g",
+      "quantity": {
+        "value": 1200,
+        "unit": "g",
+        "label": "1200 g",
+        "multipack": null
+      },
+      "aliases": [
+        "COSHIDA Bocconcini in gelatina"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.59,
+      "maxPrice": 3.59
+    },
+    {
+      "id": "coshida croccantini gatti adult oppure junior|750g",
+      "canonicalName": "coshida croccantini gatti adult oppure junior",
+      "canonicalKey": "coshida croccantini gatti adult oppure junior|750g",
+      "quantity": {
+        "value": 750,
+        "unit": "g",
+        "label": "750 g",
+        "multipack": null
+      },
+      "aliases": [
+        "COSHIDA Croccantini per gatti adult oppure Junior"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.25,
+      "maxPrice": 2.25
+    },
+    {
+      "id": "coshida croccantini gatti sterilizzati|750g",
+      "canonicalName": "coshida croccantini gatti sterilizzati",
+      "canonicalKey": "coshida croccantini gatti sterilizzati|750g",
+      "quantity": {
+        "value": 750,
+        "unit": "g",
+        "label": "750 g",
+        "multipack": null
+      },
+      "aliases": [
+        "COSHIDA Croccantini per gatti sterilizzati"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.25,
+      "maxPrice": 2.25
+    },
+    {
+      "id": "coshida lettiera assorbente fragranza lavanda|6400g",
+      "canonicalName": "coshida lettiera assorbente fragranza lavanda",
+      "canonicalKey": "coshida lettiera assorbente fragranza lavanda|6400g",
+      "quantity": {
+        "value": 6400,
+        "unit": "g",
+        "label": "6,4 kg",
+        "multipack": null
+      },
+      "aliases": [
+        "COSHIDA Lettiera assorbente con fragranza di lavanda"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.05,
+      "maxPrice": 2.05
+    },
+    {
+      "id": "coshida lettiera gatto assorbente sepiolite bianca|6400g",
+      "canonicalName": "coshida lettiera gatto assorbente sepiolite bianca",
+      "canonicalKey": "coshida lettiera gatto assorbente sepiolite bianca|6400g",
+      "quantity": {
+        "value": 6400,
+        "unit": "g",
+        "label": "6,4 kg",
+        "multipack": null
+      },
+      "aliases": [
+        "COSHIDA Lettiera gatto assorbente sepiolite bianca"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.05,
+      "maxPrice": 2.05
+    },
+    {
+      "id": "coshida mousse gatti lattina tonno manzo pollo tacchino|1020g",
+      "canonicalName": "coshida mousse gatti lattina tonno manzo pollo tacchino",
+      "canonicalKey": "coshida mousse gatti lattina tonno manzo pollo tacchino|1020g",
+      "quantity": {
+        "value": 1020,
+        "unit": "g",
+        "label": "1020 g",
+        "multipack": null
+      },
+      "aliases": [
+        "COSHIDA Mousse per gatti in lattina Al gusto tonno, manzo, pollo o tacchino"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 5.19,
+      "maxPrice": 5.19
+    },
+    {
+      "id": "coshida pate gatti manzo",
+      "canonicalName": "coshida pate gatti manzo",
+      "canonicalKey": "coshida pate gatti manzo",
+      "quantity": null,
+      "aliases": [
+        "COSHIDA Patè per gatti con manzo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.45,
+      "maxPrice": 0.45
+    },
+    {
+      "id": "coshida pate gatti pollo",
+      "canonicalName": "coshida pate gatti pollo",
+      "canonicalKey": "coshida pate gatti pollo",
+      "quantity": null,
+      "aliases": [
+        "COSHIDA Patè per gatti con pollo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.45,
+      "maxPrice": 0.45
+    },
+    {
+      "id": "coshida pate gatti salmone",
+      "canonicalName": "coshida pate gatti salmone",
+      "canonicalKey": "coshida pate gatti salmone",
+      "quantity": null,
+      "aliases": [
+        "COSHIDA Patè per gatti con salmone"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.45,
+      "maxPrice": 0.45
+    },
+    {
+      "id": "coshida pate gatto pollo tacchino manzo ortaggi|405g",
+      "canonicalName": "coshida pate gatto pollo tacchino manzo ortaggi",
+      "canonicalKey": "coshida pate gatto pollo tacchino manzo ortaggi|405g",
+      "quantity": {
+        "value": 405,
+        "unit": "g",
+        "label": "405 g",
+        "multipack": null
+      },
+      "aliases": [
+        "COSHIDA Patè per gatto Al gusto di pollo e tacchino o manzo e ortaggi"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.79,
+      "maxPrice": 0.79
+    },
+    {
+      "id": "coshida pure taste boccincini premium pouch 60 carne|340g",
+      "canonicalName": "coshida pure taste boccincini premium pouch 60 carne",
+      "canonicalKey": "coshida pure taste boccincini premium pouch 60 carne|340g",
+      "quantity": {
+        "value": 340,
+        "unit": "g",
+        "label": "340 g",
+        "multipack": null
+      },
+      "aliases": [
+        "COSHIDA PURE TASTE Boccincini premium in pouch Con 60% di carne"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
     },
     {
       "id": "costruzioni cantiere",
@@ -9802,6 +10108,241 @@
       "maxPrice": 0.79
     },
     {
+      "id": "orlando bastoncini carne essiccata|176g",
+      "canonicalName": "orlando bastoncini carne essiccata",
+      "canonicalKey": "orlando bastoncini carne essiccata|176g",
+      "quantity": {
+        "value": 176,
+        "unit": "g",
+        "label": "176 g",
+        "multipack": null
+      },
+      "aliases": [
+        "ORLANDO Bastoncini di carne essiccata"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.19,
+      "maxPrice": 2.19
+    },
+    {
+      "id": "orlando bastoncini carne menta twister",
+      "canonicalName": "orlando bastoncini carne menta twister",
+      "canonicalKey": "orlando bastoncini carne menta twister",
+      "quantity": null,
+      "aliases": [
+        "ORLANDO Bastoncini di carne con menta o twister"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.49,
+      "maxPrice": 1.49
+    },
+    {
+      "id": "orlando biscotti cane|500g",
+      "canonicalName": "orlando biscotti cane",
+      "canonicalKey": "orlando biscotti cane|500g",
+      "quantity": {
+        "value": 500,
+        "unit": "g",
+        "label": "500 g",
+        "multipack": null
+      },
+      "aliases": [
+        "ORLANDO Biscotti cane"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.59,
+      "maxPrice": 1.59
+    },
+    {
+      "id": "orlando bocconcini cane|1250g",
+      "canonicalName": "orlando bocconcini cane",
+      "canonicalKey": "orlando bocconcini cane|1250g",
+      "quantity": {
+        "value": 1250,
+        "unit": "g",
+        "label": "1250 g",
+        "multipack": null
+      },
+      "aliases": [
+        "ORLANDO Bocconcini cane"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.39,
+      "maxPrice": 1.39
+    },
+    {
+      "id": "orlando bocconcini cani piccola taglia pollo manzo|415g",
+      "canonicalName": "orlando bocconcini cani piccola taglia pollo manzo",
+      "canonicalKey": "orlando bocconcini cani piccola taglia pollo manzo|415g",
+      "quantity": {
+        "value": 415,
+        "unit": "g",
+        "label": "415 g",
+        "multipack": null
+      },
+      "aliases": [
+        "ORLANDO Bocconcini per cani di piccola taglia Al gusto pollo o manzo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.69,
+      "maxPrice": 0.69
+    },
+    {
+      "id": "orlando bocconcini pollo tacchino manzo verdure|1250g",
+      "canonicalName": "orlando bocconcini pollo tacchino manzo verdure",
+      "canonicalKey": "orlando bocconcini pollo tacchino manzo verdure|1250g",
+      "quantity": {
+        "value": 1250,
+        "unit": "g",
+        "label": "1250 g",
+        "multipack": null
+      },
+      "aliases": [
+        "ORLANDO Bocconcini al pollo e tacchino o manzo e verdure"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.39,
+      "maxPrice": 1.39
+    },
+    {
+      "id": "orlando crocchette cani piccola taglia|1500g",
+      "canonicalName": "orlando crocchette cani piccola taglia",
+      "canonicalKey": "orlando crocchette cani piccola taglia|1500g",
+      "quantity": {
+        "value": 1500,
+        "unit": "g",
+        "label": "1,5 kg",
+        "multipack": null
+      },
+      "aliases": [
+        "ORLANDO Crocchette cani piccola taglia"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.19,
+      "maxPrice": 3.19
+    },
+    {
+      "id": "orlando crocchette cani pollo verdure|10000g",
+      "canonicalName": "orlando crocchette cani pollo verdure",
+      "canonicalKey": "orlando crocchette cani pollo verdure|10000g",
+      "quantity": {
+        "value": 10000,
+        "unit": "g",
+        "label": "10 kg",
+        "multipack": null
+      },
+      "aliases": [
+        "ORLANDO Crocchette per cani pollo e verdure"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 10.99,
+      "maxPrice": 10.99
+    },
+    {
+      "id": "orlando crochette cani inulina|3000g",
+      "canonicalName": "orlando crochette cani inulina",
+      "canonicalKey": "orlando crochette cani inulina|3000g",
+      "quantity": {
+        "value": 3000,
+        "unit": "g",
+        "label": "3 kg",
+        "multipack": null
+      },
+      "aliases": [
+        "ORLANDO Crochette per cani con Inulina"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 5.19,
+      "maxPrice": 5.19
+    },
+    {
+      "id": "orlando pate cani piccola taglia|150g",
+      "canonicalName": "orlando pate cani piccola taglia",
+      "canonicalKey": "orlando pate cani piccola taglia|150g",
+      "quantity": {
+        "value": 150,
+        "unit": "g",
+        "label": "150 g",
+        "multipack": null
+      },
+      "aliases": [
+        "ORLANDO Paté per cani di piccola taglia"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.65,
+      "maxPrice": 0.65
+    },
+    {
+      "id": "orlando pate cani premium 70 carne derivati pollo|400g",
+      "canonicalName": "orlando pate cani premium 70 carne derivati pollo",
+      "canonicalKey": "orlando pate cani premium 70 carne derivati pollo|400g",
+      "quantity": {
+        "value": 400,
+        "unit": "g",
+        "label": "400 g",
+        "multipack": null
+      },
+      "aliases": [
+        "ORLANDO Patè per cani premium con 70% di carne e derivati Al gusto pollo,"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.49,
+      "maxPrice": 1.49
+    },
+    {
+      "id": "orlando pouch pate premium cani pollo manzo pollame agnello|400g",
+      "canonicalName": "orlando pouch pate premium cani pollo manzo pollame agnello",
+      "canonicalKey": "orlando pouch pate premium cani pollo manzo pollame agnello|400g",
+      "quantity": {
+        "value": 400,
+        "unit": "g",
+        "label": "400 g",
+        "multipack": null
+      },
+      "aliases": [
+        "ORLANDO Pouch con patè premium per cani Gusto pollo e manzo o pollame e agnello"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
       "id": "orlando pure taste pate cani monoproteico pollo manzo|150g",
       "canonicalName": "orlando pure taste pate cani monoproteico pollo manzo",
       "canonicalKey": "orlando pure taste pate cani monoproteico pollo manzo|150g",
@@ -9813,6 +10354,76 @@
       },
       "aliases": [
         "ORLANDO PURE TASTE Paté per cani monoproteico Con pollo o manzo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.59,
+      "maxPrice": 0.59
+    },
+    {
+      "id": "orlando snack cani carne|200g",
+      "canonicalName": "orlando snack cani carne",
+      "canonicalKey": "orlando snack cani carne|200g",
+      "quantity": {
+        "value": 200,
+        "unit": "g",
+        "label": "200 g",
+        "multipack": null
+      },
+      "aliases": [
+        "ORLANDO Snack per cani con carne"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
+    },
+    {
+      "id": "orlando tappetino igienico animali",
+      "canonicalName": "orlando tappetino igienico animali",
+      "canonicalKey": "orlando tappetino igienico animali",
+      "quantity": null,
+      "aliases": [
+        "ORLANDO Tappetino igienico per animali Al pezzo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.49,
+      "maxPrice": 4.49
+    },
+    {
+      "id": "orlando vaschette cane",
+      "canonicalName": "orlando vaschette cane",
+      "canonicalKey": "orlando vaschette cane",
+      "quantity": null,
+      "aliases": [
+        "ORLANDO Vaschette cane"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.75,
+      "maxPrice": 0.75
+    },
+    {
+      "id": "orlando vaschette cane mono proteico pollo manzo|150g",
+      "canonicalName": "orlando vaschette cane mono proteico pollo manzo",
+      "canonicalKey": "orlando vaschette cane mono proteico pollo manzo|150g",
+      "quantity": {
+        "value": 150,
+        "unit": "g",
+        "label": "150 g",
+        "multipack": null
+      },
+      "aliases": [
+        "ORLANDO Vaschette cane Mono-proteico Al gusto pollo o manzo"
       ],
       "stores": [
         "Lidl"
