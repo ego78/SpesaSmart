@@ -15,7 +15,7 @@ Le versioni seguenti devono aumentare l'utilità della spesa, non soltanto il nu
 
 **Criterio di uscita:** il comportamento v10 rimane invariato e i moduli critici hanno test ripetibili.
 
-## v11 — Motore prezzi e formati
+## v11 — Motore prezzi e formati ✅ implementato
 
 - parser centralizzato di quantità e confezioni;
 - prezzo al kg/litro/pezzo;

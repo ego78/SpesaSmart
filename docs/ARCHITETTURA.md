@@ -276,3 +276,13 @@ L'app deve continuare a permettere:
 - registrazione locale delle modifiche.
 
 Quando torna la connessione, le modifiche vengono sincronizzate con una politica esplicita di risoluzione dei conflitti.
+
+## Smart Price Engine (v11)
+
+`assets/js/smart-price.js` è la fonte unica per interpretare formati, normalizzare quantità, calcolare prezzi unitari e stimare le confezioni necessarie. `assets/js/offers.js` gestisce matching e aggregazione, ma delega tutti i calcoli economici al motore prezzi.
+
+Flusso:
+
+```text
+offerta grezza → normalizeOfferPrice → match → estimatePurchase → piano di spesa
+```
