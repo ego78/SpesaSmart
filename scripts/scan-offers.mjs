@@ -12,6 +12,7 @@ import { enrichOffersWithCatalog, buildCatalog } from '../connectors/catalog.mjs
 const OUTPUT=new URL('../data/offerte.json',import.meta.url);
 const LINKS_OUTPUT=new URL('../data/volantini-locali.json',import.meta.url);
 const CATALOG_OUTPUT=new URL('../data/catalogo.json',import.meta.url);
+const HISTORY_OUTPUT=new URL('../data/storico-offerte.json',import.meta.url);
 const config=JSON.parse(await fs.readFile(new URL('../config/app.json',import.meta.url),'utf8'));
 const appsScriptUrl=String(process.env.APPS_SCRIPT_URL||'').trim();
 const envFamily=String(process.env.FAMILY_CODE||'').trim();
@@ -67,6 +68,23 @@ function buildFlyerLinks(stores,offers,lidlLinks=[]){
  });
 }
 
+
+function compactHistoryOffer(o){
+ const price=Number(o.price);if(!Number.isFinite(price)||price<=0)return null;
+ return {product:o.product||'',canonicalName:o.canonicalName||'',brand:o.brand||'',format:o.format||'',store:o.store||o.chain||'',chain:o.chain||o.store||'',price,oldPrice:Number.isFinite(Number(o.oldPrice))?Number(o.oldPrice):null,unitPrice:Number.isFinite(Number(o.unitPrice))?Number(o.unitPrice):null,unitPriceLabel:o.unitPriceLabel||o.calculatedUnitLabel||'',normalizedUnit:o.normalizedUnit||'',normalizedQuantity:Number.isFinite(Number(o.normalizedQuantity))?Number(o.normalizedQuantity):null,catalogId:o.catalogId||''};
+}
+async function updatePriceHistory(offers){
+ let history={snapshots:[]};try{history=JSON.parse(await fs.readFile(HISTORY_OUTPUT,'utf8'))}catch{}
+ const today=new Date().toISOString().slice(0,10),compact=offers.map(compactHistoryOffer).filter(Boolean);
+ const snapshots=(Array.isArray(history.snapshots)?history.snapshots:[]).filter(x=>String(x.date||'').slice(0,10)!==today);
+ snapshots.push({date:today,generatedAt:new Date().toISOString(),offers:compact});
+ snapshots.sort((a,b)=>String(a.date).localeCompare(String(b.date)));
+ const cutoff=new Date();cutoff.setUTCDate(cutoff.getUTCDate()-180);const cutoffDay=cutoff.toISOString().slice(0,10);
+ const kept=snapshots.filter(x=>String(x.date||'')>=cutoffDay).slice(-180);
+ await fs.writeFile(HISTORY_OUTPUT,JSON.stringify({version:1,generatedAt:new Date().toISOString(),retentionDays:180,snapshots:kept},null,2)+'\n','utf8');
+ console.log(`Storico prezzi: ${kept.length} giornate, ${compact.length} offerte odierne`);
+}
+
 async function safe(name,fn){try{const out=await fn();console.log(`${name}: ${out.length} offerte`);return out}catch(e){console.error(`${name}: ${e.message}`);return[]}}
 
 const stores=await loadSelectedStores();
@@ -103,6 +121,7 @@ const offers=enrichOffersWithCatalog(uniqueOffers([...localResults,...fallback])
 const catalog=buildCatalog(offers);
 await fs.writeFile(OUTPUT,JSON.stringify(offers,null,2)+'\n','utf8');
 await fs.writeFile(CATALOG_OUTPUT,JSON.stringify({generatedAt:new Date().toISOString(),items:catalog},null,2)+'\n','utf8');
+await updatePriceHistory(offers);
 const flyerLinks=buildFlyerLinks(stores,offers,lidlLinks);
 await fs.writeFile(LINKS_OUTPUT,JSON.stringify({generatedAt:new Date().toISOString(),familyCode,stores:flyerLinks},null,2)+'\n','utf8');
 console.log('Collegamenti volantini: '+flyerLinks.map(x=>`${x.chain}: ${x.connected?'collegato':'non collegato'} (${x.offersCount})`).join(' | '));
