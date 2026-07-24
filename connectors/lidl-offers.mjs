@@ -826,8 +826,20 @@ async function resolveViewerFlyers(page, store = {}, context = {}) {
       if (body.length > 6_000_000) body = body.slice(0, 6_000_000);
       entry.bodyBytes = Buffer.byteLength(body, 'utf8');
       entry.bodyPreview = cleanText(body).slice(0, 12000);
-      if (/endpoints\.leaflets\.schwarz\/v4\/(?:widget|flyer)/i.test(url) && body) {
+      // Durante i click osserviamo qualsiasi risposta che possa rivelare un
+      // volantino, non soltanto gli endpoint widget/flyer già noti.
+      const responseCanonical = canonicalFlyerUrl(url);
+      if (responseCanonical) {
+        networkFlyers.push({ url: responseCanonical, source: clickPhase ? 'click-response-url' : 'landing-response-url' });
+      }
+      if (/endpoints\.leaflets\.schwarz\/v4\/(?:widget|flyer|overview)/i.test(url) && body) {
         try { networkFlyers.push(...collectFlyersFromPayload(JSON.parse(body), clickPhase ? 'click-network' : 'landing-network')); } catch {}
+      }
+      const bodyFlyerUrls = [...body.matchAll(/https?:\/\/[^\s\"'<>]+\/l\/it\/volantini\/[^\s\"'<>]+/gi)]
+        .map(match => canonicalFlyerUrl(match[0]))
+        .filter(Boolean);
+      for (const flyerUrl of bodyFlyerUrls) {
+        networkFlyers.push({ url: flyerUrl, source: clickPhase ? 'click-response-body' : 'landing-response-body' });
       }
       if (/volantin|leaflet|flyer|catalog|weekly/i.test(`${url}\n${body}`)) capturedResponses.push(entry);
     } catch (error) {
@@ -855,13 +867,16 @@ async function resolveViewerFlyers(page, store = {}, context = {}) {
     structuredLanding = { ...structuredLanding, cards: association.associations, unmatchedOverview: association.unmatchedOverview };
     frameAnalysis = await inspectFramesForFlyers(page);
 
-    // Le card con href diretto non richiedono alcun click. Clicchiamo solo
-    // controlli compatti e plausibili (es. il pulsante del volantino settimanale),
-    // evitando header, body e contenitori generici che rallentavano la scansione.
+    // V8.0: il browser si comporta come un utente. Ogni card visibile nelle
+    // sezioni settimanali e speciali viene cliccata realmente, anche quando ha
+    // già un href o una corrispondenza nell'API overview. In questo modo vengono
+    // intercettati anche contenuti CMS, redirect, popup e viewer non presenti
+    // nell'overview. Sono esclusi soltanto i volantini Lidl Viaggi.
     const clickCandidates = structuredLanding.cards
       .filter(card => {
-        if (card.section === 'Volantini Lidl Viaggi' || isTravelFlyer(card)) return false;
-        if (canonicalFlyerUrl(card.href) || canonicalFlyerUrl(card.matchedOverviewUrl)) return false;
+        const section = targetSectionName(card.section);
+        if (!['Volantini settimanali', 'Volantini speciali'].includes(section)) return false;
+        if (isTravelFlyer(card)) return false;
         return ['BUTTON', 'A'].includes(String(card.tag || '').toUpperCase());
       })
       .map(card => ({
@@ -871,11 +886,16 @@ async function resolveViewerFlyers(page, store = {}, context = {}) {
         imageAlt: card.title,
         attributes: { href: card.href }
       }))
-      .slice(0, 20);
+      .slice(0, 30);
 
     clickPhase = true;
     for (const card of clickCandidates) {
-      cardClickResults.push(await clickCardWithMethods(page, card, popupLog));
+      const result = await clickCardWithMethods(page, card, popupLog);
+      cardClickResults.push(result);
+      // Ogni ritorno alla landing può ricreare il DOM: attendiamo che il widget
+      // sia nuovamente pronto prima di passare alla card successiva.
+      await page.waitForSelector('[id^="flyer-"]', { timeout: 10000 }).catch(() => {});
+      await page.waitForTimeout(500);
     }
     clickPhase = false;
   } finally {
@@ -2022,7 +2042,7 @@ export async function scanLidlOffers(store = {}) {
 
     await writeJson(path.join(DEBUG_DIR, 'flyers-summary.json'), {
       generatedAt: new Date().toISOString(),
-      discoverySource: "tutte le card visibili nelle sezioni settimanali/speciali; API overview solo per arricchimento + fallback rete/widget",
+      discoverySource: "click reale di tutte le card visibili nelle sezioni settimanali/speciali; API overview solo per arricchimento e recupero del settimanale disabilitato",
       totalDiscovered: viewerFlyers.length,
       landingCards: discovery.landingCards.length,
       structuredCards: discovery.structuredLanding?.cards?.length || 0,
