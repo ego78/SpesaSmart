@@ -8,7 +8,7 @@ const HOME_URL = 'https://www.lidl.it/';
 const LANDING_URL = 'https://www.lidl.it/c/volantino-lidl/s10018048';
 const WIDGET_URL = 'https://endpoints.leaflets.schwarz/v4/widget?widget_id=b72c9549-b8f0-11ed-b03c-fa163e81deca&store_id=0&region_id=0';
 const CACHE_DIR = path.resolve('.cache/lidl');
-const PDF_CACHE_VERSION = 5;
+const PDF_CACHE_VERSION = 6;
 const MAX_FLYER_CONCURRENCY = 2;
 const DEBUG_ENABLED = /^(1|true|yes)$/i.test(process.env.LIDL_DEBUG || '');
 const DEBUG_FULL = /^(1|true|yes)$/i.test(process.env.LIDL_DEBUG_FULL || '');
@@ -532,6 +532,113 @@ function dedupeFlyers(items = []) {
   return [...map.values()];
 }
 
+
+async function extractEmbeddedFlyerSources(page, structuredLanding = { headings: [], cards: [] }) {
+  const raw = await page.evaluate(() => {
+    const clean = value => String(value || '').replace(/\u00a0/g, ' ').replace(/\s+/g, ' ').trim();
+    const absolute = value => {
+      try { return new URL(String(value || '').replace(/\\\//g, '/'), location.href).href; } catch { return ''; }
+    };
+    const sectionName = value => {
+      const text = clean(value);
+      if (/volantini?\s+settimanali?/i.test(text)) return 'Volantini settimanali';
+      if (/volantini?\s+speciali?/i.test(text)) return 'Volantini speciali';
+      if (/volantini?\s+lidl\s*viaggi|lidl\s*viaggi/i.test(text)) return 'Volantini Lidl Viaggi';
+      return '';
+    };
+    const nearestSection = node => {
+      if (!(node instanceof Element)) return '';
+      let current = node;
+      for (let depth = 0; current && depth < 10; depth += 1, current = current.parentElement) {
+        let sibling = current.previousElementSibling;
+        while (sibling) {
+          const headings = sibling.matches?.('h1,h2,h3,h4,h5,h6,.section-head,[class*=\"headline\" i],[class*=\"heading\" i]')
+            ? [sibling]
+            : [...(sibling.querySelectorAll?.('h1,h2,h3,h4,h5,h6,.section-head,[class*=\"headline\" i],[class*=\"heading\" i]') || [])];
+          for (const heading of headings.reverse()) {
+            const section = sectionName(heading.textContent);
+            if (section) return section;
+          }
+          sibling = sibling.previousElementSibling;
+        }
+      }
+      return '';
+    };
+    const attributes = node => {
+      const out = [];
+      for (const attr of [...(node.attributes || [])]) {
+        if (/^(?:href|src|action|data-|aria-)/i.test(attr.name)) out.push({ name: attr.name, value: attr.value });
+      }
+      return out;
+    };
+    const output = [];
+    const add = (url, source, node = null, context = '') => {
+      const resolved = absolute(url);
+      if (!resolved || !/(?:lidl\.it|leaflets\.schwarz)/i.test(resolved)) return;
+      if (!/\/l\/it\/volantini\/|\/c\/[^?#]*volantin|leaflet|flyer/i.test(resolved)) return;
+      const container = node instanceof Element ? (node.closest('a,button,article,li,[role=\"button\"],[id^=\"flyer-\"]') || node) : null;
+      const image = container?.querySelector?.('img');
+      output.push({
+        url: resolved,
+        source,
+        section: nearestSection(container),
+        title: clean(container?.querySelector?.('[class*=\"title\" i]')?.textContent || image?.alt || ''),
+        text: clean(container?.textContent || context).slice(0, 1000),
+        tag: container?.tagName || '',
+        id: clean(container?.id || '')
+      });
+    };
+
+    for (const node of document.querySelectorAll('*')) {
+      for (const attr of attributes(node)) {
+        const value = attr.value || '';
+        if (/volantin|leaflet|flyer|\/ar\/|view\/flyer/i.test(value)) add(value, `dom-attribute:${attr.name}`, node);
+        for (const match of value.matchAll(/(?:https?:)?\/\/[^\s\"'<>]+|\/l\/it\/volantini\/[^\s\"'<>]+/gi)) add(match[0], `dom-attribute-regex:${attr.name}`, node);
+      }
+    }
+
+    const scriptPayloads = [];
+    for (const script of document.scripts) {
+      const text = script.textContent || '';
+      if (text) scriptPayloads.push({ source: script.id ? `script#${script.id}` : `script:${script.type || 'inline'}`, text });
+      if (script.src) add(script.src, 'script-src', script);
+    }
+    const nextData = document.querySelector('#__NEXT_DATA__')?.textContent || '';
+    if (nextData) scriptPayloads.push({ source: '__NEXT_DATA__', text: nextData });
+    for (const payload of scriptPayloads) {
+      const decoded = payload.text.replace(/\\u002F/gi, '/').replace(/\\\//g, '/');
+      for (const match of decoded.matchAll(/https?:\/\/[^\s\"'<>]+\/l\/it\/volantini\/[^\s\"'<>\\]+|\/l\/it\/volantini\/[^\s\"'<>\\]+/gi)) {
+        add(match[0], payload.source, null, decoded.slice(Math.max(0, match.index - 180), match.index + 500));
+      }
+    }
+
+    for (const entry of performance.getEntriesByType('resource')) add(entry.name, 'performance-resource');
+    return output;
+  });
+
+  const cards = structuredLanding.cards || [];
+  return raw.map(item => {
+    const canonical = canonicalFlyerUrl(item.url);
+    const identifier = flyerIdentifierFromUrl(canonical || item.url);
+    const matchingCard = cards.find(card => {
+      const cardIdentifier = flyerIdentifierFromUrl(card.href || card.matchedOverviewUrl || card.api?.url || '');
+      if (identifier && cardIdentifier && identifier === cardIdentifier) return true;
+      const haystack = normalizeMatchText(`${card.title || ''} ${card.name || ''} ${card.text || ''}`);
+      const needle = normalizeMatchText(`${item.title || ''} ${item.text || ''}`);
+      return haystack.length > 8 && needle.includes(haystack.slice(0, Math.min(48, haystack.length)));
+    });
+    const section = targetSectionName(item.section) || targetSectionName(matchingCard?.section) || '';
+    return {
+      ...item,
+      url: canonical || discoveryUrl(item.url),
+      section,
+      category: section,
+      matchedCardId: matchingCard?.id || '',
+      matchedCardTitle: matchingCard?.title || matchingCard?.text || ''
+    };
+  }).filter(item => item.url);
+}
+
 async function analyzeLandingCardContainers(page) {
   return page.evaluate(() => {
     const clean = value => String(value || '').replace(/\u00a0/g, ' ').replace(/\s+/g, ' ').trim();
@@ -853,6 +960,7 @@ async function resolveViewerFlyers(page, store = {}, context = {}) {
   let frameAnalysis = [];
   let structuredLanding = { headings: [], cards: [] };
   let overviewResult = { flyers: [], attempts: [] };
+  let domSources = [];
 
   try {
     await page.goto(LANDING_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
@@ -867,37 +975,16 @@ async function resolveViewerFlyers(page, store = {}, context = {}) {
     structuredLanding = { ...structuredLanding, cards: association.associations, unmatchedOverview: association.unmatchedOverview };
     frameAnalysis = await inspectFramesForFlyers(page);
 
-    // V8.0: il browser si comporta come un utente. Ogni card visibile nelle
-    // sezioni settimanali e speciali viene cliccata realmente, anche quando ha
-    // già un href o una corrispondenza nell'API overview. In questo modo vengono
-    // intercettati anche contenuti CMS, redirect, popup e viewer non presenti
-    // nell'overview. Sono esclusi soltanto i volantini Lidl Viaggi.
-    const clickCandidates = structuredLanding.cards
-      .filter(card => {
-        const section = targetSectionName(card.section);
-        if (!['Volantini settimanali', 'Volantini speciali'].includes(section)) return false;
-        if (isTravelFlyer(card)) return false;
-        return ['BUTTON', 'A'].includes(String(card.tag || '').toUpperCase());
-      })
-      .map(card => ({
-        ...card,
-        selector: card.selector || `#${card.id}`,
-        clickSelector: card.selector || `#${card.id}`,
-        imageAlt: card.title,
-        attributes: { href: card.href }
-      }))
-      .slice(0, 30);
-
-    clickPhase = true;
-    for (const card of clickCandidates) {
-      const result = await clickCardWithMethods(page, card, popupLog);
-      cardClickResults.push(result);
-      // Ogni ritorno alla landing può ricreare il DOM: attendiamo che il widget
-      // sia nuovamente pronto prima di passare alla card successiva.
-      await page.waitForSelector('[id^="flyer-"]', { timeout: 10000 }).catch(() => {});
-      await page.waitForTimeout(500);
-    }
-    clickPhase = false;
+    // V9.0: niente click simulati. Gli URL dei volantini vengono letti
+    // direttamente dal DOM, dagli attributi data-*, dagli script incorporati,
+    // da __NEXT_DATA__ e dalle risorse già caricate dalla pagina.
+    domSources = await extractEmbeddedFlyerSources(page, structuredLanding).catch(() => []);
+    cardClickResults = [{
+      mode: 'dom-only',
+      generatedAt: new Date().toISOString(),
+      message: 'V9.0 non simula click: estrae direttamente URL e metadati dal DOM e dagli script.',
+      discovered: domSources
+    }];
   } finally {
     page.off('response', responseListener);
   }
@@ -918,9 +1005,23 @@ async function resolveViewerFlyers(page, store = {}, context = {}) {
       source: card.matchedOverview ? 'landing+overview-associated' : 'landing-structured'
     }];
   });
-  const clickedCards = cardClickResults.flatMap(result => result.discovered || [])
-    .filter(item => !isTravelFlyer(item))
-    .map(item => ({ ...item, category: targetSectionName(item.category) || 'Volantini speciali', section: targetSectionName(item.category) || 'Volantini speciali' }));
+  const domDiscoveredFlyers = domSources
+    .filter(item => {
+      const section = targetSectionName(item.section || item.category);
+      if (section === 'Volantini Lidl Viaggi' || isTravelFlyer(item)) return false;
+      // Gli URL con sezione esplicita settimanale/speciale sono sempre inclusi.
+      // Gli URL senza sezione vengono mantenuti solo se corrispondono a una card
+      // visibile o a un vero URL /l/it/volantini/.
+      return ['Volantini settimanali', 'Volantini speciali'].includes(section)
+        || Boolean(item.matchedCardId)
+        || Boolean(canonicalFlyerUrl(item.url));
+    })
+    .map(item => {
+      const section = targetSectionName(item.section || item.category)
+        || (isTravelFlyer(item) ? 'Volantini Lidl Viaggi' : 'Volantini speciali');
+      return { ...item, category: section, section, source: item.source || 'landing-dom' };
+    });
+  const clickedCards = domDiscoveredFlyers;
   const frameFlyers = frameAnalysis.flatMap(frame => (frame.flyerUrls || []).map(url => ({ title: frame.title, url, source: 'iframe' })));
 
   let widgetFlyers = [];
@@ -933,7 +1034,7 @@ async function resolveViewerFlyers(page, store = {}, context = {}) {
   // vengono presi tutti e soli i volantini delle sezioni settimanali e
   // speciali. Rete, iframe e widget restano un fallback esclusivamente se
   // Lidl cambia il markup e nessuna card della pagina viene risolta.
-  const pageFlyers = dedupeFlyers([...directCards, ...clickedCards]);
+  const pageFlyers = dedupeFlyers([...directCards, ...domDiscoveredFlyers]);
   const apiFlyers = dedupeFlyers(overviewResult.flyers || []);
   const fallbackFlyers = dedupeFlyers([...frameFlyers, ...networkFlyers, ...widgetFlyers]);
   // Le card visibili restano la fonte di verità; i metadati API vengono
@@ -948,6 +1049,7 @@ async function resolveViewerFlyers(page, store = {}, context = {}) {
   await Promise.all([
     writeJson(path.join(DEBUG_DIR, 'cards-analysis.json'), { ...cardsAnalysis, frames: frameAnalysis }),
     writeJson(path.join(DEBUG_DIR, 'card-click-results.json'), cardClickResults),
+    writeJson(path.join(DEBUG_DIR, 'dom-url-inventory.json'), domSources),
     writeJson(path.join(DEBUG_DIR, 'network-after-click.json'), networkAfterClick),
     writeJson(path.join(DEBUG_DIR, 'popup-log.json'), popupLog),
     writeJson(path.join(DEBUG_DIR, 'landing-structure.json'), structuredLanding),
@@ -958,6 +1060,7 @@ async function resolveViewerFlyers(page, store = {}, context = {}) {
     flyers,
     landingCards: cardsAnalysis?.containers || [],
     clickedCards,
+    domSources,
     networkFlyers: dedupeFlyers(networkFlyers),
     widgetFlyers: dedupeFlyers(widgetFlyers),
     landingDiagnostics: cardsAnalysis,
@@ -2042,7 +2145,7 @@ export async function scanLidlOffers(store = {}) {
 
     await writeJson(path.join(DEBUG_DIR, 'flyers-summary.json'), {
       generatedAt: new Date().toISOString(),
-      discoverySource: "click reale di tutte le card visibili nelle sezioni settimanali/speciali; API overview solo per arricchimento e recupero del settimanale disabilitato",
+      discoverySource: "analisi diretta del DOM, degli attributi data-*, degli script incorporati, di __NEXT_DATA__ e delle risorse caricate; API overview solo per arricchimento e recupero del settimanale disabilitato",
       totalDiscovered: viewerFlyers.length,
       landingCards: discovery.landingCards.length,
       structuredCards: discovery.structuredLanding?.cards?.length || 0,
