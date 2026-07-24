@@ -1,14 +1,15 @@
 {
   "name": "spesa-smart",
-  "version": "11.1.0",
+  "version": "12.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "scan-offers": "node scripts/scan-offers.mjs",
-    "test": "node scripts/test-catalog.mjs && node scripts/test-smart-price.mjs && node scripts/test-architecture.mjs",
+    "test": "node scripts/test-catalog.mjs && node scripts/test-smart-price.mjs && node scripts/test-architecture.mjs && node scripts/test-price-history.mjs",
     "test:lidl": "node scripts/test-lidl.mjs",
     "test:architecture": "node scripts/test-architecture.mjs",
-    "test:price": "node scripts/test-smart-price.mjs"
+    "test:price": "node scripts/test-smart-price.mjs",
+    "test:history": "node scripts/test-price-history.mjs"
   },
   "dependencies": {
     "cheerio": "1.0.0",

@@ -181,3 +181,6 @@ La scoperta dei volantini parte dalla pagina ufficiale **Volantini e Riviste**. 
 ## Versione 10.0 — lista della spesa operativa
 
 La v10 aggiunge quantità, unità, prezzi unitari, costo reale della quantità richiesta e modalità spesa con articoli da spuntare. Vedi `README-V10.md` per i dettagli e per l'aggiornamento di Google Apps Script.
+
+## Versione 12.0
+La v12 introduce lo storico prezzi giornaliero. Vedi `README-V12.md`.
