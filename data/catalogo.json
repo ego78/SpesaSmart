@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-24T08:47:20.102Z",
+  "generatedAt": "2026-07-24T08:55:06.519Z",
   "items": [
     {
       "id": "12 cm livarno|2pz",
@@ -592,8 +592,8 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 1,
-      "minPrice": 1.19,
+      "offersCount": 2,
+      "minPrice": 1.15,
       "maxPrice": 1.19
     },
     {
@@ -7191,6 +7191,26 @@
       "maxPrice": 3.99
     },
     {
+      "id": "labello sun protect spf 50|100ml",
+      "canonicalName": "labello sun protect spf 50",
+      "canonicalKey": "labello sun protect spf 50|100ml",
+      "quantity": {
+        "value": 100,
+        "unit": "ml",
+        "label": "100 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "LABELLO Sun Protect SPF 50"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
+    },
+    {
       "id": "latte alta digeribilita",
       "canonicalName": "latte alta digeribilita",
       "canonicalKey": "latte alta digeribilita",
@@ -7397,8 +7417,8 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 8,
-      "minPrice": 0.99,
+      "offersCount": 7,
+      "minPrice": 1.49,
       "maxPrice": 249
     },
     {
@@ -7418,8 +7438,8 @@
         "Lidl"
       ],
       "offersCount": 1,
-      "minPrice": 1.29,
-      "maxPrice": 1.29
+      "minPrice": 0.99,
+      "maxPrice": 0.99
     },
     {
       "id": "lidl plus|250g",
@@ -8168,8 +8188,8 @@
         "Lidl"
       ],
       "offersCount": 1,
-      "minPrice": 1.39,
-      "maxPrice": 1.39
+      "minPrice": 1.09,
+      "maxPrice": 1.09
     },
     {
       "id": "merivio stracciatella senza lattosio|200g",
@@ -9060,6 +9080,266 @@
       "offersCount": 1,
       "minPrice": 9.99,
       "maxPrice": 9.99
+    },
+    {
+      "id": "nivea crema viso antimacchie spf 50|100ml",
+      "canonicalName": "nivea crema viso antimacchie spf 50",
+      "canonicalKey": "nivea crema viso antimacchie spf 50|100ml",
+      "quantity": {
+        "value": 100,
+        "unit": "ml",
+        "label": "100 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "NIVEA Crema viso antimacchie SPF 50+"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 8.99,
+      "maxPrice": 8.99
+    },
+    {
+      "id": "nivea crema viso solare anti eta spf 50|100ml",
+      "canonicalName": "nivea crema viso solare anti eta spf 50",
+      "canonicalKey": "nivea crema viso solare anti eta spf 50|100ml",
+      "quantity": {
+        "value": 100,
+        "unit": "ml",
+        "label": "100 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "NIVEA Crema viso solare anti-età SPF 50+"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 7.99,
+      "maxPrice": 7.99
+    },
+    {
+      "id": "nivea kids spray protect care spf 50|250ml",
+      "canonicalName": "nivea kids spray protect care spf 50",
+      "canonicalKey": "nivea kids spray protect care spf 50|250ml",
+      "quantity": {
+        "value": 250,
+        "unit": "ml",
+        "label": "250 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "NIVEA Kids Spray Protect&Care SPF 50+"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 11.99,
+      "maxPrice": 11.99
+    },
+    {
+      "id": "nivea kids spray sensitive protect spf 50|250ml",
+      "canonicalName": "nivea kids spray sensitive protect spf 50",
+      "canonicalKey": "nivea kids spray sensitive protect spf 50|250ml",
+      "quantity": {
+        "value": 250,
+        "unit": "ml",
+        "label": "250 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "NIVEA Kids Spray Sensitive Protect SPF 50+"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 11.99,
+      "maxPrice": 11.99
+    },
+    {
+      "id": "nivea latte doposole idratante|200ml",
+      "canonicalName": "nivea latte doposole idratante",
+      "canonicalKey": "nivea latte doposole idratante|200ml",
+      "quantity": {
+        "value": 200,
+        "unit": "ml",
+        "label": "200 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "NIVEA Latte doposole idratante"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 6.99,
+      "maxPrice": 6.99
+    },
+    {
+      "id": "nivea latte soalre protect hydrate spf 30|400ml",
+      "canonicalName": "nivea latte soalre protect hydrate spf 30",
+      "canonicalKey": "nivea latte soalre protect hydrate spf 30|400ml",
+      "quantity": {
+        "value": 400,
+        "unit": "ml",
+        "label": "400 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "NIVEA Latte soalre Protect&Hydrate SPF 30"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 16.49,
+      "maxPrice": 16.49
+    },
+    {
+      "id": "nivea latte solare carotene bronze spf|200ml",
+      "canonicalName": "nivea latte solare carotene bronze spf",
+      "canonicalKey": "nivea latte solare carotene bronze spf|200ml",
+      "quantity": {
+        "value": 200,
+        "unit": "ml",
+        "label": "200 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "NIVEA Latte solare carotene bronze SPF 6"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 6.99,
+      "maxPrice": 6.99
+    },
+    {
+      "id": "nivea latte solare protect bronze spf 30|400ml",
+      "canonicalName": "nivea latte solare protect bronze spf 30",
+      "canonicalKey": "nivea latte solare protect bronze spf 30|400ml",
+      "quantity": {
+        "value": 400,
+        "unit": "ml",
+        "label": "400 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "NIVEA Latte solare Protect&Bronze SPF 30"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 16.49,
+      "maxPrice": 16.49
+    },
+    {
+      "id": "nivea latte solare protect hydrate spf 50|200ml",
+      "canonicalName": "nivea latte solare protect hydrate spf 50",
+      "canonicalKey": "nivea latte solare protect hydrate spf 50|200ml",
+      "quantity": {
+        "value": 200,
+        "unit": "ml",
+        "label": "200 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "NIVEA Latte Solare Protect&Hydrate SPF 50+"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 10.99,
+      "maxPrice": 10.99
+    },
+    {
+      "id": "nivea protect bronze latte solare spf 30|200ml",
+      "canonicalName": "nivea protect bronze latte solare spf 30",
+      "canonicalKey": "nivea protect bronze latte solare spf 30|200ml",
+      "quantity": {
+        "value": 200,
+        "unit": "ml",
+        "label": "200 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "NIVEA Protect&Bronze Latte solare SPF 30"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 10.39,
+      "maxPrice": 10.39
+    },
+    {
+      "id": "nivea spray protect hydrate spf 30|250ml",
+      "canonicalName": "nivea spray protect hydrate spf 30",
+      "canonicalKey": "nivea spray protect hydrate spf 30|250ml",
+      "quantity": {
+        "value": 250,
+        "unit": "ml",
+        "label": "250 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "NIVEA Spray Protect&Hydrate SPF 30"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 11.99,
+      "maxPrice": 11.99
+    },
+    {
+      "id": "nivea spray solare protect bronze spf 50|250ml",
+      "canonicalName": "nivea spray solare protect bronze spf 50",
+      "canonicalKey": "nivea spray solare protect bronze spf 50|250ml",
+      "quantity": {
+        "value": 250,
+        "unit": "ml",
+        "label": "250 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "NIVEA Spray solare Protect&Bronze SPF 50"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 11.99,
+      "maxPrice": 11.99
+    },
+    {
+      "id": "nivea spray solare protect hydrate spf 50|250ml",
+      "canonicalName": "nivea spray solare protect hydrate spf 50",
+      "canonicalKey": "nivea spray solare protect hydrate spf 50|250ml",
+      "quantity": {
+        "value": 250,
+        "unit": "ml",
+        "label": "250 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "NIVEA Spray solare Protect&Hydrate SPF 50+"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 11.99,
+      "maxPrice": 11.99
     },
     {
       "id": "nixe lidl plus tonno olio semi philadelphia",
@@ -15096,7 +15376,7 @@
         "PENNY"
       ],
       "offersCount": 2,
-      "minPrice": 2.79,
+      "minPrice": 1.99,
       "maxPrice": 2.99
     },
     {
