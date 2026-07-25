@@ -1,0 +1,10 @@
+import assert from'node:assert/strict';
+import{normalizePantryItem,isLowStock,daysToExpiry,pantrySummary,upsertPantry,addPurchasedProducts}from'../assets/js/pantry.js';
+const item=normalizePantryItem({id:'1',name:'Latte',quantity:'2',unit:'L',minimumQuantity:'2'});
+assert.equal(item.quantity,2);assert.equal(item.unit,'l');assert.equal(isLowStock(item),true);
+assert.equal(daysToExpiry({expiryDate:'2026-07-27'},new Date('2026-07-25T12:00:00')),3);
+assert.deepEqual(pantrySummary([item,{name:'Yogurt',quantity:1,minimumQuantity:0,expiryDate:'2026-07-27'}],new Date('2026-07-25T12:00:00')),{total:2,low:1,expiring:1,expired:0});
+let list=upsertPantry([],{id:'1',productId:'p1',name:'Latte',quantity:2,unit:'l'});
+list=upsertPantry(list,{id:'x',productId:'p1',name:'Latte',quantity:4,unit:'l'});assert.equal(list.length,1);assert.equal(list[0].quantity,4);
+const purchased=addPurchasedProducts([], [{id:'p1',name:'Pasta',quantity:2,unit:'kg',checked:true}], []);assert.equal(purchased[0].quantity,2);assert.equal(purchased[0].name,'Pasta');
+console.log('Dispensa: test superati');
