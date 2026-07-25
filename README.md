@@ -1,4 +1,6 @@
-# Spesa Smart v11.0.0 — Smart Price Engine
+# Spesa Smart
+
+Versione corrente: **14.0.0 — Dispensa intelligente** v11.0.0 — Smart Price Engine
 
 ## Novità v11
 
