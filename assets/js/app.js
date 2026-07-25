@@ -3,6 +3,7 @@ import{$,esc,money,uid}from'./utils.js';
 import{listRemote,upsertRemote,deleteRemote}from'./api.js';
 import{loadOffers,relevant,analyzeDeals}from'./offers.js';
 import{loadPriceHistory,historyForProduct,summarizeHistory}from'./price-history.js';
+import{buildPerfectShoppingPlans}from'./perfect-shopping.js';
 import{openProduct,productFromForm}from'./forms.js';
 import{nearbyStores,loadStores,persistStores,mapsUrl,enrichStore}from'./supermarkets.js';
 let products=read(PK,[]),settings=read(SK,{}),offers=[],stores=[],flyerLinks=[],foundStores=[],timer,activeStoreFilter="",offersLoadedAt=null,analysisCache=null,lastSyncAt=0;
@@ -10,7 +11,7 @@ const hydrateProduct=p=>({quantity:1,unit:'pz',priority:'normal',allowAlternativ
 products=products.map(hydrateProduct);
 const configured=()=>!!(String(settings.scriptUrl||'').trim()&&family(settings.familyCode));
 function status(t='',c=''){$('syncStatus').textContent=t;$('syncStatus').className='sync-status '+c}
-function invalidateAnalysis(){analysisCache=null}
+function invalidateAnalysis(){analysisCache=null;activePerfectPlan=null}
 function saveLocal(){write(PK,products);invalidateAnalysis()}
 function stateKey(){return [products.map(p=>[p.id,p.updatedAt,p.name,p.quantity,p.unit].join(':')).join(','),offers.length,stores.filter(s=>s.selected).map(s=>s.id).sort().join(',')].join('|')}
 function baseAnalysis(){const key=stateKey();if(analysisCache?.key===key)return analysisCache;const selectedOffers=selectedStoreOffers(offers),dealData=analyzeDeals(products,selectedOffers);analysisCache={key,selectedOffers,dealData,dealMap:new Map(dealData.matches.map(x=>[x.product.id,x]))};return analysisCache}
@@ -39,39 +40,31 @@ function storePlans(){
  }).filter(x=>x.matched.length).sort((a,b)=>b.matched.length-a.matched.length||a.total-b.total||Number(a.store.distance??999)-Number(b.store.distance??999));
 }
 
-function buildSmartPlan(){
- const selected=stores.filter(s=>s.selected);
- const choices=products.map(product=>{
-  const candidates=[];
-  for(const store of selected){
-   const data=analyzeDeals([product],offersForStore(store));
-   const hit=data.matched[0];
-   if(hit?.best)candidates.push({store,offer:hit.best,estimate:hit.bestEstimate,saving:hit.saving||0,score:hit.score||0});
-  }
-  candidates.sort((a,b)=>Number(a.estimate?.cost??a.offer.price??Infinity)-Number(b.estimate?.cost??b.offer.price??Infinity)||Number(a.store.distance??999)-Number(b.store.distance??999));
-  return {product,best:candidates[0]||null,candidates};
- });
- const matched=choices.filter(x=>x.best),missing=choices.filter(x=>!x.best);
- const groups=new Map();
- for(const item of matched){const id=item.best.store.id;if(!groups.has(id))groups.set(id,{store:item.best.store,items:[],total:0,saving:0});const g=groups.get(id);g.items.push(item);g.total+=Number(item.best.estimate?.cost||item.best.offer.price||0);g.saving+=Number(item.best.saving||0)}
- const storeGroups=[...groups.values()].map(g=>({...g,total:Math.round(g.total*100)/100,saving:Math.round(g.saving*100)/100})).sort((a,b)=>b.items.length-a.items.length||a.total-b.total);
- const total=Math.round(matched.reduce((sum,x)=>sum+Number(x.best.estimate?.cost||x.best.offer.price||0),0)*100)/100;
- const saving=Math.round(matched.reduce((sum,x)=>sum+Number(x.best.saving||0),0)*100)/100;
- return {matched,missing,storeGroups,total,saving};
-}
+let activePerfectPlan=null;
+function computePerfectPlans(){return buildPerfectShoppingPlans(products,stores,offersForStore)}
 function renderSmartPlan(){
- const el=$('smartPlan');if(!el)return;const plan=buildSmartPlan();
- if(!products.length){el.innerHTML='<div class="empty"><div style="font-size:2rem">🧠</div><h3>Aggiungi i prodotti</h3><p>Il piano intelligente apparirà quando avrai una lista da confrontare.</p></div>';return}
- if(!plan.matched.length){el.innerHTML='<div class="empty"><div style="font-size:2rem">🧠</div><h3>Nessuna combinazione disponibile</h3><p>Non sono state trovate offerte compatibili nei supermercati selezionati.</p></div>';return}
- const names=plan.storeGroups.map(g=>g.store.name||g.store.brand).join(' + ');
- el.innerHTML=`<article class="card smart-plan-card"><div class="smart-plan-icon">🧠</div><div><h3 class="name">Piano consigliato: ${esc(names)}</h3><p class="meta">${plan.matched.length} prodotti assegnati · ${plan.storeGroups.length} supermercati${plan.missing.length?' · '+plan.missing.length+' da completare':''}</p><div class="comparison-values"><span><small>Totale offerte</small><strong>${money(plan.total)}</strong></span><span><small>Risparmio indicato</small><strong>${money(plan.saving)}</strong></span></div></div><button id="openSmartPlan" class="textbtn">Apri piano</button></article>`;
+ const el=$('smartPlan');if(!el)return;
+ if(!products.length){el.innerHTML='<div class="empty"><div style="font-size:2rem">✨</div><h3>Aggiungi i prodotti</h3><p>La Spesa Perfetta sarà disponibile quando avrai una lista.</p></div>';return}
+ el.innerHTML='<article class="card smart-plan-card"><div class="smart-plan-icon">✨</div><div><h3 class="name">Trova la Spesa Perfetta</h3><p class="meta">Confronta quantità, confezioni e supermercati solo quando lo richiedi.</p></div><button id="openSmartPlan" class="btn primary">Calcola ora</button></article>';
  $('openSmartPlan').onclick=openSmartPlan;
 }
+function perfectPlanCard(plan,index){
+ const icons=['💶','⚖️','🏪'];
+ return `<button class="perfect-option ${index===0?'is-selected':''}" data-perfect-plan="${esc(plan.id)}"><span class="perfect-icon">${icons[index]||'🛒'}</span><span><strong>${esc(plan.label)}</strong><small>${esc(plan.description)}</small><em>${plan.assignments.length}/${products.length} prodotti · ${plan.storeCount} ${plan.storeCount===1?'negozio':'negozi'}</em></span><span class="perfect-total">${money(plan.total)}${plan.difference>0?`<small>+ ${money(plan.difference)}</small>`:'<small>minimo</small>'}</span></button>`;
+}
+function renderPerfectPlanDetail(plan){
+ activePerfectPlan=plan;
+ document.querySelectorAll('[data-perfect-plan]').forEach(x=>x.classList.toggle('is-selected',x.dataset.perfectPlan===plan.id));
+ $('smartPlanSummary').innerHTML=`<div><span>Prodotti assegnati</span><strong>${plan.assignments.length}/${products.length}</strong></div><div><span>Totale offerte</span><strong>${money(plan.total)}</strong></div><div><span>Supermercati</span><strong>${plan.storeCount}</strong></div>`;
+ $('smartPlanItems').innerHTML=plan.storeGroups.map(g=>`<section class="smart-store-group"><h3>${esc(g.store.name||g.store.brand)} <small>${g.items.length} prodotti · ${money(g.total)}</small></h3>${g.items.map(x=>`<article class="plan-item"><div><strong>${esc(x.product.name)}</strong><small>${esc(x.offer.product)}${x.offer.format?' · '+esc(x.offer.format):''}</small></div><div><strong>${money(x.estimate?.cost||x.offer.price)}</strong><small>${x.estimate?.packages>1?x.estimate.packages+' confezioni':''}</small>${x.saving?`<small>- ${money(x.saving)}</small>`:''}</div></article>`).join('')}</section>`).join('')+(plan.missing.length?`<p class="plan-warning">Da completare fuori offerta: ${plan.missing.map(x=>esc(x.name)).join(', ')}.</p>`:'');
+}
 function openSmartPlan(){
- const plan=buildSmartPlan();
- $('smartPlanSummary').innerHTML=`<div><span>Prodotti assegnati</span><strong>${plan.matched.length}/${products.length}</strong></div><div><span>Totale offerte</span><strong>${money(plan.total)}</strong></div><div><span>Supermercati</span><strong>${plan.storeGroups.length}</strong></div>`;
- $('smartPlanItems').innerHTML=plan.storeGroups.map(g=>`<section class="smart-store-group"><h3>${esc(g.store.name||g.store.brand)} <small>${g.items.length} prodotti · ${money(g.total)}</small></h3>${g.items.map(x=>`<article class="plan-item"><div><strong>${esc(x.product.name)}</strong><small>${esc(x.best.offer.product)}${x.best.offer.format?' · '+esc(x.best.offer.format):''}</small></div><div><strong>${money(x.best.estimate?.cost||x.best.offer.price)}</strong><small>${x.best.estimate?.packages>1?x.best.estimate.packages+' confezioni':''}</small>${x.best.saving?`<small>- ${money(x.best.saving)}</small>`:''}</div></article>`).join('')}</section>`).join('')+(plan.missing.length?`<p class="plan-warning">Da completare fuori offerta: ${plan.missing.map(x=>esc(x.product.name)).join(', ')}.</p>`:'');
- $('smartPlanDialog').showModal();
+ if(!stores.some(s=>s.selected)){alert('Seleziona almeno un supermercato prima di calcolare la Spesa Perfetta.');return}
+ const {plans}=computePerfectPlans();
+ if(!plans[0].assignments.length){alert('Non sono state trovate offerte compatibili per i prodotti della lista.');return}
+ $('perfectPlanOptions').innerHTML=plans.map(perfectPlanCard).join('');
+ document.querySelectorAll('[data-perfect-plan]').forEach(x=>x.onclick=()=>renderPerfectPlanDetail(plans.find(p=>p.id===x.dataset.perfectPlan)));
+ renderPerfectPlanDetail(plans[0]);$('smartPlanDialog').showModal();
 }
 
 function renderComparison(){
@@ -98,18 +91,18 @@ async function quickAdd(){
  products=[...created,...products];saveLocal();input.value='';render();status(created.length+' prodotti aggiunti rapidamente.','success');
  if(configured())for(const p of created)try{await upsertRemote(settings,p)}catch(e){console.warn(e)}
 }
-function shoppingPlan(){return buildSmartPlan()}
+function shoppingPlan(){return activePerfectPlan||computePerfectPlans().plans[0]}
 function renderShoppingProgress(){
  const el=$('shoppingProgress');if(!el)return;const done=products.filter(p=>p.checked).length,total=products.length,percent=total?Math.round(done/total*100):0;
  el.innerHTML=total?`<article class="card shopping-progress"><div><h3 class="name">${done} di ${total} prodotti presi</h3><p class="meta">La lista è salvata sul dispositivo.</p><div class="progress-track"><span style="width:${percent}%"></span></div></div><button id="openShopping" class="btn primary">Apri lista</button></article>`:`<div class="empty"><p>Aggiungi prodotti per creare la lista operativa.</p></div>`;
  $('openShopping')?.addEventListener('click',openShoppingDialog)
 }
-function openShoppingDialog(){renderShoppingDialog();$('shoppingDialog').showModal()}
-function renderShoppingDialog(){
- const el=$('shoppingItems');if(!el)return;const plan=shoppingPlan(),byId=new Map(plan.matched.map(x=>[x.product.id,x]));const ordered=[...products].sort((a,b)=>Number(a.checked)-Number(b.checked)||({needed:0,normal:1,optional:2}[a.priority]??1)-({needed:0,normal:1,optional:2}[b.priority]??1));
- const done=products.filter(p=>p.checked).length,total=products.length,expected=plan.total;
- $('shoppingSummary').innerHTML=`<div><span>Completati</span><strong>${done}/${total}</strong></div><div><span>Totale offerte</span><strong>${money(expected)}</strong></div><div><span>Negozi</span><strong>${plan.storeGroups.length}</strong></div>`;
- el.innerHTML=ordered.map(p=>{const hit=byId.get(p.id),best=hit?.best;return`<label class="shopping-row ${p.checked?'is-done':''}"><input type="checkbox" data-shopping-check="${esc(p.id)}" ${p.checked?'checked':''}><span><strong>${esc(p.name)}</strong><small>${esc(p.quantity||1)} ${esc(({pz:'pezzi',kg:'kg',g:'g',l:'litri',ml:'ml',conf:'confezioni'})[p.unit]||p.unit)}${best?' · '+esc(best.store.name||best.store.brand)+' · '+esc(best.offer.product):' · fuori offerta'}</small></span><span class="shopping-price">${best?money(best.estimate?.cost||best.offer.price):'—'}</span></label>`}).join('');
+function openShoppingDialog(plan=null){renderShoppingDialog(plan);$('shoppingDialog').showModal()}
+function renderShoppingDialog(selectedPlan=null){
+ const el=$('shoppingItems');if(!el)return;const plan=selectedPlan||shoppingPlan(),assignments=plan?.assignments||[],byId=new Map(assignments.map(x=>[x.product.id,x]));const ordered=[...products].sort((a,b)=>Number(a.checked)-Number(b.checked)||({needed:0,normal:1,optional:2}[a.priority]??1)-({needed:0,normal:1,optional:2}[b.priority]??1));
+ const done=products.filter(p=>p.checked).length,total=products.length,expected=plan?.total||0;
+ $('shoppingSummary').innerHTML=`<div><span>Completati</span><strong>${done}/${total}</strong></div><div><span>Totale offerte</span><strong>${money(expected)}</strong></div><div><span>Negozi</span><strong>${plan?.storeGroups?.length||0}</strong></div>`;
+ el.innerHTML=ordered.map(p=>{const hit=byId.get(p.id),best=hit?.offer?hit:null;return`<label class="shopping-row ${p.checked?'is-done':''}"><input type="checkbox" data-shopping-check="${esc(p.id)}" ${p.checked?'checked':''}><span><strong>${esc(p.name)}</strong><small>${esc(p.quantity||1)} ${esc(({pz:'pezzi',kg:'kg',g:'g',l:'litri',ml:'ml',conf:'confezioni'})[p.unit]||p.unit)}${best?' · '+esc(best.store?.name||best.store?.brand)+' · '+esc(best.offer?.product):' · fuori offerta'}</small></span><span class="shopping-price">${best?money(best.estimate?.cost||best.offer?.price):'—'}</span></label>`}).join('');
  document.querySelectorAll('[data-shopping-check]').forEach(x=>x.onchange=()=>toggleProductChecked(x.dataset.shoppingCheck,x.checked));
 }
 
@@ -128,5 +121,5 @@ $('emptyAdd')?.addEventListener('click',()=>openProduct());document.querySelecto
 async function refreshOffers(){const b=$('refreshBtn');b.disabled=true;b.textContent='Aggiornamento…';try{offers=await loadOffers();invalidateAnalysis()}catch{offers=[]}try{const r=await fetch('data/volantini-locali.json?t='+Date.now(),{cache:'no-store'});const d=await r.json();flyerLinks=Array.isArray(d?.stores)?d.stores:[]}catch{flyerLinks=[]}offersLoadedAt=new Date();render();if($('offersUpdated'))$('offersUpdated').textContent='Offerte ricaricate: '+offersLoadedAt.toLocaleString('it-IT');b.disabled=false;b.textContent='Ricarica offerte'}
 function openSettings(){$('familyCode').value=settings.familyCode||'';$('city').value=settings.city||'';$('scriptUrl').value=settings.scriptUrl||'';$('settingsMsg').textContent='';$('settingsDialog').showModal()}
 async function saveSettings(){const old=family(settings.familyCode);settings={...settings,familyCode:family($('familyCode').value),city:$('city').value.trim(),scriptUrl:$('scriptUrl').value.trim()};write(SK,settings);if(family(settings.familyCode)!==old){products=[];saveLocal();render()}$('settingsMsg').style.color='var(--p)';$('settingsMsg').textContent='Impostazioni salvate.';await syncProducts();setTimeout(()=>$('settingsDialog').close(),500)}
-function bind(){$('addBtn').onclick=$('navAdd').onclick=()=>openProduct();$('quickAddBtn').onclick=quickAdd;$('quickList').onkeydown=e=>{if(e.key==='Enter')quickAdd()};$('closeProduct').onclick=$('cancelProduct').onclick=()=>$('productDialog').close();$('saveProduct').onclick=saveProduct;$('name').onkeydown=e=>{if(e.key==='Enter')saveProduct()};let searchTimer;$('search').oninput=()=>{clearTimeout(searchTimer);searchTimer=setTimeout(render,140)};$('filter').onchange=render;$('refreshBtn').onclick=refreshOffers;if($('clearStoreFilter'))$('clearStoreFilter').onclick=()=>{activeStoreFilter='';render()};$('storesBtn').onclick=openStores;$('closeStores').onclick=()=>$('storesDialog').close();$('findStores').onclick=findNearby;$('saveStores').onclick=saveStoreSelection;$('closePlan').onclick=$('closePlanBottom').onclick=()=>$('planDialog').close();$('closeHistory').onclick=$('closeHistoryBottom').onclick=()=>$('historyDialog').close();$('closeSmartPlan').onclick=$('closeSmartPlanBottom').onclick=()=>$('smartPlanDialog').close();$('startShopping').onclick=()=>{$('smartPlanDialog').close();openShoppingDialog()};$('closeShopping').onclick=$('closeShoppingBottom').onclick=()=>$('shoppingDialog').close();$('resetShopping').onclick=()=>{products=products.map(p=>({...p,checked:false,updatedAt:new Date().toISOString()}));saveLocal();render();renderShoppingDialog()};$('settingsBtn').onclick=openSettings;$('closeSettings').onclick=()=>$('settingsDialog').close();$('saveSettings').onclick=saveSettings;$('exportBtn').onclick=()=>{const blob=new Blob([JSON.stringify({exportedAt:new Date().toISOString(),products,settings},null,2)],{type:'application/json'}),u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download='spesa-smart-backup-'+new Date().toISOString().slice(0,10)+'.json';a.click();URL.revokeObjectURL(u)};document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>$(b.dataset.go).scrollIntoView({behavior:'smooth'}))}
+function bind(){$('addBtn').onclick=$('navAdd').onclick=()=>openProduct();$('quickAddBtn').onclick=quickAdd;$('quickList').onkeydown=e=>{if(e.key==='Enter')quickAdd()};$('closeProduct').onclick=$('cancelProduct').onclick=()=>$('productDialog').close();$('saveProduct').onclick=saveProduct;$('name').onkeydown=e=>{if(e.key==='Enter')saveProduct()};let searchTimer;$('search').oninput=()=>{clearTimeout(searchTimer);searchTimer=setTimeout(render,140)};$('filter').onchange=render;$('refreshBtn').onclick=refreshOffers;if($('clearStoreFilter'))$('clearStoreFilter').onclick=()=>{activeStoreFilter='';render()};$('storesBtn').onclick=openStores;$('closeStores').onclick=()=>$('storesDialog').close();$('findStores').onclick=findNearby;$('saveStores').onclick=saveStoreSelection;$('closePlan').onclick=$('closePlanBottom').onclick=()=>$('planDialog').close();$('closeHistory').onclick=$('closeHistoryBottom').onclick=()=>$('historyDialog').close();$('closeSmartPlan').onclick=$('closeSmartPlanBottom').onclick=()=>$('smartPlanDialog').close();$('startShopping').onclick=()=>{$('smartPlanDialog').close();openShoppingDialog(activePerfectPlan)};$('closeShopping').onclick=$('closeShoppingBottom').onclick=()=>$('shoppingDialog').close();$('resetShopping').onclick=()=>{products=products.map(p=>({...p,checked:false,updatedAt:new Date().toISOString()}));saveLocal();render();renderShoppingDialog()};$('settingsBtn').onclick=openSettings;$('closeSettings').onclick=()=>$('settingsDialog').close();$('saveSettings').onclick=saveSettings;$('exportBtn').onclick=()=>{const blob=new Blob([JSON.stringify({exportedAt:new Date().toISOString(),products,settings},null,2)],{type:'application/json'}),u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download='spesa-smart-backup-'+new Date().toISOString().slice(0,10)+'.json';a.click();URL.revokeObjectURL(u)};document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>$(b.dataset.go).scrollIntoView({behavior:'smooth'}))}
 async function init(){bind();stores=await loadStores(settings);render();await Promise.allSettled([refreshOffers(),syncProducts()]);clearInterval(timer);timer=setInterval(()=>syncProducts(true),60000);const resumeSync=()=>{const now=Date.now();if(now-lastSyncAt<15000)return;lastSyncAt=now;syncProducts(true)};addEventListener('focus',resumeSync);document.addEventListener('visibilitychange',()=>{if(!document.hidden)resumeSync()});if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(console.warn))}init();
