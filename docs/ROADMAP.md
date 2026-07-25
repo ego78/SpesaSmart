@@ -118,3 +118,5 @@ La prossima implementazione di codice deve essere **v11: normalizzazione central
 - conservazione 180 giorni;
 - caricamento lazy nel popup del prodotto;
 - minimo, media e valutazione del prezzo attuale.
+
+- v14.0: dispensa intelligente, soglie minime, scadenze e trasferimento acquisti.
