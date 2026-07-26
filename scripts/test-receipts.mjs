@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {normalizeReceipt,receiptsSummary,upsertReceipt} from '../assets/js/receipts.js';
+const receipt=normalizeReceipt({store:'Lidl',date:'2026-07-26',lines:[{name:'Latte',quantity:2,unitPrice:'0,89'},{name:'Pasta',unitPrice:0.79}]});
+assert.equal(receipt.total,2.57);
+assert.equal(receipt.lines[0].total,1.78);
+assert.equal(upsertReceipt([],receipt).length,1);
+const summary=receiptsSummary([receipt],new Date('2026-07-26T12:00:00'));
+assert.equal(summary.monthTotal,2.57);
+assert.equal(summary.monthCount,1);
+console.log('Scontrini: test superati');
