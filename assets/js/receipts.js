@@ -9,6 +9,8 @@ export function normalizeReceiptLine(line={}){
  return {
   id:String(line.id||crypto.randomUUID?.()||Date.now()+Math.random()),
   name:clean(line.name),
+  rawName:clean(line.rawName||line.name),
+  productId:clean(line.productId),
   quantity,
   unit:clean(line.unit||'pz').toLowerCase(),
   unitPrice,
