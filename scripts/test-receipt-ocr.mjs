@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {parseReceiptText} from '../assets/js/receipt-ocr.js';
+const sample=`LIDL ITALIA SRL\n25/07/2026 18:42\nLATTE UHT 1L 0,89\nPASTA 2 X 0,79 1,58\nYOGURT GRECO 2,49\nTOTALE 4,96\nCONTANTE 10,00`;
+const x=parseReceiptText(sample);
+assert.equal(x.date,'2026-07-25');
+assert.equal(x.lines.length,3);
+assert.equal(x.lines[1].quantity,2);
+assert.equal(x.lines[1].unitPrice,.79);
+assert(!x.lines.some(r=>/totale/i.test(r.name)));
+console.log('OCR scontrini: test superati');
