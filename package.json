@@ -1,16 +1,17 @@
 {
   "name": "spesa-smart",
-  "version": "15.0.0",
+  "version": "15.1.0",
   "private": true,
   "type": "module",
   "scripts": {
     "scan-offers": "node scripts/scan-offers.mjs",
-    "test": "node scripts/test-catalog.mjs && node scripts/test-smart-price.mjs && node scripts/test-architecture.mjs && node scripts/test-price-history.mjs && node scripts/test-perfect-shopping.mjs && node scripts/test-pantry.mjs && node scripts/test-receipts.mjs",
+    "test": "node scripts/test-catalog.mjs && node scripts/test-smart-price.mjs && node scripts/test-architecture.mjs && node scripts/test-price-history.mjs && node scripts/test-perfect-shopping.mjs && node scripts/test-pantry.mjs && node scripts/test-receipts.mjs && node scripts/test-receipt-ocr.mjs",
     "test:lidl": "node scripts/test-lidl.mjs",
     "test:architecture": "node scripts/test-architecture.mjs",
     "test:price": "node scripts/test-smart-price.mjs",
     "test:history": "node scripts/test-price-history.mjs",
-    "test:perfect": "node scripts/test-perfect-shopping.mjs && node scripts/test-pantry.mjs && node scripts/test-receipts.mjs"
+    "test:perfect": "node scripts/test-perfect-shopping.mjs && node scripts/test-pantry.mjs && node scripts/test-receipts.mjs",
+    "test:ocr": "node scripts/test-receipt-ocr.mjs"
   },
   "dependencies": {
     "cheerio": "1.0.0",
