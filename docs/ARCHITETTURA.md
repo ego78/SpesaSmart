@@ -286,3 +286,14 @@ Flusso:
 ```text
 offerta grezza → normalizeOfferPrice → match → estimatePurchase → piano di spesa
 ```
+
+## Fondazione enterprise v19.5
+
+La v19.5 introduce una migrazione progressiva verso un kernel applicativo centralizzato. Il codice esistente continua a funzionare tramite un bridge, mentre i nuovi moduli utilizzano `AppStore`, `EventBus`, cache, logging, monitor prestazioni, notifiche, plugin e motore di regole. Questa strategia evita una riscrittura rischiosa dell'interfaccia e permette di spostare gradualmente ogni dominio nel nuovo assetto.
+
+Struttura introdotta:
+
+- `assets/js/core/`: kernel, store, event bus e logger;
+- `assets/js/services/`: cache, notifiche e performance monitor;
+- `assets/js/plugins/`: registro dei connettori supermercato;
+- `assets/js/rules/`: motore di regole deterministico.
