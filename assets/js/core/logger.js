@@ -1,0 +1,2 @@
+const LEVELS={debug:10,info:20,warn:30,error:40};
+export function createLogger({name='SpesaSmart',level='warn'}={}){const threshold=LEVELS[level]??30;const write=(kind,args)=>{if((LEVELS[kind]??99)<threshold)return;const fn=console[kind]||console.log;fn.call(console,`[${name}]`,...args)};return{debug:(...a)=>write('debug',a),info:(...a)=>write('info',a),warn:(...a)=>write('warn',a),error:(...a)=>write('error',a)}}
