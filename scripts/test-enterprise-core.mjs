@@ -1,0 +1,12 @@
+import assert from'node:assert/strict';
+import{EventBus}from'../assets/js/core/event-bus.js';
+import{AppStore}from'../assets/js/core/store.js';
+import{MemoryCache}from'../assets/js/services/cache-service.js';
+import{PluginRegistry}from'../assets/js/plugins/registry.js';
+import{RuleEngine}from'../assets/js/rules/rule-engine.js';
+const bus=new EventBus();let received=0;const off=bus.on('x',p=>received+=p);bus.emit('x',2);off();bus.emit('x',2);assert.equal(received,2);
+const store=new AppStore({count:1},bus);store.patch({count:2});assert.equal(store.getState().count,2);assert.equal(store.version,1);
+const cache=new MemoryCache();cache.set('a',5);assert.equal(cache.get('a'),5);let calls=0;assert.equal(await cache.remember('b',async()=>{calls++;return 7}),7);assert.equal(await cache.remember('b',async()=>{calls++;return 8}),7);assert.equal(calls,1);
+const plugins=new PluginRegistry();plugins.register({id:'test',type:'supermarket',capabilities:['offers']});assert.equal(plugins.supports('test','offers'),true);assert.throws(()=>plugins.register({id:'test'}));
+const rules=new RuleEngine([{id:'low',when:{path:'stock',operator:'lt',value:2},then:()=>({ok:true})}]);assert.equal(rules.evaluate({stock:1}).length,1);assert.equal(rules.evaluate({stock:3}).length,0);
+console.log('Enterprise core: test superati');
