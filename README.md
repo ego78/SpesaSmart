@@ -186,3 +186,7 @@ La v10 aggiunge quantità, unità, prezzi unitari, costo reale della quantità r
 
 ## Versione 12.0
 La v12 introduce lo storico prezzi giornaliero. Vedi `README-V12.md`.
+
+## Versione 19.5
+
+La base enterprise introduce store centrale, event bus, servizi condivisi, plugin supermercati, motore di regole e monitor prestazioni. Vedi `README-V19.5.md`.
