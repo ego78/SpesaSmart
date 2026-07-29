@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T11:07:15.283Z",
+  "generatedAt": "2026-07-29T07:53:25.097Z",
   "items": [
     {
       "id": "12 cm livarno|2pz",
@@ -2268,21 +2268,6 @@
       "maxPrice": 6.99
     },
     {
-      "id": "bon gelati",
-      "canonicalName": "bon gelati",
-      "canonicalKey": "bon gelati",
-      "quantity": null,
-      "aliases": [
-        "BON GELATI"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.39,
-      "maxPrice": 3.39
-    },
-    {
       "id": "bon gelati|165g",
       "canonicalName": "bon gelati",
       "canonicalKey": "bon gelati|165g",
@@ -2301,6 +2286,21 @@
       "offersCount": 1,
       "minPrice": 2.99,
       "maxPrice": 2.99
+    },
+    {
+      "id": "bon gelati",
+      "canonicalName": "bon gelati",
+      "canonicalKey": "bon gelati",
+      "quantity": null,
+      "aliases": [
+        "BON GELATI"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.39,
+      "maxPrice": 3.39
     },
     {
       "id": "bon gelati coni gelato fragola cioccolato vaniglia|450g",
@@ -8911,46 +8911,6 @@
       "maxPrice": 249
     },
     {
-      "id": "lidl plus|500g",
-      "canonicalName": "lidl plus",
-      "canonicalKey": "lidl plus|500g",
-      "quantity": {
-        "value": 500,
-        "unit": "g",
-        "label": "500 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Con Lidl Plus"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.99,
-      "maxPrice": 0.99
-    },
-    {
-      "id": "lidl plus|250g",
-      "canonicalName": "lidl plus",
-      "canonicalKey": "lidl plus|250g",
-      "quantity": {
-        "value": 250,
-        "unit": "g",
-        "label": "250 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Con Lidl Plus"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.99,
-      "maxPrice": 0.99
-    },
-    {
       "id": "lidl plus|350g",
       "canonicalName": "lidl plus",
       "canonicalKey": "lidl plus|350g",
@@ -8989,6 +8949,46 @@
       "offersCount": 1,
       "minPrice": 1.69,
       "maxPrice": 1.69
+    },
+    {
+      "id": "lidl plus|500g",
+      "canonicalName": "lidl plus",
+      "canonicalKey": "lidl plus|500g",
+      "quantity": {
+        "value": 500,
+        "unit": "g",
+        "label": "500 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Con Lidl Plus"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.99,
+      "maxPrice": 0.99
+    },
+    {
+      "id": "lidl plus|250g",
+      "canonicalName": "lidl plus",
+      "canonicalKey": "lidl plus|250g",
+      "quantity": {
+        "value": 250,
+        "unit": "g",
+        "label": "250 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Con Lidl Plus"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.99,
+      "maxPrice": 0.99
     },
     {
       "id": "lidl plus chef select",
@@ -11431,41 +11431,6 @@
       "maxPrice": 1.85
     },
     {
-      "id": "novita",
-      "canonicalName": "novita",
-      "canonicalKey": "novita",
-      "quantity": null,
-      "aliases": [
-        "Novità"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 2,
-      "minPrice": 0.75,
-      "maxPrice": 0.89
-    },
-    {
-      "id": "novita|208g",
-      "canonicalName": "novita",
-      "canonicalKey": "novita|208g",
-      "quantity": {
-        "value": 208,
-        "unit": "g",
-        "label": "208 g",
-        "multipack": 4
-      },
-      "aliases": [
-        "Novità"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.69,
-      "maxPrice": 3.69
-    },
-    {
       "id": "novita|300g",
       "canonicalName": "novita",
       "canonicalKey": "novita|300g",
@@ -11524,6 +11489,41 @@
       "offersCount": 1,
       "minPrice": 1.39,
       "maxPrice": 1.39
+    },
+    {
+      "id": "novita",
+      "canonicalName": "novita",
+      "canonicalKey": "novita",
+      "quantity": null,
+      "aliases": [
+        "Novità"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 2,
+      "minPrice": 0.75,
+      "maxPrice": 0.89
+    },
+    {
+      "id": "novita|208g",
+      "canonicalName": "novita",
+      "canonicalKey": "novita|208g",
+      "quantity": {
+        "value": 208,
+        "unit": "g",
+        "label": "208 g",
+        "multipack": 4
+      },
+      "aliases": [
+        "Novità"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.69,
+      "maxPrice": 3.69
     },
     {
       "id": "nutella|950g",
