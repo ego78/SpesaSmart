@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T07:53:25.112Z",
+  "generatedAt": "2026-07-30T07:43:03.498Z",
   "familyCode": "FAMIGLIA-EGO78",
   "stores": [
     {
@@ -19,8 +19,8 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 213,
-      "lastCheckedAt": "2026-07-29T07:53:25.111Z",
-      "lastSuccessfulUpdateAt": "2026-07-29T07:53:25.111Z"
+      "lastCheckedAt": "2026-07-30T07:43:03.498Z",
+      "lastSuccessfulUpdateAt": "2026-07-30T07:43:03.498Z"
     },
     {
       "familyCode": "FAMIGLIA-EGO78",
@@ -39,7 +39,7 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 0,
-      "lastCheckedAt": "2026-07-29T07:53:25.111Z",
+      "lastCheckedAt": "2026-07-30T07:43:03.498Z",
       "lastSuccessfulUpdateAt": null
     },
     {
@@ -54,13 +54,13 @@
       "verified": false,
       "officialStoreId": "IT00812",
       "officialStoreAlias": "sava",
-      "flyerId": "offerte-valide-dal-23-07-al-29-07-per-i-tuoi-amici-a-4-zampe/ar/0",
-      "flyerUrl": "https://www.lidl.it/l/it/volantini/offerte-valide-dal-23-07-al-29-07-per-i-tuoi-amici-a-4-zampe/ar/0",
+      "flyerId": "offerte-valide-dal-30-07-al-5-08-per-i-tuoi-amici-a-4-zampe/ar/0",
+      "flyerUrl": "https://www.lidl.it/l/it/volantini/offerte-valide-dal-30-07-al-5-08-per-i-tuoi-amici-a-4-zampe/ar/0",
       "offerScope": "national-chain",
       "promotionId": "",
-      "offersCount": 718,
-      "lastCheckedAt": "2026-07-29T07:53:25.111Z",
-      "lastSuccessfulUpdateAt": "2026-07-29T07:53:25.111Z"
+      "offersCount": 424,
+      "lastCheckedAt": "2026-07-30T07:43:03.498Z",
+      "lastSuccessfulUpdateAt": "2026-07-30T07:43:03.498Z"
     }
   ]
 }
