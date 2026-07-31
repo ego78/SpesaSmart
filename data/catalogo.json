@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T07:43:03.484Z",
+  "generatedAt": "2026-07-31T08:10:26.164Z",
   "items": [
     {
       "id": "19 rispetto base|55g",
@@ -13788,26 +13788,6 @@
       "maxPrice": 2.99
     },
     {
-      "id": "winni brillantante|250ml",
-      "canonicalName": "winni brillantante",
-      "canonicalKey": "winni brillantante|250ml",
-      "quantity": {
-        "value": 250,
-        "unit": "ml",
-        "label": "250 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "WINNI’S Brillantante"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.29,
-      "maxPrice": 1.29
-    },
-    {
       "id": "winni curalavastoviglie|250ml",
       "canonicalName": "winni curalavastoviglie",
       "canonicalKey": "winni curalavastoviglie|250ml",
@@ -13848,17 +13828,12 @@
       "maxPrice": 4.49
     },
     {
-      "id": "winni pavimenti superfici|40pz",
+      "id": "winni pavimenti superfici",
       "canonicalName": "winni pavimenti superfici",
-      "canonicalKey": "winni pavimenti superfici|40pz",
-      "quantity": {
-        "value": 40,
-        "unit": "pz",
-        "label": "40 pz",
-        "multipack": null
-      },
+      "canonicalKey": "winni pavimenti superfici",
+      "quantity": null,
       "aliases": [
-        "40 lavaggi WINNI’S Pavimenti e superfici"
+        "WINNI’S Pavimenti e superfici"
       ],
       "stores": [
         "Lidl"
