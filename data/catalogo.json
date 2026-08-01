@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T08:10:26.164Z",
+  "generatedAt": "2026-08-01T07:38:32.324Z",
   "items": [
     {
       "id": "19 rispetto base|55g",
@@ -892,26 +892,6 @@
       "maxPrice": 1.99
     },
     {
-      "id": "approfittane ora voiello penne rigate|500g",
-      "canonicalName": "approfittane ora voiello penne rigate",
-      "canonicalKey": "approfittane ora voiello penne rigate|500g",
-      "quantity": {
-        "value": 500,
-        "unit": "g",
-        "label": "500 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Approfittane ora VOIELLO Penne rigate"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.89,
-      "maxPrice": 0.89
-    },
-    {
       "id": "arachidi ricoperti snack|150g",
       "canonicalName": "arachidi ricoperti snack",
       "canonicalKey": "arachidi ricoperti snack|150g",
@@ -1192,9 +1172,9 @@
       "maxPrice": 3.69
     },
     {
-      "id": "barilla pesto classic approfittane ora basilico pistacchio|190g",
-      "canonicalName": "barilla pesto classic approfittane ora basilico pistacchio",
-      "canonicalKey": "barilla pesto classic approfittane ora basilico pistacchio|190g",
+      "id": "barilla pesto classic basilico pistacchio|190g",
+      "canonicalName": "barilla pesto classic basilico pistacchio",
+      "canonicalKey": "barilla pesto classic basilico pistacchio|190g",
       "quantity": {
         "value": 190,
         "unit": "g",
@@ -1202,7 +1182,7 @@
         "multipack": null
       },
       "aliases": [
-        "BARILLA Pesto Classic Approfittane ora Basilico e Pistacchio"
+        "BARILLA Pesto Classic Basilico e Pistacchio"
       ],
       "stores": [
         "Lidl"
@@ -4055,9 +4035,9 @@
       "maxPrice": 0.89
     },
     {
-      "id": "cuore approfittane ora maionese vegetale|180g",
-      "canonicalName": "cuore approfittane ora maionese vegetale",
-      "canonicalKey": "cuore approfittane ora maionese vegetale|180g",
+      "id": "cuore maionese vegetale|180g",
+      "canonicalName": "cuore maionese vegetale",
+      "canonicalKey": "cuore maionese vegetale|180g",
       "quantity": {
         "value": 180,
         "unit": "g",
@@ -4065,7 +4045,7 @@
         "multipack": null
       },
       "aliases": [
-        "CUORE Approfittane ora Maionese vegetale"
+        "CUORE Maionese vegetale"
       ],
       "stores": [
         "Lidl"
@@ -4128,21 +4108,6 @@
       "offersCount": 1,
       "minPrice": 0.79,
       "maxPrice": 0.79
-    },
-    {
-      "id": "danone danacol fragola",
-      "canonicalName": "danone danacol fragola",
-      "canonicalKey": "danone danacol fragola",
-      "quantity": null,
-      "aliases": [
-        "DANONE Danacol fragola"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.29,
-      "maxPrice": 2.29
     },
     {
       "id": "dash pods",
@@ -13766,6 +13731,26 @@
       "offersCount": 1,
       "minPrice": 1.99,
       "maxPrice": 1.99
+    },
+    {
+      "id": "voiello penne rigate|500g",
+      "canonicalName": "voiello penne rigate",
+      "canonicalKey": "voiello penne rigate|500g",
+      "quantity": {
+        "value": 500,
+        "unit": "g",
+        "label": "500 g",
+        "multipack": null
+      },
+      "aliases": [
+        "VOIELLO Penne rigate"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.89,
+      "maxPrice": 0.89
     },
     {
       "id": "winni ammorbidente concentrato|1250ml",

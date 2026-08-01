@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T08:10:26.187Z",
+  "generatedAt": "2026-08-01T07:38:32.338Z",
   "familyCode": "FAMIGLIA-EGO78",
   "stores": [
     {
@@ -19,8 +19,8 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 213,
-      "lastCheckedAt": "2026-07-31T08:10:26.186Z",
-      "lastSuccessfulUpdateAt": "2026-07-31T08:10:26.186Z"
+      "lastCheckedAt": "2026-08-01T07:38:32.337Z",
+      "lastSuccessfulUpdateAt": "2026-08-01T07:38:32.337Z"
     },
     {
       "familyCode": "FAMIGLIA-EGO78",
@@ -39,7 +39,7 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 0,
-      "lastCheckedAt": "2026-07-31T08:10:26.186Z",
+      "lastCheckedAt": "2026-08-01T07:38:32.337Z",
       "lastSuccessfulUpdateAt": null
     },
     {
@@ -58,9 +58,9 @@
       "flyerUrl": "https://www.lidl.it/l/it/volantini/offerte-valide-dal-30-07-al-5-08-per-i-tuoi-amici-a-4-zampe/ar/0",
       "offerScope": "national-chain",
       "promotionId": "",
-      "offersCount": 423,
-      "lastCheckedAt": "2026-07-31T08:10:26.186Z",
-      "lastSuccessfulUpdateAt": "2026-07-31T08:10:26.186Z"
+      "offersCount": 422,
+      "lastCheckedAt": "2026-08-01T07:38:32.337Z",
+      "lastSuccessfulUpdateAt": "2026-08-01T07:38:32.337Z"
     }
   ]
 }
