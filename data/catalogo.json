@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T07:41:32.205Z",
+  "generatedAt": "2026-08-03T08:42:47.183Z",
   "items": [
     {
       "id": "11 cm aperta chiusa",
@@ -7397,6 +7397,26 @@
       "maxPrice": 1.89
     },
     {
+      "id": "gelatelli double billionaire caramello cookie|280g",
+      "canonicalName": "gelatelli double billionaire caramello cookie",
+      "canonicalKey": "gelatelli double billionaire caramello cookie|280g",
+      "quantity": {
+        "value": 280,
+        "unit": "g",
+        "label": "280 g",
+        "multipack": null
+      },
+      "aliases": [
+        "GELATELLI Double Billionaire Caramello e cookie"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
+    },
+    {
       "id": "gelatelli family mini mix|300g",
       "canonicalName": "gelatelli family mini mix",
       "canonicalKey": "gelatelli family mini mix|300g",
@@ -7457,24 +7477,24 @@
       "maxPrice": 2.99
     },
     {
-      "id": "gelatelli gelato double paradise caramello nocciole|272g",
-      "canonicalName": "gelatelli gelato double paradise caramello nocciole",
-      "canonicalKey": "gelatelli gelato double paradise caramello nocciole|272g",
+      "id": "gelatelli gelato panna cacao stracciatella caffe|600g",
+      "canonicalName": "gelatelli gelato panna cacao stracciatella caffe",
+      "canonicalKey": "gelatelli gelato panna cacao stracciatella caffe|600g",
       "quantity": {
-        "value": 272,
+        "value": 600,
         "unit": "g",
-        "label": "272 g",
-        "multipack": null
+        "label": "600 g",
+        "multipack": 10
       },
       "aliases": [
-        "GELATELLI Gelato Double Paradise Caramello e nocciole"
+        "GELATELLI Gelato Panna, cacao, stracciatella e caffè GELATELLI"
       ],
       "stores": [
         "Lidl"
       ],
       "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
+      "minPrice": 3.49,
+      "maxPrice": 3.49
     },
     {
       "id": "gelatelli gelato vaniglia ricoperto mandorle|70g",
@@ -7707,6 +7727,26 @@
       "maxPrice": 2.79
     },
     {
+      "id": "gelatelli space runners ghiaccioli|600g",
+      "canonicalName": "gelatelli space runners ghiaccioli",
+      "canonicalKey": "gelatelli space runners ghiaccioli|600g",
+      "quantity": {
+        "value": 600,
+        "unit": "g",
+        "label": "600 g",
+        "multipack": 10
+      },
+      "aliases": [
+        "GELATELLI Space Runners Ghiaccioli"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
       "id": "gelatelli stecco double caramello|73g",
       "canonicalName": "gelatelli stecco double caramello",
       "canonicalKey": "gelatelli stecco double caramello|73g",
@@ -7880,21 +7920,6 @@
       "offersCount": 1,
       "minPrice": 2.69,
       "maxPrice": 2.69
-    },
-    {
-      "id": "gelatelli vaschetta gelato panna cacao",
-      "canonicalName": "gelatelli vaschetta gelato panna cacao",
-      "canonicalKey": "gelatelli vaschetta gelato panna cacao",
-      "quantity": null,
-      "aliases": [
-        "GELATELLI Vaschetta gelato Panna, cacao,"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.49,
-      "maxPrice": 3.49
     },
     {
       "id": "gelatelli vaschetta gelato stracciatella crema",
@@ -9901,46 +9926,6 @@
       "offersCount": 1,
       "minPrice": 19.99,
       "maxPrice": 19.99
-    },
-    {
-      "id": "leone gelati minions|198g",
-      "canonicalName": "leone gelati minions",
-      "canonicalKey": "leone gelati minions|198g",
-      "quantity": {
-        "value": 198,
-        "unit": "g",
-        "label": "198 g",
-        "multipack": 6
-      },
-      "aliases": [
-        "LEONE Gelati Minions"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
-      "id": "leone gelato spongebob my little pony|168g",
-      "canonicalName": "leone gelato spongebob my little pony",
-      "canonicalKey": "leone gelato spongebob my little pony|168g",
-      "quantity": {
-        "value": 168,
-        "unit": "g",
-        "label": "168 g",
-        "multipack": null
-      },
-      "aliases": [
-        "LEONE Gelato Spongebob O My Little Pony"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.49,
-      "maxPrice": 1.49
     },
     {
       "id": "lepis vino spumante metodo classico 10 12 vol|750ml",
@@ -18618,26 +18603,6 @@
       "offersCount": 1,
       "minPrice": 0.99,
       "maxPrice": 0.99
-    },
-    {
-      "id": "vitasia gelato dragon fruit|400ml",
-      "canonicalName": "vitasia gelato dragon fruit",
-      "canonicalKey": "vitasia gelato dragon fruit|400ml",
-      "quantity": {
-        "value": 400,
-        "unit": "ml",
-        "label": "400 ml",
-        "multipack": 8
-      },
-      "aliases": [
-        "VITASIA Gelato gusto Dragon Fruit"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
     },
     {
       "id": "vitasia gelato stecco dragon fruit|400g",
