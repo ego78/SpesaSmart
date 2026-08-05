@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T07:48:33.964Z",
+  "generatedAt": "2026-08-05T07:50:03.170Z",
   "items": [
     {
       "id": "11 cm aperta chiusa",
@@ -440,21 +440,6 @@
       "offersCount": 1,
       "minPrice": 3.49,
       "maxPrice": 3.49
-    },
-    {
-      "id": "albicocche",
-      "canonicalName": "albicocche",
-      "canonicalKey": "albicocche",
-      "quantity": null,
-      "aliases": [
-        "Albicocche"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 2,
-      "minPrice": 2.19,
-      "maxPrice": 2.99
     },
     {
       "id": "albume uovo",
@@ -8037,21 +8022,6 @@
       "maxPrice": 5.49
     },
     {
-      "id": "giovedi 07 12 08",
-      "canonicalName": "giovedi 07 12 08",
-      "canonicalKey": "giovedi 07 12 08",
-      "quantity": null,
-      "aliases": [
-        "Da giovedì 9/07 al 12/07 Da giovedì 6/08 al 9/08"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
       "id": "giovedi 08",
       "canonicalName": "giovedi 08",
       "canonicalKey": "giovedi 08",
@@ -8621,21 +8591,6 @@
       "offersCount": 1,
       "minPrice": 12.99,
       "maxPrice": 12.99
-    },
-    {
-      "id": "insalata gentile",
-      "canonicalName": "insalata gentile",
-      "canonicalKey": "insalata gentile",
-      "quantity": null,
-      "aliases": [
-        "Insalata Gentile Al pezzo"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 2,
-      "minPrice": 0.75,
-      "maxPrice": 0.99
     },
     {
       "id": "insalata greca|165g",
@@ -10008,7 +9963,7 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 17,
+      "offersCount": 18,
       "minPrice": 0.69,
       "maxPrice": 119
     },
@@ -14223,15 +14178,13 @@
         "multipack": null
       },
       "aliases": [
-        "Peperoni misti",
         "PEPERONI MISTI"
       ],
       "stores": [
-        "Lidl",
         "PENNY"
       ],
-      "offersCount": 2,
-      "minPrice": 1.49,
+      "offersCount": 1,
+      "minPrice": 1.79,
       "maxPrice": 1.79
     },
     {
@@ -14333,26 +14286,6 @@
       "offersCount": 1,
       "minPrice": 1.69,
       "maxPrice": 1.69
-    },
-    {
-      "id": "pesche piatte|500g",
-      "canonicalName": "pesche piatte",
-      "canonicalKey": "pesche piatte|500g",
-      "quantity": {
-        "value": 500,
-        "unit": "g",
-        "label": "500 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Pesche piatte"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.19,
-      "maxPrice": 1.19
     },
     {
       "id": "pesto basilico genovese dop specialita cuor terra|180g",
