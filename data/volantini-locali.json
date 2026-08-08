@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T06:18:27.365Z",
+  "generatedAt": "2026-08-08T05:56:33.564Z",
   "familyCode": "FAMIGLIA-EGO78",
   "stores": [
     {
@@ -19,8 +19,8 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 213,
-      "lastCheckedAt": "2026-08-07T06:18:27.364Z",
-      "lastSuccessfulUpdateAt": "2026-08-07T06:18:27.364Z"
+      "lastCheckedAt": "2026-08-08T05:56:33.563Z",
+      "lastSuccessfulUpdateAt": "2026-08-08T05:56:33.563Z"
     },
     {
       "familyCode": "FAMIGLIA-EGO78",
@@ -39,7 +39,7 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 0,
-      "lastCheckedAt": "2026-08-07T06:18:27.364Z",
+      "lastCheckedAt": "2026-08-08T05:56:33.563Z",
       "lastSuccessfulUpdateAt": null
     },
     {
@@ -54,13 +54,13 @@
       "verified": false,
       "officialStoreId": "IT00812",
       "officialStoreAlias": "sava",
-      "flyerId": "offerte-valide-dal-3-08-al-9-08-offerte-",
-      "flyerUrl": "https://www.lidl.it/l/it/volantini/offerte-valide-dal-3-08-al-9-08-offerte-",
+      "flyerId": "offerte-valide-dal-30-07-al-5-08-e",
+      "flyerUrl": "https://www.lidl.it/l/it/volantini/offerte-valide-dal-30-07-al-5-08-e",
       "offerScope": "national-chain",
       "promotionId": "",
-      "offersCount": 511,
-      "lastCheckedAt": "2026-08-07T06:18:27.364Z",
-      "lastSuccessfulUpdateAt": "2026-08-07T06:18:27.364Z"
+      "offersCount": 542,
+      "lastCheckedAt": "2026-08-08T05:56:33.563Z",
+      "lastSuccessfulUpdateAt": "2026-08-08T05:56:33.563Z"
     }
   ]
 }
