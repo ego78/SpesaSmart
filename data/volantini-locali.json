@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T05:56:33.564Z",
+  "generatedAt": "2026-08-09T05:57:34.026Z",
   "familyCode": "FAMIGLIA-EGO78",
   "stores": [
     {
@@ -19,8 +19,8 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 213,
-      "lastCheckedAt": "2026-08-08T05:56:33.563Z",
-      "lastSuccessfulUpdateAt": "2026-08-08T05:56:33.563Z"
+      "lastCheckedAt": "2026-08-09T05:57:34.025Z",
+      "lastSuccessfulUpdateAt": "2026-08-09T05:57:34.025Z"
     },
     {
       "familyCode": "FAMIGLIA-EGO78",
@@ -39,7 +39,7 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 0,
-      "lastCheckedAt": "2026-08-08T05:56:33.563Z",
+      "lastCheckedAt": "2026-08-09T05:57:34.025Z",
       "lastSuccessfulUpdateAt": null
     },
     {
@@ -58,9 +58,9 @@
       "flyerUrl": "https://www.lidl.it/l/it/volantini/offerte-valide-dal-30-07-al-5-08-e",
       "offerScope": "national-chain",
       "promotionId": "",
-      "offersCount": 542,
-      "lastCheckedAt": "2026-08-08T05:56:33.563Z",
-      "lastSuccessfulUpdateAt": "2026-08-08T05:56:33.563Z"
+      "offersCount": 800,
+      "lastCheckedAt": "2026-08-09T05:57:34.025Z",
+      "lastSuccessfulUpdateAt": "2026-08-09T05:57:34.025Z"
     }
   ]
 }
