@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T06:23:03.413Z",
+  "generatedAt": "2026-08-11T06:02:57.439Z",
   "items": [
     {
       "id": "11 cm aperta chiusa",
@@ -1082,6 +1082,26 @@
       "maxPrice": 1.79
     },
     {
+      "id": "approfittane dixan ora detersivo liquido bucato|2970ml",
+      "canonicalName": "approfittane dixan ora detersivo liquido bucato",
+      "canonicalKey": "approfittane dixan ora detersivo liquido bucato|2970ml",
+      "quantity": {
+        "value": 2970,
+        "unit": "ml",
+        "label": "2970 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "Approfittane DIXAN ora Detersivo liquido per bucato"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 9.99,
+      "maxPrice": 9.99
+    },
+    {
       "id": "approfittane findus ora platessa impanata|250g",
       "canonicalName": "approfittane findus ora platessa impanata",
       "canonicalKey": "approfittane findus ora platessa impanata|250g",
@@ -1967,21 +1987,6 @@
       "maxPrice": 11.49
     },
     {
-      "id": "bestway occhialini nuoto spidey disney",
-      "canonicalName": "bestway occhialini nuoto spidey disney",
-      "canonicalKey": "bestway occhialini nuoto spidey disney",
-      "quantity": null,
-      "aliases": [
-        "BESTWAY Occhialini da nuoto “Spidey, Disney"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.49,
-      "maxPrice": 1.49
-    },
-    {
       "id": "bevanda ananas multivitaminica",
       "canonicalName": "bevanda ananas multivitaminica",
       "canonicalKey": "bevanda ananas multivitaminica",
@@ -2660,21 +2665,6 @@
       "offersCount": 1,
       "minPrice": 2.89,
       "maxPrice": 2.89
-    },
-    {
-      "id": "borsa spesa",
-      "canonicalName": "borsa spesa",
-      "canonicalKey": "borsa spesa",
-      "quantity": null,
-      "aliases": [
-        "Borsa per la spesa"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 5.99,
-      "maxPrice": 5.99
     },
     {
       "id": "bottiglia termica|700ml",
@@ -3797,6 +3787,26 @@
       "maxPrice": 2.99
     },
     {
+      "id": "cien sun latte solare spf 30|250ml",
+      "canonicalName": "cien sun latte solare spf 30",
+      "canonicalKey": "cien sun latte solare spf 30|250ml",
+      "quantity": {
+        "value": 250,
+        "unit": "ml",
+        "label": "250 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "CIEN SUN Latte solare SPF 30"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.99,
+      "maxPrice": 4.99
+    },
+    {
       "id": "cien sun latte solare spf 50|250ml",
       "canonicalName": "cien sun latte solare spf 50",
       "canonicalKey": "cien sun latte solare spf 50|250ml",
@@ -4788,9 +4798,9 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 5,
-      "minPrice": 3.49,
-      "maxPrice": 14.99
+      "offersCount": 2,
+      "minPrice": 3.99,
+      "maxPrice": 9.99
     },
     {
       "id": "crivit calzini sportivi uomo donna paia",
@@ -4853,21 +4863,6 @@
       "maxPrice": 9.99
     },
     {
-      "id": "crivit materassino",
-      "canonicalName": "crivit materassino",
-      "canonicalKey": "crivit materassino",
-      "quantity": null,
-      "aliases": [
-        "CRIVIT Materassino"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 6.99,
-      "maxPrice": 6.99
-    },
-    {
       "id": "crivit materassino gonfiabile diversi assortimenti",
       "canonicalName": "crivit materassino gonfiabile diversi assortimenti",
       "canonicalKey": "crivit materassino gonfiabile diversi assortimenti",
@@ -4881,36 +4876,6 @@
       "offersCount": 2,
       "minPrice": 16.99,
       "maxPrice": 19.99
-    },
-    {
-      "id": "crivit ombrellone 140 cm",
-      "canonicalName": "crivit ombrellone 140 cm",
-      "canonicalKey": "crivit ombrellone 140 cm",
-      "quantity": null,
-      "aliases": [
-        "CRIVIT Ombrellone Ø 140 cm"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 5.99,
-      "maxPrice": 5.99
-    },
-    {
-      "id": "crivit picchetto ombrellone",
-      "canonicalName": "crivit picchetto ombrellone",
-      "canonicalKey": "crivit picchetto ombrellone",
-      "quantity": null,
-      "aliases": [
-        "CRIVIT Picchetto per ombrellone"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
     },
     {
       "id": "crivit reggiseno sportivo high level traspirante ad asciugatura rapida",
@@ -4928,81 +4893,6 @@
       "maxPrice": 6.99
     },
     {
-      "id": "crivit rete pallavolo set canestro",
-      "canonicalName": "crivit rete pallavolo set canestro",
-      "canonicalKey": "crivit rete pallavolo set canestro",
-      "quantity": null,
-      "aliases": [
-        "CRIVIT Rete da pallavolo o set canestro"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 12.99,
-      "maxPrice": 12.99
-    },
-    {
-      "id": "crivit rete pallavolo set canestro porta",
-      "canonicalName": "crivit rete pallavolo set canestro porta",
-      "canonicalKey": "crivit rete pallavolo set canestro porta",
-      "quantity": null,
-      "aliases": [
-        "CRIVIT Rete da pallavolo o set canestro e porta"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 12.99,
-      "maxPrice": 12.99
-    },
-    {
-      "id": "crivit sedia pieghevole",
-      "canonicalName": "crivit sedia pieghevole",
-      "canonicalKey": "crivit sedia pieghevole",
-      "quantity": null,
-      "aliases": [
-        "CRIVIT Sedia pieghevole"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 8.99,
-      "maxPrice": 8.99
-    },
-    {
-      "id": "crivit set borsa spiaggia cuscinetto gonfiabile diversi assortimenti",
-      "canonicalName": "crivit set borsa spiaggia cuscinetto gonfiabile diversi assortimenti",
-      "canonicalKey": "crivit set borsa spiaggia cuscinetto gonfiabile diversi assortimenti",
-      "quantity": null,
-      "aliases": [
-        "CRIVIT Set borsa da spiaggia con cuscinetto gonfiabile In diversi assortimenti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 9.99,
-      "maxPrice": 9.99
-    },
-    {
-      "id": "crivit set snorkeling",
-      "canonicalName": "crivit set snorkeling",
-      "canonicalKey": "crivit set snorkeling",
-      "quantity": null,
-      "aliases": [
-        "CRIVIT Set snorkeling"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 2,
-      "minPrice": 6.99,
-      "maxPrice": 7.99
-    },
-    {
       "id": "crivit shirt sportiva",
       "canonicalName": "crivit shirt sportiva",
       "canonicalKey": "crivit shirt sportiva",
@@ -5016,36 +4906,6 @@
       "offersCount": 1,
       "minPrice": 2.99,
       "maxPrice": 2.99
-    },
-    {
-      "id": "crivit slip bikini reggiseno",
-      "canonicalName": "crivit slip bikini reggiseno",
-      "canonicalKey": "crivit slip bikini reggiseno",
-      "quantity": null,
-      "aliases": [
-        "CRIVIT Slip-bikini o reggiseno-"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.99,
-      "maxPrice": 3.99
-    },
-    {
-      "id": "crivit tavola bodyboard",
-      "canonicalName": "crivit tavola bodyboard",
-      "canonicalKey": "crivit tavola bodyboard",
-      "quantity": null,
-      "aliases": [
-        "CRIVIT Tavola da bodyboard"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 6.99,
-      "maxPrice": 6.99
     },
     {
       "id": "croccanti filetto merluzzo alaska",
@@ -5703,21 +5563,6 @@
       "maxPrice": 3.99
     },
     {
-      "id": "disney braccioli salvagente palla spiaggia",
-      "canonicalName": "disney braccioli salvagente palla spiaggia",
-      "canonicalKey": "disney braccioli salvagente palla spiaggia",
-      "quantity": null,
-      "aliases": [
-        "DISNEY Braccioli, salvagente o palla da spiaggia"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.49,
-      "maxPrice": 1.49
-    },
-    {
       "id": "dixan approfittane detersivo ora polvere|3300g",
       "canonicalName": "dixan approfittane detersivo ora polvere",
       "canonicalKey": "dixan approfittane detersivo ora polvere|3300g",
@@ -5738,26 +5583,6 @@
       "maxPrice": 9.89
     },
     {
-      "id": "dixan detersivo liquido bucato|2970ml",
-      "canonicalName": "dixan detersivo liquido bucato",
-      "canonicalKey": "dixan detersivo liquido bucato|2970ml",
-      "quantity": {
-        "value": 2970,
-        "unit": "ml",
-        "label": "2970 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "DIXAN Detersivo liquido per bucato"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 9.99,
-      "maxPrice": 9.99
-    },
-    {
       "id": "dotazione parkside bobina filo premontata tagliabordi ricaricabile chiave brugola",
       "canonicalName": "dotazione parkside bobina filo premontata tagliabordi ricaricabile chiave brugola",
       "canonicalKey": "dotazione parkside bobina filo premontata tagliabordi ricaricabile chiave brugola",
@@ -5771,26 +5596,6 @@
       "offersCount": 1,
       "minPrice": 14.99,
       "maxPrice": 14.99
-    },
-    {
-      "id": "dove deo spray xxl|300ml",
-      "canonicalName": "dove deo spray xxl",
-      "canonicalKey": "dove deo spray xxl|300ml",
-      "quantity": {
-        "value": 300,
-        "unit": "ml",
-        "label": "300 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "DOVE Deo Spray XXL Assortito"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.79,
-      "maxPrice": 3.79
     },
     {
       "id": "emmental francese",
@@ -5931,21 +5736,6 @@
       "offersCount": 1,
       "minPrice": 6.99,
       "maxPrice": 6.99
-    },
-    {
-      "id": "esmara costume intero donna diversi assortimenti",
-      "canonicalName": "esmara costume intero donna diversi assortimenti",
-      "canonicalKey": "esmara costume intero donna diversi assortimenti",
-      "quantity": null,
-      "aliases": [
-        "ESMARA Costume intero da donna In diversi assortimenti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 7.99,
-      "maxPrice": 7.99
     },
     {
       "id": "esmara gonna lunga donna",
@@ -7763,26 +7553,6 @@
       "maxPrice": 1.89
     },
     {
-      "id": "gelatelli double billionaire caramello cookie|280g",
-      "canonicalName": "gelatelli double billionaire caramello cookie",
-      "canonicalKey": "gelatelli double billionaire caramello cookie|280g",
-      "quantity": {
-        "value": 280,
-        "unit": "g",
-        "label": "280 g",
-        "multipack": null
-      },
-      "aliases": [
-        "GELATELLI Double Billionaire Caramello e cookie"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
-    },
-    {
       "id": "gelatelli family mini mix|300g",
       "canonicalName": "gelatelli family mini mix",
       "canonicalKey": "gelatelli family mini mix|300g",
@@ -8073,6 +7843,26 @@
       "maxPrice": 2.79
     },
     {
+      "id": "gelatelli stecco cioccolato bianco mandorle|450g",
+      "canonicalName": "gelatelli stecco cioccolato bianco mandorle",
+      "canonicalKey": "gelatelli stecco cioccolato bianco mandorle|450g",
+      "quantity": {
+        "value": 450,
+        "unit": "g",
+        "label": "450 g",
+        "multipack": null
+      },
+      "aliases": [
+        "GELATELLI Stecco al cioccolato bianco e mandorle"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.99,
+      "maxPrice": 3.99
+    },
+    {
       "id": "gelatelli stecco double caramello|73g",
       "canonicalName": "gelatelli stecco double caramello",
       "canonicalKey": "gelatelli stecco double caramello|73g",
@@ -8246,21 +8036,6 @@
       "offersCount": 1,
       "minPrice": 2.69,
       "maxPrice": 2.69
-    },
-    {
-      "id": "gelatelli vaschetta gelato panna cacao",
-      "canonicalName": "gelatelli vaschetta gelato panna cacao",
-      "canonicalKey": "gelatelli vaschetta gelato panna cacao",
-      "quantity": null,
-      "aliases": [
-        "GELATELLI Vaschetta Gelato Panna, cacao,"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.49,
-      "maxPrice": 3.49
     },
     {
       "id": "gelatelli vaschetta gelato stracciatella crema",
@@ -9033,21 +8808,6 @@
       "maxPrice": 1.39
     },
     {
-      "id": "happy people",
-      "canonicalName": "happy people",
-      "canonicalKey": "happy people",
-      "quantity": null,
-      "aliases": [
-        "HAPPY PEOPLE"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.49,
-      "maxPrice": 1.49
-    },
-    {
       "id": "harvest basket contorno base patata sila igp cipolla rossa tropea calabria|450g",
       "canonicalName": "harvest basket contorno base patata sila igp cipolla rossa tropea calabria",
       "canonicalKey": "harvest basket contorno base patata sila igp cipolla rossa tropea calabria|450g",
@@ -9566,6 +9326,26 @@
       "offersCount": 1,
       "minPrice": 3.49,
       "maxPrice": 3.49
+    },
+    {
+      "id": "italiamo gelato limone|350ml",
+      "canonicalName": "italiamo gelato limone",
+      "canonicalKey": "italiamo gelato limone|350ml",
+      "quantity": {
+        "value": 350,
+        "unit": "ml",
+        "label": "350 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "ITALIAMO Gelato al limone"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.19,
+      "maxPrice": 1.19
     },
     {
       "id": "italiamo gelato tiramisu frutti bosco|300g",
@@ -10363,9 +10143,9 @@
       "maxPrice": 259.99
     },
     {
-      "id": "lavazza capsule approfittane crema ora qualita rossa|342g",
-      "canonicalName": "lavazza capsule approfittane crema ora qualita rossa",
-      "canonicalKey": "lavazza capsule approfittane crema ora qualita rossa|342g",
+      "id": "lavazza approfittane capsule ora qualita rossa compatibili nespresso|342g",
+      "canonicalName": "lavazza approfittane capsule ora qualita rossa compatibili nespresso",
+      "canonicalKey": "lavazza approfittane capsule ora qualita rossa compatibili nespresso|342g",
       "quantity": {
         "value": 342,
         "unit": "g",
@@ -10373,7 +10153,7 @@
         "multipack": null
       },
       "aliases": [
-        "LAVAZZA Capsule Approfittane Crema e Gusto ora o Qualità Rossa"
+        "LAVAZZA Approfittane Capsule ora Qualità Rossa Compatibili Nespresso"
       ],
       "stores": [
         "Lidl"
@@ -10446,36 +10226,6 @@
       "offersCount": 1,
       "minPrice": 19.99,
       "maxPrice": 19.99
-    },
-    {
-      "id": "lidl ciabatte uomo",
-      "canonicalName": "lidl ciabatte uomo",
-      "canonicalKey": "lidl ciabatte uomo",
-      "quantity": null,
-      "aliases": [
-        "LIDL Ciabatte da uomo"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.49,
-      "maxPrice": 3.49
-    },
-    {
-      "id": "lidl diversi assortimenti",
-      "canonicalName": "lidl diversi assortimenti",
-      "canonicalKey": "lidl diversi assortimenti",
-      "quantity": null,
-      "aliases": [
-        "LIDL In diversi assortimenti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.99,
-      "maxPrice": 3.99
     },
     {
       "id": "lidl plus|500g",
@@ -10868,36 +10618,6 @@
       "maxPrice": 1.49
     },
     {
-      "id": "lidl shorts mare",
-      "canonicalName": "lidl shorts mare",
-      "canonicalKey": "lidl shorts mare",
-      "quantity": null,
-      "aliases": [
-        "LIDL Shorts da mare"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 4.99,
-      "maxPrice": 4.99
-    },
-    {
-      "id": "lidl telo mare",
-      "canonicalName": "lidl telo mare",
-      "canonicalKey": "lidl telo mare",
-      "quantity": null,
-      "aliases": [
-        "LIDL Telo mare"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 7.99,
-      "maxPrice": 7.99
-    },
-    {
       "id": "limoni",
       "canonicalName": "limoni",
       "canonicalKey": "limoni",
@@ -11253,21 +10973,6 @@
       "maxPrice": 5.79
     },
     {
-      "id": "livarno telo mare",
-      "canonicalName": "livarno telo mare",
-      "canonicalKey": "livarno telo mare",
-      "quantity": null,
-      "aliases": [
-        "LIVARNO Telo mare"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 7.99,
-      "maxPrice": 7.99
-    },
-    {
       "id": "livarno tovaglia",
       "canonicalName": "livarno tovaglia",
       "canonicalKey": "livarno tovaglia",
@@ -11398,51 +11103,6 @@
       "maxPrice": 1.99
     },
     {
-      "id": "lupilu clogs bambini",
-      "canonicalName": "lupilu clogs bambini",
-      "canonicalKey": "lupilu clogs bambini",
-      "quantity": null,
-      "aliases": [
-        "LUPILU Clogs per bambini"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.99,
-      "maxPrice": 3.99
-    },
-    {
-      "id": "lupilu piscina gonfiabile vasca",
-      "canonicalName": "lupilu piscina gonfiabile vasca",
-      "canonicalKey": "lupilu piscina gonfiabile vasca",
-      "quantity": null,
-      "aliases": [
-        "LUPILU Piscina gonfiabile o vasca per"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 4.99,
-      "maxPrice": 4.99
-    },
-    {
-      "id": "lupilu piscina gonfiabile vasca sabbia acqua bambini",
-      "canonicalName": "lupilu piscina gonfiabile vasca sabbia acqua bambini",
-      "canonicalKey": "lupilu piscina gonfiabile vasca sabbia acqua bambini",
-      "quantity": null,
-      "aliases": [
-        "LUPILU Piscina gonfiabile o vasca per sabbia e acqua per bambini"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 4.99,
-      "maxPrice": 4.99
-    },
-    {
       "id": "lupilu shirt|2pz",
       "canonicalName": "lupilu shirt",
       "canonicalKey": "lupilu shirt|2pz",
@@ -11484,21 +11144,6 @@
       "quantity": null,
       "aliases": [
         "LUPILU Shirts da bambina \"Paw Patrol\" o \"Peppa Pig\" In diversi assortimenti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 6.99,
-      "maxPrice": 6.99
-    },
-    {
-      "id": "lupilu trolley giochi spiaggia diversi assortimenti",
-      "canonicalName": "lupilu trolley giochi spiaggia diversi assortimenti",
-      "canonicalKey": "lupilu trolley giochi spiaggia diversi assortimenti",
-      "quantity": null,
-      "aliases": [
-        "LUPILU Trolley con giochi da spiaggia In diversi assortimenti"
       ],
       "stores": [
         "Lidl"
@@ -14391,21 +14036,6 @@
       "maxPrice": 1.79
     },
     {
-      "id": "pepperts",
-      "canonicalName": "pepperts",
-      "canonicalKey": "pepperts",
-      "quantity": null,
-      "aliases": [
-        "PEPPERTS"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.49,
-      "maxPrice": 3.49
-    },
-    {
       "id": "pepsi|3500ml",
       "canonicalName": "pepsi",
       "canonicalKey": "pepsi|3500ml",
@@ -16491,21 +16121,6 @@
       "maxPrice": 99
     },
     {
-      "id": "scarpe mare bambini spiderman frozen diversi assortimenti",
-      "canonicalName": "scarpe mare bambini spiderman frozen diversi assortimenti",
-      "canonicalKey": "scarpe mare bambini spiderman frozen diversi assortimenti",
-      "quantity": null,
-      "aliases": [
-        "Scarpe da mare per bambini “Spiderman o Frozen” In diversi assortimenti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 4.99,
-      "maxPrice": 4.99
-    },
-    {
       "id": "scongelamento sistema espulsione automatica inserto integrato croissants panini cassetto",
       "canonicalName": "scongelamento sistema espulsione automatica inserto integrato croissants panini cassetto",
       "canonicalKey": "scongelamento sistema espulsione automatica inserto integrato croissants panini cassetto",
@@ -17954,21 +17569,6 @@
       "offersCount": 1,
       "minPrice": 19.99,
       "maxPrice": 19.99
-    },
-    {
-      "id": "telo mare",
-      "canonicalName": "telo mare",
-      "canonicalKey": "telo mare",
-      "quantity": null,
-      "aliases": [
-        "Telo mare"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 5.99,
-      "maxPrice": 5.99
     },
     {
       "id": "temperamatite elettrico",
