@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T06:44:16.384Z",
+  "generatedAt": "2026-08-14T06:42:03.509Z",
   "items": [
     {
       "id": "16 rispetto|120g",
@@ -75,21 +75,6 @@
       "offersCount": 1,
       "minPrice": 1.59,
       "maxPrice": 1.59
-    },
-    {
-      "id": "25 decorazioni led energia solare",
-      "canonicalName": "25 decorazioni led energia solare",
-      "canonicalKey": "25 decorazioni led energia solare",
-      "quantity": null,
-      "aliases": [
-        "-25% Decorazioni Led a energia solare"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.49,
-      "maxPrice": 3.49
     },
     {
       "id": "26 rispetto|230g",
@@ -2637,26 +2622,6 @@
       "maxPrice": 2.99
     },
     {
-      "id": "cien sun latte solare spf 30|250ml",
-      "canonicalName": "cien sun latte solare spf 30",
-      "canonicalKey": "cien sun latte solare spf 30|250ml",
-      "quantity": {
-        "value": 250,
-        "unit": "ml",
-        "label": "250 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "CIEN SUN Latte solare SPF 30"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 4.99,
-      "maxPrice": 4.99
-    },
-    {
       "id": "cien sun latte solare spf 50|250ml",
       "canonicalName": "cien sun latte solare spf 50",
       "canonicalKey": "cien sun latte solare spf 50|250ml",
@@ -3558,21 +3523,6 @@
       "maxPrice": 0.99
     },
     {
-      "id": "crivit",
-      "canonicalName": "crivit",
-      "canonicalKey": "crivit",
-      "quantity": null,
-      "aliases": [
-        "CRIVIT"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 2,
-      "minPrice": 3.99,
-      "maxPrice": 9.99
-    },
-    {
       "id": "crivit calzini sportivi uomo donna paia",
       "canonicalName": "crivit calzini sportivi uomo donna paia",
       "canonicalKey": "crivit calzini sportivi uomo donna paia",
@@ -3603,21 +3553,6 @@
       "maxPrice": 6.99
     },
     {
-      "id": "crivit felpa sportiva",
-      "canonicalName": "crivit felpa sportiva",
-      "canonicalKey": "crivit felpa sportiva",
-      "quantity": null,
-      "aliases": [
-        "CRIVIT Felpa sportiva"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 9.99,
-      "maxPrice": 9.99
-    },
-    {
       "id": "crivit gilet sportivo uomo donna elementi decorativi catarifrangenti ripiegabile su se stesso misure xl",
       "canonicalName": "crivit gilet sportivo uomo donna elementi decorativi catarifrangenti ripiegabile su se stesso misure xl",
       "canonicalKey": "crivit gilet sportivo uomo donna elementi decorativi catarifrangenti ripiegabile su se stesso misure xl",
@@ -3633,21 +3568,6 @@
       "maxPrice": 9.99
     },
     {
-      "id": "crivit materassino gonfiabile diversi assortimenti",
-      "canonicalName": "crivit materassino gonfiabile diversi assortimenti",
-      "canonicalKey": "crivit materassino gonfiabile diversi assortimenti",
-      "quantity": null,
-      "aliases": [
-        "CRIVIT Materassino gonfiabile In diversi assortimenti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 2,
-      "minPrice": 16.99,
-      "maxPrice": 19.99
-    },
-    {
       "id": "crivit reggiseno sportivo high level traspirante ad asciugatura rapida",
       "canonicalName": "crivit reggiseno sportivo high level traspirante ad asciugatura rapida",
       "canonicalKey": "crivit reggiseno sportivo high level traspirante ad asciugatura rapida",
@@ -3661,21 +3581,6 @@
       "offersCount": 1,
       "minPrice": 6.99,
       "maxPrice": 6.99
-    },
-    {
-      "id": "crivit shirt sportiva",
-      "canonicalName": "crivit shirt sportiva",
-      "canonicalKey": "crivit shirt sportiva",
-      "quantity": null,
-      "aliases": [
-        "CRIVIT T-shirt sportiva da"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
     },
     {
       "id": "croccanti filetto merluzzo alaska",
@@ -3868,21 +3773,6 @@
       "maxPrice": 1.79
     },
     {
-      "id": "crvit",
-      "canonicalName": "crvit",
-      "canonicalKey": "crvit",
-      "quantity": null,
-      "aliases": [
-        "CRVIT"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 14.99,
-      "maxPrice": 14.99
-    },
-    {
       "id": "cuffie nordmende bth16",
       "canonicalName": "cuffie nordmende bth16",
       "canonicalKey": "cuffie nordmende bth16",
@@ -3986,21 +3876,6 @@
       "offersCount": 1,
       "minPrice": 11.99,
       "maxPrice": 11.99
-    },
-    {
-      "id": "decorazioni led energia solare",
-      "canonicalName": "decorazioni led energia solare",
-      "canonicalKey": "decorazioni led energia solare",
-      "quantity": null,
-      "aliases": [
-        "Decorazioni Led a energia solare"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.49,
-      "maxPrice": 2.49
     },
     {
       "id": "del",
@@ -4311,146 +4186,6 @@
       "offersCount": 1,
       "minPrice": 1.85,
       "maxPrice": 1.85
-    },
-    {
-      "id": "esmara",
-      "canonicalName": "esmara",
-      "canonicalKey": "esmara",
-      "quantity": null,
-      "aliases": [
-        "ESMARA"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 6,
-      "minPrice": 6.99,
-      "maxPrice": 12.99
-    },
-    {
-      "id": "esmara|2pz",
-      "canonicalName": "esmara",
-      "canonicalKey": "esmara|2pz",
-      "quantity": {
-        "value": 2,
-        "unit": "pz",
-        "label": "2 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "ESMARA"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.49,
-      "maxPrice": 2.49
-    },
-    {
-      "id": "esmara calze donna paia",
-      "canonicalName": "esmara calze donna paia",
-      "canonicalKey": "esmara calze donna paia",
-      "quantity": null,
-      "aliases": [
-        "ESMARA Calze da donna 5 paia"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.49,
-      "maxPrice": 3.49
-    },
-    {
-      "id": "esmara camicetta donna",
-      "canonicalName": "esmara camicetta donna",
-      "canonicalKey": "esmara camicetta donna",
-      "quantity": null,
-      "aliases": [
-        "ESMARA Camicetta da donna"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 7.99,
-      "maxPrice": 7.99
-    },
-    {
-      "id": "esmara gonna lunga donna",
-      "canonicalName": "esmara gonna lunga donna",
-      "canonicalKey": "esmara gonna lunga donna",
-      "quantity": null,
-      "aliases": [
-        "ESMARA Gonna lunga da donna"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 2,
-      "minPrice": 6.99,
-      "maxPrice": 8.99
-    },
-    {
-      "id": "esmara jeggings modellanti donna",
-      "canonicalName": "esmara jeggings modellanti donna",
-      "canonicalKey": "esmara jeggings modellanti donna",
-      "quantity": null,
-      "aliases": [
-        "ESMARA Jeggings modellanti da donna"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 8.99,
-      "maxPrice": 8.99
-    },
-    {
-      "id": "esmara panaloni palazzo",
-      "canonicalName": "esmara panaloni palazzo",
-      "canonicalKey": "esmara panaloni palazzo",
-      "quantity": null,
-      "aliases": [
-        "ESMARA Panaloni a palazzo"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 7.99,
-      "maxPrice": 7.99
-    },
-    {
-      "id": "esmara shirt intima uomo",
-      "canonicalName": "esmara shirt intima uomo",
-      "canonicalKey": "esmara shirt intima uomo",
-      "quantity": null,
-      "aliases": [
-        "ESMARA T-shirt intima da uomo"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 5.99,
-      "maxPrice": 5.99
-    },
-    {
-      "id": "esmara vestito midi",
-      "canonicalName": "esmara vestito midi",
-      "canonicalKey": "esmara vestito midi",
-      "quantity": null,
-      "aliases": [
-        "ESMARA Vestito midi"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 7.99,
-      "maxPrice": 7.99
     },
     {
       "id": "essenza detergente ambianti|750ml",
@@ -6708,21 +6443,6 @@
       "maxPrice": 4.49
     },
     {
-      "id": "grillmeister barbecue botte",
-      "canonicalName": "grillmeister barbecue botte",
-      "canonicalKey": "grillmeister barbecue botte",
-      "quantity": null,
-      "aliases": [
-        "GRILLMEISTER Barbecue a botte"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 49,
-      "maxPrice": 49
-    },
-    {
       "id": "guinness draught stout birra irlandese vol|500ml",
       "canonicalName": "guinness draught stout birra irlandese vol",
       "canonicalKey": "guinness draught stout birra irlandese vol|500ml",
@@ -7648,51 +7368,6 @@
       "maxPrice": 4.59
     },
     {
-      "id": "livarno",
-      "canonicalName": "livarno",
-      "canonicalKey": "livarno",
-      "quantity": null,
-      "aliases": [
-        "LIVARNO"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 3,
-      "minPrice": 1.99,
-      "maxPrice": 15.99
-    },
-    {
-      "id": "livarno doccetta inserto risparmio idrico diversi assortimenti",
-      "canonicalName": "livarno doccetta inserto risparmio idrico diversi assortimenti",
-      "canonicalKey": "livarno doccetta inserto risparmio idrico diversi assortimenti",
-      "quantity": null,
-      "aliases": [
-        "LIVARNO Doccetta con inserto per risparmio idrico In diversi assortimenti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.99,
-      "maxPrice": 3.99
-    },
-    {
-      "id": "livarno lampada led",
-      "canonicalName": "livarno lampada led",
-      "canonicalKey": "livarno lampada led",
-      "quantity": null,
-      "aliases": [
-        "LIVARNO Lampada LED"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 9.99,
-      "maxPrice": 9.99
-    },
-    {
       "id": "livarno tovaglia",
       "canonicalName": "livarno tovaglia",
       "canonicalKey": "livarno tovaglia",
@@ -7756,71 +7431,6 @@
       "offersCount": 1,
       "minPrice": 9.99,
       "maxPrice": 9.99
-    },
-    {
-      "id": "lupilu",
-      "canonicalName": "lupilu",
-      "canonicalKey": "lupilu",
-      "quantity": null,
-      "aliases": [
-        "LUPILU"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
-      "id": "lupilu shirt|2pz",
-      "canonicalName": "lupilu shirt",
-      "canonicalKey": "lupilu shirt|2pz",
-      "quantity": {
-        "value": 2,
-        "unit": "pz",
-        "label": "2 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "LUPILU T-shirt da"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 2,
-      "minPrice": 2.99,
-      "maxPrice": 4.99
-    },
-    {
-      "id": "lupilu shirt bambina diversi assortimenti",
-      "canonicalName": "lupilu shirt bambina diversi assortimenti",
-      "canonicalKey": "lupilu shirt bambina diversi assortimenti",
-      "quantity": null,
-      "aliases": [
-        "LUPILU T-shirt da bambina In diversi assortimenti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 4.99,
-      "maxPrice": 4.99
-    },
-    {
-      "id": "lupilu shirts bambina paw patrol peppa pig diversi assortimenti",
-      "canonicalName": "lupilu shirts bambina paw patrol peppa pig diversi assortimenti",
-      "canonicalKey": "lupilu shirts bambina paw patrol peppa pig diversi assortimenti",
-      "quantity": null,
-      "aliases": [
-        "LUPILU Shirts da bambina \"Paw Patrol\" o \"Peppa Pig\" In diversi assortimenti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 6.99,
-      "maxPrice": 6.99
     },
     {
       "id": "lupini salamoia|500g",
@@ -9258,36 +8868,6 @@
       "maxPrice": 12.99
     },
     {
-      "id": "parkside",
-      "canonicalName": "parkside",
-      "canonicalKey": "parkside",
-      "quantity": null,
-      "aliases": [
-        "PARKSIDE"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 3,
-      "minPrice": 4.99,
-      "maxPrice": 12.99
-    },
-    {
-      "id": "parkside attrezzo",
-      "canonicalName": "parkside attrezzo",
-      "canonicalKey": "parkside attrezzo",
-      "quantity": null,
-      "aliases": [
-        "PARKSIDE Attrezzo da"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.5,
-      "maxPrice": 2.5
-    },
-    {
       "id": "parkside avvolgicavo 10",
       "canonicalName": "parkside avvolgicavo 10",
       "canonicalKey": "parkside avvolgicavo 10",
@@ -9363,21 +8943,6 @@
       "maxPrice": 19.99
     },
     {
-      "id": "parkside multiattreezzo 4in1 motore",
-      "canonicalName": "parkside multiattreezzo 4in1 motore",
-      "canonicalKey": "parkside multiattreezzo 4in1 motore",
-      "quantity": null,
-      "aliases": [
-        "PARKSIDE Multiattreezzo 4in1 a motore"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 129,
-      "maxPrice": 129
-    },
-    {
       "id": "parkside occhiali protettivi cinturino gomma regolabile",
       "canonicalName": "parkside occhiali protettivi cinturino gomma regolabile",
       "canonicalKey": "parkside occhiali protettivi cinturino gomma regolabile",
@@ -9391,21 +8956,6 @@
       "offersCount": 1,
       "minPrice": 4.99,
       "maxPrice": 4.99
-    },
-    {
-      "id": "parkside pantaloni",
-      "canonicalName": "parkside pantaloni",
-      "canonicalKey": "parkside pantaloni",
-      "quantity": null,
-      "aliases": [
-        "PARKSIDE Pantaloni"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 12.99,
-      "maxPrice": 12.99
     },
     {
       "id": "parkside performance batteria smart ah modalita impostabili balanced",
@@ -11879,9 +11429,9 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 3,
+      "offersCount": 1,
       "minPrice": 3.99,
-      "maxPrice": 19.99
+      "maxPrice": 3.99
     },
     {
       "id": "silvercrest|17000ml",
@@ -11902,21 +11452,6 @@
       "offersCount": 1,
       "minPrice": 59,
       "maxPrice": 59
-    },
-    {
-      "id": "silvercrest altoparlante",
-      "canonicalName": "silvercrest altoparlante",
-      "canonicalKey": "silvercrest altoparlante",
-      "quantity": null,
-      "aliases": [
-        "SILVERCREST Altoparlante"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 14.99,
-      "maxPrice": 14.99
     },
     {
       "id": "silvercrest aspiratore sottovuoto 13 cm batterie incluse",
@@ -11972,21 +11507,6 @@
       "offersCount": 1,
       "minPrice": 18.99,
       "maxPrice": 18.99
-    },
-    {
-      "id": "silvercrest secchio pulizia",
-      "canonicalName": "silvercrest secchio pulizia",
-      "canonicalKey": "silvercrest secchio pulizia",
-      "quantity": null,
-      "aliases": [
-        "SILVERCREST Secchio pulizia"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 7.99,
-      "maxPrice": 7.99
     },
     {
       "id": "silvercrest set contenitori termoresistenti 20 fino 100 ciascuna misura|700ml",
