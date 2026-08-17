@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T05:41:55.816Z",
+  "generatedAt": "2026-08-17T05:49:19.536Z",
   "familyCode": "FAMIGLIA-EGO78",
   "stores": [
     {
@@ -19,8 +19,8 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 213,
-      "lastCheckedAt": "2026-08-16T05:41:55.815Z",
-      "lastSuccessfulUpdateAt": "2026-08-16T05:41:55.815Z"
+      "lastCheckedAt": "2026-08-17T05:49:19.535Z",
+      "lastSuccessfulUpdateAt": "2026-08-17T05:49:19.535Z"
     },
     {
       "familyCode": "FAMIGLIA-EGO78",
@@ -39,7 +39,7 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 0,
-      "lastCheckedAt": "2026-08-16T05:41:55.815Z",
+      "lastCheckedAt": "2026-08-17T05:49:19.535Z",
       "lastSuccessfulUpdateAt": null
     },
     {
@@ -59,8 +59,8 @@
       "offerScope": "national-chain",
       "promotionId": "",
       "offersCount": 416,
-      "lastCheckedAt": "2026-08-16T05:41:55.815Z",
-      "lastSuccessfulUpdateAt": "2026-08-16T05:41:55.815Z"
+      "lastCheckedAt": "2026-08-17T05:49:19.535Z",
+      "lastSuccessfulUpdateAt": "2026-08-17T05:49:19.535Z"
     }
   ]
 }
