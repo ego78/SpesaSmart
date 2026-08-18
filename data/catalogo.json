@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T05:49:19.509Z",
+  "generatedAt": "2026-08-18T05:44:47.367Z",
   "items": [
     {
       "id": "12 macarons lunedi 24 08|144g",
@@ -1653,6 +1653,26 @@
       "maxPrice": 2.99
     },
     {
+      "id": "bon gelati cono gelato xxl cioccolato vaniglia fragola piu|450g",
+      "canonicalName": "bon gelati cono gelato xxl cioccolato vaniglia fragola piu",
+      "canonicalKey": "bon gelati cono gelato xxl cioccolato vaniglia fragola piu|450g",
+      "quantity": {
+        "value": 450,
+        "unit": "g",
+        "label": "450 g",
+        "multipack": null
+      },
+      "aliases": [
+        "BON GELATI Cono gelato XXL Cioccolato e vaniglia o vaniglia e fragola 2 gelati in più"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.89,
+      "maxPrice": 2.89
+    },
+    {
       "id": "bon gelati cono gelato xxl piu cioccolato vaniglia fragola|450g",
       "canonicalName": "bon gelati cono gelato xxl piu cioccolato vaniglia fragola",
       "canonicalKey": "bon gelati cono gelato xxl piu cioccolato vaniglia fragola|450g",
@@ -1824,6 +1844,26 @@
       },
       "aliases": [
         "BON GELATI Gelati Mini Mix"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.69,
+      "maxPrice": 4.69
+    },
+    {
+      "id": "bon gelati mini mix classic piu|432g",
+      "canonicalName": "bon gelati mini mix classic piu",
+      "canonicalKey": "bon gelati mini mix classic piu|432g",
+      "quantity": {
+        "value": 432,
+        "unit": "g",
+        "label": "432 g",
+        "multipack": 12
+      },
+      "aliases": [
+        "BON GELATI Gelati mini Mix Classic 4 gelati in più"
       ],
       "stores": [
         "Lidl"
@@ -6479,26 +6519,6 @@
       "maxPrice": 2.79
     },
     {
-      "id": "gelatelli stecco cioccolato bianco mandorle|450g",
-      "canonicalName": "gelatelli stecco cioccolato bianco mandorle",
-      "canonicalKey": "gelatelli stecco cioccolato bianco mandorle|450g",
-      "quantity": {
-        "value": 450,
-        "unit": "g",
-        "label": "450 g",
-        "multipack": null
-      },
-      "aliases": [
-        "GELATELLI Stecco al cioccolato bianco e mandorle"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.99,
-      "maxPrice": 3.99
-    },
-    {
       "id": "gelatelli stecco double caramello|73g",
       "canonicalName": "gelatelli stecco double caramello",
       "canonicalKey": "gelatelli stecco double caramello|73g",
@@ -7267,26 +7287,6 @@
       "offersCount": 1,
       "minPrice": 1.99,
       "maxPrice": 1.99
-    },
-    {
-      "id": "italiamo gelato limone|350ml",
-      "canonicalName": "italiamo gelato limone",
-      "canonicalKey": "italiamo gelato limone|350ml",
-      "quantity": {
-        "value": 350,
-        "unit": "ml",
-        "label": "350 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "ITALIAMO Gelato al limone"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.19,
-      "maxPrice": 1.19
     },
     {
       "id": "italiamo gorgonzola piccante dop|200g",
