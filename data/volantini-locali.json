@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T05:45:55.284Z",
+  "generatedAt": "2026-08-21T05:47:22.054Z",
   "familyCode": "FAMIGLIA-EGO78",
   "stores": [
     {
@@ -19,8 +19,8 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 213,
-      "lastCheckedAt": "2026-08-20T05:45:55.284Z",
-      "lastSuccessfulUpdateAt": "2026-08-20T05:45:55.284Z"
+      "lastCheckedAt": "2026-08-21T05:47:22.053Z",
+      "lastSuccessfulUpdateAt": "2026-08-21T05:47:22.053Z"
     },
     {
       "familyCode": "FAMIGLIA-EGO78",
@@ -39,7 +39,7 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 0,
-      "lastCheckedAt": "2026-08-20T05:45:55.284Z",
+      "lastCheckedAt": "2026-08-21T05:47:22.053Z",
       "lastSuccessfulUpdateAt": null
     },
     {
@@ -58,9 +58,9 @@
       "flyerUrl": "https://www.lidl.it/l/it/volantini/goder",
       "offerScope": "national-chain",
       "promotionId": "",
-      "offersCount": 388,
-      "lastCheckedAt": "2026-08-20T05:45:55.284Z",
-      "lastSuccessfulUpdateAt": "2026-08-20T05:45:55.284Z"
+      "offersCount": 384,
+      "lastCheckedAt": "2026-08-21T05:47:22.053Z",
+      "lastSuccessfulUpdateAt": "2026-08-21T05:47:22.053Z"
     }
   ]
 }
