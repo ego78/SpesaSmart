@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T05:40:49.916Z",
+  "generatedAt": "2026-08-23T05:43:55.086Z",
   "familyCode": "FAMIGLIA-EGO78",
   "stores": [
     {
@@ -19,8 +19,8 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 213,
-      "lastCheckedAt": "2026-08-22T05:40:49.915Z",
-      "lastSuccessfulUpdateAt": "2026-08-22T05:40:49.915Z"
+      "lastCheckedAt": "2026-08-23T05:43:55.085Z",
+      "lastSuccessfulUpdateAt": "2026-08-23T05:43:55.085Z"
     },
     {
       "familyCode": "FAMIGLIA-EGO78",
@@ -39,7 +39,7 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 0,
-      "lastCheckedAt": "2026-08-22T05:40:49.915Z",
+      "lastCheckedAt": "2026-08-23T05:43:55.085Z",
       "lastSuccessfulUpdateAt": null
     },
     {
@@ -54,13 +54,13 @@
       "verified": false,
       "officialStoreId": "IT00812",
       "officialStoreAlias": "sava",
-      "flyerId": "goder",
-      "flyerUrl": "https://www.lidl.it/l/it/volantini/goder",
+      "flyerId": "offerte-valide-dal-27-08-al-2-09-volantino-",
+      "flyerUrl": "https://www.lidl.it/l/it/volantini/offerte-valide-dal-27-08-al-2-09-volantino-",
       "offerScope": "national-chain",
       "promotionId": "",
-      "offersCount": 384,
-      "lastCheckedAt": "2026-08-22T05:40:49.915Z",
-      "lastSuccessfulUpdateAt": "2026-08-22T05:40:49.915Z"
+      "offersCount": 397,
+      "lastCheckedAt": "2026-08-23T05:43:55.085Z",
+      "lastSuccessfulUpdateAt": "2026-08-23T05:43:55.085Z"
     }
   ]
 }
