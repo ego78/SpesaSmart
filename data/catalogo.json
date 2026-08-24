@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T05:43:55.056Z",
+  "generatedAt": "2026-08-24T05:52:29.139Z",
   "items": [
     {
       "id": "10x esmara calzini uomo donna 10 paia",
@@ -243,21 +243,6 @@
       "maxPrice": 4.99
     },
     {
-      "id": "aceto vino bianco",
-      "canonicalName": "aceto vino bianco",
-      "canonicalKey": "aceto vino bianco",
-      "quantity": null,
-      "aliases": [
-        "ACETO DI VINO BIANCO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.55,
-      "maxPrice": 0.55
-    },
-    {
       "id": "acqua effervescente naturale nevea|9000ml",
       "canonicalName": "acqua effervescente naturale nevea",
       "canonicalKey": "acqua effervescente naturale nevea|9000ml",
@@ -483,26 +468,6 @@
       "maxPrice": 4.99
     },
     {
-      "id": "ammorbidente|40pz",
-      "canonicalName": "ammorbidente",
-      "canonicalKey": "ammorbidente|40pz",
-      "quantity": {
-        "value": 40,
-        "unit": "pz",
-        "label": "40 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "AMMORBIDENTE ASSORTITO, 40 LAVAGGI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.99,
-      "maxPrice": 0.99
-    },
-    {
       "id": "ammorbidente coccolino|40pz",
       "canonicalName": "ammorbidente coccolino",
       "canonicalKey": "ammorbidente coccolino|40pz",
@@ -576,21 +541,6 @@
       "offersCount": 1,
       "minPrice": 4.99,
       "maxPrice": 4.99
-    },
-    {
-      "id": "anelli totano romana",
-      "canonicalName": "anelli totano romana",
-      "canonicalKey": "anelli totano romana",
-      "quantity": null,
-      "aliases": [
-        "ANELLI DI TOTANO ALLA ROMANA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
     },
     {
       "id": "anguria natura",
@@ -751,21 +701,6 @@
       "offersCount": 1,
       "minPrice": 1.65,
       "maxPrice": 1.65
-    },
-    {
-      "id": "aperitivo italiano",
-      "canonicalName": "aperitivo italiano",
-      "canonicalKey": "aperitivo italiano",
-      "quantity": null,
-      "aliases": [
-        "APERITIVO ITALIANO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 7.49,
-      "maxPrice": 7.49
     },
     {
       "id": "approfittane",
@@ -1363,36 +1298,6 @@
       "maxPrice": 14.99
     },
     {
-      "id": "articoli cancelleria becappy lebez",
-      "canonicalName": "articoli cancelleria becappy lebez",
-      "canonicalKey": "articoli cancelleria becappy lebez",
-      "quantity": null,
-      "aliases": [
-        "ARTICOLI DI CANCELLERIA 'BECAPPY!' 'LEBEZ'"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 2,
-      "minPrice": 2.99,
-      "maxPrice": 5.99
-    },
-    {
-      "id": "articoli cancelleria osama",
-      "canonicalName": "articoli cancelleria osama",
-      "canonicalKey": "articoli cancelleria osama",
-      "quantity": null,
-      "aliases": [
-        "ARTICOLI DI CANCELLERIA 'OSAMA'"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
-    },
-    {
       "id": "articoli cancelleria stabilo",
       "canonicalName": "articoli cancelleria stabilo",
       "canonicalKey": "articoli cancelleria stabilo",
@@ -1406,21 +1311,6 @@
       "offersCount": 1,
       "minPrice": 1.99,
       "maxPrice": 1.99
-    },
-    {
-      "id": "articoli pulizia cura dell auto",
-      "canonicalName": "articoli pulizia cura dell auto",
-      "canonicalKey": "articoli pulizia cura dell auto",
-      "quantity": null,
-      "aliases": [
-        "ARTICOLI ASSORTITI PER LA PULIZIA E LA CURA DELL'AUTO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
     },
     {
       "id": "asciugacapelli professional 2200",
@@ -1773,26 +1663,6 @@
       "maxPrice": 1.99
     },
     {
-      "id": "bastoncini filetti merluzzo|15pz",
-      "canonicalName": "bastoncini filetti merluzzo",
-      "canonicalKey": "bastoncini filetti merluzzo|15pz",
-      "quantity": {
-        "value": 15,
-        "unit": "pz",
-        "label": "15 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "BASTONCINI DI FILETTI DI MERLUZZO, 15 PZ"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.79,
-      "maxPrice": 2.79
-    },
-    {
       "id": "bastoncini merluzzo|30pz",
       "canonicalName": "bastoncini merluzzo",
       "canonicalKey": "bastoncini merluzzo|30pz",
@@ -1856,21 +1726,6 @@
       "offersCount": 1,
       "minPrice": 0.99,
       "maxPrice": 0.99
-    },
-    {
-      "id": "bevanda ananas multivitaminica",
-      "canonicalName": "bevanda ananas multivitaminica",
-      "canonicalKey": "bevanda ananas multivitaminica",
-      "quantity": null,
-      "aliases": [
-        "BEVANDA ANANAS/MULTIVITAMINICA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.69,
-      "maxPrice": 0.69
     },
     {
       "id": "bevanda latte ananas cocco",
@@ -1938,76 +1793,6 @@
       "maxPrice": 0.79
     },
     {
-      "id": "bibita ananas mela",
-      "canonicalName": "bibita ananas mela",
-      "canonicalKey": "bibita ananas mela",
-      "quantity": null,
-      "aliases": [
-        "BIBITA ANANAS E MELA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.69,
-      "maxPrice": 0.69
-    },
-    {
-      "id": "bidone acciaio aspiraliquidi solidi",
-      "canonicalName": "bidone acciaio aspiraliquidi solidi",
-      "canonicalKey": "bidone acciaio aspiraliquidi solidi",
-      "quantity": null,
-      "aliases": [
-        "BIDONE IN ACCIAIO ASPIRALIQUIDI E SOLIDI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 49.99,
-      "maxPrice": 49.99
-    },
-    {
-      "id": "big cioc bianchi mandorle|3pz",
-      "canonicalName": "big cioc bianchi mandorle",
-      "canonicalKey": "big cioc bianchi mandorle|3pz",
-      "quantity": {
-        "value": 3,
-        "unit": "pz",
-        "label": "3 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "BIG CIOC BIANCHI CON MANDORLE 3 PZ"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.65,
-      "maxPrice": 1.65
-    },
-    {
-      "id": "big cioc mandorle|3pz",
-      "canonicalName": "big cioc mandorle",
-      "canonicalKey": "big cioc mandorle|3pz",
-      "quantity": {
-        "value": 3,
-        "unit": "pz",
-        "label": "3 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "BIG CIOC CON MANDORLE 3 PZ"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.65,
-      "maxPrice": 1.65
-    },
-    {
       "id": "birra",
       "canonicalName": "birra",
       "canonicalKey": "birra",
@@ -2063,21 +1848,6 @@
       "maxPrice": 2.99
     },
     {
-      "id": "birra lager",
-      "canonicalName": "birra lager",
-      "canonicalKey": "birra lager",
-      "quantity": null,
-      "aliases": [
-        "BIRRA LAGER"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.39,
-      "maxPrice": 0.39
-    },
-    {
       "id": "birra messina|990ml",
       "canonicalName": "birra messina",
       "canonicalKey": "birra messina|990ml",
@@ -2131,21 +1901,6 @@
       "offersCount": 1,
       "minPrice": 0.55,
       "maxPrice": 0.55
-    },
-    {
-      "id": "birra premium strong doppio malto",
-      "canonicalName": "birra premium strong doppio malto",
-      "canonicalKey": "birra premium strong doppio malto",
-      "quantity": null,
-      "aliases": [
-        "BIRRA PREMIUM STRONG DOPPIO MALTO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.69,
-      "maxPrice": 0.69
     },
     {
       "id": "birra spaten|500ml",
@@ -2251,26 +2006,6 @@
       "offersCount": 1,
       "minPrice": 0.99,
       "maxPrice": 0.99
-    },
-    {
-      "id": "biscotti trigusto|6pz",
-      "canonicalName": "biscotti trigusto",
-      "canonicalKey": "biscotti trigusto|6pz",
-      "quantity": {
-        "value": 6,
-        "unit": "pz",
-        "label": "6 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "BISCOTTI TRIGUSTO, 6 PZ"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.49,
-      "maxPrice": 2.49
     },
     {
       "id": "biscottini vaniglia gelizie|380g",
@@ -2396,21 +2131,6 @@
       "offersCount": 1,
       "minPrice": 0.49,
       "maxPrice": 0.49
-    },
-    {
-      "id": "bocconcini scamorza affumicata",
-      "canonicalName": "bocconcini scamorza affumicata",
-      "canonicalKey": "bocconcini scamorza affumicata",
-      "quantity": null,
-      "aliases": [
-        "BOCCONCINI DI SCAMORZA AFFUMICATA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.79,
-      "maxPrice": 1.79
     },
     {
       "id": "bocconcini xxl gatto allegra compagnia|2400g",
@@ -2808,21 +2528,6 @@
       "maxPrice": 4.29
     },
     {
-      "id": "bresaola valtellina igp",
-      "canonicalName": "bresaola valtellina igp",
-      "canonicalKey": "bresaola valtellina igp",
-      "quantity": null,
-      "aliases": [
-        "BRESAOLA DELLA VALTELLINA IGP"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.29,
-      "maxPrice": 2.29
-    },
-    {
       "id": "bucatini all amatriciana specialita cuor terrra|550g",
       "canonicalName": "bucatini all amatriciana specialita cuor terrra",
       "canonicalKey": "bucatini all amatriciana specialita cuor terrra|550g",
@@ -2888,21 +2593,6 @@
       "maxPrice": 0.95
     },
     {
-      "id": "burro",
-      "canonicalName": "burro",
-      "canonicalKey": "burro",
-      "quantity": null,
-      "aliases": [
-        "BURRO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 2,
-      "minPrice": 1.69,
-      "maxPrice": 2.49
-    },
-    {
       "id": "burro bavarese",
       "canonicalName": "burro bavarese",
       "canonicalKey": "burro bavarese",
@@ -2953,21 +2643,6 @@
       "maxPrice": 7.99
     },
     {
-      "id": "caciottina",
-      "canonicalName": "caciottina",
-      "canonicalKey": "caciottina",
-      "quantity": null,
-      "aliases": [
-        "CACIOTTINA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 9.89,
-      "maxPrice": 9.89
-    },
-    {
       "id": "caffe aroma italiano kimbo|750g",
       "canonicalName": "caffe aroma italiano kimbo",
       "canonicalKey": "caffe aroma italiano kimbo|750g",
@@ -2986,21 +2661,6 @@
       "offersCount": 1,
       "minPrice": 8.99,
       "maxPrice": 8.99
-    },
-    {
-      "id": "caffe classico",
-      "canonicalName": "caffe classico",
-      "canonicalKey": "caffe classico",
-      "quantity": null,
-      "aliases": [
-        "CAFFÈ CLASSICO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 4.19,
-      "maxPrice": 4.19
     },
     {
       "id": "caffe crema aroma penny|500g",
@@ -3148,21 +2808,6 @@
       "maxPrice": 2.19
     },
     {
-      "id": "candeggina delicata",
-      "canonicalName": "candeggina delicata",
-      "canonicalKey": "candeggina delicata",
-      "quantity": null,
-      "aliases": [
-        "CANDEGGINA DELICATA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.19,
-      "maxPrice": 1.19
-    },
-    {
       "id": "candy asciugatrice smart pro croe h9a2tbe|9000g",
       "canonicalName": "candy asciugatrice smart pro croe h9a2tbe",
       "canonicalKey": "candy asciugatrice smart pro croe h9a2tbe|9000g",
@@ -3271,21 +2916,6 @@
       "offersCount": 1,
       "minPrice": 0.99,
       "maxPrice": 0.99
-    },
-    {
-      "id": "caricabatterie auto",
-      "canonicalName": "caricabatterie auto",
-      "canonicalKey": "caricabatterie auto",
-      "quantity": null,
-      "aliases": [
-        "CARICABATTERIE AUTO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 12.99,
-      "maxPrice": 12.99
     },
     {
       "id": "carne bovino gelatina|215g",
@@ -3438,41 +3068,6 @@
       "maxPrice": 2.75
     },
     {
-      "id": "carrello multiuso polipropilene",
-      "canonicalName": "carrello multiuso polipropilene",
-      "canonicalKey": "carrello multiuso polipropilene",
-      "quantity": null,
-      "aliases": [
-        "CARRELLO MULTIUSO IN POLIPROPILENE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 29.99,
-      "maxPrice": 29.99
-    },
-    {
-      "id": "carta igienica delicata veli|20pz",
-      "canonicalName": "carta igienica delicata veli",
-      "canonicalKey": "carta igienica delicata veli|20pz",
-      "quantity": {
-        "value": 20,
-        "unit": "pz",
-        "label": "20 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "CARTA IGIENICA LA DELICATA, 20 ROTOLI, 2 VELI, 170 STRAPPI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.69,
-      "maxPrice": 2.69
-    },
-    {
       "id": "carta igienica lunghissima veli|4pz",
       "canonicalName": "carta igienica lunghissima veli",
       "canonicalKey": "carta igienica lunghissima veli|4pz",
@@ -3533,41 +3128,6 @@
       "maxPrice": 2.69
     },
     {
-      "id": "carta igienica setosa veli|12pz",
-      "canonicalName": "carta igienica setosa veli",
-      "canonicalKey": "carta igienica setosa veli|12pz",
-      "quantity": {
-        "value": 12,
-        "unit": "pz",
-        "label": "12 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "CARTA IGIENICA LA SETOSA, 12 ROTOLI, 2 VELI, 150 STRAPPI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.49,
-      "maxPrice": 2.49
-    },
-    {
-      "id": "cartella ad anelli a4 monocromo",
-      "canonicalName": "cartella ad anelli a4 monocromo",
-      "canonicalKey": "cartella ad anelli a4 monocromo",
-      "quantity": null,
-      "aliases": [
-        "CARTELLA AD ANELLI A4 MONOCROMO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.49,
-      "maxPrice": 2.49
-    },
-    {
       "id": "cartella kawaii elastico dorso cm",
       "canonicalName": "cartella kawaii elastico dorso cm",
       "canonicalKey": "cartella kawaii elastico dorso cm",
@@ -3583,21 +3143,6 @@
       "maxPrice": 2.49
     },
     {
-      "id": "cartella lembi a4 monocromo dorso cm",
-      "canonicalName": "cartella lembi a4 monocromo dorso cm",
-      "canonicalKey": "cartella lembi a4 monocromo dorso cm",
-      "quantity": null,
-      "aliases": [
-        "CARTELLA 3 LEMBI A4 MONOCROMO DORSO 1,2 CM"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
       "id": "cartella lembi dolci cuccioli animal pigna",
       "canonicalName": "cartella lembi dolci cuccioli animal pigna",
       "canonicalKey": "cartella lembi dolci cuccioli animal pigna",
@@ -3611,36 +3156,6 @@
       "offersCount": 1,
       "minPrice": 1.79,
       "maxPrice": 1.79
-    },
-    {
-      "id": "casseruola 16 cm padella 24 crepiera 28",
-      "canonicalName": "casseruola 16 cm padella 24 crepiera 28",
-      "canonicalKey": "casseruola 16 cm padella 24 crepiera 28",
-      "quantity": null,
-      "aliases": [
-        "CASSERUOLA 16 CM / PADELLA 24 CM / CREPIERA 28 CM"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 9.99,
-      "maxPrice": 9.99
-    },
-    {
-      "id": "cassettiera cassetti",
-      "canonicalName": "cassettiera cassetti",
-      "canonicalKey": "cassettiera cassetti",
-      "quantity": null,
-      "aliases": [
-        "CASSETTIERA 4 CASSETTI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 16.99,
-      "maxPrice": 16.99
     },
     {
       "id": "cedrata|1500ml",
@@ -4133,21 +3648,6 @@
       "maxPrice": 4.99
     },
     {
-      "id": "cipolle rosse agrodolce tropea igp",
-      "canonicalName": "cipolle rosse agrodolce tropea igp",
-      "canonicalKey": "cipolle rosse agrodolce tropea igp",
-      "quantity": null,
-      "aliases": [
-        "CIPOLLE ROSSE IN AGRODOLCE DI TROPEA IGP"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
       "id": "cipolline acettelli sacla|180g",
       "canonicalName": "cipolline acettelli sacla",
       "canonicalKey": "cipolline acettelli sacla|180g",
@@ -4186,21 +3686,6 @@
       "offersCount": 1,
       "minPrice": 2.79,
       "maxPrice": 2.79
-    },
-    {
-      "id": "code mazzancolla tropicale",
-      "canonicalName": "code mazzancolla tropicale",
-      "canonicalKey": "code mazzancolla tropicale",
-      "quantity": null,
-      "aliases": [
-        "CODE DI MAZZANCOLLA TROPICALE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 5.49,
-      "maxPrice": 5.49
     },
     {
       "id": "cola",
@@ -4251,21 +3736,6 @@
       "offersCount": 1,
       "minPrice": 3.39,
       "maxPrice": 3.39
-    },
-    {
-      "id": "coltello verdura grattuggia lati grattugia",
-      "canonicalName": "coltello verdura grattuggia lati grattugia",
-      "canonicalKey": "coltello verdura grattuggia lati grattugia",
-      "quantity": null,
-      "aliases": [
-        "COLTELLO VERDURA / GRATTUGGIA 4 LATI / GRATTUGIA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
     },
     {
       "id": "combino spaghetti spinaci pomodoro|400g",
@@ -4323,21 +3793,6 @@
       "maxPrice": 1.25
     },
     {
-      "id": "condimento riso tonno",
-      "canonicalName": "condimento riso tonno",
-      "canonicalKey": "condimento riso tonno",
-      "quantity": null,
-      "aliases": [
-        "CONDIMENTO PER RISO CON TONNO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.19,
-      "maxPrice": 2.19
-    },
-    {
       "id": "confettura extra albicocca",
       "canonicalName": "confettura extra albicocca",
       "canonicalKey": "confettura extra albicocca",
@@ -4388,26 +3843,6 @@
       "maxPrice": 2.69
     },
     {
-      "id": "coni croccante|6pz",
-      "canonicalName": "coni croccante",
-      "canonicalKey": "coni croccante|6pz",
-      "quantity": {
-        "value": 6,
-        "unit": "pz",
-        "label": "6 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "CONI AL CROCCANTE, 6 PZ"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.15,
-      "maxPrice": 2.15
-    },
-    {
       "id": "coni gelato caffe|6pz",
       "canonicalName": "coni gelato caffe",
       "canonicalKey": "coni gelato caffe|6pz",
@@ -4446,26 +3881,6 @@
       "offersCount": 1,
       "minPrice": 2.69,
       "maxPrice": 2.69
-    },
-    {
-      "id": "coni panna|12pz",
-      "canonicalName": "coni panna",
-      "canonicalKey": "coni panna|12pz",
-      "quantity": {
-        "value": 12,
-        "unit": "pz",
-        "label": "12 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "CONI CON PANNA, 12 PZ"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.99,
-      "maxPrice": 3.99
     },
     {
       "id": "cono amarena gelizie|450g",
@@ -4603,21 +4018,6 @@
       "maxPrice": 16.99
     },
     {
-      "id": "coprivolante",
-      "canonicalName": "coprivolante",
-      "canonicalKey": "coprivolante",
-      "quantity": null,
-      "aliases": [
-        "COPRIVOLANTE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.99,
-      "maxPrice": 3.99
-    },
-    {
       "id": "cornetti formaggio",
       "canonicalName": "cornetti formaggio",
       "canonicalKey": "cornetti formaggio",
@@ -4681,21 +4081,6 @@
       "offersCount": 1,
       "minPrice": 1.39,
       "maxPrice": 1.39
-    },
-    {
-      "id": "cozze gratinate",
-      "canonicalName": "cozze gratinate",
-      "canonicalKey": "cozze gratinate",
-      "quantity": null,
-      "aliases": [
-        "COZZE GRATINATE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.89,
-      "maxPrice": 2.89
     },
     {
       "id": "cracker leggeri",
@@ -4793,41 +4178,6 @@
       "maxPrice": 0.99
     },
     {
-      "id": "croccanti filetto merluzzo alaska",
-      "canonicalName": "croccanti filetto merluzzo alaska",
-      "canonicalKey": "croccanti filetto merluzzo alaska",
-      "quantity": null,
-      "aliases": [
-        "CROCCANTI DI FILETTO DI MERLUZZO D'ALASKA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
-    },
-    {
-      "id": "croccantini formaggio|6pz",
-      "canonicalName": "croccantini formaggio",
-      "canonicalKey": "croccantini formaggio|6pz",
-      "quantity": {
-        "value": 6,
-        "unit": "pz",
-        "label": "6 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "CROCCANTINI AL FORMAGGIO, 6 PZ"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.19,
-      "maxPrice": 1.19
-    },
-    {
       "id": "croccantini gatti active procat|800g",
       "canonicalName": "croccantini gatti active procat",
       "canonicalKey": "croccantini gatti active procat|800g",
@@ -4883,21 +4233,6 @@
       "maxPrice": 3.19
     },
     {
-      "id": "crocchette cani adulti",
-      "canonicalName": "crocchette cani adulti",
-      "canonicalKey": "crocchette cani adulti",
-      "quantity": null,
-      "aliases": [
-        "CROCCHETTE PER CANI ADULTI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 8.39,
-      "maxPrice": 8.39
-    },
-    {
       "id": "crocchette cani allegra compagina|5000g",
       "canonicalName": "crocchette cani allegra compagina",
       "canonicalKey": "crocchette cani allegra compagina|5000g",
@@ -4938,46 +4273,6 @@
       "maxPrice": 9.99
     },
     {
-      "id": "crocchini amarena|6pz",
-      "canonicalName": "crocchini amarena",
-      "canonicalKey": "crocchini amarena|6pz",
-      "quantity": {
-        "value": 6,
-        "unit": "pz",
-        "label": "6 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "CROCCHINI CON AMARENA, 6 PZ"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.39,
-      "maxPrice": 2.39
-    },
-    {
-      "id": "crocchini gianduia|6pz",
-      "canonicalName": "crocchini gianduia",
-      "canonicalKey": "crocchini gianduia|6pz",
-      "quantity": {
-        "value": 6,
-        "unit": "pz",
-        "label": "6 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "CROCCHINI GUSTO GIANDUIA, 6 PZ"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.39,
-      "maxPrice": 2.39
-    },
-    {
       "id": "croissant ciliegia|10pz",
       "canonicalName": "croissant ciliegia",
       "canonicalKey": "croissant ciliegia|10pz",
@@ -5016,26 +4311,6 @@
       "offersCount": 1,
       "minPrice": 1.69,
       "maxPrice": 1.69
-    },
-    {
-      "id": "croissant crema pasticcera|10pz",
-      "canonicalName": "croissant crema pasticcera",
-      "canonicalKey": "croissant crema pasticcera|10pz",
-      "quantity": {
-        "value": 10,
-        "unit": "pz",
-        "label": "10 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "CROISSANT CON CREMA PASTICCERA, 10 PZ"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.79,
-      "maxPrice": 1.79
     },
     {
       "id": "croissant senza farcitura|6pz",
@@ -5107,36 +4382,6 @@
       "offersCount": 1,
       "minPrice": 14.99,
       "maxPrice": 14.99
-    },
-    {
-      "id": "cuffie nordmende bth16",
-      "canonicalName": "cuffie nordmende bth16",
-      "canonicalKey": "cuffie nordmende bth16",
-      "quantity": null,
-      "aliases": [
-        "CUFFIE 'NORDMENDE' BTH16"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 9.99,
-      "maxPrice": 9.99
-    },
-    {
-      "id": "culurgionis ogliastra igp menta",
-      "canonicalName": "culurgionis ogliastra igp menta",
-      "canonicalKey": "culurgionis ogliastra igp menta",
-      "quantity": null,
-      "aliases": [
-        "CULURGIONIS D'OGLIASTRA IGP ALLA MENTA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.39,
-      "maxPrice": 3.39
     },
     {
       "id": "cuori iceberg insalata mista natura|200g",
@@ -5302,21 +4547,6 @@
       "offersCount": 1,
       "minPrice": 1.99,
       "maxPrice": 1.99
-    },
-    {
-      "id": "detergente piatti limone",
-      "canonicalName": "detergente piatti limone",
-      "canonicalKey": "detergente piatti limone",
-      "quantity": null,
-      "aliases": [
-        "DETERGENTE PIATTI AL LIMONE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.79,
-      "maxPrice": 1.79
     },
     {
       "id": "detergente vetri netty|1000ml",
@@ -5939,21 +5169,6 @@
       "maxPrice": 2.49
     },
     {
-      "id": "emmental francese",
-      "canonicalName": "emmental francese",
-      "canonicalKey": "emmental francese",
-      "quantity": null,
-      "aliases": [
-        "EMMENTAL FRANCESE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.85,
-      "maxPrice": 1.85
-    },
-    {
       "id": "eridanous baklava|390g",
       "canonicalName": "eridanous baklava",
       "canonicalKey": "eridanous baklava|390g",
@@ -6555,21 +5770,6 @@
       "maxPrice": 0.35
     },
     {
-      "id": "fagioli tonno",
-      "canonicalName": "fagioli tonno",
-      "canonicalKey": "fagioli tonno",
-      "quantity": null,
-      "aliases": [
-        "FAGIOLI E TONNO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.29,
-      "maxPrice": 2.29
-    },
-    {
       "id": "fagiolini finissimi",
       "canonicalName": "fagiolini finissimi",
       "canonicalKey": "fagiolini finissimi",
@@ -6585,21 +5785,6 @@
       "maxPrice": 1.05
     },
     {
-      "id": "farfalle integrali trafilate bronzo",
-      "canonicalName": "farfalle integrali trafilate bronzo",
-      "canonicalKey": "farfalle integrali trafilate bronzo",
-      "quantity": null,
-      "aliases": [
-        "FARFALLE INTEGRALI TRAFILATE AL BRONZO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.65,
-      "maxPrice": 0.65
-    },
-    {
       "id": "farina 00 grano tenero",
       "canonicalName": "farina 00 grano tenero",
       "canonicalKey": "farina 00 grano tenero",
@@ -6613,26 +5798,6 @@
       "offersCount": 1,
       "minPrice": 0.39,
       "maxPrice": 0.39
-    },
-    {
-      "id": "fazzoletti delicati veli 30 pacchetti|10pz",
-      "canonicalName": "fazzoletti delicati veli 30 pacchetti",
-      "canonicalKey": "fazzoletti delicati veli 30 pacchetti|10pz",
-      "quantity": {
-        "value": 10,
-        "unit": "pz",
-        "label": "10 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "FAZZOLETTI DELICATI, 4 VELI, 30 PACCHETTI, 10 PZ"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
     },
     {
       "id": "fazzoletti ecolabel veli 18 pacchetti|10pz",
@@ -6740,21 +5905,6 @@
       "maxPrice": 4.39
     },
     {
-      "id": "filetti acciughe mar cantabrico olio oliva",
-      "canonicalName": "filetti acciughe mar cantabrico olio oliva",
-      "canonicalKey": "filetti acciughe mar cantabrico olio oliva",
-      "quantity": null,
-      "aliases": [
-        "FILETTI DI ACCIUGHE DEL MAR CANTABRICO IN OLIO DI OLIVA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.69,
-      "maxPrice": 1.69
-    },
-    {
       "id": "filetti alici gran mare|200g",
       "canonicalName": "filetti alici gran mare",
       "canonicalKey": "filetti alici gran mare|200g",
@@ -6775,21 +5925,6 @@
       "maxPrice": 2.95
     },
     {
-      "id": "filetti merluzzo atlantico",
-      "canonicalName": "filetti merluzzo atlantico",
-      "canonicalKey": "filetti merluzzo atlantico",
-      "quantity": null,
-      "aliases": [
-        "FILETTI DI MERLUZZO ATLANTICO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 5.99,
-      "maxPrice": 5.99
-    },
-    {
       "id": "filetti merluzzo sudafricano",
       "canonicalName": "filetti merluzzo sudafricano",
       "canonicalKey": "filetti merluzzo sudafricano",
@@ -6803,36 +5938,6 @@
       "offersCount": 1,
       "minPrice": 5.49,
       "maxPrice": 5.49
-    },
-    {
-      "id": "filetti platessa impanati",
-      "canonicalName": "filetti platessa impanati",
-      "canonicalKey": "filetti platessa impanati",
-      "quantity": null,
-      "aliases": [
-        "FILETTI DI PLATESSA IMPANATI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.49,
-      "maxPrice": 3.49
-    },
-    {
-      "id": "filetti salmone all olio oliva",
-      "canonicalName": "filetti salmone all olio oliva",
-      "canonicalKey": "filetti salmone all olio oliva",
-      "quantity": null,
-      "aliases": [
-        "FILETTI DI SALMONE ALL'OLIO DI OLIVA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.39,
-      "maxPrice": 2.39
     },
     {
       "id": "filetti tonno olio oliva pinna gialla",
@@ -7180,21 +6285,6 @@
       "maxPrice": 1.49
     },
     {
-      "id": "frollini gocce cioccolato",
-      "canonicalName": "frollini gocce cioccolato",
-      "canonicalKey": "frollini gocce cioccolato",
-      "quantity": null,
-      "aliases": [
-        "FROLLINI CON GOCCE DI CIOCCOLATO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.59,
-      "maxPrice": 1.59
-    },
-    {
       "id": "frollini integrali",
       "canonicalName": "frollini integrali",
       "canonicalKey": "frollini integrali",
@@ -7223,21 +6313,6 @@
       "offersCount": 1,
       "minPrice": 1.39,
       "maxPrice": 1.39
-    },
-    {
-      "id": "frollini riso latte",
-      "canonicalName": "frollini riso latte",
-      "canonicalKey": "frollini riso latte",
-      "quantity": null,
-      "aliases": [
-        "FROLLINI CON RISO E LATTE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.49,
-      "maxPrice": 1.49
     },
     {
       "id": "funghetti coltivati sottolio",
@@ -7273,21 +6348,6 @@
       "offersCount": 1,
       "minPrice": 1.69,
       "maxPrice": 1.69
-    },
-    {
-      "id": "fusilli",
-      "canonicalName": "fusilli",
-      "canonicalKey": "fusilli",
-      "quantity": null,
-      "aliases": [
-        "FUSILLI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.19,
-      "maxPrice": 1.19
     },
     {
       "id": "fusilli trafilati bronzo",
@@ -8240,66 +7300,6 @@
       "maxPrice": 2.39
     },
     {
-      "id": "gelato crema",
-      "canonicalName": "gelato crema",
-      "canonicalKey": "gelato crema",
-      "quantity": null,
-      "aliases": [
-        "GELATO AL GUSTO CREMA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
-      "id": "gelato crema spalmabile caramello salato",
-      "canonicalName": "gelato crema spalmabile caramello salato",
-      "canonicalKey": "gelato crema spalmabile caramello salato",
-      "quantity": null,
-      "aliases": [
-        "GELATO CON CREMA SPALMABILE AL CARAMELLO SALATO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
-      "id": "gelato crema spalmabile nocciola cacao",
-      "canonicalName": "gelato crema spalmabile nocciola cacao",
-      "canonicalKey": "gelato crema spalmabile nocciola cacao",
-      "quantity": null,
-      "aliases": [
-        "GELATO CON CREMA SPALMABILE NOCCIOLA E CACAO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
-      "id": "gelato crema spalmabile pistacchio",
-      "canonicalName": "gelato crema spalmabile pistacchio",
-      "canonicalKey": "gelato crema spalmabile pistacchio",
-      "quantity": null,
-      "aliases": [
-        "GELATO CON CREMA SPALMABILE AL PISTACCHIO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
       "id": "gelato fior fragola algida|408g",
       "canonicalName": "gelato fior fragola algida",
       "canonicalKey": "gelato fior fragola algida|408g",
@@ -8318,21 +7318,6 @@
       "offersCount": 1,
       "minPrice": 3.99,
       "maxPrice": 3.99
-    },
-    {
-      "id": "gelato frutti bosco",
-      "canonicalName": "gelato frutti bosco",
-      "canonicalKey": "gelato frutti bosco",
-      "quantity": null,
-      "aliases": [
-        "GELATO AI FRUTTI DI BOSCO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
     },
     {
       "id": "gelato kinder bueno|248g",
@@ -8355,66 +7340,6 @@
       "maxPrice": 3.59
     },
     {
-      "id": "gelato limone",
-      "canonicalName": "gelato limone",
-      "canonicalKey": "gelato limone",
-      "quantity": null,
-      "aliases": [
-        "GELATO AL LIMONE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
-      "id": "gelato nocciola",
-      "canonicalName": "gelato nocciola",
-      "canonicalKey": "gelato nocciola",
-      "quantity": null,
-      "aliases": [
-        "GELATO ALLA NOCCIOLA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
-      "id": "gelato panna",
-      "canonicalName": "gelato panna",
-      "canonicalKey": "gelato panna",
-      "quantity": null,
-      "aliases": [
-        "GELATO ALLA PANNA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
-      "id": "gelato tartufo",
-      "canonicalName": "gelato tartufo",
-      "canonicalKey": "gelato tartufo",
-      "quantity": null,
-      "aliases": [
-        "GELATO AL TARTUFO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
       "id": "ghiaccioli|12pz",
       "canonicalName": "ghiaccioli",
       "canonicalKey": "ghiaccioli|12pz",
@@ -8433,26 +7358,6 @@
       "offersCount": 1,
       "minPrice": 1.99,
       "maxPrice": 1.99
-    },
-    {
-      "id": "ghiaccioli|20pz",
-      "canonicalName": "ghiaccioli",
-      "canonicalKey": "ghiaccioli|20pz",
-      "quantity": {
-        "value": 20,
-        "unit": "pz",
-        "label": "20 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "GHIACCIOLI ASSORTITI, 20 PZ"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.19,
-      "maxPrice": 3.19
     },
     {
       "id": "ghiaccioli gelizie|1400g",
@@ -8560,21 +7465,6 @@
       "maxPrice": 1.99
     },
     {
-      "id": "gnocchetti patate",
-      "canonicalName": "gnocchetti patate",
-      "canonicalKey": "gnocchetti patate",
-      "quantity": null,
-      "aliases": [
-        "GNOCCHETTI DI PATATE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.65,
-      "maxPrice": 0.65
-    },
-    {
       "id": "gocciole pavesi|500g",
       "canonicalName": "gocciole pavesi",
       "canonicalKey": "gocciole pavesi|500g",
@@ -8665,21 +7555,6 @@
       "maxPrice": 2.35
     },
     {
-      "id": "grana padano dop cubetti",
-      "canonicalName": "grana padano dop cubetti",
-      "canonicalKey": "grana padano dop cubetti",
-      "quantity": null,
-      "aliases": [
-        "GRANA PADANO DOP A CUBETTI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 4.39,
-      "maxPrice": 4.39
-    },
-    {
       "id": "grana padano dop stagionato oltre 16 mesi",
       "canonicalName": "grana padano dop stagionato oltre 16 mesi",
       "canonicalKey": "grana padano dop stagionato oltre 16 mesi",
@@ -8693,21 +7568,6 @@
       "offersCount": 1,
       "minPrice": 11.79,
       "maxPrice": 11.79
-    },
-    {
-      "id": "grattugiato italiano",
-      "canonicalName": "grattugiato italiano",
-      "canonicalKey": "grattugiato italiano",
-      "quantity": null,
-      "aliases": [
-        "GRATTUGIATO ITALIANO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.39,
-      "maxPrice": 1.39
     },
     {
       "id": "grundig aspirapolvere ricaricabile|500ml",
@@ -8778,21 +7638,6 @@
       "offersCount": 1,
       "minPrice": 12.49,
       "maxPrice": 12.49
-    },
-    {
-      "id": "idropulitrice ad alta pressione",
-      "canonicalName": "idropulitrice ad alta pressione",
-      "canonicalKey": "idropulitrice ad alta pressione",
-      "quantity": null,
-      "aliases": [
-        "IDROPULITRICE AD ALTA PRESSIONE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 59.99,
-      "maxPrice": 59.99
     },
     {
       "id": "igp",
@@ -8898,21 +7743,6 @@
       "offersCount": 1,
       "minPrice": 1.59,
       "maxPrice": 1.59
-    },
-    {
-      "id": "insalata riso wurstel",
-      "canonicalName": "insalata riso wurstel",
-      "canonicalKey": "insalata riso wurstel",
-      "quantity": null,
-      "aliases": [
-        "INSALATA PER RISO CON WURSTEL"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.19,
-      "maxPrice": 2.19
     },
     {
       "id": "insalata tonno|250g",
@@ -9110,41 +7940,6 @@
       "maxPrice": 1.99
     },
     {
-      "id": "kit auto|56pz",
-      "canonicalName": "kit auto",
-      "canonicalKey": "kit auto|56pz",
-      "quantity": {
-        "value": 56,
-        "unit": "pz",
-        "label": "56 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "KIT PER AUTO 56 PZ"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 12.99,
-      "maxPrice": 12.99
-    },
-    {
-      "id": "kit panni microfibra",
-      "canonicalName": "kit panni microfibra",
-      "canonicalKey": "kit panni microfibra",
-      "quantity": null,
-      "aliases": [
-        "KIT 2 PANNI IN MICROFIBRA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
       "id": "lagostina padella 24 cm",
       "canonicalName": "lagostina padella 24 cm",
       "canonicalKey": "lagostina padella 24 cm",
@@ -9175,36 +7970,6 @@
       "maxPrice": 17.99
     },
     {
-      "id": "lampada led tavolo",
-      "canonicalName": "lampada led tavolo",
-      "canonicalKey": "lampada led tavolo",
-      "quantity": null,
-      "aliases": [
-        "LAMPADA LED DA TAVOLO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 9.99,
-      "maxPrice": 9.99
-    },
-    {
-      "id": "lampada tavolo",
-      "canonicalName": "lampada tavolo",
-      "canonicalKey": "lampada tavolo",
-      "quantity": null,
-      "aliases": [
-        "LAMPADA DA TAVOLO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 6.99,
-      "maxPrice": 6.99
-    },
-    {
       "id": "latte cioccolato",
       "canonicalName": "latte cioccolato",
       "canonicalKey": "latte cioccolato",
@@ -9218,21 +7983,6 @@
       "offersCount": 1,
       "minPrice": 0.89,
       "maxPrice": 0.89
-    },
-    {
-      "id": "latte intero uht",
-      "canonicalName": "latte intero uht",
-      "canonicalKey": "latte intero uht",
-      "quantity": null,
-      "aliases": [
-        "LATTE INTERO UHT"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.69,
-      "maxPrice": 0.69
     },
     {
       "id": "latte parzialmente scremato sterilgarda|1500ml",
@@ -9265,9 +8015,9 @@
       "stores": [
         "Eurospin"
       ],
-      "offersCount": 2,
+      "offersCount": 1,
       "minPrice": 0.69,
-      "maxPrice": 0.89
+      "maxPrice": 0.69
     },
     {
       "id": "lava pavimenti agrumi freschezza marina",
@@ -9298,26 +8048,6 @@
       "offersCount": 1,
       "minPrice": 6.99,
       "maxPrice": 6.99
-    },
-    {
-      "id": "lavatrice candy cs1292dw4 11|9000g",
-      "canonicalName": "lavatrice candy cs1292dw4 11",
-      "canonicalKey": "lavatrice candy cs1292dw4 11|9000g",
-      "quantity": {
-        "value": 9000,
-        "unit": "g",
-        "label": "9 kg",
-        "multipack": null
-      },
-      "aliases": [
-        "LAVATRICE 'CANDY' CS1292DW4-1-11 9 KG"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 259.99,
-      "maxPrice": 259.99
     },
     {
       "id": "lemon cola",
@@ -9388,21 +8118,6 @@
       "offersCount": 1,
       "minPrice": 3.99,
       "maxPrice": 3.99
-    },
-    {
-      "id": "libreria",
-      "canonicalName": "libreria",
-      "canonicalKey": "libreria",
-      "quantity": null,
-      "aliases": [
-        "LIBRERIA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 19.99,
-      "maxPrice": 19.99
     },
     {
       "id": "lidl plus",
@@ -9750,26 +8465,6 @@
       "maxPrice": 2.69
     },
     {
-      "id": "liquido lavatrice marsiglia felce|50pz",
-      "canonicalName": "liquido lavatrice marsiglia felce",
-      "canonicalKey": "liquido lavatrice marsiglia felce|50pz",
-      "quantity": {
-        "value": 50,
-        "unit": "pz",
-        "label": "50 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "LIQUIDO LAVATRICE MARSIGLIA E FELCE, 50 LAVAGGI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.39,
-      "maxPrice": 3.39
-    },
-    {
       "id": "liuk limone algida|632g",
       "canonicalName": "liuk limone algida",
       "canonicalKey": "liuk limone algida|632g",
@@ -10080,8 +8775,8 @@
       "stores": [
         "Eurospin"
       ],
-      "offersCount": 2,
-      "minPrice": 0.59,
+      "offersCount": 1,
+      "minPrice": 1.39,
       "maxPrice": 1.39
     },
     {
@@ -10135,21 +8830,6 @@
       "maxPrice": 7.99
     },
     {
-      "id": "mascarpone cremoso",
-      "canonicalName": "mascarpone cremoso",
-      "canonicalKey": "mascarpone cremoso",
-      "quantity": null,
-      "aliases": [
-        "MASCARPONE CREMOSO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.09,
-      "maxPrice": 3.09
-    },
-    {
       "id": "maxi biscotti cioco stracciatella|4pz",
       "canonicalName": "maxi biscotti cioco stracciatella",
       "canonicalKey": "maxi biscotti cioco stracciatella|4pz",
@@ -10168,21 +8848,6 @@
       "offersCount": 1,
       "minPrice": 2.49,
       "maxPrice": 2.49
-    },
-    {
-      "id": "maxi cookies gocce cioccolato",
-      "canonicalName": "maxi cookies gocce cioccolato",
-      "canonicalKey": "maxi cookies gocce cioccolato",
-      "quantity": null,
-      "aliases": [
-        "MAXI COOKIES CON GOCCE DI CIOCCOLATO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.49,
-      "maxPrice": 1.49
     },
     {
       "id": "maxi cookies gocce cioccolato nocciole",
@@ -10441,21 +9106,6 @@
       "maxPrice": 9.99
     },
     {
-      "id": "mini cassettiera cassetti a5",
-      "canonicalName": "mini cassettiera cassetti a5",
-      "canonicalKey": "mini cassettiera cassetti a5",
-      "quantity": null,
-      "aliases": [
-        "MINI CASSETTIERA 3 CASSETTI FORMATO A5"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 6.99,
-      "maxPrice": 6.99
-    },
-    {
       "id": "mini gallette mais",
       "canonicalName": "mini gallette mais",
       "canonicalKey": "mini gallette mais",
@@ -10611,21 +9261,6 @@
       "maxPrice": 2.79
     },
     {
-      "id": "mobiletto due ante vani",
-      "canonicalName": "mobiletto due ante vani",
-      "canonicalKey": "mobiletto due ante vani",
-      "quantity": null,
-      "aliases": [
-        "MOBILETTO DUE ANTE E DUE VANI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 34.99,
-      "maxPrice": 34.99
-    },
-    {
       "id": "monopattino tre eta ruote led bambini paw patrol freno sulla|50000g",
       "canonicalName": "monopattino tre eta ruote led bambini paw patrol freno sulla",
       "canonicalKey": "monopattino tre eta ruote led bambini paw patrol freno sulla|50000g",
@@ -10701,21 +9336,6 @@
       "maxPrice": 7.99
     },
     {
-      "id": "mortadella bologna igp",
-      "canonicalName": "mortadella bologna igp",
-      "canonicalKey": "mortadella bologna igp",
-      "quantity": null,
-      "aliases": [
-        "MORTADELLA BOLOGNA IGP"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.49,
-      "maxPrice": 1.49
-    },
-    {
       "id": "motta coppa nonno|260g",
       "canonicalName": "motta coppa nonno",
       "canonicalKey": "motta coppa nonno|260g",
@@ -10781,39 +9401,9 @@
       "stores": [
         "Eurospin"
       ],
-      "offersCount": 2,
-      "minPrice": 1.89,
+      "offersCount": 1,
+      "minPrice": 2.59,
       "maxPrice": 2.59
-    },
-    {
-      "id": "mozzarella fior latte",
-      "canonicalName": "mozzarella fior latte",
-      "canonicalKey": "mozzarella fior latte",
-      "quantity": null,
-      "aliases": [
-        "MOZZARELLA FIOR DI LATTE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.59,
-      "maxPrice": 1.59
-    },
-    {
-      "id": "mozzarella light",
-      "canonicalName": "mozzarella light",
-      "canonicalKey": "mozzarella light",
-      "quantity": null,
-      "aliases": [
-        "MOZZARELLA LIGHT"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.29,
-      "maxPrice": 2.29
     },
     {
       "id": "mozzarella light welless|125g",
@@ -10834,21 +9424,6 @@
       "offersCount": 1,
       "minPrice": 0.79,
       "maxPrice": 0.79
-    },
-    {
-      "id": "mozzarella pizze panini",
-      "canonicalName": "mozzarella pizze panini",
-      "canonicalKey": "mozzarella pizze panini",
-      "quantity": null,
-      "aliases": [
-        "MOZZARELLA PER PIZZE E PANINI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 4.99,
-      "maxPrice": 4.99
     },
     {
       "id": "mozzarella santa lucia|300g",
@@ -11337,21 +9912,6 @@
       "maxPrice": 1.89
     },
     {
-      "id": "olio extra vergine oliva",
-      "canonicalName": "olio extra vergine oliva",
-      "canonicalKey": "olio extra vergine oliva",
-      "quantity": null,
-      "aliases": [
-        "OLIO EXTRA VERGINE DI OLIVA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 22.49,
-      "maxPrice": 22.49
-    },
-    {
       "id": "olio extra vergine oliva|750ml",
       "canonicalName": "olio extra vergine oliva",
       "canonicalKey": "olio extra vergine oliva|750ml",
@@ -11427,21 +9987,6 @@
       "maxPrice": 3.99
     },
     {
-      "id": "olio semi girasole",
-      "canonicalName": "olio semi girasole",
-      "canonicalKey": "olio semi girasole",
-      "quantity": null,
-      "aliases": [
-        "OLIO DI SEMI DI GIRASOLE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.39,
-      "maxPrice": 1.39
-    },
-    {
       "id": "olio semi mais",
       "canonicalName": "olio semi mais",
       "canonicalKey": "olio semi mais",
@@ -11485,21 +10030,6 @@
       "offersCount": 1,
       "minPrice": 0.79,
       "maxPrice": 0.79
-    },
-    {
-      "id": "olive verdi denocciolate",
-      "canonicalName": "olive verdi denocciolate",
-      "canonicalKey": "olive verdi denocciolate",
-      "quantity": null,
-      "aliases": [
-        "OLIVE VERDI DENOCCIOLATE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.39,
-      "maxPrice": 1.39
     },
     {
       "id": "oltre",
@@ -11570,51 +10100,6 @@
       "offersCount": 1,
       "minPrice": 1.79,
       "maxPrice": 1.79
-    },
-    {
-      "id": "padella 20 cm oliera spray colino 34",
-      "canonicalName": "padella 20 cm oliera spray colino 34",
-      "canonicalKey": "padella 20 cm oliera spray colino 34",
-      "quantity": null,
-      "aliases": [
-        "PADELLA 20 CM / OLIERA SPRAY / COLINO 34 CM"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 5.99,
-      "maxPrice": 5.99
-    },
-    {
-      "id": "padella 28 cm bistecchiera casseruola",
-      "canonicalName": "padella 28 cm bistecchiera casseruola",
-      "canonicalKey": "padella 28 cm bistecchiera casseruola",
-      "quantity": null,
-      "aliases": [
-        "PADELLA 28 CM / BISTECCHIERA 28 CM / CASSERUOLA 2"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 14.99,
-      "maxPrice": 14.99
-    },
-    {
-      "id": "padella 30 cm wok 28 casseruola 24",
-      "canonicalName": "padella 30 cm wok 28 casseruola 24",
-      "canonicalKey": "padella 30 cm wok 28 casseruola 24",
-      "quantity": null,
-      "aliases": [
-        "PADELLA 30 CM / WOK 28 CM / CASSERUOLA 24 CM"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 19.99,
-      "maxPrice": 19.99
     },
     {
       "id": "padella pancake animali 26 cm",
@@ -11765,36 +10250,6 @@
       "offersCount": 1,
       "minPrice": 1.35,
       "maxPrice": 1.35
-    },
-    {
-      "id": "pane american sandwich",
-      "canonicalName": "pane american sandwich",
-      "canonicalKey": "pane american sandwich",
-      "quantity": null,
-      "aliases": [
-        "PANE AMERICAN SANDWICH"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.19,
-      "maxPrice": 1.19
-    },
-    {
-      "id": "panno pva magic dryer",
-      "canonicalName": "panno pva magic dryer",
-      "canonicalKey": "panno pva magic dryer",
-      "quantity": null,
-      "aliases": [
-        "PANNO IN PVA MAGIC DRYER"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
     },
     {
       "id": "panzerottini pomodoro mozzarella|10pz",
@@ -11982,36 +10437,6 @@
       "maxPrice": 89
     },
     {
-      "id": "parmigiano reggiano dop",
-      "canonicalName": "parmigiano reggiano dop",
-      "canonicalKey": "parmigiano reggiano dop",
-      "quantity": null,
-      "aliases": [
-        "PARMIGIANO REGGIANO DOP"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 4.99,
-      "maxPrice": 4.99
-    },
-    {
-      "id": "parmigiano reggiano dop grattugiato",
-      "canonicalName": "parmigiano reggiano dop grattugiato",
-      "canonicalKey": "parmigiano reggiano dop grattugiato",
-      "quantity": null,
-      "aliases": [
-        "PARMIGIANO REGGIANO DOP GRATTUGIATO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.49,
-      "maxPrice": 1.49
-    },
-    {
       "id": "parure copripiumino",
       "canonicalName": "parure copripiumino",
       "canonicalKey": "parure copripiumino",
@@ -12037,8 +10462,8 @@
       "stores": [
         "Eurospin"
       ],
-      "offersCount": 2,
-      "minPrice": 0.65,
+      "offersCount": 1,
+      "minPrice": 0.79,
       "maxPrice": 0.79
     },
     {
@@ -12117,21 +10542,6 @@
       "maxPrice": 0.99
     },
     {
-      "id": "pasta sfoglia fresca rettangolare",
-      "canonicalName": "pasta sfoglia fresca rettangolare",
-      "canonicalKey": "pasta sfoglia fresca rettangolare",
-      "quantity": null,
-      "aliases": [
-        "PASTA SFOGLIA FRESCA RETTANGOLARE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.69,
-      "maxPrice": 0.69
-    },
-    {
       "id": "pasta sfoglia fresca rotonda",
       "canonicalName": "pasta sfoglia fresca rotonda",
       "canonicalKey": "pasta sfoglia fresca rotonda",
@@ -12185,21 +10595,6 @@
       "offersCount": 3,
       "minPrice": 0.99,
       "maxPrice": 1.49
-    },
-    {
-      "id": "patate fritte",
-      "canonicalName": "patate fritte",
-      "canonicalKey": "patate fritte",
-      "quantity": null,
-      "aliases": [
-        "PATATE FRITTE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.29,
-      "maxPrice": 1.29
     },
     {
       "id": "patate paletta",
@@ -12286,21 +10681,6 @@
       ],
       "stores": [
         "PENNY"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.99,
-      "maxPrice": 0.99
-    },
-    {
-      "id": "patatine croccanti grigliate",
-      "canonicalName": "patatine croccanti grigliate",
-      "canonicalKey": "patatine croccanti grigliate",
-      "quantity": null,
-      "aliases": [
-        "PATATINE CROCCANTI GRIGLIATE"
-      ],
-      "stores": [
-        "Eurospin"
       ],
       "offersCount": 1,
       "minPrice": 0.99,
@@ -12400,51 +10780,6 @@
       "offersCount": 1,
       "minPrice": 5.59,
       "maxPrice": 5.59
-    },
-    {
-      "id": "peluche 30 cm",
-      "canonicalName": "peluche 30 cm",
-      "canonicalKey": "peluche 30 cm",
-      "quantity": null,
-      "aliases": [
-        "PELUCHE 30 CM"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 7.99,
-      "maxPrice": 7.99
-    },
-    {
-      "id": "penne rigate",
-      "canonicalName": "penne rigate",
-      "canonicalKey": "penne rigate",
-      "quantity": null,
-      "aliases": [
-        "PENNE RIGATE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.19,
-      "maxPrice": 1.19
-    },
-    {
-      "id": "penne rigate integrali trafilate bronzo",
-      "canonicalName": "penne rigate integrali trafilate bronzo",
-      "canonicalKey": "penne rigate integrali trafilate bronzo",
-      "quantity": null,
-      "aliases": [
-        "PENNE RIGATE INTEGRALI TRAFILATE AL BRONZO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.65,
-      "maxPrice": 0.65
     },
     {
       "id": "penne rigate trafilate bronzo",
@@ -12637,21 +10972,6 @@
       "maxPrice": 1.99
     },
     {
-      "id": "petto tacchino arrosto",
-      "canonicalName": "petto tacchino arrosto",
-      "canonicalKey": "petto tacchino arrosto",
-      "quantity": null,
-      "aliases": [
-        "PETTO DI TACCHINO ARROSTO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
       "id": "petto tacchino forno welless|120g",
       "canonicalName": "petto tacchino forno welless",
       "canonicalKey": "petto tacchino forno welless|120g",
@@ -12722,21 +11042,6 @@
       "maxPrice": 9.99
     },
     {
-      "id": "piadina romagnola igp riminese",
-      "canonicalName": "piadina romagnola igp riminese",
-      "canonicalKey": "piadina romagnola igp riminese",
-      "quantity": null,
-      "aliases": [
-        "PIADINA ROMAGNOLA IGP ALLA RIMINESE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.95,
-      "maxPrice": 0.95
-    },
-    {
       "id": "piante verdi mix vaso 12 cm altezza 20 40 annaffiare regolarmente",
       "canonicalName": "piante verdi mix vaso 12 cm altezza 20 40 annaffiare regolarmente",
       "canonicalKey": "piante verdi mix vaso 12 cm altezza 20 40 annaffiare regolarmente",
@@ -12802,21 +11107,6 @@
       "maxPrice": 1.39
     },
     {
-      "id": "pinze",
-      "canonicalName": "pinze",
-      "canonicalKey": "pinze",
-      "quantity": null,
-      "aliases": [
-        "PINZE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
-    },
-    {
       "id": "piselli finissimi",
       "canonicalName": "piselli finissimi",
       "canonicalKey": "piselli finissimi",
@@ -12830,21 +11120,6 @@
       "offersCount": 1,
       "minPrice": 1.45,
       "maxPrice": 1.45
-    },
-    {
-      "id": "piselli tonno",
-      "canonicalName": "piselli tonno",
-      "canonicalKey": "piselli tonno",
-      "quantity": null,
-      "aliases": [
-        "PISELLI E TONNO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.29,
-      "maxPrice": 2.29
     },
     {
       "id": "pisellini primavera findus|660g",
@@ -13112,21 +11387,6 @@
       "maxPrice": 0.49
     },
     {
-      "id": "pomodori secchi",
-      "canonicalName": "pomodori secchi",
-      "canonicalKey": "pomodori secchi",
-      "quantity": null,
-      "aliases": [
-        "POMODORI SECCHI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.99,
-      "maxPrice": 0.99
-    },
-    {
       "id": "pomodori secchi ortomio|340g",
       "canonicalName": "pomodori secchi ortomio",
       "canonicalKey": "pomodori secchi ortomio|340g",
@@ -13327,8 +11587,8 @@
       "stores": [
         "Eurospin"
       ],
-      "offersCount": 2,
-      "minPrice": 1.49,
+      "offersCount": 1,
+      "minPrice": 2.49,
       "maxPrice": 2.49
     },
     {
@@ -13407,51 +11667,6 @@
       "maxPrice": 1.65
     },
     {
-      "id": "prosciutto parma dop",
-      "canonicalName": "prosciutto parma dop",
-      "canonicalKey": "prosciutto parma dop",
-      "quantity": null,
-      "aliases": [
-        "PROSCIUTTO DI PARMA DOP"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.59,
-      "maxPrice": 2.59
-    },
-    {
-      "id": "prosecco doc frizzante",
-      "canonicalName": "prosecco doc frizzante",
-      "canonicalKey": "prosecco doc frizzante",
-      "quantity": null,
-      "aliases": [
-        "PROSECCO DOC FRIZZANTE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.89,
-      "maxPrice": 2.89
-    },
-    {
-      "id": "provola dolce fette",
-      "canonicalName": "provola dolce fette",
-      "canonicalKey": "provola dolce fette",
-      "quantity": null,
-      "aliases": [
-        "PROVOLA DOLCE A FETTE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.29,
-      "maxPrice": 1.29
-    },
-    {
       "id": "provola dolce scamorza affumicata valbonta|140g",
       "canonicalName": "provola dolce scamorza affumicata valbonta",
       "canonicalKey": "provola dolce scamorza affumicata valbonta|140g",
@@ -13470,21 +11685,6 @@
       "offersCount": 1,
       "minPrice": 1.09,
       "maxPrice": 1.09
-    },
-    {
-      "id": "provoletta affumicata",
-      "canonicalName": "provoletta affumicata",
-      "canonicalKey": "provoletta affumicata",
-      "quantity": null,
-      "aliases": [
-        "PROVOLETTA AFFUMICATA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 9.99,
-      "maxPrice": 9.99
     },
     {
       "id": "provolone dolce",
@@ -13542,21 +11742,6 @@
       "maxPrice": 17.99
     },
     {
-      "id": "quaderni a4 maxi monocromo punto metallico 1r 5m",
-      "canonicalName": "quaderni a4 maxi monocromo punto metallico 1r 5m",
-      "canonicalKey": "quaderni a4 maxi monocromo punto metallico 1r 5m",
-      "quantity": null,
-      "aliases": [
-        "QUADERNI A4 MAXI MONOCROMO PUNTO METALLICO 1R/5M"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.29,
-      "maxPrice": 1.29
-    },
-    {
       "id": "quaderno maxi one color 1r mm",
       "canonicalName": "quaderno maxi one color 1r mm",
       "canonicalKey": "quaderno maxi one color 1r mm",
@@ -13587,36 +11772,6 @@
       "maxPrice": 3.99
     },
     {
-      "id": "ravioli ricotta spinaci",
-      "canonicalName": "ravioli ricotta spinaci",
-      "canonicalKey": "ravioli ricotta spinaci",
-      "quantity": null,
-      "aliases": [
-        "RAVIOLI RICOTTA E SPINACI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.29,
-      "maxPrice": 2.29
-    },
-    {
-      "id": "ravioli ricotta spinaci erbette",
-      "canonicalName": "ravioli ricotta spinaci erbette",
-      "canonicalKey": "ravioli ricotta spinaci erbette",
-      "quantity": null,
-      "aliases": [
-        "RAVIOLI RICOTTA, SPINACI ED ERBETTE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.39,
-      "maxPrice": 1.39
-    },
-    {
       "id": "ricarica sapone argan aloe",
       "canonicalName": "ricarica sapone argan aloe",
       "canonicalKey": "ricarica sapone argan aloe",
@@ -13630,21 +11785,6 @@
       "offersCount": 1,
       "minPrice": 1.69,
       "maxPrice": 1.69
-    },
-    {
-      "id": "ricotta fresca",
-      "canonicalName": "ricotta fresca",
-      "canonicalKey": "ricotta fresca",
-      "quantity": null,
-      "aliases": [
-        "RICOTTA FRESCA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.55,
-      "maxPrice": 0.55
     },
     {
       "id": "risma carta a4 business|75g",
@@ -13702,21 +11842,6 @@
       "maxPrice": 2.49
     },
     {
-      "id": "riso lungo parboiled",
-      "canonicalName": "riso lungo parboiled",
-      "canonicalKey": "riso lungo parboiled",
-      "quantity": null,
-      "aliases": [
-        "RISO LUNGO B PARBOILED"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.29,
-      "maxPrice": 2.29
-    },
-    {
       "id": "riso ribe parboiled penny|1000g",
       "canonicalName": "riso ribe parboiled penny",
       "canonicalKey": "riso ribe parboiled penny|1000g",
@@ -13765,26 +11890,6 @@
       "offersCount": 1,
       "minPrice": 1.59,
       "maxPrice": 1.59
-    },
-    {
-      "id": "rotolo tuttofare casa veli|400pz",
-      "canonicalName": "rotolo tuttofare casa veli",
-      "canonicalKey": "rotolo tuttofare casa veli|400pz",
-      "quantity": {
-        "value": 400,
-        "unit": "pz",
-        "label": "400 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "ROTOLO TUTTOFARE CASA, 2 VELI, 400 STRAPPI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.69,
-      "maxPrice": 1.69
     },
     {
       "id": "rucola natura|200g",
@@ -13892,21 +11997,6 @@
       "maxPrice": 1.35
     },
     {
-      "id": "salame napoli",
-      "canonicalName": "salame napoli",
-      "canonicalKey": "salame napoli",
-      "quantity": null,
-      "aliases": [
-        "SALAME NAPOLI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.29,
-      "maxPrice": 1.29
-    },
-    {
       "id": "salame ungherese",
       "canonicalName": "salame ungherese",
       "canonicalKey": "salame ungherese",
@@ -13940,36 +12030,6 @@
       "offersCount": 1,
       "minPrice": 3.99,
       "maxPrice": 3.99
-    },
-    {
-      "id": "salamini classici",
-      "canonicalName": "salamini classici",
-      "canonicalKey": "salamini classici",
-      "quantity": null,
-      "aliases": [
-        "SALAMINI CLASSICI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.85,
-      "maxPrice": 1.85
-    },
-    {
-      "id": "salamini piccanti",
-      "canonicalName": "salamini piccanti",
-      "canonicalKey": "salamini piccanti",
-      "quantity": null,
-      "aliases": [
-        "SALAMINI PICCANTI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.85,
-      "maxPrice": 1.85
     },
     {
       "id": "salmone norvegese affumicato gran mare|150g",
@@ -14010,36 +12070,6 @@
       "offersCount": 1,
       "minPrice": 0.79,
       "maxPrice": 0.79
-    },
-    {
-      "id": "salsa pomodoro datterino",
-      "canonicalName": "salsa pomodoro datterino",
-      "canonicalKey": "salsa pomodoro datterino",
-      "quantity": null,
-      "aliases": [
-        "SALSA DI POMODORO DATTERINO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.79,
-      "maxPrice": 0.79
-    },
-    {
-      "id": "salsiccia curva",
-      "canonicalName": "salsiccia curva",
-      "canonicalKey": "salsiccia curva",
-      "quantity": null,
-      "aliases": [
-        "SALSICCIA CURVA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 13.99,
-      "maxPrice": 13.99
     },
     {
       "id": "salumiere",
@@ -14277,21 +12307,6 @@
       "maxPrice": 1.39
     },
     {
-      "id": "scaffale portaoggetti",
-      "canonicalName": "scaffale portaoggetti",
-      "canonicalKey": "scaffale portaoggetti",
-      "quantity": null,
-      "aliases": [
-        "SCAFFALE PORTAOGGETTI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 24.99,
-      "maxPrice": 24.99
-    },
-    {
       "id": "scamorza affumicata",
       "canonicalName": "scamorza affumicata",
       "canonicalKey": "scamorza affumicata",
@@ -14382,51 +12397,6 @@
       "maxPrice": 3.99
     },
     {
-      "id": "scrivania",
-      "canonicalName": "scrivania",
-      "canonicalKey": "scrivania",
-      "quantity": null,
-      "aliases": [
-        "SCRIVANIA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 69.99,
-      "maxPrice": 69.99
-    },
-    {
-      "id": "sebadas sardegna igp",
-      "canonicalName": "sebadas sardegna igp",
-      "canonicalKey": "sebadas sardegna igp",
-      "quantity": null,
-      "aliases": [
-        "SEBADAS DI SARDEGNA IGP"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.69,
-      "maxPrice": 2.69
-    },
-    {
-      "id": "sedia scrivania",
-      "canonicalName": "sedia scrivania",
-      "canonicalKey": "sedia scrivania",
-      "quantity": null,
-      "aliases": [
-        "SEDIA DA SCRIVANIA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 39.99,
-      "maxPrice": 39.99
-    },
-    {
       "id": "select go insalata pronta caesar salad pollo arrosto|140g",
       "canonicalName": "select go insalata pronta caesar salad pollo arrosto",
       "canonicalKey": "select go insalata pronta caesar salad pollo arrosto|140g",
@@ -14502,21 +12472,6 @@
       "maxPrice": 4.79
     },
     {
-      "id": "set 10 penne sfera scatto osama correttori nastro 20",
-      "canonicalName": "set 10 penne sfera scatto osama correttori nastro 20",
-      "canonicalKey": "set 10 penne sfera scatto osama correttori nastro 20",
-      "quantity": null,
-      "aliases": [
-        "SET 10 PENNE A SFERA A SCATTO 'OSAMA'/SET 2 CORRETTORI A NASTRO 20 M 'OSAMA'"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.99,
-      "maxPrice": 3.99
-    },
-    {
       "id": "set 12 pennarelli acrilici carioca",
       "canonicalName": "set 12 pennarelli acrilici carioca",
       "canonicalKey": "set 12 pennarelli acrilici carioca",
@@ -14530,21 +12485,6 @@
       "offersCount": 1,
       "minPrice": 7.99,
       "maxPrice": 7.99
-    },
-    {
-      "id": "set 13 pennarelli matite colorate temperino gomma",
-      "canonicalName": "set 13 pennarelli matite colorate temperino gomma",
-      "canonicalKey": "set 13 pennarelli matite colorate temperino gomma",
-      "quantity": null,
-      "aliases": [
-        "SET 13 PENNARELLI/ SET 13 MATITE COLORATE/ SET 2 MATITE + TEMPERINO + GOMMA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
     },
     {
       "id": "set 24 pastelli colorati giotto smile evidenziatori tratto video emotions",
@@ -14577,21 +12517,6 @@
       "maxPrice": 3.99
     },
     {
-      "id": "set 50 buste forate trasparenti a4",
-      "canonicalName": "set 50 buste forate trasparenti a4",
-      "canonicalKey": "set 50 buste forate trasparenti a4",
-      "quantity": null,
-      "aliases": [
-        "SET 50 BUSTE FORATE TRASPARENTI A4"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.49,
-      "maxPrice": 2.49
-    },
-    {
       "id": "set adesivi|500pz",
       "canonicalName": "set adesivi",
       "canonicalKey": "set adesivi|500pz",
@@ -14610,41 +12535,6 @@
       "offersCount": 1,
       "minPrice": 1.49,
       "maxPrice": 1.49
-    },
-    {
-      "id": "set bicchieri kaleido bormioli rocco|250ml",
-      "canonicalName": "set bicchieri kaleido bormioli rocco",
-      "canonicalKey": "set bicchieri kaleido bormioli rocco|250ml",
-      "quantity": {
-        "value": 250,
-        "unit": "ml",
-        "label": "250 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "SET 6 BICCHIERI 25 CL 'KALEIDO' 'BORMIOLI ROCCO'"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.49,
-      "maxPrice": 3.49
-    },
-    {
-      "id": "set buste eva cerniera",
-      "canonicalName": "set buste eva cerniera",
-      "canonicalKey": "set buste eva cerniera",
-      "quantity": null,
-      "aliases": [
-        "SET 3 BUSTE IN EVA CON CERNIERA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
     },
     {
       "id": "set cacciaviti",
@@ -14712,21 +12602,6 @@
       "maxPrice": 11.99
     },
     {
-      "id": "set cinghie tensionatrici",
-      "canonicalName": "set cinghie tensionatrici",
-      "canonicalKey": "set cinghie tensionatrici",
-      "quantity": null,
-      "aliases": [
-        "SET CINGHIE TENSIONATRICI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 9.99,
-      "maxPrice": 9.99
-    },
-    {
       "id": "set colle pritt|10g",
       "canonicalName": "set colle pritt",
       "canonicalKey": "set colle pritt|10g",
@@ -14745,106 +12620,6 @@
       "offersCount": 1,
       "minPrice": 1.99,
       "maxPrice": 1.99
-    },
-    {
-      "id": "set colle stick osama penna sfera 4multi|10g",
-      "canonicalName": "set colle stick osama penna sfera 4multi",
-      "canonicalKey": "set colle stick osama penna sfera 4multi|10g",
-      "quantity": {
-        "value": 10,
-        "unit": "g",
-        "label": "10 g",
-        "multipack": null
-      },
-      "aliases": [
-        "SET 5 COLLE STICK 10 G 'OSAMA'/PENNA A SFERA 4MULTI 'OSAMA'"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
-      "id": "set contenitori frigo 1400 cc forme casa",
-      "canonicalName": "set contenitori frigo 1400 cc forme casa",
-      "canonicalKey": "set contenitori frigo 1400 cc forme casa",
-      "quantity": null,
-      "aliases": [
-        "SET 3 CONTENITORI FRIGO 1400 CC 'FORME CASA'"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 5.99,
-      "maxPrice": 5.99
-    },
-    {
-      "id": "set contenitori frigoverre bormioli rocco",
-      "canonicalName": "set contenitori frigoverre bormioli rocco",
-      "canonicalKey": "set contenitori frigoverre bormioli rocco",
-      "quantity": null,
-      "aliases": [
-        "SET 3 CONTENITORI FRIGOVERRE 'BORMIOLI ROCCO'"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 9.99,
-      "maxPrice": 9.99
-    },
-    {
-      "id": "set coprisedili auto",
-      "canonicalName": "set coprisedili auto",
-      "canonicalKey": "set coprisedili auto",
-      "quantity": null,
-      "aliases": [
-        "SET COPRISEDILI PER AUTO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 16.99,
-      "maxPrice": 16.99
-    },
-    {
-      "id": "set disegno arda|4pz",
-      "canonicalName": "set disegno arda",
-      "canonicalKey": "set disegno arda|4pz",
-      "quantity": {
-        "value": 4,
-        "unit": "pz",
-        "label": "4 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "SET 4 PEZZI DISEGNO 'ARDA'"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.99,
-      "maxPrice": 3.99
-    },
-    {
-      "id": "set due insalatiere 24 28 cm coperchio forme casa",
-      "canonicalName": "set due insalatiere 24 28 cm coperchio forme casa",
-      "canonicalKey": "set due insalatiere 24 28 cm coperchio forme casa",
-      "quantity": null,
-      "aliases": [
-        "SET DUE INSALATIERE 24 + 28 CM CON COPERCHIO 'FORME CASA'"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 6.99,
-      "maxPrice": 6.99
     },
     {
       "id": "set graffatrici manuali",
@@ -14912,21 +12687,6 @@
       "maxPrice": 3.99
     },
     {
-      "id": "set scolapiatti",
-      "canonicalName": "set scolapiatti",
-      "canonicalKey": "set scolapiatti",
-      "quantity": null,
-      "aliases": [
-        "SET SCOLAPIATTI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 4.99,
-      "maxPrice": 4.99
-    },
-    {
       "id": "set slip bambino",
       "canonicalName": "set slip bambino",
       "canonicalKey": "set slip bambino",
@@ -14948,21 +12708,6 @@
       "quantity": null,
       "aliases": [
         "SET 2 TAGLIERI IN BAMBU'"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 7.99,
-      "maxPrice": 7.99
-    },
-    {
-      "id": "set tappeti auto",
-      "canonicalName": "set tappeti auto",
-      "canonicalKey": "set tappeti auto",
-      "quantity": null,
-      "aliases": [
-        "SET 4 TAPPETI AUTO"
       ],
       "stores": [
         "Eurospin"
@@ -15327,21 +13072,6 @@
       "maxPrice": 2.49
     },
     {
-      "id": "snack tirolese xxl",
-      "canonicalName": "snack tirolese xxl",
-      "canonicalKey": "snack tirolese xxl",
-      "quantity": null,
-      "aliases": [
-        "SNACK ALLA TIROLESE XXL ASSORTITI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
       "id": "solevita arancia zero rossa",
       "canonicalName": "solevita arancia zero rossa",
       "canonicalKey": "solevita arancia zero rossa",
@@ -15389,21 +13119,6 @@
       "maxPrice": 0.65
     },
     {
-      "id": "spaghetti integrali trafilati bronzo",
-      "canonicalName": "spaghetti integrali trafilati bronzo",
-      "canonicalKey": "spaghetti integrali trafilati bronzo",
-      "quantity": null,
-      "aliases": [
-        "SPAGHETTI INTEGRALI TRAFILATI AL BRONZO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.65,
-      "maxPrice": 0.65
-    },
-    {
       "id": "spaghetti trafilati bronzo",
       "canonicalName": "spaghetti trafilati bronzo",
       "canonicalKey": "spaghetti trafilati bronzo",
@@ -15432,21 +13147,6 @@
       "offersCount": 1,
       "minPrice": 1.19,
       "maxPrice": 1.19
-    },
-    {
-      "id": "speaker bluetooth impermeabile bijoux",
-      "canonicalName": "speaker bluetooth impermeabile bijoux",
-      "canonicalKey": "speaker bluetooth impermeabile bijoux",
-      "quantity": null,
-      "aliases": [
-        "SPEAKER BLUETOOTH® IMPERMEABILE 'BIJOUX'"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 7.99,
-      "maxPrice": 7.99
     },
     {
       "id": "speaker bluetooth microfono integrato",
@@ -15512,36 +13212,6 @@
       "offersCount": 1,
       "minPrice": 29.99,
       "maxPrice": 29.99
-    },
-    {
-      "id": "spritz aperitivo",
-      "canonicalName": "spritz aperitivo",
-      "canonicalKey": "spritz aperitivo",
-      "quantity": null,
-      "aliases": [
-        "SPRITZ APERITIVO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.45,
-      "maxPrice": 1.45
-    },
-    {
-      "id": "spumante prince castell brut",
-      "canonicalName": "spumante prince castell brut",
-      "canonicalKey": "spumante prince castell brut",
-      "quantity": null,
-      "aliases": [
-        "SPUMANTE PRINCE CASTELL BRUT"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.69,
-      "maxPrice": 1.69
     },
     {
       "id": "spumante prosecco millesimato doc|750ml",
@@ -15612,21 +13282,6 @@
       "offersCount": 1,
       "minPrice": 15.99,
       "maxPrice": 15.99
-    },
-    {
-      "id": "stracchino",
-      "canonicalName": "stracchino",
-      "canonicalKey": "stracchino",
-      "quantity": null,
-      "aliases": [
-        "STRACCHINO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.09,
-      "maxPrice": 1.09
     },
     {
       "id": "stuzzichine bacon|6pz",
@@ -15739,9 +13394,9 @@
       "stores": [
         "Eurospin"
       ],
-      "offersCount": 2,
+      "offersCount": 1,
       "minPrice": 1.99,
-      "maxPrice": 2.55
+      "maxPrice": 1.99
     },
     {
       "id": "sugo bolognese",
@@ -15759,21 +13414,6 @@
       "maxPrice": 1.09
     },
     {
-      "id": "sugo frutti mare",
-      "canonicalName": "sugo frutti mare",
-      "canonicalKey": "sugo frutti mare",
-      "quantity": null,
-      "aliases": [
-        "SUGO AI FRUTTI DI MARE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
       "id": "sugo olive",
       "canonicalName": "sugo olive",
       "canonicalKey": "sugo olive",
@@ -15787,21 +13427,6 @@
       "offersCount": 1,
       "minPrice": 1.09,
       "maxPrice": 1.09
-    },
-    {
-      "id": "supporto monitor",
-      "canonicalName": "supporto monitor",
-      "canonicalKey": "supporto monitor",
-      "quantity": null,
-      "aliases": [
-        "SUPPORTO PER MONITOR"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 8.99,
-      "maxPrice": 8.99
     },
     {
       "id": "susine rosse",
@@ -15849,21 +13474,6 @@
       "maxPrice": 17.99
     },
     {
-      "id": "tagliere coltello chef 20 cm pane",
-      "canonicalName": "tagliere coltello chef 20 cm pane",
-      "canonicalKey": "tagliere coltello chef 20 cm pane",
-      "quantity": null,
-      "aliases": [
-        "TAGLIERE / COLTELLO CHEF 20 CM / COLTELLO PANE 20"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 4.99,
-      "maxPrice": 4.99
-    },
-    {
       "id": "tappetini assorbenti|10pz",
       "canonicalName": "tappetini assorbenti",
       "canonicalKey": "tappetini assorbenti|10pz",
@@ -15902,21 +13512,6 @@
       "offersCount": 1,
       "minPrice": 3.19,
       "maxPrice": 3.19
-    },
-    {
-      "id": "tavolino sedie",
-      "canonicalName": "tavolino sedie",
-      "canonicalKey": "tavolino sedie",
-      "quantity": null,
-      "aliases": [
-        "TAVOLINO E 2 SEDIE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 27.99,
-      "maxPrice": 27.99
     },
     {
       "id": "tazza|1200ml",
@@ -15972,21 +13567,6 @@
       "offersCount": 1,
       "minPrice": 5.99,
       "maxPrice": 5.99
-    },
-    {
-      "id": "temperamatite elettrico",
-      "canonicalName": "temperamatite elettrico",
-      "canonicalKey": "temperamatite elettrico",
-      "quantity": null,
-      "aliases": [
-        "TEMPERAMATITE ELETTRICO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.99,
-      "maxPrice": 3.99
     },
     {
       "id": "temperatura regolabile livelli seta tessuti sintetici lana cotone lino vapore permanente|130g",
@@ -16089,21 +13669,6 @@
       "maxPrice": 0.99
     },
     {
-      "id": "the pesca limone zero zucchero",
-      "canonicalName": "the pesca limone zero zucchero",
-      "canonicalKey": "the pesca limone zero zucchero",
-      "quantity": null,
-      "aliases": [
-        "THÈ ALLA PESCA/ AL LIMONE ZERO ZUCCHERO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.55,
-      "maxPrice": 0.55
-    },
-    {
       "id": "tiragraffi gatti",
       "canonicalName": "tiragraffi gatti",
       "canonicalKey": "tiragraffi gatti",
@@ -16117,36 +13682,6 @@
       "offersCount": 1,
       "minPrice": 9.99,
       "maxPrice": 9.99
-    },
-    {
-      "id": "tonica limone",
-      "canonicalName": "tonica limone",
-      "canonicalKey": "tonica limone",
-      "quantity": null,
-      "aliases": [
-        "TONICA AL LIMONE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.49,
-      "maxPrice": 0.49
-    },
-    {
-      "id": "tonno naturale",
-      "canonicalName": "tonno naturale",
-      "canonicalKey": "tonno naturale",
-      "quantity": null,
-      "aliases": [
-        "TONNO AL NATURALE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
     },
     {
       "id": "tonno naturale gran mare|240g",
@@ -16224,36 +13759,6 @@
       "maxPrice": 3.69
     },
     {
-      "id": "tonno pinna gialla all olio oliva",
-      "canonicalName": "tonno pinna gialla all olio oliva",
-      "canonicalKey": "tonno pinna gialla all olio oliva",
-      "quantity": null,
-      "aliases": [
-        "TONNO PINNA GIALLA ALL'OLIO DI OLIVA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
-    },
-    {
-      "id": "torcia led kit attrezzi",
-      "canonicalName": "torcia led kit attrezzi",
-      "canonicalKey": "torcia led kit attrezzi",
-      "quantity": null,
-      "aliases": [
-        "TORCIA LED CON KIT ATTREZZI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 9.99,
-      "maxPrice": 9.99
-    },
-    {
       "id": "torcia led lavoro scelta tra tubolare estraibile gancio ribaltabile",
       "canonicalName": "torcia led lavoro scelta tra tubolare estraibile gancio ribaltabile",
       "canonicalKey": "torcia led lavoro scelta tra tubolare estraibile gancio ribaltabile",
@@ -16312,21 +13817,6 @@
       "offersCount": 1,
       "minPrice": 0.65,
       "maxPrice": 0.65
-    },
-    {
-      "id": "tortilla",
-      "canonicalName": "tortilla",
-      "canonicalKey": "tortilla",
-      "quantity": null,
-      "aliases": [
-        "TORTILLA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.99,
-      "maxPrice": 0.99
     },
     {
       "id": "tovaglietta pp stitch angel 45x30cm",
@@ -16452,41 +13942,6 @@
       "offersCount": 1,
       "minPrice": 1.09,
       "maxPrice": 1.09
-    },
-    {
-      "id": "trancetti tonno olio oliva",
-      "canonicalName": "trancetti tonno olio oliva",
-      "canonicalKey": "trancetti tonno olio oliva",
-      "quantity": null,
-      "aliases": [
-        "TRANCETTI DI TONNO ALL'OLIO DI OLIVA"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.19,
-      "maxPrice": 2.19
-    },
-    {
-      "id": "tranci pizza margherita|3pz",
-      "canonicalName": "tranci pizza margherita",
-      "canonicalKey": "tranci pizza margherita|3pz",
-      "quantity": {
-        "value": 3,
-        "unit": "pz",
-        "label": "3 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "TRANCI DI PIZZA MARGHERITA, 3 PZ"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.69,
-      "maxPrice": 3.69
     },
     {
       "id": "trancino crema latte",
@@ -16734,21 +14189,6 @@
       "maxPrice": 3.99
     },
     {
-      "id": "valigetta nera portautensili",
-      "canonicalName": "valigetta nera portautensili",
-      "canonicalKey": "valigetta nera portautensili",
-      "quantity": null,
-      "aliases": [
-        "VALIGETTA NERA CON PORTAUTENSILI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 24.99,
-      "maxPrice": 24.99
-    },
-    {
       "id": "varieta assortite",
       "canonicalName": "varieta assortite",
       "canonicalKey": "varieta assortite",
@@ -16894,21 +14334,6 @@
       "maxPrice": 3.99
     },
     {
-      "id": "vermentino gallura docg",
-      "canonicalName": "vermentino gallura docg",
-      "canonicalKey": "vermentino gallura docg",
-      "quantity": null,
-      "aliases": [
-        "VERMENTINO DI GALLURA DOCG"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.89,
-      "maxPrice": 3.89
-    },
-    {
       "id": "vermentino sardegna doc vino bianco 10 12 vol|750ml",
       "canonicalName": "vermentino sardegna doc vino bianco 10 12 vol",
       "canonicalKey": "vermentino sardegna doc vino bianco 10 12 vol|750ml",
@@ -16967,36 +14392,6 @@
       "offersCount": 1,
       "minPrice": 2.49,
       "maxPrice": 2.49
-    },
-    {
-      "id": "vino bianco brik",
-      "canonicalName": "vino bianco brik",
-      "canonicalKey": "vino bianco brik",
-      "quantity": null,
-      "aliases": [
-        "VINO BIANCO IN BRIK"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.85,
-      "maxPrice": 0.85
-    },
-    {
-      "id": "vino rosato brik",
-      "canonicalName": "vino rosato brik",
-      "canonicalKey": "vino rosato brik",
-      "quantity": null,
-      "aliases": [
-        "VINO ROSATO IN BRIK"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.85,
-      "maxPrice": 0.85
     },
     {
       "id": "vino rosso",
@@ -17144,26 +14539,6 @@
       "maxPrice": 0.45
     },
     {
-      "id": "wurstel puro suino|4pz",
-      "canonicalName": "wurstel puro suino",
-      "canonicalKey": "wurstel puro suino|4pz",
-      "quantity": {
-        "value": 4,
-        "unit": "pz",
-        "label": "4 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "WÜRSTEL PURO SUINO, 4 PZ"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.39,
-      "maxPrice": 0.39
-    },
-    {
       "id": "yogurt bere fragola",
       "canonicalName": "yogurt bere fragola",
       "canonicalKey": "yogurt bere fragola",
@@ -17192,21 +14567,6 @@
       "offersCount": 1,
       "minPrice": 0.59,
       "maxPrice": 0.59
-    },
-    {
-      "id": "yogurt bianco dolce cremoso",
-      "canonicalName": "yogurt bianco dolce cremoso",
-      "canonicalKey": "yogurt bianco dolce cremoso",
-      "quantity": null,
-      "aliases": [
-        "YOGURT BIANCO DOLCE E CREMOSO"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.49,
-      "maxPrice": 2.49
     },
     {
       "id": "yogurt cremoso pistacchio mandorle caramellate",
@@ -17307,21 +14667,6 @@
       "offersCount": 1,
       "minPrice": 17.99,
       "maxPrice": 17.99
-    },
-    {
-      "id": "zuppa pesce",
-      "canonicalName": "zuppa pesce",
-      "canonicalKey": "zuppa pesce",
-      "quantity": null,
-      "aliases": [
-        "ZUPPA DI PESCE"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 4.99,
-      "maxPrice": 4.99
     },
     {
       "id": "zymil approfittane yogurt greco ora senza lattosio bianco fragola|150g",
