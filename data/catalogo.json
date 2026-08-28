@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T16:30:08.491Z",
+  "generatedAt": "2026-08-28T17:26:24.595Z",
   "items": [
     {
       "id": "10x esmara calzini uomo donna 10 paia",
@@ -848,28 +848,8 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 1,
+      "offersCount": 2,
       "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
-      "id": "approfittane ora biorepair dentifricio|75ml",
-      "canonicalName": "approfittane ora biorepair dentifricio",
-      "canonicalKey": "approfittane ora biorepair dentifricio|75ml",
-      "quantity": {
-        "value": 75,
-        "unit": "ml",
-        "label": "75 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "Approfittane ora BIOREPAIR Dentifricio Assortito"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
       "maxPrice": 2.99
     },
     {
@@ -891,26 +871,6 @@
       "offersCount": 1,
       "minPrice": 2.49,
       "maxPrice": 2.49
-    },
-    {
-      "id": "approfittane ora calve ketchup|250ml",
-      "canonicalName": "approfittane ora calve ketchup",
-      "canonicalKey": "approfittane ora calve ketchup|250ml",
-      "quantity": {
-        "value": 250,
-        "unit": "ml",
-        "label": "250 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "Approfittane ora CALVÉ Ketchup"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.39,
-      "maxPrice": 1.39
     },
     {
       "id": "approfittane ora cameo sticks bretzel|300g",
@@ -1176,26 +1136,6 @@
       "offersCount": 1,
       "minPrice": 1.79,
       "maxPrice": 1.79
-    },
-    {
-      "id": "approfittane oreal ora excellence colorazione capelli|272g",
-      "canonicalName": "approfittane oreal ora excellence colorazione capelli",
-      "canonicalKey": "approfittane oreal ora excellence colorazione capelli|272g",
-      "quantity": {
-        "value": 272,
-        "unit": "g",
-        "label": "272 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Approfittane L’ORÈAL ora Excellence Colorazione capelli Assortito"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 8.99,
-      "maxPrice": 8.99
     },
     {
       "id": "approfittane solevita ora succo pera pesca ace senza zuccheri aggiunti|600ml",
@@ -7885,6 +7825,26 @@
       "maxPrice": 59.99
     },
     {
+      "id": "infasil deodorante approfittane ora spray|150ml",
+      "canonicalName": "infasil deodorante approfittane ora spray",
+      "canonicalKey": "infasil deodorante approfittane ora spray|150ml",
+      "quantity": {
+        "value": 150,
+        "unit": "ml",
+        "label": "150 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "INFASIL Deodorante Approfittane ora spray Assortito"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.25,
+      "maxPrice": 2.25
+    },
+    {
       "id": "infasil deodorante approfittane ora stick|50ml",
       "canonicalName": "infasil deodorante approfittane ora stick",
       "canonicalKey": "infasil deodorante approfittane ora stick|50ml",
@@ -7903,26 +7863,6 @@
       "offersCount": 1,
       "minPrice": 2.19,
       "maxPrice": 2.19
-    },
-    {
-      "id": "infasil deodorante spray|150ml",
-      "canonicalName": "infasil deodorante spray",
-      "canonicalKey": "infasil deodorante spray|150ml",
-      "quantity": {
-        "value": 150,
-        "unit": "ml",
-        "label": "150 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "INFASIL Deodorante spray Assortito"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.25,
-      "maxPrice": 2.25
     },
     {
       "id": "insalata mare verdure|350g",
@@ -14667,21 +14607,6 @@
       "offersCount": 1,
       "minPrice": 2.99,
       "maxPrice": 2.99
-    },
-    {
-      "id": "veicolo",
-      "canonicalName": "veicolo",
-      "canonicalKey": "veicolo",
-      "quantity": null,
-      "aliases": [
-        "Veicolo con"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.99,
-      "maxPrice": 3.99
     },
     {
       "id": "ventilatorino portatile",
