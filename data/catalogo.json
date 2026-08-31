@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T10:28:50.596Z",
+  "generatedAt": "2026-08-31T11:35:24.230Z",
   "items": [
     {
       "id": "10x esmara calzini uomo donna 10 paia",
@@ -1621,6 +1621,26 @@
       "offersCount": 1,
       "minPrice": 1.99,
       "maxPrice": 1.99
+    },
+    {
+      "id": "aspirapolvere ricaricabile|500ml",
+      "canonicalName": "aspirapolvere ricaricabile",
+      "canonicalKey": "aspirapolvere ricaricabile|500ml",
+      "quantity": {
+        "value": 500,
+        "unit": "ml",
+        "label": "500 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "Aspirapolvere ricaricabile 2 in 1"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 79,
+      "maxPrice": 79
     },
     {
       "id": "assorbenti giorno notte ali inea|20pz",
@@ -5464,46 +5484,6 @@
       "maxPrice": 19.99
     },
     {
-      "id": "duc de coeur creme brulee pasta sfoglia|350g",
-      "canonicalName": "duc de coeur creme brulee pasta sfoglia",
-      "canonicalKey": "duc de coeur creme brulee pasta sfoglia|350g",
-      "quantity": {
-        "value": 350,
-        "unit": "g",
-        "label": "350 g",
-        "multipack": null
-      },
-      "aliases": [
-        "DUC DE COEUR Crème brûlée con pasta sfoglia"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.89,
-      "maxPrice": 1.89
-    },
-    {
-      "id": "duc de coeur gelato variegato diversi|490g",
-      "canonicalName": "duc de coeur gelato variegato diversi",
-      "canonicalKey": "duc de coeur gelato variegato diversi|490g",
-      "quantity": {
-        "value": 490,
-        "unit": "g",
-        "label": "490 g",
-        "multipack": null
-      },
-      "aliases": [
-        "DUC DE COEUR Gelato variegato In diversi gusti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.49,
-      "maxPrice": 2.49
-    },
-    {
       "id": "dulano approfittane ora parkside edition",
       "canonicalName": "dulano approfittane ora parkside edition",
       "canonicalKey": "dulano approfittane ora parkside edition",
@@ -7754,6 +7734,26 @@
       "offersCount": 1,
       "minPrice": 2.89,
       "maxPrice": 2.89
+    },
+    {
+      "id": "gelatelli cono gelato gocce cioccolato cacao fragola|420g",
+      "canonicalName": "gelatelli cono gelato gocce cioccolato cacao fragola",
+      "canonicalKey": "gelatelli cono gelato gocce cioccolato cacao fragola|420g",
+      "quantity": {
+        "value": 420,
+        "unit": "g",
+        "label": "420 g",
+        "multipack": null
+      },
+      "aliases": [
+        "GELATELLI Cono gelato con gocce di cioccolato Gusto cacao o fragola"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.29,
+      "maxPrice": 3.29
     },
     {
       "id": "gelatelli cono gelato granella croccante mandorle caffe|450g",
