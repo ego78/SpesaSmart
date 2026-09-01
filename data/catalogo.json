@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T11:35:24.230Z",
+  "generatedAt": "2026-09-01T10:04:41.196Z",
   "items": [
     {
       "id": "10x esmara calzini uomo donna 10 paia",
@@ -6701,6 +6701,21 @@
       "maxPrice": 0.99
     },
     {
+      "id": "fichi freschi",
+      "canonicalName": "fichi freschi",
+      "canonicalKey": "fichi freschi",
+      "quantity": null,
+      "aliases": [
+        "Fichi Freschi"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.55,
+      "maxPrice": 0.55
+    },
+    {
       "id": "filetti acciughe",
       "canonicalName": "filetti acciughe",
       "canonicalKey": "filetti acciughe",
@@ -9831,8 +9846,8 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 18,
-      "minPrice": 0.55,
+      "offersCount": 16,
+      "minPrice": 1.11,
       "maxPrice": 29.99
     },
     {
