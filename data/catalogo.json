@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T09:39:14.963Z",
+  "generatedAt": "2026-09-09T09:43:22.401Z",
   "items": [
     {
       "id": "21",
@@ -11737,12 +11737,12 @@
       "maxPrice": 9.99
     },
     {
-      "id": "parkside cacciavite elettricista inserti intercambiabili dotazione impugnatura supporto lama intercambiabile",
-      "canonicalName": "parkside cacciavite elettricista inserti intercambiabili dotazione impugnatura supporto lama intercambiabile",
-      "canonicalKey": "parkside cacciavite elettricista inserti intercambiabili dotazione impugnatura supporto lama intercambiabile",
+      "id": "parkside cacciavite elettricista inserti intercambiabili dotazione impugnatura",
+      "canonicalName": "parkside cacciavite elettricista inserti intercambiabili dotazione impugnatura",
+      "canonicalKey": "parkside cacciavite elettricista inserti intercambiabili dotazione impugnatura",
       "quantity": null,
       "aliases": [
-        "PARKSIDE Cacciavite da elettricista con inserti intercambiabili In dotazione: impugnatura con supporto per lama intercambiabile, 5 inserti"
+        "PARKSIDE Cacciavite da elettricista con inserti intercambiabili In dotazione: impugnatura,"
       ],
       "stores": [
         "Lidl"
@@ -16485,8 +16485,8 @@
         "Lidl"
       ],
       "offersCount": 1,
-      "minPrice": 2.09,
-      "maxPrice": 2.09
+      "minPrice": 1.99,
+      "maxPrice": 1.99
     },
     {
       "id": "tagliere montanara",
