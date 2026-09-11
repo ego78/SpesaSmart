@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T09:41:39.897Z",
+  "generatedAt": "2026-09-11T09:39:05.170Z",
   "items": [
     {
       "id": "3m nastro adesivo",
@@ -270,6 +270,26 @@
       "offersCount": 1,
       "minPrice": 4.19,
       "maxPrice": 4.19
+    },
+    {
+      "id": "aia salsiccia pollo tacchino suino|400g",
+      "canonicalName": "aia salsiccia pollo tacchino suino",
+      "canonicalKey": "aia salsiccia pollo tacchino suino|400g",
+      "quantity": {
+        "value": 400,
+        "unit": "g",
+        "label": "400 g",
+        "multipack": null
+      },
+      "aliases": [
+        "AIA Salsiccia di pollo, tacchino e suino"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.79,
+      "maxPrice": 2.79
     },
     {
       "id": "alla",
@@ -1172,6 +1192,26 @@
       "maxPrice": 1
     },
     {
+      "id": "approfittane ora mulino bianco galletti|800g",
+      "canonicalName": "approfittane ora mulino bianco galletti",
+      "canonicalKey": "approfittane ora mulino bianco galletti|800g",
+      "quantity": {
+        "value": 800,
+        "unit": "g",
+        "label": "800 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Approfittane ora MULINO BIANCO Galletti"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.69,
+      "maxPrice": 2.69
+    },
+    {
       "id": "approfittane ora nivea acqua micellare|400ml",
       "canonicalName": "approfittane ora nivea acqua micellare",
       "canonicalKey": "approfittane ora nivea acqua micellare|400ml",
@@ -1245,26 +1285,6 @@
       "offersCount": 1,
       "minPrice": 1,
       "maxPrice": 1
-    },
-    {
-      "id": "approfittane pantene ora pro shampoo|625ml",
-      "canonicalName": "approfittane pantene ora pro shampoo",
-      "canonicalKey": "approfittane pantene ora pro shampoo|625ml",
-      "quantity": {
-        "value": 625,
-        "unit": "ml",
-        "label": "625 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "Approfittane PANTENE ora Pro-V shampoo Assortiti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 4.89,
-      "maxPrice": 4.89
     },
     {
       "id": "arachidi ricoperti snack|150g",
@@ -1687,9 +1707,9 @@
       "maxPrice": 2
     },
     {
-      "id": "bavaria approfittane ora birra lager vol|500ml",
-      "canonicalName": "bavaria approfittane ora birra lager vol",
-      "canonicalKey": "bavaria approfittane ora birra lager vol|500ml",
+      "id": "bavaria birra lager vol|500ml",
+      "canonicalName": "bavaria birra lager vol",
+      "canonicalKey": "bavaria birra lager vol|500ml",
       "quantity": {
         "value": 500,
         "unit": "ml",
@@ -1697,7 +1717,7 @@
         "multipack": null
       },
       "aliases": [
-        "BAVARIA Approfittane ora Birra lager 4.3% vol."
+        "BAVARIA Birra lager 4.3% vol."
       ],
       "stores": [
         "Lidl"
@@ -1767,9 +1787,9 @@
       "maxPrice": 2.99
     },
     {
-      "id": "biraghi gran sottocosto grattugiato|200g",
-      "canonicalName": "biraghi gran sottocosto grattugiato",
-      "canonicalKey": "biraghi gran sottocosto grattugiato|200g",
+      "id": "biraghi sottocosto gran grattugiato|200g",
+      "canonicalName": "biraghi sottocosto gran grattugiato",
+      "canonicalKey": "biraghi sottocosto gran grattugiato|200g",
       "quantity": {
         "value": 200,
         "unit": "g",
@@ -1777,7 +1797,7 @@
         "multipack": null
       },
       "aliases": [
-        "BIRAGHI Gran Biraghi Sottocosto Grattugiato"
+        "BIRAGHI Sottocosto Gran Biraghi Grattugiato"
       ],
       "stores": [
         "Lidl"
@@ -2282,7 +2302,7 @@
       "canonicalKey": "brioschi approfittane ora volo digestivo orosolubile",
       "quantity": null,
       "aliases": [
-        "BRIOSCHI Brioschi al Approfittane ora volo Digestivo orosolubile"
+        "BRIOSCHI Approfittane Brioschi al ora volo Digestivo orosolubile"
       ],
       "stores": [
         "Lidl"
@@ -5902,46 +5922,6 @@
       "maxPrice": 9.99
     },
     {
-      "id": "granarolo sottocosto mozzarella 100 latte italiano|375g",
-      "canonicalName": "granarolo sottocosto mozzarella 100 latte italiano",
-      "canonicalKey": "granarolo sottocosto mozzarella 100 latte italiano|375g",
-      "quantity": {
-        "value": 375,
-        "unit": "g",
-        "label": "375 g",
-        "multipack": 3
-      },
-      "aliases": [
-        "GRANAROLO Sottocosto Mozzarella 100% latte italiano"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.29,
-      "maxPrice": 2.29
-    },
-    {
-      "id": "granarolo sottocosto stracchino|160g",
-      "canonicalName": "granarolo sottocosto stracchino",
-      "canonicalKey": "granarolo sottocosto stracchino|160g",
-      "quantity": {
-        "value": 160,
-        "unit": "g",
-        "label": "160 g",
-        "multipack": null
-      },
-      "aliases": [
-        "GRANAROLO Sottocosto Stracchino"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.09,
-      "maxPrice": 1.09
-    },
-    {
       "id": "granarolo sottocosto yogurt intero frutta|1000g",
       "canonicalName": "granarolo sottocosto yogurt intero frutta",
       "canonicalKey": "granarolo sottocosto yogurt intero frutta|1000g",
@@ -5960,26 +5940,6 @@
       "offersCount": 1,
       "minPrice": 1.99,
       "maxPrice": 1.99
-    },
-    {
-      "id": "granarolo stracchino approfittane ora fermenti kefir|160g",
-      "canonicalName": "granarolo stracchino approfittane ora fermenti kefir",
-      "canonicalKey": "granarolo stracchino approfittane ora fermenti kefir|160g",
-      "quantity": {
-        "value": 160,
-        "unit": "g",
-        "label": "160 g",
-        "multipack": null
-      },
-      "aliases": [
-        "GRANAROLO Stracchino Approfittane ora con fermenti del Kefir"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.5,
-      "maxPrice": 1.5
     },
     {
       "id": "grattugiato italiano",
@@ -8262,26 +8222,6 @@
       "maxPrice": 2.99
     },
     {
-      "id": "mulino bianco galletti|800g",
-      "canonicalName": "mulino bianco galletti",
-      "canonicalKey": "mulino bianco galletti|800g",
-      "quantity": {
-        "value": 800,
-        "unit": "g",
-        "label": "800 g",
-        "multipack": null
-      },
-      "aliases": [
-        "MULINO BIANCO Galletti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.69,
-      "maxPrice": 2.69
-    },
-    {
       "id": "mulino bianco pan bauletto|400g",
       "canonicalName": "mulino bianco pan bauletto",
       "canonicalKey": "mulino bianco pan bauletto|400g",
@@ -8410,46 +8350,6 @@
       "offersCount": 1,
       "minPrice": 2.19,
       "maxPrice": 2.19
-    },
-    {
-      "id": "nel banco carne|400g",
-      "canonicalName": "nel banco carne",
-      "canonicalKey": "nel banco carne|400g",
-      "quantity": {
-        "value": 400,
-        "unit": "g",
-        "label": "400 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Nel banco carne"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.79,
-      "maxPrice": 2.79
-    },
-    {
-      "id": "nel banco carne|370g",
-      "canonicalName": "nel banco carne",
-      "canonicalKey": "nel banco carne|370g",
-      "quantity": {
-        "value": 370,
-        "unit": "g",
-        "label": "370 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Nel banco carne"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.29,
-      "maxPrice": 3.29
     },
     {
       "id": "nero avola sicilia doc|750ml",
@@ -9162,26 +9062,6 @@
       "maxPrice": 4.99
     },
     {
-      "id": "palette approfittane ora colorazione permanente|115ml",
-      "canonicalName": "palette approfittane ora colorazione permanente",
-      "canonicalKey": "palette approfittane ora colorazione permanente|115ml",
-      "quantity": {
-        "value": 115,
-        "unit": "ml",
-        "label": "115 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "PALETTE Approfittane ora Colorazione permanente"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 4.99,
-      "maxPrice": 4.99
-    },
-    {
       "id": "pan bauletto",
       "canonicalName": "pan bauletto",
       "canonicalKey": "pan bauletto",
@@ -9362,9 +9242,9 @@
       "maxPrice": 9.99
     },
     {
-      "id": "pantene approfittane ora pro balsamo|500ml",
-      "canonicalName": "pantene approfittane ora pro balsamo",
-      "canonicalKey": "pantene approfittane ora pro balsamo|500ml",
+      "id": "pantene pro balsamo|500ml",
+      "canonicalName": "pantene pro balsamo",
+      "canonicalKey": "pantene pro balsamo|500ml",
       "quantity": {
         "value": 500,
         "unit": "ml",
@@ -9372,7 +9252,27 @@
         "multipack": null
       },
       "aliases": [
-        "PANTENE Approfittane ora Pro-V balsamo Assortiti"
+        "PANTENE Pro-V balsamo Assortiti"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.89,
+      "maxPrice": 4.89
+    },
+    {
+      "id": "pantene pro shampoo|625ml",
+      "canonicalName": "pantene pro shampoo",
+      "canonicalKey": "pantene pro shampoo|625ml",
+      "quantity": {
+        "value": 625,
+        "unit": "ml",
+        "label": "625 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "PANTENE Pro-V shampoo Assortiti"
       ],
       "stores": [
         "Lidl"
@@ -9982,12 +9882,12 @@
       "maxPrice": 24.99
     },
     {
-      "id": "parmalat bonta sottocosto leggerezza latte uht",
-      "canonicalName": "parmalat bonta sottocosto leggerezza latte uht",
-      "canonicalKey": "parmalat bonta sottocosto leggerezza latte uht",
+      "id": "parmalat bonta sottocosto leggerezza latte uht grassi",
+      "canonicalName": "parmalat bonta sottocosto leggerezza latte uht grassi",
+      "canonicalKey": "parmalat bonta sottocosto leggerezza latte uht grassi",
       "quantity": null,
       "aliases": [
-        "PARMALAT Bontà Sottocosto e Leggerezza Latte UHT"
+        "PARMALAT Bontà Sottocosto e Leggerezza Latte UHT 1,2% di grassi"
       ],
       "stores": [
         "Lidl"
@@ -10457,9 +10357,9 @@
       "maxPrice": 0.65
     },
     {
-      "id": "peroni approfittane nastro azzurro ora stile capri vol|330ml",
-      "canonicalName": "peroni approfittane nastro azzurro ora stile capri vol",
-      "canonicalKey": "peroni approfittane nastro azzurro ora stile capri vol|330ml",
+      "id": "peroni nastro azzurro stile capri vol|330ml",
+      "canonicalName": "peroni nastro azzurro stile capri vol",
+      "canonicalKey": "peroni nastro azzurro stile capri vol|330ml",
       "quantity": {
         "value": 330,
         "unit": "ml",
@@ -10467,7 +10367,7 @@
         "multipack": null
       },
       "aliases": [
-        "PERONI Approfittane Nastro Azzurro ora “Stile Capri” 4,2% vol"
+        "PERONI Nastro Azzurro “Stile Capri” 4,2% vol"
       ],
       "stores": [
         "Lidl"
@@ -10590,26 +10490,6 @@
       "offersCount": 1,
       "minPrice": 1.99,
       "maxPrice": 1.99
-    },
-    {
-      "id": "pfanner bevanda pesca|2000ml",
-      "canonicalName": "pfanner bevanda pesca",
-      "canonicalKey": "pfanner bevanda pesca|2000ml",
-      "quantity": {
-        "value": 2000,
-        "unit": "ml",
-        "label": "2 L",
-        "multipack": null
-      },
-      "aliases": [
-        "PFANNER Bevanda alla pesca"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.69,
-      "maxPrice": 1.69
     },
     {
       "id": "philadelphia|190g",
@@ -13734,6 +13614,21 @@
       "maxPrice": 1.39
     },
     {
+      "id": "vemondo bevanda lidl plus cocco 37",
+      "canonicalName": "vemondo bevanda lidl plus cocco 37",
+      "canonicalKey": "vemondo bevanda lidl plus cocco 37",
+      "quantity": null,
+      "aliases": [
+        "VEMONDO Bevanda Con Lidl Plus di cocco e -37%"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.59,
+      "maxPrice": 1.59
+    },
+    {
       "id": "vemondo bevanda lidl plus cocco 37 riso bio",
       "canonicalName": "vemondo bevanda lidl plus cocco 37 riso bio",
       "canonicalKey": "vemondo bevanda lidl plus cocco 37 riso bio",
@@ -13747,21 +13642,6 @@
       "offersCount": 1,
       "minPrice": 1,
       "maxPrice": 1
-    },
-    {
-      "id": "vemondo bevanda milbona lidl plus cocco crema dessert",
-      "canonicalName": "vemondo bevanda milbona lidl plus cocco crema dessert",
-      "canonicalKey": "vemondo bevanda milbona lidl plus cocco crema dessert",
-      "quantity": null,
-      "aliases": [
-        "VEMONDO Bevanda MILBONA Con Lidl Plus di cocco e Crema dessert"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.59,
-      "maxPrice": 1.59
     },
     {
       "id": "vemondo crunchy burger lenticchie",
