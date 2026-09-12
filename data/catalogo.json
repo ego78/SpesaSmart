@@ -1,6 +1,46 @@
 {
-  "generatedAt": "2026-09-11T09:39:05.170Z",
+  "generatedAt": "2026-09-12T09:18:33.657Z",
   "items": [
+    {
+      "id": "24 rispetto base|450g",
+      "canonicalName": "24 rispetto base",
+      "canonicalKey": "24 rispetto base|450g",
+      "quantity": {
+        "value": 450,
+        "unit": "g",
+        "label": "450 g",
+        "multipack": null
+      },
+      "aliases": [
+        "-24% rispetto al Formato Base"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.89,
+      "maxPrice": 2.89
+    },
+    {
+      "id": "38 rispetto base|504g",
+      "canonicalName": "38 rispetto base",
+      "canonicalKey": "38 rispetto base|504g",
+      "quantity": {
+        "value": 504,
+        "unit": "g",
+        "label": "504 g",
+        "multipack": null
+      },
+      "aliases": [
+        "-38% rispetto al Formato Base"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.29,
+      "maxPrice": 3.29
+    },
     {
       "id": "3m nastro adesivo",
       "canonicalName": "3m nastro adesivo",
@@ -290,6 +330,66 @@
       "offersCount": 1,
       "minPrice": 2.79,
       "maxPrice": 2.79
+    },
+    {
+      "id": "algida cornetto caramello|450g",
+      "canonicalName": "algida cornetto caramello",
+      "canonicalKey": "algida cornetto caramello|450g",
+      "quantity": {
+        "value": 450,
+        "unit": "g",
+        "label": "450 g",
+        "multipack": null
+      },
+      "aliases": [
+        "ALGIDA Cornetto Caramello"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.69,
+      "maxPrice": 3.69
+    },
+    {
+      "id": "algida magnum billionaire|213g",
+      "canonicalName": "algida magnum billionaire",
+      "canonicalKey": "algida magnum billionaire|213g",
+      "quantity": {
+        "value": 213,
+        "unit": "g",
+        "label": "213 g",
+        "multipack": null
+      },
+      "aliases": [
+        "ALGIDA Magnum Billionaire"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.49,
+      "maxPrice": 3.49
+    },
+    {
+      "id": "algida magnum double nocciole|212g",
+      "canonicalName": "algida magnum double nocciole",
+      "canonicalKey": "algida magnum double nocciole|212g",
+      "quantity": {
+        "value": 212,
+        "unit": "g",
+        "label": "211,5 g",
+        "multipack": null
+      },
+      "aliases": [
+        "ALGIDA Magnum Double Nocciole"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.49,
+      "maxPrice": 3.49
     },
     {
       "id": "alla",
@@ -4397,6 +4497,26 @@
       "maxPrice": 2.49
     },
     {
+      "id": "duc de coeur gelato sfogliato creme brulee|350g",
+      "canonicalName": "duc de coeur gelato sfogliato creme brulee",
+      "canonicalKey": "duc de coeur gelato sfogliato creme brulee|350g",
+      "quantity": {
+        "value": 350,
+        "unit": "g",
+        "label": "350 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DUC DE COEUR Gelato sfogliato gusto crème brùléè"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.89,
+      "maxPrice": 1.89
+    },
+    {
       "id": "esmara",
       "canonicalName": "esmara",
       "canonicalKey": "esmara",
@@ -5387,6 +5507,26 @@
       "maxPrice": 3.99
     },
     {
+      "id": "gelatelli cono gelato|308g",
+      "canonicalName": "gelatelli cono gelato",
+      "canonicalKey": "gelatelli cono gelato|308g",
+      "quantity": {
+        "value": 308,
+        "unit": "g",
+        "label": "308 g",
+        "multipack": 4
+      },
+      "aliases": [
+        "GELATELLI Cono gelato"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.79,
+      "maxPrice": 2.79
+    },
+    {
       "id": "gelatelli eo ti pre ay ssoititi",
       "canonicalName": "gelatelli eo ti pre ay ssoititi",
       "canonicalKey": "gelatelli eo ti pre ay ssoititi",
@@ -5433,6 +5573,26 @@
       },
       "aliases": [
         "GELATELLI Gelato con amarena Con gïanella ¤i nocciole"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
+    },
+    {
+      "id": "gelatelli gelato ricoperto|360ml",
+      "canonicalName": "gelatelli gelato ricoperto",
+      "canonicalKey": "gelatelli gelato ricoperto|360ml",
+      "quantity": {
+        "value": 360,
+        "unit": "ml",
+        "label": "360 ml",
+        "multipack": 4
+      },
+      "aliases": [
+        "GELATELLI Gelato ricoperto"
       ],
       "stores": [
         "Lidl"
@@ -6697,6 +6857,26 @@
       "maxPrice": 1.99
     },
     {
+      "id": "kinder choco ice stick|152g",
+      "canonicalName": "kinder choco ice stick",
+      "canonicalKey": "kinder choco ice stick|152g",
+      "quantity": {
+        "value": 152,
+        "unit": "g",
+        "label": "152 g",
+        "multipack": null
+      },
+      "aliases": [
+        "KINDER Choco Ice Stick"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
+    },
+    {
       "id": "kinder colazione piu|290g",
       "canonicalName": "kinder colazione piu",
       "canonicalKey": "kinder colazione piu|290g",
@@ -6925,6 +7105,46 @@
       "offersCount": 1,
       "minPrice": 5.49,
       "maxPrice": 5.49
+    },
+    {
+      "id": "lec swirly pistachi oh|268g",
+      "canonicalName": "lec swirly pistachi oh",
+      "canonicalKey": "lec swirly pistachi oh|268g",
+      "quantity": {
+        "value": 268,
+        "unit": "g",
+        "label": "268 g",
+        "multipack": null
+      },
+      "aliases": [
+        "LEC Swirly pistachi-oh!"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.49,
+      "maxPrice": 3.49
+    },
+    {
+      "id": "lec why nut|273g",
+      "canonicalName": "lec why nut",
+      "canonicalKey": "lec why nut|273g",
+      "quantity": {
+        "value": 273,
+        "unit": "g",
+        "label": "273 g",
+        "multipack": null
+      },
+      "aliases": [
+        "LEC Why Nut"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.49,
+      "maxPrice": 3.49
     },
     {
       "id": "lidl plus",
@@ -7655,6 +7875,46 @@
       "offersCount": 1,
       "minPrice": 1.99,
       "maxPrice": 1.99
+    },
+    {
+      "id": "maxibon choco chips|240g",
+      "canonicalName": "maxibon choco chips",
+      "canonicalKey": "maxibon choco chips|240g",
+      "quantity": {
+        "value": 240,
+        "unit": "g",
+        "label": "240 g",
+        "multipack": null
+      },
+      "aliases": [
+        "MAXIBON Choco Chips"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.49,
+      "maxPrice": 3.49
+    },
+    {
+      "id": "maxibon coconut paradise|228g",
+      "canonicalName": "maxibon coconut paradise",
+      "canonicalKey": "maxibon coconut paradise|228g",
+      "quantity": {
+        "value": 228,
+        "unit": "g",
+        "label": "228 g",
+        "multipack": null
+      },
+      "aliases": [
+        "MAXIBON Coconut Paradise"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.49,
+      "maxPrice": 3.49
     },
     {
       "id": "mele gala",
