@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T10:15:01.111Z",
+  "generatedAt": "2026-09-14T10:37:06.132Z",
   "items": [
     {
       "id": "16 rispetto base|40g",
@@ -220,6 +220,26 @@
       "offersCount": 1,
       "minPrice": 2.5,
       "maxPrice": 2.5
+    },
+    {
+      "id": "43 convenienza|300g",
+      "canonicalName": "43 convenienza",
+      "canonicalKey": "43 convenienza|300g",
+      "quantity": {
+        "value": 300,
+        "unit": "g",
+        "label": "300 g",
+        "multipack": null
+      },
+      "aliases": [
+        "-43% Formato convenienza"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.49,
+      "maxPrice": 4.49
     },
     {
       "id": "46 prezzo imbattibile",
@@ -2975,26 +2995,6 @@
         "unit": "g",
         "label": "450 g",
         "multipack": null
-      },
-      "aliases": [
-        "BON GELATI Coni gelato Cioccolato e vaniglia o fragola e vaniglia"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.29,
-      "maxPrice": 2.29
-    },
-    {
-      "id": "bon gelati coni gelato cioccolato vaniglia fragola|520ml",
-      "canonicalName": "bon gelati coni gelato cioccolato vaniglia fragola",
-      "canonicalKey": "bon gelati coni gelato cioccolato vaniglia fragola|520ml",
-      "quantity": {
-        "value": 520,
-        "unit": "ml",
-        "label": "520 ml",
-        "multipack": 4
       },
       "aliases": [
         "BON GELATI Coni gelato Cioccolato e vaniglia o fragola e vaniglia"
@@ -7272,26 +7272,6 @@
       "maxPrice": 2.99
     },
     {
-      "id": "gelatelli neo gelato su stecco|360ml",
-      "canonicalName": "gelatelli neo gelato su stecco",
-      "canonicalKey": "gelatelli neo gelato su stecco|360ml",
-      "quantity": {
-        "value": 360,
-        "unit": "ml",
-        "label": "360 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "GELATELLI NEO Gelato su stecco"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
-    },
-    {
       "id": "gelatelli oc ett eo to ioi lattei cacaoi",
       "canonicalName": "gelatelli oc ett eo to ioi lattei cacaoi",
       "canonicalKey": "gelatelli oc ett eo to ioi lattei cacaoi",
@@ -8340,6 +8320,26 @@
       "offersCount": 1,
       "minPrice": 3.49,
       "maxPrice": 3.49
+    },
+    {
+      "id": "italiamo gelato tiramisu zabaione amarena|180g",
+      "canonicalName": "italiamo gelato tiramisu zabaione amarena",
+      "canonicalKey": "italiamo gelato tiramisu zabaione amarena|180g",
+      "quantity": {
+        "value": 180,
+        "unit": "g",
+        "label": "180 g",
+        "multipack": null
+      },
+      "aliases": [
+        "ITALIAMO Gelato Tiramisù o zabaione e amarena"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.29,
+      "maxPrice": 2.29
     },
     {
       "id": "italiamo gnocchi ripieni cacio pepe|500g",
@@ -9940,21 +9940,6 @@
       "offersCount": 1,
       "minPrice": 3.49,
       "maxPrice": 3.49
-    },
-    {
-      "id": "lunedi 09 13",
-      "canonicalName": "lunedi 09 13",
-      "canonicalKey": "lunedi 09 13",
-      "quantity": null,
-      "aliases": [
-        "Da lunedì 7/09 al 13/09"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.89,
-      "maxPrice": 2.89
     },
     {
       "id": "lunedi 14 09",
@@ -15317,18 +15302,18 @@
       "maxPrice": 2.75
     },
     {
-      "id": "salumiere bresaola valtellina igp punta anca",
-      "canonicalName": "salumiere bresaola valtellina igp punta anca",
-      "canonicalKey": "salumiere bresaola valtellina igp punta anca",
+      "id": "salumiere bresaola valtellina igp punta anca kg lidl plus",
+      "canonicalName": "salumiere bresaola valtellina igp punta anca kg lidl plus",
+      "canonicalKey": "salumiere bresaola valtellina igp punta anca kg lidl plus",
       "quantity": null,
       "aliases": [
-        "DAL SALUMIERE Bresaola della Valtellina IGP Punta d'Anca"
+        "DAL SALUMIERE Bresaola della Valtellina IGP Punta d'Anca kg Con Lidl Plus"
       ],
       "stores": [
         "Lidl"
       ],
       "offersCount": 2,
-      "minPrice": 2.79,
+      "minPrice": 2.69,
       "maxPrice": 3.49
     },
     {
@@ -15497,12 +15482,12 @@
       "maxPrice": 1.11
     },
     {
-      "id": "salumiere ventricina piccante fette",
-      "canonicalName": "salumiere ventricina piccante fette",
-      "canonicalKey": "salumiere ventricina piccante fette",
+      "id": "salumiere ventricina piccante fette kg",
+      "canonicalName": "salumiere ventricina piccante fette kg",
+      "canonicalKey": "salumiere ventricina piccante fette kg",
       "quantity": null,
       "aliases": [
-        "DAL SALUMIERE Ventricina piccante A fette"
+        "DAL SALUMIERE Ventricina piccante A fette kg"
       ],
       "stores": [
         "Lidl"
