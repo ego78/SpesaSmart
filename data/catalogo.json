@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T10:37:06.132Z",
+  "generatedAt": "2026-09-15T10:03:38.980Z",
   "items": [
     {
       "id": "16 rispetto base|40g",
@@ -37,9 +37,9 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 1,
+      "offersCount": 2,
       "minPrice": 3.99,
-      "maxPrice": 3.99
+      "maxPrice": 18.56
     },
     {
       "id": "17 rispetto base|208g",
@@ -4037,9 +4037,9 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 1,
-      "minPrice": 3.99,
-      "maxPrice": 3.99
+      "offersCount": 2,
+      "minPrice": 3.79,
+      "maxPrice": 4.98
     },
     {
       "id": "ciabatta donna stampata",
