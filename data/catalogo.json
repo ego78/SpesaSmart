@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T09:59:16.689Z",
+  "generatedAt": "2026-09-18T09:44:08.685Z",
   "items": [
     {
       "id": "16 rispetto base|40g",
@@ -152,6 +152,26 @@
       "maxPrice": 1.78
     },
     {
+      "id": "38 rispetto base|504g",
+      "canonicalName": "38 rispetto base",
+      "canonicalKey": "38 rispetto base|504g",
+      "quantity": {
+        "value": 504,
+        "unit": "g",
+        "label": "504 g",
+        "multipack": null
+      },
+      "aliases": [
+        "-38% rispetto al Formato Base"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.29,
+      "maxPrice": 3.29
+    },
+    {
       "id": "39 33 cm ripiano w5 organizer sottolavello",
       "canonicalName": "39 33 cm ripiano w5 organizer sottolavello",
       "canonicalKey": "39 33 cm ripiano w5 organizer sottolavello",
@@ -178,6 +198,26 @@
       },
       "aliases": [
         "-43% Formato convenienza"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.49,
+      "maxPrice": 4.49
+    },
+    {
+      "id": "43 rispetto base convenienza|400g",
+      "canonicalName": "43 rispetto base convenienza",
+      "canonicalKey": "43 rispetto base convenienza|400g",
+      "quantity": {
+        "value": 400,
+        "unit": "g",
+        "label": "400 g",
+        "multipack": 8
+      },
+      "aliases": [
+        "-43% rispetto al Formato Base Formato convenienza"
       ],
       "stores": [
         "Lidl"
@@ -5272,6 +5312,26 @@
       "maxPrice": 3.99
     },
     {
+      "id": "gelatelli cono gelato|308g",
+      "canonicalName": "gelatelli cono gelato",
+      "canonicalKey": "gelatelli cono gelato|308g",
+      "quantity": {
+        "value": 308,
+        "unit": "g",
+        "label": "308 g",
+        "multipack": 4
+      },
+      "aliases": [
+        "GELATELLI Cono gelato Assortito"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.79,
+      "maxPrice": 2.79
+    },
+    {
       "id": "gelatelli eo ti pre ay ssoititi",
       "canonicalName": "gelatelli eo ti pre ay ssoititi",
       "canonicalKey": "gelatelli eo ti pre ay ssoititi",
@@ -5318,6 +5378,46 @@
       },
       "aliases": [
         "GELATELLI Gelato con amarena Con gïanella ¤i nocciole"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
+    },
+    {
+      "id": "gelatelli gelato multistrato ricotta miele cioccolato modica igp|280g",
+      "canonicalName": "gelatelli gelato multistrato ricotta miele cioccolato modica igp",
+      "canonicalKey": "gelatelli gelato multistrato ricotta miele cioccolato modica igp|280g",
+      "quantity": {
+        "value": 280,
+        "unit": "g",
+        "label": "280 g",
+        "multipack": null
+      },
+      "aliases": [
+        "GELATELLI Gelato multistrato Con ricotta, miele e cioccolato di Modica IGP"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.19,
+      "maxPrice": 2.19
+    },
+    {
+      "id": "gelatelli gelato ricoperto|360ml",
+      "canonicalName": "gelatelli gelato ricoperto",
+      "canonicalKey": "gelatelli gelato ricoperto|360ml",
+      "quantity": {
+        "value": 360,
+        "unit": "ml",
+        "label": "360 ml",
+        "multipack": 4
+      },
+      "aliases": [
+        "GELATELLI Gelato ricoperto"
       ],
       "stores": [
         "Lidl"
@@ -7400,6 +7500,46 @@
       "offersCount": 1,
       "minPrice": 69,
       "maxPrice": 69
+    },
+    {
+      "id": "maxibon choco chips|240g",
+      "canonicalName": "maxibon choco chips",
+      "canonicalKey": "maxibon choco chips|240g",
+      "quantity": {
+        "value": 240,
+        "unit": "g",
+        "label": "240 g",
+        "multipack": null
+      },
+      "aliases": [
+        "MAXIBON Choco Chips"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.49,
+      "maxPrice": 3.49
+    },
+    {
+      "id": "maxibon coconut paradise|228g",
+      "canonicalName": "maxibon coconut paradise",
+      "canonicalKey": "maxibon coconut paradise|228g",
+      "quantity": {
+        "value": 228,
+        "unit": "g",
+        "label": "228 g",
+        "multipack": null
+      },
+      "aliases": [
+        "MAXIBON Coconut Paradise"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.49,
+      "maxPrice": 3.49
     },
     {
       "id": "meglio",
