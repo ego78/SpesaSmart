@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T09:29:22.452Z",
+  "generatedAt": "2026-09-21T10:41:05.313Z",
   "familyCode": "FAMIGLIA-EGO78",
   "stores": [
     {
@@ -19,8 +19,8 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 213,
-      "lastCheckedAt": "2026-09-19T09:29:22.451Z",
-      "lastSuccessfulUpdateAt": "2026-09-19T09:29:22.451Z"
+      "lastCheckedAt": "2026-09-21T10:41:05.312Z",
+      "lastSuccessfulUpdateAt": "2026-09-21T10:41:05.312Z"
     },
     {
       "familyCode": "FAMIGLIA-EGO78",
@@ -39,7 +39,7 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 0,
-      "lastCheckedAt": "2026-09-19T09:29:22.451Z",
+      "lastCheckedAt": "2026-09-21T10:41:05.312Z",
       "lastSuccessfulUpdateAt": null
     },
     {
@@ -58,9 +58,9 @@
       "flyerUrl": "https://www.lidl.it/l/it/volantini/offerte-valide-dal-17-09-al-23-09-il-cambio-",
       "offerScope": "national-chain",
       "promotionId": "",
-      "offersCount": 389,
-      "lastCheckedAt": "2026-09-19T09:29:22.451Z",
-      "lastSuccessfulUpdateAt": "2026-09-19T09:29:22.451Z"
+      "offersCount": 645,
+      "lastCheckedAt": "2026-09-21T10:41:05.312Z",
+      "lastSuccessfulUpdateAt": "2026-09-21T10:41:05.312Z"
     }
   ]
 }
