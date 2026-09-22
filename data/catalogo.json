@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T10:41:05.296Z",
+  "generatedAt": "2026-09-22T09:56:18.256Z",
   "items": [
     {
       "id": "100 succo arancia bluey",
@@ -30,21 +30,6 @@
       "offersCount": 1,
       "minPrice": 12.99,
       "maxPrice": 12.99
-    },
-    {
-      "id": "14 rispetto base latteria free from",
-      "canonicalName": "14 rispetto base latteria free from",
-      "canonicalKey": "14 rispetto base latteria free from",
-      "quantity": null,
-      "aliases": [
-        "-14% rispetto al Formato Base LATTERIA FREE FROM"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 5.59,
-      "maxPrice": 5.59
     },
     {
       "id": "16 rispetto base|40g",
@@ -145,6 +130,21 @@
       "offersCount": 1,
       "minPrice": 2.99,
       "maxPrice": 2.99
+    },
+    {
+      "id": "21 rispetto base",
+      "canonicalName": "21 rispetto base",
+      "canonicalKey": "21 rispetto base",
+      "quantity": null,
+      "aliases": [
+        "-21% rispetto al Formato Base"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 5.59,
+      "maxPrice": 5.59
     },
     {
       "id": "23 patate selenella|1500g",
@@ -6864,8 +6864,8 @@
         "Lidl"
       ],
       "offersCount": 1,
-      "minPrice": 0.99,
-      "maxPrice": 0.99
+      "minPrice": 1.11,
+      "maxPrice": 1.11
     },
     {
       "id": "giovedi 17 09 23",
@@ -7004,8 +7004,8 @@
         "Lidl"
       ],
       "offersCount": 1,
-      "minPrice": 1.19,
-      "maxPrice": 1.19
+      "minPrice": 1.39,
+      "maxPrice": 1.39
     },
     {
       "id": "giulio pasotti pinot grigio venezie doc vino bianco secco 10 11 vol|750ml",
