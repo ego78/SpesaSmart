@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T09:58:30.650Z",
+  "generatedAt": "2026-09-24T09:58:40.417Z",
   "familyCode": "FAMIGLIA-EGO78",
   "stores": [
     {
@@ -19,8 +19,8 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 213,
-      "lastCheckedAt": "2026-09-23T09:58:30.649Z",
-      "lastSuccessfulUpdateAt": "2026-09-23T09:58:30.649Z"
+      "lastCheckedAt": "2026-09-24T09:58:40.416Z",
+      "lastSuccessfulUpdateAt": "2026-09-24T09:58:40.416Z"
     },
     {
       "familyCode": "FAMIGLIA-EGO78",
@@ -39,7 +39,7 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 0,
-      "lastCheckedAt": "2026-09-23T09:58:30.649Z",
+      "lastCheckedAt": "2026-09-24T09:58:40.416Z",
       "lastSuccessfulUpdateAt": null
     },
     {
@@ -54,13 +54,13 @@
       "verified": false,
       "officialStoreId": "IT00812",
       "officialStoreAlias": "sava",
-      "flyerId": "offerte-valide-dal-17-09-al-23-09-il-cambio-",
-      "flyerUrl": "https://www.lidl.it/l/it/volantini/offerte-valide-dal-17-09-al-23-09-il-cambio-",
+      "flyerId": "i-viaggi-del-me",
+      "flyerUrl": "https://www.lidl.it/l/it/volantini/i-viaggi-del-me",
       "offerScope": "national-chain",
       "promotionId": "",
-      "offersCount": 645,
-      "lastCheckedAt": "2026-09-23T09:58:30.649Z",
-      "lastSuccessfulUpdateAt": "2026-09-23T09:58:30.649Z"
+      "offersCount": 320,
+      "lastCheckedAt": "2026-09-24T09:58:40.416Z",
+      "lastSuccessfulUpdateAt": "2026-09-24T09:58:40.416Z"
     }
   ]
 }
