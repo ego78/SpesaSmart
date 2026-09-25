@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T09:58:40.404Z",
+  "generatedAt": "2026-09-25T10:11:11.098Z",
   "items": [
     {
       "id": "100 succo arancia bluey",
@@ -3051,21 +3051,6 @@
       "offersCount": 1,
       "minPrice": 0.99,
       "maxPrice": 0.99
-    },
-    {
-      "id": "crostini dorati",
-      "canonicalName": "crostini dorati",
-      "canonicalKey": "crostini dorati",
-      "quantity": null,
-      "aliases": [
-        "CROSTINI DORATI"
-      ],
-      "stores": [
-        "Eurospin"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.59,
-      "maxPrice": 1.59
     },
     {
       "id": "crownfield farro soffiato bio cioccolato 100 italiano|150g",
