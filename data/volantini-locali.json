@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T10:33:10.762Z",
+  "generatedAt": "2026-09-28T11:40:48.245Z",
   "familyCode": "FAMIGLIA-EGO78",
   "stores": [
     {
@@ -19,8 +19,8 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 213,
-      "lastCheckedAt": "2026-09-27T10:33:10.761Z",
-      "lastSuccessfulUpdateAt": "2026-09-27T10:33:10.761Z"
+      "lastCheckedAt": "2026-09-28T11:40:48.244Z",
+      "lastSuccessfulUpdateAt": "2026-09-28T11:40:48.244Z"
     },
     {
       "familyCode": "FAMIGLIA-EGO78",
@@ -39,7 +39,7 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 0,
-      "lastCheckedAt": "2026-09-27T10:33:10.761Z",
+      "lastCheckedAt": "2026-09-28T11:40:48.244Z",
       "lastSuccessfulUpdateAt": null
     },
     {
@@ -54,13 +54,13 @@
       "verified": false,
       "officialStoreId": "IT00812",
       "officialStoreAlias": "sava",
-      "flyerId": "fatti-numeri-e-",
-      "flyerUrl": "https://www.lidl.it/l/it/volantini/fatti-numeri-e-",
+      "flyerId": "offerte-valide-dall1-10-al-31-10-da-lidl-ogni-brivido-vale-davvero/ar/0",
+      "flyerUrl": "https://www.lidl.it/l/it/volantini/offerte-valide-dall1-10-al-31-10-da-lidl-ogni-brivido-vale-davvero/ar/0",
       "offerScope": "national-chain",
       "promotionId": "",
-      "offersCount": 712,
-      "lastCheckedAt": "2026-09-27T10:33:10.761Z",
-      "lastSuccessfulUpdateAt": "2026-09-27T10:33:10.761Z"
+      "offersCount": 711,
+      "lastCheckedAt": "2026-09-28T11:40:48.244Z",
+      "lastSuccessfulUpdateAt": "2026-09-28T11:40:48.244Z"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T10:33:10.747Z",
+  "generatedAt": "2026-09-28T11:40:48.229Z",
   "items": [
     {
       "id": "100 succo arancia bluey",
@@ -5531,26 +5531,6 @@
       "offersCount": 1,
       "minPrice": 0.69,
       "maxPrice": 0.69
-    },
-    {
-      "id": "formaggio fette senza lattosio|100g",
-      "canonicalName": "formaggio fette senza lattosio",
-      "canonicalKey": "formaggio fette senza lattosio|100g",
-      "quantity": {
-        "value": 100,
-        "unit": "g",
-        "label": "100 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Formaggio a fette senza lattosio"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 11.9,
-      "maxPrice": 11.9
     },
     {
       "id": "formaggio frutta milkeria|360g",
