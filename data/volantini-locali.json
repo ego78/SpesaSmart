@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T10:24:33.129Z",
+  "generatedAt": "2026-10-04T11:06:45.838Z",
   "familyCode": "FAMIGLIA-EGO78",
   "stores": [
     {
@@ -19,8 +19,8 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 213,
-      "lastCheckedAt": "2026-10-03T10:24:33.129Z",
-      "lastSuccessfulUpdateAt": "2026-10-03T10:24:33.129Z"
+      "lastCheckedAt": "2026-10-04T11:06:45.838Z",
+      "lastSuccessfulUpdateAt": "2026-10-04T11:06:45.838Z"
     },
     {
       "familyCode": "FAMIGLIA-EGO78",
@@ -39,7 +39,7 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 0,
-      "lastCheckedAt": "2026-10-03T10:24:33.129Z",
+      "lastCheckedAt": "2026-10-04T11:06:45.838Z",
       "lastSuccessfulUpdateAt": null
     },
     {
@@ -58,9 +58,9 @@
       "flyerUrl": "https://www.lidl.it/l/it/volantini/offerte-valide-dall1-10-al-31-10-da-lidl-ogni-brivido-vale-davvero/ar/0",
       "offerScope": "national-chain",
       "promotionId": "",
-      "offersCount": 429,
-      "lastCheckedAt": "2026-10-03T10:24:33.129Z",
-      "lastSuccessfulUpdateAt": "2026-10-03T10:24:33.129Z"
+      "offersCount": 733,
+      "lastCheckedAt": "2026-10-04T11:06:45.838Z",
+      "lastSuccessfulUpdateAt": "2026-10-04T11:06:45.838Z"
     }
   ]
 }
