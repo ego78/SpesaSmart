@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T11:24:02.808Z",
+  "generatedAt": "2026-10-12T13:08:09.986Z",
   "items": [
     {
       "id": "10x prezzo cappelletti imbattibile prosciutto crudo|250g",
@@ -3556,6 +3556,21 @@
       "offersCount": 1,
       "minPrice": 17.99,
       "maxPrice": 17.99
+    },
+    {
+      "id": "crivit set luci led bici intensita luminosa 44 mm commutabile",
+      "canonicalName": "crivit set luci led bici intensita luminosa 44 mm commutabile",
+      "canonicalKey": "crivit set luci led bici intensita luminosa 44 mm commutabile",
+      "quantity": null,
+      "aliases": [
+        "CRIVIT Set luci LED da bici Intensità luminosa 105 x 38,5 x 44,3 mm commutabile"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 7.99,
+      "maxPrice": 7.99
     },
     {
       "id": "croccantini gatti active procat|800g",
@@ -8473,26 +8488,6 @@
       "maxPrice": 39.99
     },
     {
-      "id": "livarno asciugamano|550g",
-      "canonicalName": "livarno asciugamano",
-      "canonicalKey": "livarno asciugamano|550g",
-      "quantity": {
-        "value": 550,
-        "unit": "g",
-        "label": "550 g",
-        "multipack": null
-      },
-      "aliases": [
-        "LIVARNO Asciugamano"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 5.99,
-      "maxPrice": 5.99
-    },
-    {
       "id": "livarno asse wc chiusura automatica",
       "canonicalName": "livarno asse wc chiusura automatica",
       "canonicalKey": "livarno asse wc chiusura automatica",
@@ -8733,17 +8728,12 @@
       "maxPrice": 1.99
     },
     {
-      "id": "livarno telo doccia cm|550g",
-      "canonicalName": "livarno telo doccia cm",
-      "canonicalKey": "livarno telo doccia cm|550g",
-      "quantity": {
-        "value": 550,
-        "unit": "g",
-        "label": "550 g",
-        "multipack": null
-      },
+      "id": "livarno telo doccia",
+      "canonicalName": "livarno telo doccia",
+      "canonicalKey": "livarno telo doccia",
+      "quantity": null,
       "aliases": [
-        "[ A ] LIVARNO Telo doccia 70x140 cm"
+        "[ A ] LIVARNO Telo doccia"
       ],
       "stores": [
         "Lidl"
