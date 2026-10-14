@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T12:42:03.051Z",
+  "generatedAt": "2026-10-14T10:10:20.136Z",
   "items": [
     {
       "id": "10x prezzo cappelletti imbattibile prosciutto crudo|250g",
@@ -1852,9 +1852,9 @@
       "maxPrice": 4.49
     },
     {
-      "id": "belbake cioccolato extra fondente|500g",
-      "canonicalName": "belbake cioccolato extra fondente",
-      "canonicalKey": "belbake cioccolato extra fondente|500g",
+      "id": "belbake 22 cioccolato extra fondente|500g",
+      "canonicalName": "belbake 22 cioccolato extra fondente",
+      "canonicalKey": "belbake 22 cioccolato extra fondente|500g",
       "quantity": {
         "value": 500,
         "unit": "g",
@@ -1862,14 +1862,14 @@
         "multipack": null
       },
       "aliases": [
-        "BELBAKE Cioccolato extra fondente"
+        "BELBAKE -22% Cioccolato extra fondente"
       ],
       "stores": [
         "Lidl"
       ],
       "offersCount": 1,
-      "minPrice": 3.99,
-      "maxPrice": 3.99
+      "minPrice": 3.49,
+      "maxPrice": 3.49
     },
     {
       "id": "belbake uva sultanina|250g",
@@ -5444,7 +5444,8 @@
         "multipack": null
       },
       "aliases": [
-        "FLORALYS Fazzoletti box 4 veli"
+        "FLORALYS Fazzoletti box 4 veli",
+        "FLORALYS Fazzoletti box 4 veli Alla"
       ],
       "stores": [
         "Lidl"
