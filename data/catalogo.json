@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T09:52:50.096Z",
+  "generatedAt": "2026-10-16T09:46:17.262Z",
   "items": [
     {
       "id": "10x prezzo cappelletti imbattibile prosciutto crudo|250g",
@@ -215,21 +215,6 @@
       "offersCount": 1,
       "minPrice": 2.84,
       "maxPrice": 2.84
-    },
-    {
-      "id": "26 pere abate",
-      "canonicalName": "26 pere abate",
-      "canonicalKey": "26 pere abate",
-      "quantity": null,
-      "aliases": [
-        "-26% Pere Abate"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
     },
     {
       "id": "30 lidl plus",
@@ -7541,6 +7526,21 @@
       "maxPrice": 1.98
     },
     {
+      "id": "pere abate",
+      "canonicalName": "pere abate",
+      "canonicalKey": "pere abate",
+      "quantity": null,
+      "aliases": [
+        "Pere Abate"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
       "id": "peroni birra vol",
       "canonicalName": "peroni birra vol",
       "canonicalKey": "peroni birra vol",
@@ -8987,8 +8987,8 @@
         "Lidl"
       ],
       "offersCount": 1,
-      "minPrice": 2.19,
-      "maxPrice": 2.19
+      "minPrice": 1.99,
+      "maxPrice": 1.99
     },
     {
       "id": "sgrassator disinfettante trigger classico|750ml",
