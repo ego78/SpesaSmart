@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T10:44:14.347Z",
+  "generatedAt": "2026-10-20T10:01:27.031Z",
   "items": [
     {
       "id": "10x prezzo cappelletti imbattibile prosciutto crudo|250g",
@@ -2767,8 +2767,8 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 2,
-      "minPrice": 3.49,
+      "offersCount": 1,
+      "minPrice": 3.99,
       "maxPrice": 3.99
     },
     {
@@ -5412,6 +5412,21 @@
       "offersCount": 1,
       "minPrice": 1.29,
       "maxPrice": 1.29
+    },
+    {
+      "id": "fiori composizioni floreali annaffiare poco partire",
+      "canonicalName": "fiori composizioni floreali annaffiare poco partire",
+      "canonicalKey": "fiori composizioni floreali annaffiare poco partire",
+      "quantity": null,
+      "aliases": [
+        "Fiori e composizioni floreali Annaffiare poco A partire da"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.49,
+      "maxPrice": 3.49
     },
     {
       "id": "fiori composizioni floreali partire",
