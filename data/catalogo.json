@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T10:09:07.023Z",
+  "generatedAt": "2026-10-23T10:01:51.381Z",
   "items": [
     {
       "id": "15 rispetto 2025",
@@ -50,6 +50,21 @@
       "offersCount": 2,
       "minPrice": 1.89,
       "maxPrice": 3.78
+    },
+    {
+      "id": "22 10 26",
+      "canonicalName": "22 10 26",
+      "canonicalKey": "22 10 26",
+      "quantity": null,
+      "aliases": [
+        "Dal 22/10 al 26/10"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.49,
+      "maxPrice": 2.49
     },
     {
       "id": "2830 silvercrest ferro stiro vapore|400ml",
@@ -6925,8 +6940,8 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 1,
-      "minPrice": 2.49,
+      "offersCount": 2,
+      "minPrice": 1.99,
       "maxPrice": 2.49
     },
     {
