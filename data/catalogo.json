@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T11:30:30.211Z",
+  "generatedAt": "2026-10-30T11:23:26.837Z",
   "items": [
     {
       "id": "10 rispetto|125g",
@@ -312,9 +312,9 @@
       "maxPrice": 2.79
     },
     {
-      "id": "ambipur profumatore bagno pacco doppio|8ml",
-      "canonicalName": "ambipur profumatore bagno pacco doppio",
-      "canonicalKey": "ambipur profumatore bagno pacco doppio|8ml",
+      "id": "ambipur profumatore bagno lavanda risveglio primaverile portofino|8ml",
+      "canonicalName": "ambipur profumatore bagno lavanda risveglio primaverile portofino",
+      "canonicalKey": "ambipur profumatore bagno lavanda risveglio primaverile portofino|8ml",
       "quantity": {
         "value": 8,
         "unit": "ml",
@@ -322,7 +322,7 @@
         "multipack": null
       },
       "aliases": [
-        "AMBIPUR Profumatore per bagno Pacco doppio"
+        "AMBIPUR Profumatore per bagno Lavanda, Risveglio primaverile o Portofino"
       ],
       "stores": [
         "Lidl"
@@ -612,26 +612,6 @@
       "maxPrice": 9.99
     },
     {
-      "id": "approfittane boundelle ora contornissimi broccoli spinaci melanzane|200g",
-      "canonicalName": "approfittane boundelle ora contornissimi broccoli spinaci melanzane",
-      "canonicalKey": "approfittane boundelle ora contornissimi broccoli spinaci melanzane|200g",
-      "quantity": {
-        "value": 200,
-        "unit": "g",
-        "label": "200 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Approfittane BOUNDELLE ora Contornissimi Broccoli, spinaci o melanzane"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.49,
-      "maxPrice": 2.49
-    },
-    {
       "id": "approfittane citterio ora guanciale 100 carne nazionale",
       "canonicalName": "approfittane citterio ora guanciale 100 carne nazionale",
       "canonicalKey": "approfittane citterio ora guanciale 100 carne nazionale",
@@ -645,26 +625,6 @@
       "offersCount": 1,
       "minPrice": 1.59,
       "maxPrice": 1.59
-    },
-    {
-      "id": "approfittane mon amour ora detersivo liquido blu mare|1680ml",
-      "canonicalName": "approfittane mon amour ora detersivo liquido blu mare",
-      "canonicalKey": "approfittane mon amour ora detersivo liquido blu mare|1680ml",
-      "quantity": {
-        "value": 1680,
-        "unit": "ml",
-        "label": "1680 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "Approfittane MON AMOUR ora Detersivo liquido Blu mare"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.19,
-      "maxPrice": 3.19
     },
     {
       "id": "approfittane ora",
@@ -720,6 +680,26 @@
       "offersCount": 1,
       "minPrice": 2.79,
       "maxPrice": 2.79
+    },
+    {
+      "id": "approfittane ora pata sfizzy stick bretzel|300g",
+      "canonicalName": "approfittane ora pata sfizzy stick bretzel",
+      "canonicalKey": "approfittane ora pata sfizzy stick bretzel|300g",
+      "quantity": {
+        "value": 300,
+        "unit": "g",
+        "label": "300 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Approfittane ora PATA SFIZZY Stick e bretzel"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.69,
+      "maxPrice": 1.69
     },
     {
       "id": "arachidi ricoperti snack|150g",
@@ -915,6 +895,21 @@
       ],
       "offersCount": 3,
       "minPrice": 6.99,
+      "maxPrice": 19.99
+    },
+    {
+      "id": "bambola wednesday",
+      "canonicalName": "bambola wednesday",
+      "canonicalKey": "bambola wednesday",
+      "quantity": null,
+      "aliases": [
+        "Bambola Wednesday"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 19.99,
       "maxPrice": 19.99
     },
     {
@@ -1236,26 +1231,6 @@
       "offersCount": 1,
       "minPrice": 10.99,
       "maxPrice": 10.99
-    },
-    {
-      "id": "bottiglie|0ml",
-      "canonicalName": "bottiglie",
-      "canonicalKey": "bottiglie|0ml",
-      "quantity": {
-        "value": 0,
-        "unit": "ml",
-        "label": "0,33 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "bottiglie a"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.39,
-      "maxPrice": 1.39
     },
     {
       "id": "braccialetto multifunzione bt usb",
@@ -2271,6 +2246,51 @@
       "offersCount": 1,
       "minPrice": 3.49,
       "maxPrice": 3.49
+    },
+    {
+      "id": "crivit felpa sportiva uomo donna diversi assortimenti",
+      "canonicalName": "crivit felpa sportiva uomo donna diversi assortimenti",
+      "canonicalKey": "crivit felpa sportiva uomo donna diversi assortimenti",
+      "quantity": null,
+      "aliases": [
+        "CRIVIT Felpa sportiva da uomo o da donna In diversi assortimenti"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 9.99,
+      "maxPrice": 9.99
+    },
+    {
+      "id": "crivit pantaloni sportivi donna diversi assortimenti",
+      "canonicalName": "crivit pantaloni sportivi donna diversi assortimenti",
+      "canonicalKey": "crivit pantaloni sportivi donna diversi assortimenti",
+      "quantity": null,
+      "aliases": [
+        "CRIVIT Pantaloni sportivi da donna In diversi assortimenti"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 6.99,
+      "maxPrice": 6.99
+    },
+    {
+      "id": "crivit pantaloni sportivi uomo diversi assortimenti",
+      "canonicalName": "crivit pantaloni sportivi uomo diversi assortimenti",
+      "canonicalKey": "crivit pantaloni sportivi uomo diversi assortimenti",
+      "quantity": null,
+      "aliases": [
+        "CRIVIT Pantaloni sportivi da uomo In diversi assortimenti"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 6.99,
+      "maxPrice": 6.99
     },
     {
       "id": "croccanti soffici|600g",
@@ -3303,6 +3323,141 @@
       "maxPrice": 1.99
     },
     {
+      "id": "esmara",
+      "canonicalName": "esmara",
+      "canonicalKey": "esmara",
+      "quantity": null,
+      "aliases": [
+        "ESMARA"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 14.99,
+      "maxPrice": 14.99
+    },
+    {
+      "id": "esmara abito camicia",
+      "canonicalName": "esmara abito camicia",
+      "canonicalKey": "esmara abito camicia",
+      "quantity": null,
+      "aliases": [
+        "ESMARA Abito camicia"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 12.99,
+      "maxPrice": 12.99
+    },
+    {
+      "id": "esmara abito felpa donna diversi assortimenti",
+      "canonicalName": "esmara abito felpa donna diversi assortimenti",
+      "canonicalKey": "esmara abito felpa donna diversi assortimenti",
+      "quantity": null,
+      "aliases": [
+        "ESMARA Abito in felpa da donna In diversi assortimenti"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 7.99,
+      "maxPrice": 7.99
+    },
+    {
+      "id": "esmara blazer donna",
+      "canonicalName": "esmara blazer donna",
+      "canonicalKey": "esmara blazer donna",
+      "quantity": null,
+      "aliases": [
+        "ESMARA Blazer da donna"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 14.99,
+      "maxPrice": 14.99
+    },
+    {
+      "id": "esmara blazer donna diversi assortimenti",
+      "canonicalName": "esmara blazer donna diversi assortimenti",
+      "canonicalKey": "esmara blazer donna diversi assortimenti",
+      "quantity": null,
+      "aliases": [
+        "ESMARA Blazer da donna In diversi assortimenti"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 14.99,
+      "maxPrice": 14.99
+    },
+    {
+      "id": "esmara gonna midi",
+      "canonicalName": "esmara gonna midi",
+      "canonicalKey": "esmara gonna midi",
+      "quantity": null,
+      "aliases": [
+        "ESMARA Gonna midi"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 7.99,
+      "maxPrice": 7.99
+    },
+    {
+      "id": "esmara gonna raso",
+      "canonicalName": "esmara gonna raso",
+      "canonicalKey": "esmara gonna raso",
+      "quantity": null,
+      "aliases": [
+        "ESMARA Gonna in raso"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 8.99,
+      "maxPrice": 8.99
+    },
+    {
+      "id": "esmara panaloni palazzo",
+      "canonicalName": "esmara panaloni palazzo",
+      "canonicalKey": "esmara panaloni palazzo",
+      "quantity": null,
+      "aliases": [
+        "ESMARA Panaloni a palazzo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 9.99,
+      "maxPrice": 9.99
+    },
+    {
+      "id": "esmara pantaloni",
+      "canonicalName": "esmara pantaloni",
+      "canonicalKey": "esmara pantaloni",
+      "quantity": null,
+      "aliases": [
+        "ESMARA Pantaloni"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 9.99,
+      "maxPrice": 9.99
+    },
+    {
       "id": "essenza detergente ambianti|750ml",
       "canonicalName": "essenza detergente ambianti",
       "canonicalKey": "essenza detergente ambianti|750ml",
@@ -4239,21 +4394,6 @@
       "offersCount": 1,
       "minPrice": 24.99,
       "maxPrice": 24.99
-    },
-    {
-      "id": "giovedi 29 10",
-      "canonicalName": "giovedi 29 10",
-      "canonicalKey": "giovedi 29 10",
-      "quantity": null,
-      "aliases": [
-        "Da giovedì 29/10"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.78,
-      "maxPrice": 2.78
     },
     {
       "id": "giovedi 29 10 11",
@@ -5663,6 +5803,21 @@
       "maxPrice": 2.29
     },
     {
+      "id": "lidl plus salumiere",
+      "canonicalName": "lidl plus salumiere",
+      "canonicalKey": "lidl plus salumiere",
+      "quantity": null,
+      "aliases": [
+        "DAL Con Lidl Plus SALUMIERE"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.39,
+      "maxPrice": 1.39
+    },
+    {
       "id": "lidl plus salumiere salame milano fette|150g",
       "canonicalName": "lidl plus salumiere salame milano fette",
       "canonicalKey": "lidl plus salumiere salame milano fette|150g",
@@ -5679,8 +5834,8 @@
         "Lidl"
       ],
       "offersCount": 1,
-      "minPrice": 1.19,
-      "maxPrice": 1.19
+      "minPrice": 1.11,
+      "maxPrice": 1.11
     },
     {
       "id": "lidl plus vemondo burger vegani|160g",
@@ -5883,6 +6038,41 @@
       "maxPrice": 4.99
     },
     {
+      "id": "livarno decorazioni led ad energia solare diversi assortimenti",
+      "canonicalName": "livarno decorazioni led ad energia solare diversi assortimenti",
+      "canonicalKey": "livarno decorazioni led ad energia solare diversi assortimenti",
+      "quantity": null,
+      "aliases": [
+        "LIVARNO Decorazioni a led ad energia solare In diversi assortimenti"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.49,
+      "maxPrice": 3.49
+    },
+    {
+      "id": "livarno federa cuscino mussola|2pz",
+      "canonicalName": "livarno federa cuscino mussola",
+      "canonicalKey": "livarno federa cuscino mussola|2pz",
+      "quantity": {
+        "value": 2,
+        "unit": "pz",
+        "label": "2 pz",
+        "multipack": null
+      },
+      "aliases": [
+        "LIVARNO Federa per cuscino in mussola"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 6.99,
+      "maxPrice": 6.99
+    },
+    {
       "id": "livarno figura decorativa halloween",
       "canonicalName": "livarno figura decorativa halloween",
       "canonicalKey": "livarno figura decorativa halloween",
@@ -5913,6 +6103,21 @@
       "maxPrice": 24.99
     },
     {
+      "id": "livarno parure copripiumino",
+      "canonicalName": "livarno parure copripiumino",
+      "canonicalKey": "livarno parure copripiumino",
+      "quantity": null,
+      "aliases": [
+        "LIVARNO Parure copripiumino"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 2,
+      "minPrice": 29.99,
+      "maxPrice": 49
+    },
+    {
       "id": "livarno parure copripiumino matrimoniale",
       "canonicalName": "livarno parure copripiumino matrimoniale",
       "canonicalKey": "livarno parure copripiumino matrimoniale",
@@ -5941,6 +6146,21 @@
       "offersCount": 1,
       "minPrice": 6.99,
       "maxPrice": 6.99
+    },
+    {
+      "id": "livarno parure prodotti copripiumino matrimoniale diversi assortimenti",
+      "canonicalName": "livarno parure prodotti copripiumino matrimoniale diversi assortimenti",
+      "canonicalKey": "livarno parure prodotti copripiumino matrimoniale diversi assortimenti",
+      "quantity": null,
+      "aliases": [
+        "LIVARNO Parure prodotti copripiumino Matrimoniale In diversi assortimenti"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 49,
+      "maxPrice": 49
     },
     {
       "id": "livarno rialzo monitor",
@@ -6058,6 +6278,21 @@
       "maxPrice": 1.99
     },
     {
+      "id": "lupilu felpa cappuccio",
+      "canonicalName": "lupilu felpa cappuccio",
+      "canonicalKey": "lupilu felpa cappuccio",
+      "quantity": null,
+      "aliases": [
+        "LUPILU Felpa con cappuccio"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 9.99,
+      "maxPrice": 9.99
+    },
+    {
       "id": "lupilu giacca lightweight neonati mickey mouse minnie",
       "canonicalName": "lupilu giacca lightweight neonati mickey mouse minnie",
       "canonicalKey": "lupilu giacca lightweight neonati mickey mouse minnie",
@@ -6166,6 +6401,21 @@
       "offersCount": 1,
       "minPrice": 4.99,
       "maxPrice": 4.99
+    },
+    {
+      "id": "lupilu pigiama intero",
+      "canonicalName": "lupilu pigiama intero",
+      "canonicalKey": "lupilu pigiama intero",
+      "quantity": null,
+      "aliases": [
+        "LUPILU Pigiama intero"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 9.99,
+      "maxPrice": 9.99
     },
     {
       "id": "lupilu pigiama intero neonati mickey mouse minnie misure 24 mesi",
@@ -6304,8 +6554,8 @@
         "Lidl"
       ],
       "offersCount": 1,
-      "minPrice": 1.79,
-      "maxPrice": 1.79
+      "minPrice": 1.55,
+      "maxPrice": 1.55
     },
     {
       "id": "maribel confettura extra frutti bosco 50 frutta|425g",
@@ -6326,21 +6576,6 @@
       "offersCount": 1,
       "minPrice": 1.39,
       "maxPrice": 1.39
-    },
-    {
-      "id": "maribel lidl plus salumiere confettura extra",
-      "canonicalName": "maribel lidl plus salumiere confettura extra",
-      "canonicalKey": "maribel lidl plus salumiere confettura extra",
-      "quantity": null,
-      "aliases": [
-        "MARIBEL DAL Con Lidl Plus SALUMIERE Confettura extra"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.55,
-      "maxPrice": 1.55
     },
     {
       "id": "marmellata confettura extra|425g",
@@ -7788,6 +8023,21 @@
       "maxPrice": 49
     },
     {
+      "id": "parkside banco lavoro",
+      "canonicalName": "parkside banco lavoro",
+      "canonicalKey": "parkside banco lavoro",
+      "quantity": null,
+      "aliases": [
+        "PARKSIDE Banco da lavoro"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 19.99,
+      "maxPrice": 19.99
+    },
+    {
       "id": "parkside batteria ah agli ioni litio indicazione led",
       "canonicalName": "parkside batteria ah agli ioni litio indicazione led",
       "canonicalKey": "parkside batteria ah agli ioni litio indicazione led",
@@ -7913,6 +8163,36 @@
       "maxPrice": 49
     },
     {
+      "id": "parkside multiattreezzo motore",
+      "canonicalName": "parkside multiattreezzo motore",
+      "canonicalKey": "parkside multiattreezzo motore",
+      "quantity": null,
+      "aliases": [
+        "PARKSIDE Multiattreezzo 4 in 1 a motore"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 129,
+      "maxPrice": 129
+    },
+    {
+      "id": "parkside multiattrezzo motore",
+      "canonicalName": "parkside multiattrezzo motore",
+      "canonicalKey": "parkside multiattrezzo motore",
+      "quantity": null,
+      "aliases": [
+        "PARKSIDE Multiattrezzo 4 in 1 a motore"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 129,
+      "maxPrice": 129
+    },
+    {
       "id": "parkside nastro pacchi|3pz",
       "canonicalName": "parkside nastro pacchi",
       "canonicalKey": "parkside nastro pacchi|3pz",
@@ -8031,6 +8311,21 @@
       "offersCount": 1,
       "minPrice": 14.99,
       "maxPrice": 14.99
+    },
+    {
+      "id": "parkside scarpe",
+      "canonicalName": "parkside scarpe",
+      "canonicalKey": "parkside scarpe",
+      "quantity": null,
+      "aliases": [
+        "PARKSIDE Scarpe"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 24.99,
+      "maxPrice": 24.99
     },
     {
       "id": "parkside set accessori smerigliatrice angolare|11pz",
@@ -8351,26 +8646,6 @@
       "offersCount": 1,
       "minPrice": 0.89,
       "maxPrice": 0.89
-    },
-    {
-      "id": "pata sfizzy stick bretzel|300g",
-      "canonicalName": "pata sfizzy stick bretzel",
-      "canonicalKey": "pata sfizzy stick bretzel|300g",
-      "quantity": {
-        "value": 300,
-        "unit": "g",
-        "label": "300 g",
-        "multipack": null
-      },
-      "aliases": [
-        "PATA SFIZZY Stick e bretzel"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.69,
-      "maxPrice": 1.69
     },
     {
       "id": "patate ausoni",
@@ -9403,6 +9678,26 @@
       "maxPrice": 1.29
     },
     {
+      "id": "raffo birra approfittane ora grezza vol|450ml",
+      "canonicalName": "raffo birra approfittane ora grezza vol",
+      "canonicalKey": "raffo birra approfittane ora grezza vol|450ml",
+      "quantity": {
+        "value": 450,
+        "unit": "ml",
+        "label": "0,45 L",
+        "multipack": null
+      },
+      "aliases": [
+        "RAFFO Birra Approfittane ora grezza 4,8% Vol."
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.09,
+      "maxPrice": 1.09
+    },
+    {
       "id": "ragnatela led halloween",
       "canonicalName": "ragnatela led halloween",
       "canonicalKey": "ragnatela led halloween",
@@ -10153,6 +10448,36 @@
       "maxPrice": 4.49
     },
     {
+      "id": "silvercrest",
+      "canonicalName": "silvercrest",
+      "canonicalKey": "silvercrest",
+      "quantity": null,
+      "aliases": [
+        "SILVERCREST"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 19.99,
+      "maxPrice": 19.99
+    },
+    {
+      "id": "silvercrest aspirapolvere ricaricabile",
+      "canonicalName": "silvercrest aspirapolvere ricaricabile",
+      "canonicalKey": "silvercrest aspirapolvere ricaricabile",
+      "quantity": null,
+      "aliases": [
+        "SILVERCREST Aspirapolvere ricaricabile"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 89,
+      "maxPrice": 89
+    },
+    {
       "id": "singolo|995g",
       "canonicalName": "singolo",
       "canonicalKey": "singolo|995g",
@@ -10191,26 +10516,6 @@
       "offersCount": 1,
       "minPrice": 2.49,
       "maxPrice": 2.49
-    },
-    {
-      "id": "smac sgrassatori|650ml",
-      "canonicalName": "smac sgrassatori",
-      "canonicalKey": "smac sgrassatori|650ml",
-      "quantity": {
-        "value": 650,
-        "unit": "ml",
-        "label": "650 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "SMAC Sgrassatori Assortiti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.49,
-      "maxPrice": 1.49
     },
     {
       "id": "smacchiotutto pretrattante|250ml",
@@ -10481,26 +10786,6 @@
       "offersCount": 1,
       "minPrice": 1.89,
       "maxPrice": 1.89
-    },
-    {
-      "id": "suppli pomodoro mozzarella peso minimo|225g",
-      "canonicalName": "suppli pomodoro mozzarella peso minimo",
-      "canonicalKey": "suppli pomodoro mozzarella peso minimo|225g",
-      "quantity": {
-        "value": 225,
-        "unit": "g",
-        "label": "225 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Supplì Con pomodoro e mozzarella Peso minimo"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
     },
     {
       "id": "susine rosse",
@@ -11038,6 +11323,26 @@
       "maxPrice": 1.79
     },
     {
+      "id": "vendita|225g",
+      "canonicalName": "vendita",
+      "canonicalKey": "vendita|225g",
+      "quantity": {
+        "value": 225,
+        "unit": "g",
+        "label": "225 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Vendita in"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
       "id": "ventilatorino portatile",
       "canonicalName": "ventilatorino portatile",
       "canonicalKey": "ventilatorino portatile",
@@ -11466,6 +11771,21 @@
       "offersCount": 1,
       "minPrice": 1.99,
       "maxPrice": 1.99
+    },
+    {
+      "id": "wednesday pantaloni sportivi bambina diversi assortimenti",
+      "canonicalName": "wednesday pantaloni sportivi bambina diversi assortimenti",
+      "canonicalKey": "wednesday pantaloni sportivi bambina diversi assortimenti",
+      "quantity": null,
+      "aliases": [
+        "WEDNESDAY Pantaloni sportivi da bambina In diversi assortimenti"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 6.99,
+      "maxPrice": 6.99
     },
     {
       "id": "world vegan day",

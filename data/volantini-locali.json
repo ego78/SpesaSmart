@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T11:30:30.223Z",
+  "generatedAt": "2026-10-30T11:23:26.850Z",
   "familyCode": "FAMIGLIA-EGO78",
   "stores": [
     {
@@ -19,8 +19,8 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 213,
-      "lastCheckedAt": "2026-10-29T11:30:30.223Z",
-      "lastSuccessfulUpdateAt": "2026-10-29T11:30:30.223Z"
+      "lastCheckedAt": "2026-10-30T11:23:26.849Z",
+      "lastSuccessfulUpdateAt": "2026-10-30T11:23:26.849Z"
     },
     {
       "familyCode": "FAMIGLIA-EGO78",
@@ -39,7 +39,7 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 0,
-      "lastCheckedAt": "2026-10-29T11:30:30.223Z",
+      "lastCheckedAt": "2026-10-30T11:23:26.849Z",
       "lastSuccessfulUpdateAt": null
     },
     {
@@ -54,13 +54,13 @@
       "verified": false,
       "officialStoreId": "IT00812",
       "officialStoreAlias": "sava",
-      "flyerId": "offerte-valide-dall1-10-al-31-10-da-lidl-ogni-brivido-vale-davvero-LV/ar/0",
-      "flyerUrl": "https://www.lidl.it/l/it/volantini/offerte-valide-dall1-10-al-31-10-da-lidl-ogni-brivido-vale-davvero-LV/ar/0",
+      "flyerId": "offerte-valide-dal-29-10-al-4-11-l-autunno-che-vale-davvero/ar/0",
+      "flyerUrl": "https://www.lidl.it/l/it/volantini/offerte-valide-dal-29-10-al-4-11-l-autunno-che-vale-davvero/ar/0",
       "offerScope": "national-chain",
       "promotionId": "",
-      "offersCount": 454,
-      "lastCheckedAt": "2026-10-29T11:30:30.223Z",
-      "lastSuccessfulUpdateAt": "2026-10-29T11:30:30.223Z"
+      "offersCount": 477,
+      "lastCheckedAt": "2026-10-30T11:23:26.849Z",
+      "lastSuccessfulUpdateAt": "2026-10-30T11:23:26.849Z"
     }
   ]
 }
