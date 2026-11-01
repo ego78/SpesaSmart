@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T10:54:55.118Z",
+  "generatedAt": "2026-11-01T11:49:38.773Z",
   "items": [
     {
       "id": "10 rispetto|125g",
@@ -220,21 +220,6 @@
       "offersCount": 1,
       "minPrice": 12.99,
       "maxPrice": 12.99
-    },
-    {
-      "id": "accessori halloween adulti non giocattolo",
-      "canonicalName": "accessori halloween adulti non giocattolo",
-      "canonicalKey": "accessori halloween adulti non giocattolo",
-      "quantity": null,
-      "aliases": [
-        "Accessori di Halloween per adulti Non è un giocattolo"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.79,
-      "maxPrice": 1.79
     },
     {
       "id": "accessori inclusi",
@@ -1297,21 +1282,6 @@
       "maxPrice": 2.79
     },
     {
-      "id": "bambini",
-      "canonicalName": "bambini",
-      "canonicalKey": "bambini",
-      "quantity": null,
-      "aliases": [
-        "per bambini"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.99,
-      "maxPrice": 0.99
-    },
-    {
       "id": "bambola",
       "canonicalName": "bambola",
       "canonicalKey": "bambola",
@@ -1426,36 +1396,6 @@
       "offersCount": 1,
       "minPrice": 0.79,
       "maxPrice": 0.79
-    },
-    {
-      "id": "bicchiere forma zucca teschio",
-      "canonicalName": "bicchiere forma zucca teschio",
-      "canonicalKey": "bicchiere forma zucca teschio",
-      "quantity": null,
-      "aliases": [
-        "Bicchiere a forma di zucca o di teschio"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
-    },
-    {
-      "id": "bicchieri carta tema halloween",
-      "canonicalName": "bicchieri carta tema halloween",
-      "canonicalKey": "bicchieri carta tema halloween",
-      "quantity": null,
-      "aliases": [
-        "Bicchieri di carta tema Halloween Alla"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.49,
-      "maxPrice": 1.49
     },
     {
       "id": "biraghi biraghini snack",
@@ -1878,21 +1818,6 @@
       "maxPrice": 1.45
     },
     {
-      "id": "cactus vaso decorato cm",
-      "canonicalName": "cactus vaso decorato cm",
-      "canonicalKey": "cactus vaso decorato cm",
-      "quantity": null,
-      "aliases": [
-        "Cactus in Vaso decorato Vaso Ø 9,5x7 cm"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.49,
-      "maxPrice": 2.49
-    },
-    {
       "id": "caffe aroma italiano kimbo|750g",
       "canonicalName": "caffe aroma italiano kimbo",
       "canonicalKey": "caffe aroma italiano kimbo|750g",
@@ -1986,26 +1911,6 @@
       "offersCount": 1,
       "minPrice": 3.79,
       "maxPrice": 3.79
-    },
-    {
-      "id": "candela halloween|4pz",
-      "canonicalName": "candela halloween",
-      "canonicalKey": "candela halloween|4pz",
-      "quantity": {
-        "value": 4,
-        "unit": "pz",
-        "label": "4 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "Candela di Halloween,"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.49,
-      "maxPrice": 2.49
     },
     {
       "id": "capacita serbatoio",
@@ -2123,26 +2028,6 @@
       "maxPrice": 2.75
     },
     {
-      "id": "carta cucina tema halloween veli|2pz",
-      "canonicalName": "carta cucina tema halloween veli",
-      "canonicalKey": "carta cucina tema halloween veli|2pz",
-      "quantity": {
-        "value": 2,
-        "unit": "pz",
-        "label": "2 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "Carta da cucina tema Halloween 3 veli"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
       "id": "carta igienica profumata penny|6pz",
       "canonicalName": "carta igienica profumata penny",
       "canonicalKey": "carta igienica profumata penny|6pz",
@@ -2163,26 +2048,6 @@
       "maxPrice": 2.49
     },
     {
-      "id": "carta igienica tema halloween|4pz",
-      "canonicalName": "carta igienica tema halloween",
-      "canonicalKey": "carta igienica tema halloween|4pz",
-      "quantity": {
-        "value": 4,
-        "unit": "pz",
-        "label": "4 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "Carta igienica tema Halloween"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
       "id": "casette livarno 10 led luce bianca calda decorazione natalizia illuminazione",
       "canonicalName": "casette livarno 10 led luce bianca calda decorazione natalizia illuminazione",
       "canonicalKey": "casette livarno 10 led luce bianca calda decorazione natalizia illuminazione",
@@ -2196,21 +2061,6 @@
       "offersCount": 1,
       "minPrice": 19.99,
       "maxPrice": 19.99
-    },
-    {
-      "id": "catena luminosa led ragnatela halloween diversi assortimenti non giocattolo",
-      "canonicalName": "catena luminosa led ragnatela halloween diversi assortimenti non giocattolo",
-      "canonicalKey": "catena luminosa led ragnatela halloween diversi assortimenti non giocattolo",
-      "quantity": null,
-      "aliases": [
-        "[B] Catena luminosa LED o Ragnatela LED \"Halloween\" In diversi assortimenti Non è un giocattolo"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 5.99,
-      "maxPrice": 5.99
     },
     {
       "id": "celebrations cioccolatini|340g",
@@ -2836,51 +2686,6 @@
       "offersCount": 1,
       "minPrice": 3.69,
       "maxPrice": 3.69
-    },
-    {
-      "id": "costume halloween",
-      "canonicalName": "costume halloween",
-      "canonicalKey": "costume halloween",
-      "quantity": null,
-      "aliases": [
-        "Costume di Halloween da"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 7.49,
-      "maxPrice": 7.49
-    },
-    {
-      "id": "costume halloween bambina",
-      "canonicalName": "costume halloween bambina",
-      "canonicalKey": "costume halloween bambina",
-      "quantity": null,
-      "aliases": [
-        "Costume di Halloween da bambina"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 7.49,
-      "maxPrice": 7.49
-    },
-    {
-      "id": "costume halloween bambini",
-      "canonicalName": "costume halloween bambini",
-      "canonicalKey": "costume halloween bambini",
-      "quantity": null,
-      "aliases": [
-        "Costume di Halloween da bambini"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 7.99,
-      "maxPrice": 7.99
     },
     {
       "id": "cotoletta approfittane ora croccante pollo|220g",
@@ -4818,26 +4623,6 @@
       "maxPrice": 3.99
     },
     {
-      "id": "donut halloween|54g",
-      "canonicalName": "donut halloween",
-      "canonicalKey": "donut halloween|54g",
-      "quantity": {
-        "value": 54,
-        "unit": "g",
-        "label": "54 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Donut di Halloween"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.59,
-      "maxPrice": 0.59
-    },
-    {
       "id": "dotazione batteria 12v caricabatterie accessori",
       "canonicalName": "dotazione batteria 12v caricabatterie accessori",
       "canonicalKey": "dotazione batteria 12v caricabatterie accessori",
@@ -6006,21 +5791,6 @@
       "maxPrice": 2.19
     },
     {
-      "id": "fazzoletti",
-      "canonicalName": "fazzoletti",
-      "canonicalKey": "fazzoletti",
-      "quantity": null,
-      "aliases": [
-        "Fazzoletti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.49,
-      "maxPrice": 1.49
-    },
-    {
       "id": "felce azzurra ammorbidente classico|12000ml",
       "canonicalName": "felce azzurra ammorbidente classico",
       "canonicalKey": "felce azzurra ammorbidente classico|12000ml",
@@ -6291,26 +6061,6 @@
       "maxPrice": 1.89
     },
     {
-      "id": "fini scary box halloween|92g",
-      "canonicalName": "fini scary box halloween",
-      "canonicalKey": "fini scary box halloween|92g",
-      "quantity": {
-        "value": 92,
-        "unit": "g",
-        "label": "92 g",
-        "multipack": null
-      },
-      "aliases": [
-        "FINI Scary Box Halloween"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
       "id": "fiorani hamburger approfittane ora black angus irlandese|180g",
       "canonicalName": "fiorani hamburger approfittane ora black angus irlandese",
       "canonicalKey": "fiorani hamburger approfittane ora black angus irlandese|180g",
@@ -6579,21 +6329,6 @@
       "offersCount": 1,
       "minPrice": 2.99,
       "maxPrice": 2.99
-    },
-    {
-      "id": "funko mini personaggi",
-      "canonicalName": "funko mini personaggi",
-      "canonicalKey": "funko mini personaggi",
-      "quantity": null,
-      "aliases": [
-        "FUNKO Mini personaggi"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.99,
-      "maxPrice": 3.99
     },
     {
       "id": "funzione powerbank parkside tramite porta usb lampada ricaricabile",
@@ -7138,21 +6873,6 @@
       "maxPrice": 1.39
     },
     {
-      "id": "halloween bambini",
-      "canonicalName": "halloween bambini",
-      "canonicalKey": "halloween bambini",
-      "quantity": null,
-      "aliases": [
-        "Halloween per bambini"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
-    },
-    {
       "id": "halloween biscotti cioccolato latte|150g",
       "canonicalName": "halloween biscotti cioccolato latte",
       "canonicalKey": "halloween biscotti cioccolato latte|150g",
@@ -7193,41 +6913,6 @@
       "maxPrice": 1.79
     },
     {
-      "id": "halloween caramelle gommose",
-      "canonicalName": "halloween caramelle gommose",
-      "canonicalKey": "halloween caramelle gommose",
-      "quantity": null,
-      "aliases": [
-        "HALLOWEEN Caramelle gommose"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 4.99,
-      "maxPrice": 4.99
-    },
-    {
-      "id": "halloween caramelle gommose fragola|200g",
-      "canonicalName": "halloween caramelle gommose fragola",
-      "canonicalKey": "halloween caramelle gommose fragola|200g",
-      "quantity": {
-        "value": 200,
-        "unit": "g",
-        "label": "200 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Caramelle gommose Gusto fragola"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.29,
-      "maxPrice": 1.29
-    },
-    {
       "id": "halloween caramelle gommose frutta tatuaggi|90g",
       "canonicalName": "halloween caramelle gommose frutta tatuaggi",
       "canonicalKey": "halloween caramelle gommose frutta tatuaggi|90g",
@@ -7248,46 +6933,6 @@
       "maxPrice": 1.19
     },
     {
-      "id": "halloween caramelle morbide frutta|1200g",
-      "canonicalName": "halloween caramelle morbide frutta",
-      "canonicalKey": "halloween caramelle morbide frutta|1200g",
-      "quantity": {
-        "value": 1200,
-        "unit": "g",
-        "label": "1200 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Caramelle morbide alla frutta"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 4.99,
-      "maxPrice": 4.99
-    },
-    {
-      "id": "halloween cioccolatini latte|200g",
-      "canonicalName": "halloween cioccolatini latte",
-      "canonicalKey": "halloween cioccolatini latte|200g",
-      "quantity": {
-        "value": 200,
-        "unit": "g",
-        "label": "200 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Cioccolatini al latte"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.49,
-      "maxPrice": 2.49
-    },
-    {
       "id": "halloween coni gelato diversi|300g",
       "canonicalName": "halloween coni gelato diversi",
       "canonicalKey": "halloween coni gelato diversi|300g",
@@ -7306,121 +6951,6 @@
       "offersCount": 1,
       "minPrice": 2.69,
       "maxPrice": 2.69
-    },
-    {
-      "id": "halloween crocchette zucca|256g",
-      "canonicalName": "halloween crocchette zucca",
-      "canonicalKey": "halloween crocchette zucca|256g",
-      "quantity": {
-        "value": 256,
-        "unit": "g",
-        "label": "256 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Crocchette alla zucca"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
-    },
-    {
-      "id": "halloween dessert zucca speziata",
-      "canonicalName": "halloween dessert zucca speziata",
-      "canonicalKey": "halloween dessert zucca speziata",
-      "quantity": null,
-      "aliases": [
-        "HALLOWEEN Dessert alla zucca speziata"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.29,
-      "maxPrice": 1.29
-    },
-    {
-      "id": "halloween figure patate|450g",
-      "canonicalName": "halloween figure patate",
-      "canonicalKey": "halloween figure patate|450g",
-      "quantity": {
-        "value": 450,
-        "unit": "g",
-        "label": "450 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Figure di patate"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.49,
-      "maxPrice": 1.49
-    },
-    {
-      "id": "halloween gnocchi patata forma fantasmini zucca|500g",
-      "canonicalName": "halloween gnocchi patata forma fantasmini zucca",
-      "canonicalKey": "halloween gnocchi patata forma fantasmini zucca|500g",
-      "quantity": {
-        "value": 500,
-        "unit": "g",
-        "label": "500 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Gnocchi di patata a forma di fantasmini alla zucca"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.79,
-      "maxPrice": 1.79
-    },
-    {
-      "id": "halloween krapfen|368g",
-      "canonicalName": "halloween krapfen",
-      "canonicalKey": "halloween krapfen|368g",
-      "quantity": {
-        "value": 368,
-        "unit": "g",
-        "label": "368 g",
-        "multipack": 4
-      },
-      "aliases": [
-        "HALLOWEEN Krapfen"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.49,
-      "maxPrice": 3.49
-    },
-    {
-      "id": "halloween lecca cioccolato diverse forme|65g",
-      "canonicalName": "halloween lecca cioccolato diverse forme",
-      "canonicalKey": "halloween lecca cioccolato diverse forme|65g",
-      "quantity": {
-        "value": 65,
-        "unit": "g",
-        "label": "65 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Lecca lecca di cioccolato In diverse forme"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
     },
     {
       "id": "halloween macaron kit|105g",
@@ -7463,61 +6993,6 @@
       "maxPrice": 1.49
     },
     {
-      "id": "halloween mini donuts|279g",
-      "canonicalName": "halloween mini donuts",
-      "canonicalKey": "halloween mini donuts|279g",
-      "quantity": {
-        "value": 279,
-        "unit": "g",
-        "label": "279 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Mini Donuts Assortiti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
-    },
-    {
-      "id": "halloween mini figure cioccolato",
-      "canonicalName": "halloween mini figure cioccolato",
-      "canonicalKey": "halloween mini figure cioccolato",
-      "quantity": null,
-      "aliases": [
-        "HALLOWEEN Mini figure di cioccolato"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.99,
-      "maxPrice": 0.99
-    },
-    {
-      "id": "halloween mini pizze farcite|360g",
-      "canonicalName": "halloween mini pizze farcite",
-      "canonicalKey": "halloween mini pizze farcite|360g",
-      "quantity": {
-        "value": 360,
-        "unit": "g",
-        "label": "360 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Mini Pizze farcite"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.39,
-      "maxPrice": 3.39
-    },
-    {
       "id": "halloween mix arachidi pastella|200g",
       "canonicalName": "halloween mix arachidi pastella",
       "canonicalKey": "halloween mix arachidi pastella|200g",
@@ -7536,126 +7011,6 @@
       "offersCount": 1,
       "minPrice": 1.79,
       "maxPrice": 1.79
-    },
-    {
-      "id": "halloween mix lecca|209g",
-      "canonicalName": "halloween mix lecca",
-      "canonicalKey": "halloween mix lecca|209g",
-      "quantity": {
-        "value": 209,
-        "unit": "g",
-        "label": "209 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Mix di lecca-lecca"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.49,
-      "maxPrice": 1.49
-    },
-    {
-      "id": "halloween nuggets formaggio jalapeno|420g",
-      "canonicalName": "halloween nuggets formaggio jalapeno",
-      "canonicalKey": "halloween nuggets formaggio jalapeno|420g",
-      "quantity": {
-        "value": 420,
-        "unit": "g",
-        "label": "420 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Nuggets di formaggio e jalapeño"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.99,
-      "maxPrice": 3.99
-    },
-    {
-      "id": "halloween nuggets petto pollo|400g",
-      "canonicalName": "halloween nuggets petto pollo",
-      "canonicalKey": "halloween nuggets petto pollo|400g",
-      "quantity": {
-        "value": 400,
-        "unit": "g",
-        "label": "400 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Nuggets di petto di pollo"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.49,
-      "maxPrice": 3.49
-    },
-    {
-      "id": "halloween pasta|500g",
-      "canonicalName": "halloween pasta",
-      "canonicalKey": "halloween pasta|500g",
-      "quantity": {
-        "value": 500,
-        "unit": "g",
-        "label": "500 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Pasta"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.29,
-      "maxPrice": 1.29
-    },
-    {
-      "id": "halloween pasta fresca ripiena zucca|250g",
-      "canonicalName": "halloween pasta fresca ripiena zucca",
-      "canonicalKey": "halloween pasta fresca ripiena zucca|250g",
-      "quantity": {
-        "value": 250,
-        "unit": "g",
-        "label": "250 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Pasta fresca ripiena alla zucca"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.49,
-      "maxPrice": 1.49
-    },
-    {
-      "id": "halloween pizza zucca pancetta|390g",
-      "canonicalName": "halloween pizza zucca pancetta",
-      "canonicalKey": "halloween pizza zucca pancetta|390g",
-      "quantity": {
-        "value": 390,
-        "unit": "g",
-        "label": "390 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Pizza con zucca e pancetta"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.79,
-      "maxPrice": 2.79
     },
     {
       "id": "halloween popcorn caramellati|250g",
@@ -7706,66 +7061,6 @@
       "offersCount": 1,
       "minPrice": 1.19,
       "maxPrice": 1.19
-    },
-    {
-      "id": "halloween tortilla chips blu|340g",
-      "canonicalName": "halloween tortilla chips blu",
-      "canonicalKey": "halloween tortilla chips blu|340g",
-      "quantity": {
-        "value": 340,
-        "unit": "g",
-        "label": "340 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Tortilla chips blu"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
-    },
-    {
-      "id": "halloween zucca plastica ripiena dolciumi|200g",
-      "canonicalName": "halloween zucca plastica ripiena dolciumi",
-      "canonicalKey": "halloween zucca plastica ripiena dolciumi|200g",
-      "quantity": {
-        "value": 200,
-        "unit": "g",
-        "label": "200 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Zucca di plastica ripiena di dolciumi"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.49,
-      "maxPrice": 3.49
-    },
-    {
-      "id": "halloween zucchette ripiene gorgonzola|400g",
-      "canonicalName": "halloween zucchette ripiene gorgonzola",
-      "canonicalKey": "halloween zucchette ripiene gorgonzola|400g",
-      "quantity": {
-        "value": 400,
-        "unit": "g",
-        "label": "400 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Zucchette ripiene al Gorgonzola"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
     },
     {
       "id": "hamburger pollo|400g",
@@ -7838,46 +7133,6 @@
       "maxPrice": 2.89
     },
     {
-      "id": "haribo halloween crazy skeletties little monsters|175g",
-      "canonicalName": "haribo halloween crazy skeletties little monsters",
-      "canonicalKey": "haribo halloween crazy skeletties little monsters|175g",
-      "quantity": {
-        "value": 175,
-        "unit": "g",
-        "label": "175 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HARIBO Halloween Crazy Skeletties o Little Monsters"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.39,
-      "maxPrice": 1.39
-    },
-    {
-      "id": "haribo halloween party mix|500g",
-      "canonicalName": "haribo halloween party mix",
-      "canonicalKey": "haribo halloween party mix|500g",
-      "quantity": {
-        "value": 500,
-        "unit": "g",
-        "label": "500 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HARIBO Halloween Party Mix"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
-    },
-    {
       "id": "heineken birra analcolica|330ml",
       "canonicalName": "heineken birra analcolica",
       "canonicalKey": "heineken birra analcolica|330ml",
@@ -7896,21 +7151,6 @@
       "offersCount": 1,
       "minPrice": 0.79,
       "maxPrice": 0.79
-    },
-    {
-      "id": "hulten teschio ripieno",
-      "canonicalName": "hulten teschio ripieno",
-      "canonicalKey": "hulten teschio ripieno",
-      "quantity": null,
-      "aliases": [
-        "HULTÉN Teschio ripieno"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 5.99,
-      "maxPrice": 5.99
     },
     {
       "id": "imbattibili deluxe tortelloni ricotta spinaci funghi|250g",
@@ -7991,51 +7231,6 @@
       "offersCount": 1,
       "minPrice": 3.25,
       "maxPrice": 3.25
-    },
-    {
-      "id": "kalanchoe decorazioni vaso ca 12 cm",
-      "canonicalName": "kalanchoe decorazioni vaso ca 12 cm",
-      "canonicalKey": "kalanchoe decorazioni vaso ca 12 cm",
-      "quantity": null,
-      "aliases": [
-        "Kalanchoe con decorazioni Vaso Ø c.ca 12 cm"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.49,
-      "maxPrice": 2.49
-    },
-    {
-      "id": "kalanchoe vaso decorato",
-      "canonicalName": "kalanchoe vaso decorato",
-      "canonicalKey": "kalanchoe vaso decorato",
-      "quantity": null,
-      "aliases": [
-        "Kalanchoe in vaso decorato"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 4.49,
-      "maxPrice": 4.49
-    },
-    {
-      "id": "kalanchoe vaso figure",
-      "canonicalName": "kalanchoe vaso figure",
-      "canonicalKey": "kalanchoe vaso figure",
-      "quantity": null,
-      "aliases": [
-        "Kalanchoe in vaso con figure"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.49,
-      "maxPrice": 2.49
     },
     {
       "id": "kania risotto milanese|175g",
@@ -8178,21 +7373,6 @@
       "maxPrice": 1.99
     },
     {
-      "id": "kinder zucca",
-      "canonicalName": "kinder zucca",
-      "canonicalKey": "kinder zucca",
-      "quantity": null,
-      "aliases": [
-        "KINDER Zucca"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 9.99,
-      "maxPrice": 9.99
-    },
-    {
       "id": "kit",
       "canonicalName": "kit",
       "canonicalKey": "kit",
@@ -8256,21 +7436,6 @@
       "offersCount": 1,
       "minPrice": 17.99,
       "maxPrice": 17.99
-    },
-    {
-      "id": "lanterna led halloween diversi assortimenti non giocattolo",
-      "canonicalName": "lanterna led halloween diversi assortimenti non giocattolo",
-      "canonicalKey": "lanterna led halloween diversi assortimenti non giocattolo",
-      "quantity": null,
-      "aliases": [
-        "[A] Lanterna LED \"Halloween\" In diversi assortimenti Non è un giocattolo"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 7.99,
-      "maxPrice": 7.99
     },
     {
       "id": "laser 625 645 nm parkside misuratore distanza livella croce",
@@ -8958,21 +8123,6 @@
       "maxPrice": 14.99
     },
     {
-      "id": "livarno adesivi gel led halloween",
-      "canonicalName": "livarno adesivi gel led halloween",
-      "canonicalKey": "livarno adesivi gel led halloween",
-      "quantity": null,
-      "aliases": [
-        "LIVARNO Adesivi in gel LED \"Halloween\""
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
-    },
-    {
       "id": "livarno adesivi natalizi led finestre batterie incluse lunghezza 107 cm",
       "canonicalName": "livarno adesivi natalizi led finestre batterie incluse lunghezza 107 cm",
       "canonicalKey": "livarno adesivi natalizi led finestre batterie incluse lunghezza 107 cm",
@@ -9001,36 +8151,6 @@
       "offersCount": 1,
       "minPrice": 19.99,
       "maxPrice": 19.99
-    },
-    {
-      "id": "livarno bastoncini luminosi lanterne halloween diversi assortimenti",
-      "canonicalName": "livarno bastoncini luminosi lanterne halloween diversi assortimenti",
-      "canonicalKey": "livarno bastoncini luminosi lanterne halloween diversi assortimenti",
-      "quantity": null,
-      "aliases": [
-        "LIVARNO Bastoncini luminosi o lanterne di Halloween In diversi assortimenti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
-    },
-    {
-      "id": "livarno candela halloween",
-      "canonicalName": "livarno candela halloween",
-      "canonicalKey": "livarno candela halloween",
-      "quantity": null,
-      "aliases": [
-        "LIVARNO Candela di Halloween"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.49,
-      "maxPrice": 2.49
     },
     {
       "id": "livarno candela led|4pz",
@@ -9113,21 +8233,6 @@
       "maxPrice": 14.99
     },
     {
-      "id": "livarno catena luminosa halloween",
-      "canonicalName": "livarno catena luminosa halloween",
-      "canonicalKey": "livarno catena luminosa halloween",
-      "quantity": null,
-      "aliases": [
-        "LIVARNO Catena luminosa di Halloween"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.79,
-      "maxPrice": 1.79
-    },
-    {
       "id": "livarno completo lenzuola matrimoniali lenzuolo angoli 170 27 cm",
       "canonicalName": "livarno completo lenzuola matrimoniali lenzuolo angoli 170 27 cm",
       "canonicalKey": "livarno completo lenzuola matrimoniali lenzuolo angoli 170 27 cm",
@@ -9143,21 +8248,6 @@
       "maxPrice": 14.99
     },
     {
-      "id": "livarno decorazione gonfiabile halloween",
-      "canonicalName": "livarno decorazione gonfiabile halloween",
-      "canonicalKey": "livarno decorazione gonfiabile halloween",
-      "quantity": null,
-      "aliases": [
-        "LIVARNO Decorazione gonfiabile di Halloween"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.79,
-      "maxPrice": 0.79
-    },
-    {
       "id": "livarno decorazione natalizia led legno",
       "canonicalName": "livarno decorazione natalizia led legno",
       "canonicalKey": "livarno decorazione natalizia led legno",
@@ -9171,21 +8261,6 @@
       "offersCount": 1,
       "minPrice": 2.99,
       "maxPrice": 2.99
-    },
-    {
-      "id": "livarno decorazioni halloween",
-      "canonicalName": "livarno decorazioni halloween",
-      "canonicalKey": "livarno decorazioni halloween",
-      "quantity": null,
-      "aliases": [
-        "LIVARNO Decorazioni per Halloween"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 4.99,
-      "maxPrice": 4.99
     },
     {
       "id": "livarno decorazioni led ad energia solare diversi assortimenti",
@@ -9221,21 +8296,6 @@
       "offersCount": 1,
       "minPrice": 6.99,
       "maxPrice": 6.99
-    },
-    {
-      "id": "livarno figura decorativa halloween",
-      "canonicalName": "livarno figura decorativa halloween",
-      "canonicalKey": "livarno figura decorativa halloween",
-      "quantity": null,
-      "aliases": [
-        "LIVARNO Figura decorativa per Halloween"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.99,
-      "maxPrice": 3.99
     },
     {
       "id": "livarno lampada led tavolo soffitto cm",
@@ -9396,21 +8456,6 @@
       "offersCount": 1,
       "minPrice": 6.99,
       "maxPrice": 6.99
-    },
-    {
-      "id": "livarno set adesivi halloween",
-      "canonicalName": "livarno set adesivi halloween",
-      "canonicalKey": "livarno set adesivi halloween",
-      "quantity": null,
-      "aliases": [
-        "LIVARNO Set adesivi per Halloween"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
     },
     {
       "id": "livarno set palline natalizie|49pz",
@@ -9864,26 +8909,6 @@
       "maxPrice": 2.99
     },
     {
-      "id": "manca foto|90g",
-      "canonicalName": "manca foto",
-      "canonicalKey": "manca foto|90g",
-      "quantity": {
-        "value": 90,
-        "unit": "g",
-        "label": "90 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Manca foto"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.99,
-      "maxPrice": 3.99
-    },
-    {
       "id": "mango",
       "canonicalName": "mango",
       "canonicalKey": "mango",
@@ -10107,46 +9132,6 @@
       "offersCount": 1,
       "minPrice": 0.49,
       "maxPrice": 0.49
-    },
-    {
-      "id": "migliorati pipistrelli crema latte|200g",
-      "canonicalName": "migliorati pipistrelli crema latte",
-      "canonicalKey": "migliorati pipistrelli crema latte|200g",
-      "quantity": {
-        "value": 200,
-        "unit": "g",
-        "label": "200 g",
-        "multipack": null
-      },
-      "aliases": [
-        "MIGLIORATI Pipistrelli con crema al latte"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
-    },
-    {
-      "id": "migliorati zucchette crema nocciola|200g",
-      "canonicalName": "migliorati zucchette crema nocciola",
-      "canonicalKey": "migliorati zucchette crema nocciola|200g",
-      "quantity": {
-        "value": 200,
-        "unit": "g",
-        "label": "200 g",
-        "multipack": null
-      },
-      "aliases": [
-        "MIGLIORATI Zucchette con crema alla nocciola"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
     },
     {
       "id": "mila world bocconcini gatto salsa|1660g",
@@ -10447,26 +9432,6 @@
       "offersCount": 1,
       "minPrice": 2.49,
       "maxPrice": 2.49
-    },
-    {
-      "id": "monelle spiedini marshmallow prodotto artigiano italiano diversi|60g",
-      "canonicalName": "monelle spiedini marshmallow prodotto artigiano italiano diversi",
-      "canonicalKey": "monelle spiedini marshmallow prodotto artigiano italiano diversi|60g",
-      "quantity": {
-        "value": 60,
-        "unit": "g",
-        "label": "60 g",
-        "multipack": null
-      },
-      "aliases": [
-        "LE MONELLE Spiedini Marshmallow Prodotto artigiano italiano In diversi gusti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.49,
-      "maxPrice": 1.49
     },
     {
       "id": "morato skrikki mais viola|200g",
@@ -10894,7 +9859,7 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 4,
+      "offersCount": 2,
       "minPrice": 1.49,
       "maxPrice": 9.49
     },
@@ -11079,66 +10044,6 @@
       "maxPrice": 12.99
     },
     {
-      "id": "novita|70g",
-      "canonicalName": "novita",
-      "canonicalKey": "novita|70g",
-      "quantity": {
-        "value": 70,
-        "unit": "g",
-        "label": "70 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Novità"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.49,
-      "maxPrice": 0.49
-    },
-    {
-      "id": "novita|120g",
-      "canonicalName": "novita",
-      "canonicalKey": "novita|120g",
-      "quantity": {
-        "value": 120,
-        "unit": "g",
-        "label": "120 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Novità"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.59,
-      "maxPrice": 1.59
-    },
-    {
-      "id": "novita|500ml",
-      "canonicalName": "novita",
-      "canonicalKey": "novita|500ml",
-      "quantity": {
-        "value": 500,
-        "unit": "ml",
-        "label": "500 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "Novità"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 7.99,
-      "maxPrice": 7.99
-    },
-    {
       "id": "novita gastronomia mare approfittane ora merluzzo nordico croccante|200g",
       "canonicalName": "novita gastronomia mare approfittane ora merluzzo nordico croccante",
       "canonicalKey": "novita gastronomia mare approfittane ora merluzzo nordico croccante|200g",
@@ -11157,26 +10062,6 @@
       "offersCount": 1,
       "minPrice": 2.49,
       "maxPrice": 2.49
-    },
-    {
-      "id": "novita halloween gnocchi forma pipistrello carota nera|400g",
-      "canonicalName": "novita halloween gnocchi forma pipistrello carota nera",
-      "canonicalKey": "novita halloween gnocchi forma pipistrello carota nera|400g",
-      "quantity": {
-        "value": 400,
-        "unit": "g",
-        "label": "400 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Novità HALLOWEEN Gnocchi a forma di pipistrello con carota nera"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.69,
-      "maxPrice": 1.69
     },
     {
       "id": "numero colpi 3100min nominale vuoto 23 mm lunghezza corsa batteria",
@@ -12359,21 +11244,6 @@
       "maxPrice": 2.65
     },
     {
-      "id": "parure copripiumino",
-      "canonicalName": "parure copripiumino",
-      "canonicalKey": "parure copripiumino",
-      "quantity": null,
-      "aliases": [
-        "Parure copripiumino"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 17.99,
-      "maxPrice": 17.99
-    },
-    {
       "id": "parure copripiumino matrimoniale cm federe",
       "canonicalName": "parure copripiumino matrimoniale cm federe",
       "canonicalKey": "parure copripiumino matrimoniale cm federe",
@@ -12949,66 +11819,6 @@
       "maxPrice": 1.99
     },
     {
-      "id": "piantine fiorite tazza halloween vaso ca cm",
-      "canonicalName": "piantine fiorite tazza halloween vaso ca cm",
-      "canonicalKey": "piantine fiorite tazza halloween vaso ca cm",
-      "quantity": null,
-      "aliases": [
-        "Piantine fiorite in tazza di Halloween Vaso Ø c.ca 8 cm"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.49,
-      "maxPrice": 2.49
-    },
-    {
-      "id": "piantine fiorite vaso halloween",
-      "canonicalName": "piantine fiorite vaso halloween",
-      "canonicalKey": "piantine fiorite vaso halloween",
-      "quantity": null,
-      "aliases": [
-        "Piantine fiorite in vaso di Halloween"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
-    },
-    {
-      "id": "piatti carta",
-      "canonicalName": "piatti carta",
-      "canonicalKey": "piatti carta",
-      "quantity": null,
-      "aliases": [
-        "Piatti di carta"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.49,
-      "maxPrice": 1.49
-    },
-    {
-      "id": "pile cappuccio",
-      "canonicalName": "pile cappuccio",
-      "canonicalKey": "pile cappuccio",
-      "quantity": null,
-      "aliases": [
-        "Pile con cappuccio"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 14.99,
-      "maxPrice": 14.99
-    },
-    {
       "id": "pinsa|230g",
       "canonicalName": "pinsa",
       "canonicalKey": "pinsa|230g",
@@ -13152,26 +11962,6 @@
       "offersCount": 1,
       "minPrice": 3.49,
       "maxPrice": 3.49
-    },
-    {
-      "id": "pizzette halloween pomodoro mozzarella|12pz",
-      "canonicalName": "pizzette halloween pomodoro mozzarella",
-      "canonicalKey": "pizzette halloween pomodoro mozzarella|12pz",
-      "quantity": {
-        "value": 12,
-        "unit": "pz",
-        "label": "12 pz",
-        "multipack": null
-      },
-      "aliases": [
-        "Pizzette Halloween Con pomodoro e mozzarella"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
     },
     {
       "id": "platycodon",
@@ -13697,61 +12487,6 @@
       "offersCount": 1,
       "minPrice": 1.09,
       "maxPrice": 1.09
-    },
-    {
-      "id": "ragnatela led halloween",
-      "canonicalName": "ragnatela led halloween",
-      "canonicalKey": "ragnatela led halloween",
-      "quantity": null,
-      "aliases": [
-        "Ragnatela LED \"Halloween\""
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 7.99,
-      "maxPrice": 7.99
-    },
-    {
-      "id": "ragolds caramelle forma teschi|72g",
-      "canonicalName": "ragolds caramelle forma teschi",
-      "canonicalKey": "ragolds caramelle forma teschi|72g",
-      "quantity": {
-        "value": 72,
-        "unit": "g",
-        "label": "72 g",
-        "multipack": null
-      },
-      "aliases": [
-        "RAGOLDS Caramelle a forma di teschi"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.29,
-      "maxPrice": 1.29
-    },
-    {
-      "id": "ragolds caramelle gommose diversi|291g",
-      "canonicalName": "ragolds caramelle gommose diversi",
-      "canonicalKey": "ragolds caramelle gommose diversi|291g",
-      "quantity": {
-        "value": 291,
-        "unit": "g",
-        "label": "291 g",
-        "multipack": null
-      },
-      "aliases": [
-        "RAGOLDS Caramelle gommose In diversi gusti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.29,
-      "maxPrice": 2.29
     },
     {
       "id": "rio mare tonno olio oliva pescato canna|468g",
@@ -15169,21 +13904,6 @@
       "maxPrice": 3.49
     },
     {
-      "id": "tappeto catturasporco",
-      "canonicalName": "tappeto catturasporco",
-      "canonicalKey": "tappeto catturasporco",
-      "quantity": null,
-      "aliases": [
-        "Tappeto catturasporco"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.49,
-      "maxPrice": 2.49
-    },
-    {
       "id": "tartare bovino adulto scottona|200g",
       "canonicalName": "tartare bovino adulto scottona",
       "canonicalKey": "tartare bovino adulto scottona|200g",
@@ -15399,21 +14119,6 @@
       "maxPrice": 8.99
     },
     {
-      "id": "tovaglioli carta",
-      "canonicalName": "tovaglioli carta",
-      "canonicalKey": "tovaglioli carta",
-      "quantity": null,
-      "aliases": [
-        "Tovaglioli di carta"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 0.99,
-      "maxPrice": 0.99
-    },
-    {
       "id": "tovaglioli colorati penny|50pz",
       "canonicalName": "tovaglioli colorati penny",
       "canonicalKey": "tovaglioli colorati penny|50pz",
@@ -15527,26 +14232,6 @@
       "offersCount": 1,
       "minPrice": 3.69,
       "maxPrice": 3.69
-    },
-    {
-      "id": "trolli caramelle gommose halloween mix|360g",
-      "canonicalName": "trolli caramelle gommose halloween mix",
-      "canonicalKey": "trolli caramelle gommose halloween mix|360g",
-      "quantity": {
-        "value": 360,
-        "unit": "g",
-        "label": "360 g",
-        "multipack": null
-      },
-      "aliases": [
-        "TROLLI Caramelle gommose Halloween mix"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.29,
-      "maxPrice": 3.29
     },
     {
       "id": "trolli caramelle gommose ripieno|75g",
@@ -16557,21 +15242,6 @@
       "offersCount": 1,
       "minPrice": 1.49,
       "maxPrice": 1.49
-    },
-    {
-      "id": "zucca ornamentale",
-      "canonicalName": "zucca ornamentale",
-      "canonicalKey": "zucca ornamentale",
-      "quantity": null,
-      "aliases": [
-        "Zucca ornamentale"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 5.99,
-      "maxPrice": 5.99
     }
   ]
 }
