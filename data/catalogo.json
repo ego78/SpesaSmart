@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T11:49:38.773Z",
+  "generatedAt": "2026-11-02T13:28:55.485Z",
   "items": [
     {
       "id": "10 rispetto|125g",
@@ -6873,196 +6873,6 @@
       "maxPrice": 1.39
     },
     {
-      "id": "halloween biscotti cioccolato latte|150g",
-      "canonicalName": "halloween biscotti cioccolato latte",
-      "canonicalKey": "halloween biscotti cioccolato latte|150g",
-      "quantity": {
-        "value": 150,
-        "unit": "g",
-        "label": "150 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Biscotti con cioccolato al latte"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.79,
-      "maxPrice": 1.79
-    },
-    {
-      "id": "halloween biscotti pasta frolla confettini cioccolato|150g",
-      "canonicalName": "halloween biscotti pasta frolla confettini cioccolato",
-      "canonicalKey": "halloween biscotti pasta frolla confettini cioccolato|150g",
-      "quantity": {
-        "value": 150,
-        "unit": "g",
-        "label": "150 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Biscotti di pasta frolla Con confettini di cioccolato"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.79,
-      "maxPrice": 1.79
-    },
-    {
-      "id": "halloween caramelle gommose frutta tatuaggi|90g",
-      "canonicalName": "halloween caramelle gommose frutta tatuaggi",
-      "canonicalKey": "halloween caramelle gommose frutta tatuaggi|90g",
-      "quantity": {
-        "value": 90,
-        "unit": "g",
-        "label": "90 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Caramelle gommose al gusto di frutta Con tatuaggi"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.19,
-      "maxPrice": 1.19
-    },
-    {
-      "id": "halloween coni gelato diversi|300g",
-      "canonicalName": "halloween coni gelato diversi",
-      "canonicalKey": "halloween coni gelato diversi|300g",
-      "quantity": {
-        "value": 300,
-        "unit": "g",
-        "label": "300 g",
-        "multipack": 4
-      },
-      "aliases": [
-        "HALLOWEEN Coni gelato In diversi gusti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.69,
-      "maxPrice": 2.69
-    },
-    {
-      "id": "halloween macaron kit|105g",
-      "canonicalName": "halloween macaron kit",
-      "canonicalKey": "halloween macaron kit|105g",
-      "quantity": {
-        "value": 105,
-        "unit": "g",
-        "label": "105 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Macaron Kit"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.99,
-      "maxPrice": 3.99
-    },
-    {
-      "id": "halloween marshmallow dolcetti spumosi|275g",
-      "canonicalName": "halloween marshmallow dolcetti spumosi",
-      "canonicalKey": "halloween marshmallow dolcetti spumosi|275g",
-      "quantity": {
-        "value": 275,
-        "unit": "g",
-        "label": "275 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Marshmallow Dolcetti spumosi"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.49,
-      "maxPrice": 1.49
-    },
-    {
-      "id": "halloween mix arachidi pastella|200g",
-      "canonicalName": "halloween mix arachidi pastella",
-      "canonicalKey": "halloween mix arachidi pastella|200g",
-      "quantity": {
-        "value": 200,
-        "unit": "g",
-        "label": "200 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Mix di arachidi in pastella"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.79,
-      "maxPrice": 1.79
-    },
-    {
-      "id": "halloween popcorn caramellati|250g",
-      "canonicalName": "halloween popcorn caramellati",
-      "canonicalKey": "halloween popcorn caramellati|250g",
-      "quantity": {
-        "value": 250,
-        "unit": "g",
-        "label": "250 g",
-        "multipack": null
-      },
-      "aliases": [
-        "HALLOWEEN Popcorn caramellati"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.79,
-      "maxPrice": 2.79
-    },
-    {
-      "id": "halloween snack diversi",
-      "canonicalName": "halloween snack diversi",
-      "canonicalKey": "halloween snack diversi",
-      "quantity": null,
-      "aliases": [
-        "HALLOWEEN Snack In diversi gusti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.19,
-      "maxPrice": 1.19
-    },
-    {
-      "id": "halloween snack forma vampiro diversi",
-      "canonicalName": "halloween snack forma vampiro diversi",
-      "canonicalKey": "halloween snack forma vampiro diversi",
-      "quantity": null,
-      "aliases": [
-        "HALLOWEEN Snack a forma di vampiro In diversi gusti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.19,
-      "maxPrice": 1.19
-    },
-    {
       "id": "hamburger pollo|400g",
       "canonicalName": "hamburger pollo",
       "canonicalKey": "hamburger pollo|400g",
@@ -9394,26 +9204,6 @@
       "maxPrice": 9.49
     },
     {
-      "id": "minions caramelle gommose diversi|240g",
-      "canonicalName": "minions caramelle gommose diversi",
-      "canonicalKey": "minions caramelle gommose diversi|240g",
-      "quantity": {
-        "value": 240,
-        "unit": "g",
-        "label": "240 g",
-        "multipack": null
-      },
-      "aliases": [
-        "MINIONS Caramelle gommose In diversi gusti"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.49,
-      "maxPrice": 2.49
-    },
-    {
       "id": "mirtilli|250g",
       "canonicalName": "mirtilli",
       "canonicalKey": "mirtilli|250g",
@@ -9864,66 +9654,6 @@
       "maxPrice": 9.49
     },
     {
-      "id": "novita|370g",
-      "canonicalName": "novita",
-      "canonicalKey": "novita|370g",
-      "quantity": {
-        "value": 370,
-        "unit": "g",
-        "label": "370 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Novità"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
-      "id": "novita|200g",
-      "canonicalName": "novita",
-      "canonicalKey": "novita|200g",
-      "quantity": {
-        "value": 200,
-        "unit": "g",
-        "label": "200 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Novità"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 2,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
-    },
-    {
-      "id": "novita|500g",
-      "canonicalName": "novita",
-      "canonicalKey": "novita|500g",
-      "quantity": {
-        "value": 500,
-        "unit": "g",
-        "label": "500 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Novità"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 2,
-      "minPrice": 3.49,
-      "maxPrice": 3.69
-    },
-    {
       "id": "novita|240g",
       "canonicalName": "novita",
       "canonicalKey": "novita|240g",
@@ -10024,6 +9754,26 @@
       "maxPrice": 5.79
     },
     {
+      "id": "novita|500g",
+      "canonicalName": "novita",
+      "canonicalKey": "novita|500g",
+      "quantity": {
+        "value": 500,
+        "unit": "g",
+        "label": "500 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Novità"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.69,
+      "maxPrice": 3.69
+    },
+    {
       "id": "novita|230g",
       "canonicalName": "novita",
       "canonicalKey": "novita|230g",
@@ -10042,6 +9792,26 @@
       "offersCount": 1,
       "minPrice": 12.99,
       "maxPrice": 12.99
+    },
+    {
+      "id": "novita|200g",
+      "canonicalName": "novita",
+      "canonicalKey": "novita|200g",
+      "quantity": {
+        "value": 200,
+        "unit": "g",
+        "label": "200 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Novità"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
     },
     {
       "id": "novita gastronomia mare approfittane ora merluzzo nordico croccante|200g",
@@ -14232,26 +14002,6 @@
       "offersCount": 1,
       "minPrice": 3.69,
       "maxPrice": 3.69
-    },
-    {
-      "id": "trolli caramelle gommose ripieno|75g",
-      "canonicalName": "trolli caramelle gommose ripieno",
-      "canonicalKey": "trolli caramelle gommose ripieno|75g",
-      "quantity": {
-        "value": 75,
-        "unit": "g",
-        "label": "75 g",
-        "multipack": null
-      },
-      "aliases": [
-        "TROLLI Caramelle gommose con ripieno"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.49,
-      "maxPrice": 1.49
     },
     {
       "id": "tronic set supporto smartphone auto larghezza cm",
