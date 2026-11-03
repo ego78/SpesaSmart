@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T13:28:55.485Z",
+  "generatedAt": "2026-11-03T12:47:02.165Z",
   "items": [
     {
       "id": "10 rispetto|125g",
@@ -35,6 +35,26 @@
       "offersCount": 1,
       "minPrice": 4.99,
       "maxPrice": 4.99
+    },
+    {
+      "id": "11 rispetto 2025|75g",
+      "canonicalName": "11 rispetto 2025",
+      "canonicalKey": "11 rispetto 2025|75g",
+      "quantity": {
+        "value": 75,
+        "unit": "g",
+        "label": "75 g",
+        "multipack": null
+      },
+      "aliases": [
+        "-11% rispetto al 2025"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.49,
+      "maxPrice": 1.49
     },
     {
       "id": "13 findus piselli novelli|1000g",
@@ -317,12 +337,42 @@
       "maxPrice": 3.49
     },
     {
+      "id": "action figure",
+      "canonicalName": "action figure",
+      "canonicalKey": "action figure",
+      "quantity": null,
+      "aliases": [
+        "Action Figure"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 12.99,
+      "maxPrice": 12.99
+    },
+    {
       "id": "action figure dragon ball altezza 12 cm",
       "canonicalName": "action figure dragon ball altezza 12 cm",
       "canonicalKey": "action figure dragon ball altezza 12 cm",
       "quantity": null,
       "aliases": [
         "Action Figure “Dragon Ball” Altezza: 12 cm"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 12.99,
+      "maxPrice": 12.99
+    },
+    {
+      "id": "action figure sorpresa",
+      "canonicalName": "action figure sorpresa",
+      "canonicalKey": "action figure sorpresa",
+      "quantity": null,
+      "aliases": [
+        "Action Figure a sorpresa"
       ],
       "stores": [
         "Lidl"
@@ -562,6 +612,26 @@
       "maxPrice": 3.99
     },
     {
+      "id": "allini prosecco magnum 11 vol|1500ml",
+      "canonicalName": "allini prosecco magnum 11 vol",
+      "canonicalKey": "allini prosecco magnum 11 vol|1500ml",
+      "quantity": {
+        "value": 1500,
+        "unit": "ml",
+        "label": "1500 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "ALLINI Prosecco Magnum 11% Vol."
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 7.99,
+      "maxPrice": 7.99
+    },
+    {
       "id": "altezza 70 cm",
       "canonicalName": "altezza 70 cm",
       "canonicalKey": "altezza 70 cm",
@@ -590,6 +660,21 @@
       "offersCount": 1,
       "minPrice": 2.79,
       "maxPrice": 2.79
+    },
+    {
+      "id": "ambiente luminoso interno stella natale grande vaso 17 cm",
+      "canonicalName": "ambiente luminoso interno stella natale grande vaso 17 cm",
+      "canonicalKey": "ambiente luminoso interno stella natale grande vaso 17 cm",
+      "quantity": null,
+      "aliases": [
+        "Ambiente luminoso Da interno STELLA DI NATALE GRANDE Vaso Ø 17 cm"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 6.99,
+      "maxPrice": 6.99
     },
     {
       "id": "ambipur profumatore bagno lavanda risveglio primaverile portofino|8ml",
@@ -792,12 +877,72 @@
       "maxPrice": 1.89
     },
     {
+      "id": "annaffiare abbondantemente ambiente luminoso interno bonsai natale",
+      "canonicalName": "annaffiare abbondantemente ambiente luminoso interno bonsai natale",
+      "canonicalKey": "annaffiare abbondantemente ambiente luminoso interno bonsai natale",
+      "quantity": null,
+      "aliases": [
+        "Annaffiare abbondantemente Ambiente luminoso Da interno BONSAI DI NATALE"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 8.99,
+      "maxPrice": 8.99
+    },
+    {
       "id": "annaffiare abbondantemente ambiente luminoso interno esterno",
       "canonicalName": "annaffiare abbondantemente ambiente luminoso interno esterno",
       "canonicalKey": "annaffiare abbondantemente ambiente luminoso interno esterno",
       "quantity": null,
       "aliases": [
         "Annaffiare abbondantemente Ambiente luminoso Da interno/ esterno"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.99,
+      "maxPrice": 3.99
+    },
+    {
+      "id": "annaffiare poco ambiente luminoso interno babbo natale",
+      "canonicalName": "annaffiare poco ambiente luminoso interno babbo natale",
+      "canonicalKey": "annaffiare poco ambiente luminoso interno babbo natale",
+      "quantity": null,
+      "aliases": [
+        "Annaffiare poco Ambiente luminoso Da interno BABBO NATALE"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.49,
+      "maxPrice": 4.49
+    },
+    {
+      "id": "annaffiare poco ambiente luminoso interno composizione",
+      "canonicalName": "annaffiare poco ambiente luminoso interno composizione",
+      "canonicalKey": "annaffiare poco ambiente luminoso interno composizione",
+      "quantity": null,
+      "aliases": [
+        "Annaffiare poco Ambiente luminoso Da interno COMPOSIZIONE"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 8.99,
+      "maxPrice": 8.99
+    },
+    {
+      "id": "annaffiare poco ambiente luminoso interno figure natalizie",
+      "canonicalName": "annaffiare poco ambiente luminoso interno figure natalizie",
+      "canonicalKey": "annaffiare poco ambiente luminoso interno figure natalizie",
+      "quantity": null,
+      "aliases": [
+        "Annaffiare poco Ambiente luminoso Da interno FIGURE NATALIZIE"
       ],
       "stores": [
         "Lidl"
@@ -1142,6 +1287,21 @@
       "maxPrice": 1.99
     },
     {
+      "id": "aspirapolvere",
+      "canonicalName": "aspirapolvere",
+      "canonicalKey": "aspirapolvere",
+      "quantity": null,
+      "aliases": [
+        "Aspirapolvere"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 24.99,
+      "maxPrice": 24.99
+    },
+    {
       "id": "assorbenti giorno notte ali inea|20pz",
       "canonicalName": "assorbenti giorno notte ali inea",
       "canonicalKey": "assorbenti giorno notte ali inea|20pz",
@@ -1298,6 +1458,36 @@
       "maxPrice": 19.99
     },
     {
+      "id": "bambola monster truck",
+      "canonicalName": "bambola monster truck",
+      "canonicalKey": "bambola monster truck",
+      "quantity": null,
+      "aliases": [
+        "Bambola o Monster Truck"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 6.99,
+      "maxPrice": 6.99
+    },
+    {
+      "id": "bambola prime",
+      "canonicalName": "bambola prime",
+      "canonicalKey": "bambola prime",
+      "quantity": null,
+      "aliases": [
+        "Bambola prime"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 14.99,
+      "maxPrice": 14.99
+    },
+    {
       "id": "bambola wednesday",
       "canonicalName": "bambola wednesday",
       "canonicalKey": "bambola wednesday",
@@ -1356,6 +1546,26 @@
       "offersCount": 1,
       "minPrice": 2.99,
       "maxPrice": 2.99
+    },
+    {
+      "id": "berian fauna toro roble 14 vol|750ml",
+      "canonicalName": "berian fauna toro roble 14 vol",
+      "canonicalKey": "berian fauna toro roble 14 vol|750ml",
+      "quantity": {
+        "value": 750,
+        "unit": "ml",
+        "label": "750 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "berian Fauna Toro Roble 14.5% Vol."
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.99,
+      "maxPrice": 3.99
     },
     {
       "id": "bevanda vegetale bio|1000ml",
@@ -1913,6 +2123,21 @@
       "maxPrice": 3.79
     },
     {
+      "id": "calze antiscivolo natalizie adulti",
+      "canonicalName": "calze antiscivolo natalizie adulti",
+      "canonicalKey": "calze antiscivolo natalizie adulti",
+      "quantity": null,
+      "aliases": [
+        "Calze antiscivolo natalizie per adulti"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.49,
+      "maxPrice": 3.49
+    },
+    {
       "id": "capacita serbatoio",
       "canonicalName": "capacita serbatoio",
       "canonicalKey": "capacita serbatoio",
@@ -2098,6 +2323,21 @@
       "maxPrice": 2.99
     },
     {
+      "id": "centro carta avvolgilo modo che strisce si trovino all estremita superiore inferiore regalo incolla",
+      "canonicalName": "centro carta avvolgilo modo che strisce si trovino all estremita superiore inferiore regalo incolla",
+      "canonicalKey": "centro carta avvolgilo modo che strisce si trovino all estremita superiore inferiore regalo incolla",
+      "quantity": null,
+      "aliases": [
+        "al centro della carta, avvolgilo in modo che le strisce si trovino all’estremità superiore e inferiore del regalo. Incolla le strisce"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.49,
+      "maxPrice": 1.49
+    },
+    {
       "id": "certossa triangolini mais biologici|30g",
       "canonicalName": "certossa triangolini mais biologici",
       "canonicalKey": "certossa triangolini mais biologici|30g",
@@ -2236,6 +2476,21 @@
       "offersCount": 1,
       "minPrice": 4.49,
       "maxPrice": 4.49
+    },
+    {
+      "id": "chitarra tastiera",
+      "canonicalName": "chitarra tastiera",
+      "canonicalKey": "chitarra tastiera",
+      "quantity": null,
+      "aliases": [
+        "Chitarra, tastiera o"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 17.99,
+      "maxPrice": 17.99
     },
     {
       "id": "chiuso 49 11 cm",
@@ -2783,9 +3038,24 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 1,
+      "offersCount": 2,
       "minPrice": 0.69,
-      "maxPrice": 0.69
+      "maxPrice": 0.99
+    },
+    {
+      "id": "crelando carta sacchetti",
+      "canonicalName": "crelando carta sacchetti",
+      "canonicalKey": "crelando carta sacchetti",
+      "quantity": null,
+      "aliases": [
+        "CRELANDO Carta, sacchetti o"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.49,
+      "maxPrice": 1.49
     },
     {
       "id": "crelando rotolo carta regalo",
@@ -2803,6 +3073,26 @@
       "maxPrice": 1.99
     },
     {
+      "id": "crelando set biglietti auguri natalizi|6pz",
+      "canonicalName": "crelando set biglietti auguri natalizi",
+      "canonicalKey": "crelando set biglietti auguri natalizi|6pz",
+      "quantity": {
+        "value": 6,
+        "unit": "pz",
+        "label": "6 pz",
+        "multipack": null
+      },
+      "aliases": [
+        "CRELANDO Set biglietti di auguri natalizi"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1,
+      "maxPrice": 1
+    },
+    {
       "id": "crelando set sacchetti regalo|6pz",
       "canonicalName": "crelando set sacchetti regalo",
       "canonicalKey": "crelando set sacchetti regalo|6pz",
@@ -2814,6 +3104,21 @@
       },
       "aliases": [
         "CRELANDO Set sacchetti regalo,"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
+      "id": "crelando set scatoline",
+      "canonicalName": "crelando set scatoline",
+      "canonicalKey": "crelando set scatoline",
+      "quantity": null,
+      "aliases": [
+        "CRELANDO Set scatoline o"
       ],
       "stores": [
         "Lidl"
@@ -3203,6 +3508,46 @@
       "maxPrice": 2.99
     },
     {
+      "id": "deluxe astice americano precotto|350g",
+      "canonicalName": "deluxe astice americano precotto",
+      "canonicalKey": "deluxe astice americano precotto|350g",
+      "quantity": {
+        "value": 350,
+        "unit": "g",
+        "label": "350 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Astice americano precotto"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 9.99,
+      "maxPrice": 9.99
+    },
+    {
+      "id": "deluxe bacche vaniglia bourbon madagascar|2pz",
+      "canonicalName": "deluxe bacche vaniglia bourbon madagascar",
+      "canonicalKey": "deluxe bacche vaniglia bourbon madagascar|2pz",
+      "quantity": {
+        "value": 2,
+        "unit": "pz",
+        "label": "2 pz",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Bacche di vaniglia Bourbon del Madagascar"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
+    },
+    {
       "id": "deluxe bacche vaniglia bourbon madagascar",
       "canonicalName": "deluxe bacche vaniglia bourbon madagascar",
       "canonicalKey": "deluxe bacche vaniglia bourbon madagascar",
@@ -3231,6 +3576,96 @@
       "offersCount": 1,
       "minPrice": 1.49,
       "maxPrice": 1.49
+    },
+    {
+      "id": "deluxe biscotti ripieni crema pistacchio|150g",
+      "canonicalName": "deluxe biscotti ripieni crema pistacchio",
+      "canonicalKey": "deluxe biscotti ripieni crema pistacchio|150g",
+      "quantity": {
+        "value": 150,
+        "unit": "g",
+        "label": "150 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Biscotti ripieni con crema al pistacchio"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.69,
+      "maxPrice": 2.69
+    },
+    {
+      "id": "deluxe bottarga muggine intera",
+      "canonicalName": "deluxe bottarga muggine intera",
+      "canonicalKey": "deluxe bottarga muggine intera",
+      "quantity": null,
+      "aliases": [
+        "DELUXE Bottarga di muggine intera"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 79.9,
+      "maxPrice": 79.9
+    },
+    {
+      "id": "deluxe burrata crema gorgonzola dop",
+      "canonicalName": "deluxe burrata crema gorgonzola dop",
+      "canonicalKey": "deluxe burrata crema gorgonzola dop",
+      "quantity": null,
+      "aliases": [
+        "DELUXE Burrata Con crema al \"Gorgonzola DOP\""
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.69,
+      "maxPrice": 1.69
+    },
+    {
+      "id": "deluxe burro tartufo|80g",
+      "canonicalName": "deluxe burro tartufo",
+      "canonicalKey": "deluxe burro tartufo|80g",
+      "quantity": {
+        "value": 80,
+        "unit": "g",
+        "label": "80 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Burro al tartufo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.49,
+      "maxPrice": 2.49
+    },
+    {
+      "id": "deluxe camembert bufala|250g",
+      "canonicalName": "deluxe camembert bufala",
+      "canonicalKey": "deluxe camembert bufala|250g",
+      "quantity": {
+        "value": 250,
+        "unit": "g",
+        "label": "250 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Camembert di bufala"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.99,
+      "maxPrice": 3.99
     },
     {
       "id": "deluxe camembert bufala formaggio molle latte|250g",
@@ -3293,6 +3728,56 @@
       "maxPrice": 9.99
     },
     {
+      "id": "deluxe caviale|15g",
+      "canonicalName": "deluxe caviale",
+      "canonicalKey": "deluxe caviale|15g",
+      "quantity": {
+        "value": 15,
+        "unit": "g",
+        "label": "15 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Caviale"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 10.99,
+      "maxPrice": 10.99
+    },
+    {
+      "id": "deluxe cesto natalizio",
+      "canonicalName": "deluxe cesto natalizio",
+      "canonicalKey": "deluxe cesto natalizio",
+      "quantity": null,
+      "aliases": [
+        "DELUXE Cesto natalizio"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 19.99,
+      "maxPrice": 19.99
+    },
+    {
+      "id": "deluxe cesto natalizio pandoro",
+      "canonicalName": "deluxe cesto natalizio pandoro",
+      "canonicalKey": "deluxe cesto natalizio pandoro",
+      "quantity": null,
+      "aliases": [
+        "DELUXE Cesto natalizio con pandoro"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 19.99,
+      "maxPrice": 19.99
+    },
+    {
       "id": "deluxe chips barbabietola rossa",
       "canonicalName": "deluxe chips barbabietola rossa",
       "canonicalKey": "deluxe chips barbabietola rossa",
@@ -3306,6 +3791,71 @@
       "offersCount": 1,
       "minPrice": 1.79,
       "maxPrice": 1.79
+    },
+    {
+      "id": "deluxe coppa all amarone valpolicella docg",
+      "canonicalName": "deluxe coppa all amarone valpolicella docg",
+      "canonicalKey": "deluxe coppa all amarone valpolicella docg",
+      "quantity": null,
+      "aliases": [
+        "DELUXE Coppa all' Amarone della Valpolicella DOCG"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.29,
+      "maxPrice": 2.29
+    },
+    {
+      "id": "deluxe coppa ginepro",
+      "canonicalName": "deluxe coppa ginepro",
+      "canonicalKey": "deluxe coppa ginepro",
+      "quantity": null,
+      "aliases": [
+        "DELUXE Coppa al ginepro"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.29,
+      "maxPrice": 2.29
+    },
+    {
+      "id": "deluxe crema parmigiano reggiano dop tartufo|190g",
+      "canonicalName": "deluxe crema parmigiano reggiano dop tartufo",
+      "canonicalKey": "deluxe crema parmigiano reggiano dop tartufo|190g",
+      "quantity": {
+        "value": 190,
+        "unit": "g",
+        "label": "190 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Crema con Parmigiano Reggiano DOP e tartufo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
+    },
+    {
+      "id": "deluxe creme brulee",
+      "canonicalName": "deluxe creme brulee",
+      "canonicalKey": "deluxe creme brulee",
+      "quantity": null,
+      "aliases": [
+        "DELUXE Crème Brûlée"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
     },
     {
       "id": "deluxe creme brulee cremoso dessert caramello croccante",
@@ -3343,6 +3893,26 @@
       "maxPrice": 2.49
     },
     {
+      "id": "deluxe croccante arachidi mandorle|150g",
+      "canonicalName": "deluxe croccante arachidi mandorle",
+      "canonicalKey": "deluxe croccante arachidi mandorle|150g",
+      "quantity": {
+        "value": 150,
+        "unit": "g",
+        "label": "150 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Croccante in pezzi Alle arachidi o alle mandorle"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.79,
+      "maxPrice": 1.79
+    },
+    {
       "id": "deluxe croccante nocciola|140g",
       "canonicalName": "deluxe croccante nocciola",
       "canonicalKey": "deluxe croccante nocciola|140g",
@@ -3354,6 +3924,66 @@
       },
       "aliases": [
         "DELUXE Croccante alla nocciola"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
+      "id": "deluxe croccante nocciole|140g",
+      "canonicalName": "deluxe croccante nocciole",
+      "canonicalKey": "deluxe croccante nocciole|140g",
+      "quantity": {
+        "value": 140,
+        "unit": "g",
+        "label": "140 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Croccante alle nocciole"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
+      "id": "deluxe culatello|70g",
+      "canonicalName": "deluxe culatello",
+      "canonicalKey": "deluxe culatello|70g",
+      "quantity": {
+        "value": 70,
+        "unit": "g",
+        "label": "70 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Culatello"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
+    },
+    {
+      "id": "deluxe dessert caramello salato|120g",
+      "canonicalName": "deluxe dessert caramello salato",
+      "canonicalKey": "deluxe dessert caramello salato|120g",
+      "quantity": {
+        "value": 120,
+        "unit": "g",
+        "label": "120 g",
+        "multipack": 2
+      },
+      "aliases": [
+        "DELUXE Dessert con caramello salato"
       ],
       "stores": [
         "Lidl"
@@ -3378,9 +4008,29 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 1,
+      "offersCount": 2,
       "minPrice": 1.99,
       "maxPrice": 1.99
+    },
+    {
+      "id": "deluxe dessert cioccolato belga bianco nero cocco|130g",
+      "canonicalName": "deluxe dessert cioccolato belga bianco nero cocco",
+      "canonicalKey": "deluxe dessert cioccolato belga bianco nero cocco|130g",
+      "quantity": {
+        "value": 130,
+        "unit": "g",
+        "label": "130 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Dessert al cioccolato belga bianco o nero e cocco"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.79,
+      "maxPrice": 1.79
     },
     {
       "id": "deluxe dessert cioccolato cocco|130g",
@@ -3401,6 +4051,26 @@
       "offersCount": 1,
       "minPrice": 1.79,
       "maxPrice": 1.79
+    },
+    {
+      "id": "deluxe dessert crema mascarpone panettone|125g",
+      "canonicalName": "deluxe dessert crema mascarpone panettone",
+      "canonicalKey": "deluxe dessert crema mascarpone panettone|125g",
+      "quantity": {
+        "value": 125,
+        "unit": "g",
+        "label": "125 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Dessert con crema al mascarpone e panettone"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.19,
+      "maxPrice": 2.19
     },
     {
       "id": "deluxe dessert cucchiaio dama bianca mocaccino|120g",
@@ -3443,6 +4113,106 @@
       "maxPrice": 1.59
     },
     {
+      "id": "deluxe fettuccine nero seppia 100 semola italiana|250g",
+      "canonicalName": "deluxe fettuccine nero seppia 100 semola italiana",
+      "canonicalKey": "deluxe fettuccine nero seppia 100 semola italiana|250g",
+      "quantity": {
+        "value": 250,
+        "unit": "g",
+        "label": "250 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Fettuccine al nero di seppia 100% semola italiana"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.19,
+      "maxPrice": 2.19
+    },
+    {
+      "id": "deluxe filetti acciughe all olio oliva|126g",
+      "canonicalName": "deluxe filetti acciughe all olio oliva",
+      "canonicalKey": "deluxe filetti acciughe all olio oliva|126g",
+      "quantity": {
+        "value": 126,
+        "unit": "g",
+        "label": "126 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Filetti di acciughe All'olio di oliva"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 5.99,
+      "maxPrice": 5.99
+    },
+    {
+      "id": "deluxe filetti alici marinate scorze arancia limone olio extra vergine oliva|150g",
+      "canonicalName": "deluxe filetti alici marinate scorze arancia limone olio extra vergine oliva",
+      "canonicalKey": "deluxe filetti alici marinate scorze arancia limone olio extra vergine oliva|150g",
+      "quantity": {
+        "value": 150,
+        "unit": "g",
+        "label": "150 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Filetti di alici marinate Con scorze di arancia o limone e olio extra vergine di oliva"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
+    },
+    {
+      "id": "deluxe fiocchetto affumicato|80g",
+      "canonicalName": "deluxe fiocchetto affumicato",
+      "canonicalKey": "deluxe fiocchetto affumicato|80g",
+      "quantity": {
+        "value": 80,
+        "unit": "g",
+        "label": "80 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Fiocchetto Affumicato"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
+      "id": "deluxe florentine pistacchio caramello|120g",
+      "canonicalName": "deluxe florentine pistacchio caramello",
+      "canonicalKey": "deluxe florentine pistacchio caramello|120g",
+      "quantity": {
+        "value": 120,
+        "unit": "g",
+        "label": "120 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Florentine Al pistacchio o al caramello"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
       "id": "deluxe florentine sfoglie croccanti cioccolato bianco caramello salato pistacchio|120g",
       "canonicalName": "deluxe florentine sfoglie croccanti cioccolato bianco caramello salato pistacchio",
       "canonicalKey": "deluxe florentine sfoglie croccanti cioccolato bianco caramello salato pistacchio|120g",
@@ -3483,6 +4253,106 @@
       "maxPrice": 2.99
     },
     {
+      "id": "deluxe formaggi erborinato tartufo|180g",
+      "canonicalName": "deluxe formaggi erborinato tartufo",
+      "canonicalKey": "deluxe formaggi erborinato tartufo|180g",
+      "quantity": {
+        "value": 180,
+        "unit": "g",
+        "label": "180 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Formaggi erborinato al tartufo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
+    },
+    {
+      "id": "deluxe formaggio capra pistacchi nocciole|160g",
+      "canonicalName": "deluxe formaggio capra pistacchi nocciole",
+      "canonicalKey": "deluxe formaggio capra pistacchi nocciole|160g",
+      "quantity": {
+        "value": 160,
+        "unit": "g",
+        "label": "160 g",
+        "multipack": 2
+      },
+      "aliases": [
+        "DELUXE Formaggio di capra Con pistacchi e nocciole"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.29,
+      "maxPrice": 2.29
+    },
+    {
+      "id": "deluxe formaggio erborinato capra|200g",
+      "canonicalName": "deluxe formaggio erborinato capra",
+      "canonicalKey": "deluxe formaggio erborinato capra|200g",
+      "quantity": {
+        "value": 200,
+        "unit": "g",
+        "label": "200 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Formaggio erborinato di capra"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.99,
+      "maxPrice": 3.99
+    },
+    {
+      "id": "deluxe fritto misto calamari gamberi argentini|300g",
+      "canonicalName": "deluxe fritto misto calamari gamberi argentini",
+      "canonicalKey": "deluxe fritto misto calamari gamberi argentini|300g",
+      "quantity": {
+        "value": 300,
+        "unit": "g",
+        "label": "300 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Fritto misto Con calamari e gamberi argentini"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.79,
+      "maxPrice": 3.79
+    },
+    {
+      "id": "deluxe frutta secca pralinata mandorle arachidi nocciole|200g",
+      "canonicalName": "deluxe frutta secca pralinata mandorle arachidi nocciole",
+      "canonicalKey": "deluxe frutta secca pralinata mandorle arachidi nocciole|200g",
+      "quantity": {
+        "value": 200,
+        "unit": "g",
+        "label": "200 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Frutta secca pralinata Mandorle, arachidi o nocciole"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.39,
+      "maxPrice": 2.39
+    },
+    {
       "id": "deluxe funghi misti finferli interi|350g",
       "canonicalName": "deluxe funghi misti finferli interi",
       "canonicalKey": "deluxe funghi misti finferli interi|350g",
@@ -3503,6 +4373,26 @@
       "maxPrice": 2.29
     },
     {
+      "id": "deluxe funghi porcini fette|200g",
+      "canonicalName": "deluxe funghi porcini fette",
+      "canonicalKey": "deluxe funghi porcini fette|200g",
+      "quantity": {
+        "value": 200,
+        "unit": "g",
+        "label": "200 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Funghi porcini a fette"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
+    },
+    {
       "id": "deluxe funghi porcini interi salmone|300g",
       "canonicalName": "deluxe funghi porcini interi salmone",
       "canonicalKey": "deluxe funghi porcini interi salmone|300g",
@@ -3521,6 +4411,26 @@
       "offersCount": 1,
       "minPrice": 3.99,
       "maxPrice": 3.99
+    },
+    {
+      "id": "deluxe gamberi argentini|400g",
+      "canonicalName": "deluxe gamberi argentini",
+      "canonicalKey": "deluxe gamberi argentini|400g",
+      "quantity": {
+        "value": 400,
+        "unit": "g",
+        "label": "400 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Gamberi argentini"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 6.99,
+      "maxPrice": 6.99
     },
     {
       "id": "deluxe gamberi panatura croccante sale aceto aglio erbe|160g",
@@ -3554,6 +4464,46 @@
       },
       "aliases": [
         "DELUXE Gelato variegato Ai frutti di bosco e vaniglia o triplo cioccolato"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.99,
+      "maxPrice": 3.99
+    },
+    {
+      "id": "deluxe gelato variegato pistacchio|230g",
+      "canonicalName": "deluxe gelato variegato pistacchio",
+      "canonicalKey": "deluxe gelato variegato pistacchio|230g",
+      "quantity": {
+        "value": 230,
+        "unit": "g",
+        "label": "230 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Gelato variegato al pistacchio"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
+      "id": "deluxe gelato variegato vaniglia fragola mango|650g",
+      "canonicalName": "deluxe gelato variegato vaniglia fragola mango",
+      "canonicalKey": "deluxe gelato variegato vaniglia fragola mango|650g",
+      "quantity": {
+        "value": 650,
+        "unit": "g",
+        "label": "650 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Gelato variegato al gusto vaniglia Fragola o mango"
       ],
       "stores": [
         "Lidl"
@@ -3603,6 +4553,26 @@
       "maxPrice": 1.79
     },
     {
+      "id": "deluxe gnocchi all ortica|400g",
+      "canonicalName": "deluxe gnocchi all ortica",
+      "canonicalKey": "deluxe gnocchi all ortica|400g",
+      "quantity": {
+        "value": 400,
+        "unit": "g",
+        "label": "400 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Gnocchi all'ortica"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.69,
+      "maxPrice": 1.69
+    },
+    {
       "id": "deluxe gnocchi patate ceci semi chia curcuma|400g",
       "canonicalName": "deluxe gnocchi patate ceci semi chia curcuma",
       "canonicalKey": "deluxe gnocchi patate ceci semi chia curcuma|400g",
@@ -3623,6 +4593,26 @@
       "maxPrice": 1.69
     },
     {
+      "id": "deluxe gnocchi ripieni radicchio scamorza tartufo|500g",
+      "canonicalName": "deluxe gnocchi ripieni radicchio scamorza tartufo",
+      "canonicalKey": "deluxe gnocchi ripieni radicchio scamorza tartufo|500g",
+      "quantity": {
+        "value": 500,
+        "unit": "g",
+        "label": "500 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Gnocchi ripieni Radicchio e scamorza o tartufo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
       "id": "deluxe gnocchi ripieni salmone|500g",
       "canonicalName": "deluxe gnocchi ripieni salmone",
       "canonicalKey": "deluxe gnocchi ripieni salmone|500g",
@@ -3641,6 +4631,26 @@
       "offersCount": 1,
       "minPrice": 1.99,
       "maxPrice": 1.99
+    },
+    {
+      "id": "deluxe gnocchi zucca amaretto|400g",
+      "canonicalName": "deluxe gnocchi zucca amaretto",
+      "canonicalKey": "deluxe gnocchi zucca amaretto|400g",
+      "quantity": {
+        "value": 400,
+        "unit": "g",
+        "label": "400 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Gnocchi con zucca e amaretto"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.69,
+      "maxPrice": 1.69
     },
     {
       "id": "deluxe gorgonzola dop mascarpone|200g",
@@ -3673,7 +4683,28 @@
         "multipack": null
       },
       "aliases": [
-        "DELUXE \"Gorgonzola DOP\" e mascarpone con noci"
+        "DELUXE \"Gorgonzola DOP\" e mascarpone con noci",
+        "DELUXE Gorgonzola DOP e mascarpone Con noci"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 2,
+      "minPrice": 2.49,
+      "maxPrice": 2.49
+    },
+    {
+      "id": "deluxe gorgonzola dop mascarpone pistacchi|170g",
+      "canonicalName": "deluxe gorgonzola dop mascarpone pistacchi",
+      "canonicalKey": "deluxe gorgonzola dop mascarpone pistacchi|170g",
+      "quantity": {
+        "value": 170,
+        "unit": "g",
+        "label": "170 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Gorgonzola DOP e mascarpone con pistacchi"
       ],
       "stores": [
         "Lidl"
@@ -3681,6 +4712,26 @@
       "offersCount": 1,
       "minPrice": 2.49,
       "maxPrice": 2.49
+    },
+    {
+      "id": "deluxe jamon serran sgt reserva|7500g",
+      "canonicalName": "deluxe jamon serran sgt reserva",
+      "canonicalKey": "deluxe jamon serran sgt reserva|7500g",
+      "quantity": {
+        "value": 7500,
+        "unit": "g",
+        "label": "7,5 kg",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Jamón Serran SGT Reserva"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 63.89,
+      "maxPrice": 63.89
     },
     {
       "id": "deluxe jamon serrano gran reserva prosciutto crudo essiccato all aria|70g",
@@ -3694,6 +4745,26 @@
       },
       "aliases": [
         "DELUXE Jamón Serrano Gran Reserva Prosciutto crudo essiccato all'aria"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
+      "id": "deluxe jamon serrano gran reserva stg prosciutto crudo essiccato all aria|70g",
+      "canonicalName": "deluxe jamon serrano gran reserva stg prosciutto crudo essiccato all aria",
+      "canonicalKey": "deluxe jamon serrano gran reserva stg prosciutto crudo essiccato all aria|70g",
+      "quantity": {
+        "value": 70,
+        "unit": "g",
+        "label": "70 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Jamón Serrano Gran Reserva STG Prosciutto crudo essiccato all'aria"
       ],
       "stores": [
         "Lidl"
@@ -3723,6 +4794,21 @@
       "maxPrice": 63.89
     },
     {
+      "id": "deluxe lardo norcino",
+      "canonicalName": "deluxe lardo norcino",
+      "canonicalKey": "deluxe lardo norcino",
+      "quantity": null,
+      "aliases": [
+        "DELUXE Lardo del Norcino"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 12.99,
+      "maxPrice": 12.99
+    },
+    {
       "id": "deluxe lasagne pistacchio|500g",
       "canonicalName": "deluxe lasagne pistacchio",
       "canonicalKey": "deluxe lasagne pistacchio|500g",
@@ -3741,6 +4827,26 @@
       "offersCount": 1,
       "minPrice": 3.49,
       "maxPrice": 3.49
+    },
+    {
+      "id": "deluxe lombetta profumo bosco|90g",
+      "canonicalName": "deluxe lombetta profumo bosco",
+      "canonicalKey": "deluxe lombetta profumo bosco|90g",
+      "quantity": {
+        "value": 90,
+        "unit": "g",
+        "label": "90 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Lombetta al profumo di bosco"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
     },
     {
       "id": "deluxe lunette scampi gamberi girasoli pesce spada|250g",
@@ -3783,6 +4889,26 @@
       "maxPrice": 3.99
     },
     {
+      "id": "deluxe mazzancolle tropicali salsa|300g",
+      "canonicalName": "deluxe mazzancolle tropicali salsa",
+      "canonicalKey": "deluxe mazzancolle tropicali salsa|300g",
+      "quantity": {
+        "value": 300,
+        "unit": "g",
+        "label": "300 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Mazzancolle tropicali con salsa"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 5.99,
+      "maxPrice": 5.99
+    },
+    {
       "id": "deluxe mazzancolle tropicali salsa all aglio dolce",
       "canonicalName": "deluxe mazzancolle tropicali salsa all aglio dolce",
       "canonicalKey": "deluxe mazzancolle tropicali salsa all aglio dolce",
@@ -3796,6 +4922,116 @@
       "offersCount": 1,
       "minPrice": 5.99,
       "maxPrice": 5.99
+    },
+    {
+      "id": "deluxe medaglioni gamberi lime|250g",
+      "canonicalName": "deluxe medaglioni gamberi lime",
+      "canonicalKey": "deluxe medaglioni gamberi lime|250g",
+      "quantity": {
+        "value": 250,
+        "unit": "g",
+        "label": "250 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Medaglioni gamberi e lime"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.79,
+      "maxPrice": 1.79
+    },
+    {
+      "id": "deluxe medaglioni ravioli formaggio capra frutta secca miele brie|250g",
+      "canonicalName": "deluxe medaglioni ravioli formaggio capra frutta secca miele brie",
+      "canonicalKey": "deluxe medaglioni ravioli formaggio capra frutta secca miele brie|250g",
+      "quantity": {
+        "value": 250,
+        "unit": "g",
+        "label": "250 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Medaglioni o ravioli Con formaggio di capra,frutta secca miele o Brie e"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.69,
+      "maxPrice": 1.69
+    },
+    {
+      "id": "deluxe mezzelune radicchio gorgonzola dop amarone docg|250g",
+      "canonicalName": "deluxe mezzelune radicchio gorgonzola dop amarone docg",
+      "canonicalKey": "deluxe mezzelune radicchio gorgonzola dop amarone docg|250g",
+      "quantity": {
+        "value": 250,
+        "unit": "g",
+        "label": "250 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Mezzelune Con radicchio, gorgonzola DOP e Amarone DOCG"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.79,
+      "maxPrice": 1.79
+    },
+    {
+      "id": "deluxe mini pandoro crema pistacchio",
+      "canonicalName": "deluxe mini pandoro crema pistacchio",
+      "canonicalKey": "deluxe mini pandoro crema pistacchio",
+      "quantity": null,
+      "aliases": [
+        "DELUXE Mini pandoro con crema al pistacchio"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.99,
+      "maxPrice": 0.99
+    },
+    {
+      "id": "deluxe mini panettone gocce cioccolato pere candite",
+      "canonicalName": "deluxe mini panettone gocce cioccolato pere candite",
+      "canonicalKey": "deluxe mini panettone gocce cioccolato pere candite",
+      "quantity": null,
+      "aliases": [
+        "DELUXE Mini panettone con gocce di cioccolato e pere candite"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.99,
+      "maxPrice": 0.99
+    },
+    {
+      "id": "deluxe mini panettoni gastronomici|240g",
+      "canonicalName": "deluxe mini panettoni gastronomici",
+      "canonicalKey": "deluxe mini panettoni gastronomici|240g",
+      "quantity": {
+        "value": 240,
+        "unit": "g",
+        "label": "240 g",
+        "multipack": 3
+      },
+      "aliases": [
+        "DELUXE Mini panettoni gastronomici"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
     },
     {
       "id": "deluxe mini vol au vent pasta sfoglia|80g",
@@ -3913,6 +5149,161 @@
       "maxPrice": 1.29
     },
     {
+      "id": "deluxe pandoro crema gianduia|750g",
+      "canonicalName": "deluxe pandoro crema gianduia",
+      "canonicalKey": "deluxe pandoro crema gianduia|750g",
+      "quantity": {
+        "value": 750,
+        "unit": "g",
+        "label": "750 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Pandoro con crema al gianduia"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 5.99,
+      "maxPrice": 5.99
+    },
+    {
+      "id": "deluxe pandoro crema pistacchio|750g",
+      "canonicalName": "deluxe pandoro crema pistacchio",
+      "canonicalKey": "deluxe pandoro crema pistacchio|750g",
+      "quantity": {
+        "value": 750,
+        "unit": "g",
+        "label": "750 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Pandoro con crema al pistacchio"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 5.49,
+      "maxPrice": 5.49
+    },
+    {
+      "id": "deluxe panettone",
+      "canonicalName": "deluxe panettone",
+      "canonicalKey": "deluxe panettone",
+      "quantity": null,
+      "aliases": [
+        "DELUXE Panettone con"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 7.99,
+      "maxPrice": 7.99
+    },
+    {
+      "id": "deluxe panettone cassata|800g",
+      "canonicalName": "deluxe panettone cassata",
+      "canonicalKey": "deluxe panettone cassata|800g",
+      "quantity": {
+        "value": 800,
+        "unit": "g",
+        "label": "800 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Panettone alla cassata"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 7.99,
+      "maxPrice": 7.99
+    },
+    {
+      "id": "deluxe panettone crema caramello salato ricoperto cioccolato|750g",
+      "canonicalName": "deluxe panettone crema caramello salato ricoperto cioccolato",
+      "canonicalKey": "deluxe panettone crema caramello salato ricoperto cioccolato|750g",
+      "quantity": {
+        "value": 750,
+        "unit": "g",
+        "label": "750 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Panettone Con crema al caramello salato e ricoperto di cioccolato"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 5.99,
+      "maxPrice": 5.99
+    },
+    {
+      "id": "deluxe panettone crema mascarpone frutti bosco|750g",
+      "canonicalName": "deluxe panettone crema mascarpone frutti bosco",
+      "canonicalKey": "deluxe panettone crema mascarpone frutti bosco|750g",
+      "quantity": {
+        "value": 750,
+        "unit": "g",
+        "label": "750 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Panettone con crema al mascarpone e frutti di bosco"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 7.49,
+      "maxPrice": 7.49
+    },
+    {
+      "id": "deluxe panettone gastronomico|500g",
+      "canonicalName": "deluxe panettone gastronomico",
+      "canonicalKey": "deluxe panettone gastronomico|500g",
+      "quantity": {
+        "value": 500,
+        "unit": "g",
+        "label": "500 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Panettone gastronomico"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.99,
+      "maxPrice": 3.99
+    },
+    {
+      "id": "deluxe panettone pan neve|800g",
+      "canonicalName": "deluxe panettone pan neve",
+      "canonicalKey": "deluxe panettone pan neve|800g",
+      "quantity": {
+        "value": 800,
+        "unit": "g",
+        "label": "800 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Panettone Pan di neve"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 6.49,
+      "maxPrice": 6.49
+    },
+    {
       "id": "deluxe panettone pesca mela pera candite|750g",
       "canonicalName": "deluxe panettone pesca mela pera candite",
       "canonicalKey": "deluxe panettone pesca mela pera candite|750g",
@@ -3933,6 +5324,66 @@
       "maxPrice": 5.49
     },
     {
+      "id": "deluxe panettone ricoperto cioccolato fondente extra granella fave cacao|750g",
+      "canonicalName": "deluxe panettone ricoperto cioccolato fondente extra granella fave cacao",
+      "canonicalKey": "deluxe panettone ricoperto cioccolato fondente extra granella fave cacao|750g",
+      "quantity": {
+        "value": 750,
+        "unit": "g",
+        "label": "750 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Panettone ricoperto di cioccolato fondente extra Con granella di fave di cacao"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 7.99,
+      "maxPrice": 7.99
+    },
+    {
+      "id": "deluxe panettone scorze arancia candita gocce cioccolato|800g",
+      "canonicalName": "deluxe panettone scorze arancia candita gocce cioccolato",
+      "canonicalKey": "deluxe panettone scorze arancia candita gocce cioccolato|800g",
+      "quantity": {
+        "value": 800,
+        "unit": "g",
+        "label": "800 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Panettone Con scorze d'arancia candita e gocce di cioccolato"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 5.49,
+      "maxPrice": 5.49
+    },
+    {
+      "id": "deluxe panettone stracciatella|800g",
+      "canonicalName": "deluxe panettone stracciatella",
+      "canonicalKey": "deluxe panettone stracciatella|800g",
+      "quantity": {
+        "value": 800,
+        "unit": "g",
+        "label": "800 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Panettone alla stracciatella"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 5.49,
+      "maxPrice": 5.49
+    },
+    {
       "id": "deluxe panzerotti gamberi polpa granchio|250g",
       "canonicalName": "deluxe panzerotti gamberi polpa granchio",
       "canonicalKey": "deluxe panzerotti gamberi polpa granchio|250g",
@@ -3943,14 +5394,55 @@
         "multipack": null
       },
       "aliases": [
+        "DELUXE Panzerotti ai gamberi e polpa di granchio",
         "DELUXE Panzerotti gamberi e polpa di granchio"
       ],
       "stores": [
         "Lidl"
       ],
-      "offersCount": 1,
+      "offersCount": 2,
       "minPrice": 1.79,
       "maxPrice": 1.79
+    },
+    {
+      "id": "deluxe pate funghi porcini|190g",
+      "canonicalName": "deluxe pate funghi porcini",
+      "canonicalKey": "deluxe pate funghi porcini|190g",
+      "quantity": {
+        "value": 190,
+        "unit": "g",
+        "label": "190 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Paté ai funghi porcini"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
+      "id": "deluxe pate olive verdi agrumi|180g",
+      "canonicalName": "deluxe pate olive verdi agrumi",
+      "canonicalKey": "deluxe pate olive verdi agrumi|180g",
+      "quantity": {
+        "value": 180,
+        "unit": "g",
+        "label": "180 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Paté di olive verdi e agrumi"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
     },
     {
       "id": "deluxe peperoni ripieni|160g",
@@ -4033,6 +5525,26 @@
       "maxPrice": 1.99
     },
     {
+      "id": "deluxe polenta funghi tartufo|350g",
+      "canonicalName": "deluxe polenta funghi tartufo",
+      "canonicalKey": "deluxe polenta funghi tartufo|350g",
+      "quantity": {
+        "value": 350,
+        "unit": "g",
+        "label": "350 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Polenta funghi e tartufo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.49,
+      "maxPrice": 2.49
+    },
+    {
       "id": "deluxe praline dubai style ripiene crema pistacchio pasta kataifi|150g",
       "canonicalName": "deluxe praline dubai style ripiene crema pistacchio pasta kataifi",
       "canonicalKey": "deluxe praline dubai style ripiene crema pistacchio pasta kataifi|150g",
@@ -4051,6 +5563,26 @@
       "offersCount": 1,
       "minPrice": 2.49,
       "maxPrice": 2.49
+    },
+    {
+      "id": "deluxe praline rhum|250g",
+      "canonicalName": "deluxe praline rhum",
+      "canonicalKey": "deluxe praline rhum|250g",
+      "quantity": {
+        "value": 250,
+        "unit": "g",
+        "label": "250 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Praline al rhum"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
     },
     {
       "id": "deluxe prezzi|2000g",
@@ -4073,6 +5605,46 @@
       "maxPrice": 4.99
     },
     {
+      "id": "deluxe profiteroles crema caramello salato|500g",
+      "canonicalName": "deluxe profiteroles crema caramello salato",
+      "canonicalKey": "deluxe profiteroles crema caramello salato|500g",
+      "quantity": {
+        "value": 500,
+        "unit": "g",
+        "label": "500 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Profiteroles Con crema al caramello salato"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.99,
+      "maxPrice": 4.99
+    },
+    {
+      "id": "deluxe prosciutto fume affumicato legno faggio|90g",
+      "canonicalName": "deluxe prosciutto fume affumicato legno faggio",
+      "canonicalKey": "deluxe prosciutto fume affumicato legno faggio|90g",
+      "quantity": {
+        "value": 90,
+        "unit": "g",
+        "label": "90 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Prosciutto Fumé affumicato Con legno di faggio"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
       "id": "deluxe prosciutto parma dop stagionatura minima 18 mesi|150g",
       "canonicalName": "deluxe prosciutto parma dop stagionatura minima 18 mesi",
       "canonicalKey": "deluxe prosciutto parma dop stagionatura minima 18 mesi|150g",
@@ -4091,6 +5663,26 @@
       "offersCount": 1,
       "minPrice": 4.99,
       "maxPrice": 4.99
+    },
+    {
+      "id": "deluxe ragu selvaggina|180g",
+      "canonicalName": "deluxe ragu selvaggina",
+      "canonicalKey": "deluxe ragu selvaggina|180g",
+      "quantity": {
+        "value": 180,
+        "unit": "g",
+        "label": "180 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Ragù di selvaggina"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
     },
     {
       "id": "deluxe ragu selvaggina capriolo cervo|180g",
@@ -4113,6 +5705,146 @@
       "maxPrice": 2.99
     },
     {
+      "id": "deluxe ravioli ripieni uovo tartufo burrata|250g",
+      "canonicalName": "deluxe ravioli ripieni uovo tartufo burrata",
+      "canonicalKey": "deluxe ravioli ripieni uovo tartufo burrata|250g",
+      "quantity": {
+        "value": 250,
+        "unit": "g",
+        "label": "250 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Ravioli ripieni Con uovo al tartufo o burrata al tartufo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.79,
+      "maxPrice": 1.79
+    },
+    {
+      "id": "deluxe ravioli stracotto manzo barolo dop|250g",
+      "canonicalName": "deluxe ravioli stracotto manzo barolo dop",
+      "canonicalKey": "deluxe ravioli stracotto manzo barolo dop|250g",
+      "quantity": {
+        "value": 250,
+        "unit": "g",
+        "label": "250 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Ravioli stracotto di manzo e Barolo DOP"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.79,
+      "maxPrice": 1.79
+    },
+    {
+      "id": "deluxe ravioli zucca castagne|250g",
+      "canonicalName": "deluxe ravioli zucca castagne",
+      "canonicalKey": "deluxe ravioli zucca castagne|250g",
+      "quantity": {
+        "value": 250,
+        "unit": "g",
+        "label": "250 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Ravioli con zucca e castagne"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.79,
+      "maxPrice": 1.79
+    },
+    {
+      "id": "deluxe ravioli zucca pancetta affumicata|250g",
+      "canonicalName": "deluxe ravioli zucca pancetta affumicata",
+      "canonicalKey": "deluxe ravioli zucca pancetta affumicata|250g",
+      "quantity": {
+        "value": 250,
+        "unit": "g",
+        "label": "250 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Ravioli zucca e pancetta affumicata"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 2,
+      "minPrice": 1.49,
+      "maxPrice": 1.79
+    },
+    {
+      "id": "deluxe ravioloni capesante zucchine burrata|200g",
+      "canonicalName": "deluxe ravioloni capesante zucchine burrata",
+      "canonicalKey": "deluxe ravioloni capesante zucchine burrata|200g",
+      "quantity": {
+        "value": 200,
+        "unit": "g",
+        "label": "200 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Ravioloni con capesante, zucchine e burrata"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.79,
+      "maxPrice": 1.79
+    },
+    {
+      "id": "deluxe ravioloni ricotta spinaci cipolla caramellata formaggio capra|240g",
+      "canonicalName": "deluxe ravioloni ricotta spinaci cipolla caramellata formaggio capra",
+      "canonicalKey": "deluxe ravioloni ricotta spinaci cipolla caramellata formaggio capra|240g",
+      "quantity": {
+        "value": 240,
+        "unit": "g",
+        "label": "240 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Ravioloni Ricotta e spinaci o cipolla caramellata e formaggio di capra"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
+      "id": "deluxe risotto carnaroli radicchio chioggia igp scamorza|210g",
+      "canonicalName": "deluxe risotto carnaroli radicchio chioggia igp scamorza",
+      "canonicalKey": "deluxe risotto carnaroli radicchio chioggia igp scamorza|210g",
+      "quantity": {
+        "value": 210,
+        "unit": "g",
+        "label": "210 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Risotto Carnaroli Con radicchio di Chioggia IGP e scamorza"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.79,
+      "maxPrice": 1.79
+    },
+    {
       "id": "deluxe robiola alba tartufo|200g",
       "canonicalName": "deluxe robiola alba tartufo",
       "canonicalKey": "deluxe robiola alba tartufo|200g",
@@ -4133,12 +5865,112 @@
       "maxPrice": 2.99
     },
     {
+      "id": "deluxe salamini whisky|85g",
+      "canonicalName": "deluxe salamini whisky",
+      "canonicalKey": "deluxe salamini whisky|85g",
+      "quantity": {
+        "value": 85,
+        "unit": "g",
+        "label": "85 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Salamini Con whisky"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.49,
+      "maxPrice": 1.49
+    },
+    {
+      "id": "deluxe salmone affumicato norvegese pistacchio",
+      "canonicalName": "deluxe salmone affumicato norvegese pistacchio",
+      "canonicalKey": "deluxe salmone affumicato norvegese pistacchio",
+      "quantity": null,
+      "aliases": [
+        "DELUXE Salmone affumicato norvegese Con pistacchio"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.29,
+      "maxPrice": 4.29
+    },
+    {
+      "id": "deluxe salmone norvegese affumicato|500g",
+      "canonicalName": "deluxe salmone norvegese affumicato",
+      "canonicalKey": "deluxe salmone norvegese affumicato|500g",
+      "quantity": {
+        "value": 500,
+        "unit": "g",
+        "label": "500 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Salmone norvegese affumicato"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 9.99,
+      "maxPrice": 9.99
+    },
+    {
       "id": "deluxe salmone norvegese affumicato bacche",
       "canonicalName": "deluxe salmone norvegese affumicato bacche",
       "canonicalKey": "deluxe salmone norvegese affumicato bacche",
       "quantity": null,
       "aliases": [
         "DELUXE Salmone norvegese affumicato alle 4 bacche"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.29,
+      "maxPrice": 4.29
+    },
+    {
+      "id": "deluxe salmone norvegese affumicato gin tonic",
+      "canonicalName": "deluxe salmone norvegese affumicato gin tonic",
+      "canonicalKey": "deluxe salmone norvegese affumicato gin tonic",
+      "quantity": null,
+      "aliases": [
+        "DELUXE Salmone norvegese affumicato al Gin Tonic"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.29,
+      "maxPrice": 4.29
+    },
+    {
+      "id": "deluxe salmone norvegese affumicato pepe aranci taglio sashimi",
+      "canonicalName": "deluxe salmone norvegese affumicato pepe aranci taglio sashimi",
+      "canonicalKey": "deluxe salmone norvegese affumicato pepe aranci taglio sashimi",
+      "quantity": null,
+      "aliases": [
+        "DELUXE Salmone norvegese affumicato Con pepe e aranci Taglio sashimi"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.29,
+      "maxPrice": 4.29
+    },
+    {
+      "id": "deluxe salmone norvegese affumicato pepe rosa",
+      "canonicalName": "deluxe salmone norvegese affumicato pepe rosa",
+      "canonicalKey": "deluxe salmone norvegese affumicato pepe rosa",
+      "quantity": null,
+      "aliases": [
+        "DELUXE Salmone norvegese affumicato Con pepe rosa"
       ],
       "stores": [
         "Lidl"
@@ -4163,6 +5995,61 @@
       "maxPrice": 3.29
     },
     {
+      "id": "deluxe salmone norvegese affumicato whisky",
+      "canonicalName": "deluxe salmone norvegese affumicato whisky",
+      "canonicalKey": "deluxe salmone norvegese affumicato whisky",
+      "quantity": null,
+      "aliases": [
+        "DELUXE Salmone norvegese Affumicato al whisky"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.29,
+      "maxPrice": 4.29
+    },
+    {
+      "id": "deluxe salmone pasta sfoglia|700g",
+      "canonicalName": "deluxe salmone pasta sfoglia",
+      "canonicalKey": "deluxe salmone pasta sfoglia|700g",
+      "quantity": {
+        "value": 700,
+        "unit": "g",
+        "label": "700 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Salmone in pasta sfoglia"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 9.99,
+      "maxPrice": 9.99
+    },
+    {
+      "id": "deluxe salsa ortiche zucca amaretti|180g",
+      "canonicalName": "deluxe salsa ortiche zucca amaretti",
+      "canonicalKey": "deluxe salsa ortiche zucca amaretti|180g",
+      "quantity": {
+        "value": 180,
+        "unit": "g",
+        "label": "180 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Salsa alle ortiche o alla zucca e amaretti"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
       "id": "deluxe salsa tartufo|180g",
       "canonicalName": "deluxe salsa tartufo",
       "canonicalKey": "deluxe salsa tartufo|180g",
@@ -4183,6 +6070,81 @@
       "maxPrice": 2.79
     },
     {
+      "id": "deluxe saute mare|500g",
+      "canonicalName": "deluxe saute mare",
+      "canonicalKey": "deluxe saute mare|500g",
+      "quantity": {
+        "value": 500,
+        "unit": "g",
+        "label": "500 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Sautè di mare"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.49,
+      "maxPrice": 3.49
+    },
+    {
+      "id": "deluxe selezione te infusi bio regalo|42g",
+      "canonicalName": "deluxe selezione te infusi bio regalo",
+      "canonicalKey": "deluxe selezione te infusi bio regalo|42g",
+      "quantity": {
+        "value": 42,
+        "unit": "g",
+        "label": "42 g",
+        "multipack": 24
+      },
+      "aliases": [
+        "DELUXE Selezione di tè ed infusi bio in confezione regalo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.49,
+      "maxPrice": 4.49
+    },
+    {
+      "id": "deluxe semifreddo crema caramello salato|65g",
+      "canonicalName": "deluxe semifreddo crema caramello salato",
+      "canonicalKey": "deluxe semifreddo crema caramello salato|65g",
+      "quantity": {
+        "value": 65,
+        "unit": "g",
+        "label": "65 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Semifreddo Con crema al caramello salato"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.19,
+      "maxPrice": 1.19
+    },
+    {
+      "id": "deluxe souffle cioccolato fondente ripieno caramello salato",
+      "canonicalName": "deluxe souffle cioccolato fondente ripieno caramello salato",
+      "canonicalKey": "deluxe souffle cioccolato fondente ripieno caramello salato",
+      "quantity": null,
+      "aliases": [
+        "DELUXE Soufflè al cioccolato fondente Con ripieno al caramello salato"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.49,
+      "maxPrice": 2.49
+    },
+    {
       "id": "deluxe souffle cioccolato fondente ripieno pistacchio",
       "canonicalName": "deluxe souffle cioccolato fondente ripieno pistacchio",
       "canonicalKey": "deluxe souffle cioccolato fondente ripieno pistacchio",
@@ -4198,6 +6160,61 @@
       "maxPrice": 2.49
     },
     {
+      "id": "deluxe souffle cioccolato ripieno pistacchio",
+      "canonicalName": "deluxe souffle cioccolato ripieno pistacchio",
+      "canonicalKey": "deluxe souffle cioccolato ripieno pistacchio",
+      "quantity": null,
+      "aliases": [
+        "DELUXE Soufflè al cioccolato Con ripieno al pistacchio"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.49,
+      "maxPrice": 2.49
+    },
+    {
+      "id": "deluxe speck vino lagrein|90g",
+      "canonicalName": "deluxe speck vino lagrein",
+      "canonicalKey": "deluxe speck vino lagrein|90g",
+      "quantity": {
+        "value": 90,
+        "unit": "g",
+        "label": "90 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Speck al vino Al vino Lagrein"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
+      "id": "deluxe spiedini calamari mazzancolle|240g",
+      "canonicalName": "deluxe spiedini calamari mazzancolle",
+      "canonicalKey": "deluxe spiedini calamari mazzancolle|240g",
+      "quantity": {
+        "value": 240,
+        "unit": "g",
+        "label": "240 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Spiedini di calamari e mazzancolle"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.99,
+      "maxPrice": 4.99
+    },
+    {
       "id": "deluxe spiedini gratinati scorfano atlantico zucchine|280g",
       "canonicalName": "deluxe spiedini gratinati scorfano atlantico zucchine",
       "canonicalKey": "deluxe spiedini gratinati scorfano atlantico zucchine|280g",
@@ -4209,6 +6226,26 @@
       },
       "aliases": [
         "DELUXE Spiedini gratinati di scorfano atlantico e zucchine"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
+    },
+    {
+      "id": "deluxe spiedoni scorfano zucchine gratinati|280g",
+      "canonicalName": "deluxe spiedoni scorfano zucchine gratinati",
+      "canonicalKey": "deluxe spiedoni scorfano zucchine gratinati|280g",
+      "quantity": {
+        "value": 280,
+        "unit": "g",
+        "label": "280 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Spiedoni di scorfano e zucchine Gratinati"
       ],
       "stores": [
         "Lidl"
@@ -4238,6 +6275,66 @@
       "maxPrice": 2.99
     },
     {
+      "id": "deluxe sugo all astice|150g",
+      "canonicalName": "deluxe sugo all astice",
+      "canonicalKey": "deluxe sugo all astice|150g",
+      "quantity": {
+        "value": 150,
+        "unit": "g",
+        "label": "150 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Sugo all'astice"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.69,
+      "maxPrice": 1.69
+    },
+    {
+      "id": "deluxe tagliolini tartufo|250g",
+      "canonicalName": "deluxe tagliolini tartufo",
+      "canonicalKey": "deluxe tagliolini tartufo|250g",
+      "quantity": {
+        "value": 250,
+        "unit": "g",
+        "label": "250 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Tagliolini al tartufo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.79,
+      "maxPrice": 1.79
+    },
+    {
+      "id": "deluxe tartufo cuore pistacchio|190g",
+      "canonicalName": "deluxe tartufo cuore pistacchio",
+      "canonicalKey": "deluxe tartufo cuore pistacchio|190g",
+      "quantity": {
+        "value": 190,
+        "unit": "g",
+        "label": "190 g",
+        "multipack": 2
+      },
+      "aliases": [
+        "DELUXE Tartufo con cuore di pistacchio"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.29,
+      "maxPrice": 2.29
+    },
+    {
       "id": "deluxe tartufo estate|18g",
       "canonicalName": "deluxe tartufo estate",
       "canonicalKey": "deluxe tartufo estate|18g",
@@ -4249,6 +6346,26 @@
       },
       "aliases": [
         "DELUXE Tartufo d'estate"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.99,
+      "maxPrice": 4.99
+    },
+    {
+      "id": "deluxe tartufo estivo|18g",
+      "canonicalName": "deluxe tartufo estivo",
+      "canonicalKey": "deluxe tartufo estivo|18g",
+      "quantity": {
+        "value": 18,
+        "unit": "g",
+        "label": "18 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Tartufo estivo"
       ],
       "stores": [
         "Lidl"
@@ -4278,6 +6395,86 @@
       "maxPrice": 1.19
     },
     {
+      "id": "deluxe tiramisu|500g",
+      "canonicalName": "deluxe tiramisu",
+      "canonicalKey": "deluxe tiramisu|500g",
+      "quantity": {
+        "value": 500,
+        "unit": "g",
+        "label": "500 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Tiramisù"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.69,
+      "maxPrice": 3.69
+    },
+    {
+      "id": "deluxe tiramisu savoiardi|70g",
+      "canonicalName": "deluxe tiramisu savoiardi",
+      "canonicalKey": "deluxe tiramisu savoiardi|70g",
+      "quantity": {
+        "value": 70,
+        "unit": "g",
+        "label": "70 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Tiramisù con savoiardi"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.19,
+      "maxPrice": 1.19
+    },
+    {
+      "id": "deluxe torrone morbido mandorle agrumi canditi pistacchi|180g",
+      "canonicalName": "deluxe torrone morbido mandorle agrumi canditi pistacchi",
+      "canonicalKey": "deluxe torrone morbido mandorle agrumi canditi pistacchi|180g",
+      "quantity": {
+        "value": 180,
+        "unit": "g",
+        "label": "180 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Torrone morbido Con mandorle, agrumi canditi e pistacchi"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.49,
+      "maxPrice": 2.49
+    },
+    {
+      "id": "deluxe torrone tenero mandorle|200g",
+      "canonicalName": "deluxe torrone tenero mandorle",
+      "canonicalKey": "deluxe torrone tenero mandorle|200g",
+      "quantity": {
+        "value": 200,
+        "unit": "g",
+        "label": "200 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Torrone tenero Con mandorle"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.69,
+      "maxPrice": 2.69
+    },
+    {
       "id": "deluxe torrone tenero uvetta rhum tiramisu cioccolato bianco lamponi fondente",
       "canonicalName": "deluxe torrone tenero uvetta rhum tiramisu cioccolato bianco lamponi fondente",
       "canonicalKey": "deluxe torrone tenero uvetta rhum tiramisu cioccolato bianco lamponi fondente",
@@ -4291,6 +6488,46 @@
       "offersCount": 1,
       "minPrice": 1.69,
       "maxPrice": 1.69
+    },
+    {
+      "id": "deluxe torta panna|750g",
+      "canonicalName": "deluxe torta panna",
+      "canonicalKey": "deluxe torta panna|750g",
+      "quantity": {
+        "value": 750,
+        "unit": "g",
+        "label": "750 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Torta alla panna"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 6.99,
+      "maxPrice": 6.99
+    },
+    {
+      "id": "deluxe torta tartufata|750g",
+      "canonicalName": "deluxe torta tartufata",
+      "canonicalKey": "deluxe torta tartufata|750g",
+      "quantity": {
+        "value": 750,
+        "unit": "g",
+        "label": "750 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Torta tartufata"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 5.49,
+      "maxPrice": 5.49
     },
     {
       "id": "deluxe torta tartufata farcito crema cioccolato copertura|750g",
@@ -4343,14 +6580,35 @@
         "multipack": null
       },
       "aliases": [
-        "DELUXE Tortelloni con ricotta e spinaci o ai funghi"
+        "DELUXE Tortelloni con ricotta e spinaci o ai funghi",
+        "DELUXE Tortelloni Con ricotta e spinaci o con funghi"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 2,
+      "minPrice": 0.99,
+      "maxPrice": 1.29
+    },
+    {
+      "id": "deluxe trota iridea affumicata|300g",
+      "canonicalName": "deluxe trota iridea affumicata",
+      "canonicalKey": "deluxe trota iridea affumicata|300g",
+      "quantity": {
+        "value": 300,
+        "unit": "g",
+        "label": "300 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Trota iridea affumicata"
       ],
       "stores": [
         "Lidl"
       ],
       "offersCount": 1,
-      "minPrice": 0.99,
-      "maxPrice": 0.99
+      "minPrice": 8.99,
+      "maxPrice": 8.99
     },
     {
       "id": "deluxe uova lompo rosse nere|200g",
@@ -5038,8 +7296,8 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 2,
-      "minPrice": 14.99,
+      "offersCount": 5,
+      "minPrice": 4.99,
       "maxPrice": 19.99
     },
     {
@@ -5163,6 +7421,21 @@
       "maxPrice": 9.99
     },
     {
+      "id": "esmara felpa donna grinch",
+      "canonicalName": "esmara felpa donna grinch",
+      "canonicalKey": "esmara felpa donna grinch",
+      "quantity": null,
+      "aliases": [
+        "ESMARA Felpa da donna \"Grinch\""
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 11.99,
+      "maxPrice": 11.99
+    },
+    {
       "id": "esmara gonna midi",
       "canonicalName": "esmara gonna midi",
       "canonicalKey": "esmara gonna midi",
@@ -5258,6 +7531,36 @@
       "maxPrice": 5.49
     },
     {
+      "id": "esmara men",
+      "canonicalName": "esmara men",
+      "canonicalKey": "esmara men",
+      "quantity": null,
+      "aliases": [
+        "ESMARA MEN"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 3,
+      "minPrice": 3.99,
+      "maxPrice": 9.99
+    },
+    {
+      "id": "esmara men felpa uomo grinch",
+      "canonicalName": "esmara men felpa uomo grinch",
+      "canonicalKey": "esmara men felpa uomo grinch",
+      "quantity": null,
+      "aliases": [
+        "ESMARA MEN Felpa da uomo \"Grinch\""
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 11.99,
+      "maxPrice": 11.99
+    },
+    {
       "id": "esmara men giacca uomo",
       "canonicalName": "esmara men giacca uomo",
       "canonicalKey": "esmara men giacca uomo",
@@ -5318,6 +7621,21 @@
       "maxPrice": 12.99
     },
     {
+      "id": "esmara men pullover natalizio uomo",
+      "canonicalName": "esmara men pullover natalizio uomo",
+      "canonicalKey": "esmara men pullover natalizio uomo",
+      "quantity": null,
+      "aliases": [
+        "ESMARA MEN Pullover natalizio da uomo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 8.99,
+      "maxPrice": 8.99
+    },
+    {
       "id": "esmara panaloni palazzo",
       "canonicalName": "esmara panaloni palazzo",
       "canonicalKey": "esmara panaloni palazzo",
@@ -5346,6 +7664,21 @@
       "offersCount": 1,
       "minPrice": 9.99,
       "maxPrice": 9.99
+    },
+    {
+      "id": "esmara pantofole uomo donna grinch",
+      "canonicalName": "esmara pantofole uomo donna grinch",
+      "canonicalKey": "esmara pantofole uomo donna grinch",
+      "quantity": null,
+      "aliases": [
+        "ESMARA Pantofole da uomo o da donna \"Grinch\""
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 6.99,
+      "maxPrice": 6.99
     },
     {
       "id": "esmara pigiama donna cotone misure",
@@ -5476,6 +7809,26 @@
       "maxPrice": 0.99
     },
     {
+      "id": "fantini notturnia merlot rosato 12 vol|750ml",
+      "canonicalName": "fantini notturnia merlot rosato 12 vol",
+      "canonicalKey": "fantini notturnia merlot rosato 12 vol|750ml",
+      "quantity": {
+        "value": 750,
+        "unit": "ml",
+        "label": "750 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "FANTINI Notturnia Merlot Rosato 12.5% Vol."
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 5.99,
+      "maxPrice": 5.99
+    },
+    {
       "id": "fattoria pane gonfiotti all olio oliva|200g",
       "canonicalName": "fattoria pane gonfiotti all olio oliva",
       "canonicalKey": "fattoria pane gonfiotti all olio oliva|200g",
@@ -5494,6 +7847,46 @@
       "offersCount": 1,
       "minPrice": 1.29,
       "maxPrice": 1.29
+    },
+    {
+      "id": "favorina arachidi ricoperte cioccolato fondente latte bianco|250g",
+      "canonicalName": "favorina arachidi ricoperte cioccolato fondente latte bianco",
+      "canonicalKey": "favorina arachidi ricoperte cioccolato fondente latte bianco|250g",
+      "quantity": {
+        "value": 250,
+        "unit": "g",
+        "label": "250 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Arachidi ricoperte di cioccolato Fondente, al latte o bianco"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
+    },
+    {
+      "id": "favorina babbo natale cioccolato latte|110g",
+      "canonicalName": "favorina babbo natale cioccolato latte",
+      "canonicalKey": "favorina babbo natale cioccolato latte|110g",
+      "quantity": {
+        "value": 110,
+        "unit": "g",
+        "label": "110 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Babbo Natale di cioccolato al latte"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.99,
+      "maxPrice": 0.99
     },
     {
       "id": "favorina bastoncini natalizi cioccolato|150g",
@@ -5534,6 +7927,46 @@
       "offersCount": 1,
       "minPrice": 3.79,
       "maxPrice": 3.79
+    },
+    {
+      "id": "favorina biscotti pasta frolla natale diversi|600g",
+      "canonicalName": "favorina biscotti pasta frolla natale diversi",
+      "canonicalKey": "favorina biscotti pasta frolla natale diversi|600g",
+      "quantity": {
+        "value": 600,
+        "unit": "g",
+        "label": "600 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Biscotti di pasta frolla di Natale In diversi gusti"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.79,
+      "maxPrice": 3.79
+    },
+    {
+      "id": "favorina biscotti speziati|600g",
+      "canonicalName": "favorina biscotti speziati",
+      "canonicalKey": "favorina biscotti speziati|600g",
+      "quantity": {
+        "value": 600,
+        "unit": "g",
+        "label": "600 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Biscotti speziati"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
     },
     {
       "id": "favorina biscotti speziati mandorle|300g",
@@ -5636,6 +8069,26 @@
       "maxPrice": 2.49
     },
     {
+      "id": "favorina dolcetti pan speziato|300g",
+      "canonicalName": "favorina dolcetti pan speziato",
+      "canonicalKey": "favorina dolcetti pan speziato|300g",
+      "quantity": {
+        "value": 300,
+        "unit": "g",
+        "label": "300 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Dolcetti di pan speziato"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
+    },
+    {
       "id": "favorina figure natalizie cioccolato latte diverse forme|125g",
       "canonicalName": "favorina figure natalizie cioccolato latte diverse forme",
       "canonicalKey": "favorina figure natalizie cioccolato latte diverse forme|125g",
@@ -5654,6 +8107,66 @@
       "offersCount": 1,
       "minPrice": 1.99,
       "maxPrice": 1.99
+    },
+    {
+      "id": "favorina frutta marzapane|150g",
+      "canonicalName": "favorina frutta marzapane",
+      "canonicalKey": "favorina frutta marzapane|150g",
+      "quantity": {
+        "value": 150,
+        "unit": "g",
+        "label": "150 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Frutta di marzapane"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.29,
+      "maxPrice": 2.29
+    },
+    {
+      "id": "favorina frutta secca pralinata ricoperta|200g",
+      "canonicalName": "favorina frutta secca pralinata ricoperta",
+      "canonicalKey": "favorina frutta secca pralinata ricoperta|200g",
+      "quantity": {
+        "value": 200,
+        "unit": "g",
+        "label": "200 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Frutta secca pralinata ricoperta"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
+    },
+    {
+      "id": "favorina kit omino pan zenzero|215g",
+      "canonicalName": "favorina kit omino pan zenzero",
+      "canonicalKey": "favorina kit omino pan zenzero|215g",
+      "quantity": {
+        "value": 215,
+        "unit": "g",
+        "label": "215 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Kit per omino di pan di zenzero"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.99,
+      "maxPrice": 3.99
     },
     {
       "id": "favorina marrons glaces|250g",
@@ -5676,6 +8189,136 @@
       "maxPrice": 3.79
     },
     {
+      "id": "favorina marrons glaces ricoperti cioccolato|250g",
+      "canonicalName": "favorina marrons glaces ricoperti cioccolato",
+      "canonicalKey": "favorina marrons glaces ricoperti cioccolato|250g",
+      "quantity": {
+        "value": 250,
+        "unit": "g",
+        "label": "250 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Marrons glaces in pezzi ricoperti di cioccolato"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.99,
+      "maxPrice": 3.99
+    },
+    {
+      "id": "favorina mini figure natalizie|125g",
+      "canonicalName": "favorina mini figure natalizie",
+      "canonicalKey": "favorina mini figure natalizie|125g",
+      "quantity": {
+        "value": 125,
+        "unit": "g",
+        "label": "125 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Mini figure natalizie"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
+      "id": "favorina mini nocciolato fondente latte|130g",
+      "canonicalName": "favorina mini nocciolato fondente latte",
+      "canonicalKey": "favorina mini nocciolato fondente latte|130g",
+      "quantity": {
+        "value": 130,
+        "unit": "g",
+        "label": "130 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Mini Nocciolato Fondente o al latte"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
+      "id": "favorina mini pandoro gocce cioccolato|80g",
+      "canonicalName": "favorina mini pandoro gocce cioccolato",
+      "canonicalKey": "favorina mini pandoro gocce cioccolato|80g",
+      "quantity": {
+        "value": 80,
+        "unit": "g",
+        "label": "80 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Mini pandoro con gocce di cioccolato"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.89,
+      "maxPrice": 0.89
+    },
+    {
+      "id": "favorina mini panettone",
+      "canonicalName": "favorina mini panettone",
+      "canonicalKey": "favorina mini panettone",
+      "quantity": null,
+      "aliases": [
+        "FAVORINA Mini Panettone"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.89,
+      "maxPrice": 0.89
+    },
+    {
+      "id": "favorina mini panettone gocce cioccolato",
+      "canonicalName": "favorina mini panettone gocce cioccolato",
+      "canonicalKey": "favorina mini panettone gocce cioccolato",
+      "quantity": null,
+      "aliases": [
+        "FAVORINA Mini Panettone con gocce di cioccolato"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.89,
+      "maxPrice": 0.89
+    },
+    {
+      "id": "favorina mini stollen diversi|200g",
+      "canonicalName": "favorina mini stollen diversi",
+      "canonicalKey": "favorina mini stollen diversi|200g",
+      "quantity": {
+        "value": 200,
+        "unit": "g",
+        "label": "200 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Mini stollen In diversi gusti"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
       "id": "favorina mini stollen dolcetti marzapane burro|350g",
       "canonicalName": "favorina mini stollen dolcetti marzapane burro",
       "canonicalKey": "favorina mini stollen dolcetti marzapane burro|350g",
@@ -5694,6 +8337,26 @@
       "offersCount": 1,
       "minPrice": 3.99,
       "maxPrice": 3.99
+    },
+    {
+      "id": "favorina nocciolato fondente latte|250g",
+      "canonicalName": "favorina nocciolato fondente latte",
+      "canonicalKey": "favorina nocciolato fondente latte|250g",
+      "quantity": {
+        "value": 250,
+        "unit": "g",
+        "label": "250 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Nocciolato Fondente o al latte"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
     },
     {
       "id": "favorina omini pan zenzero decorare|215g",
@@ -5716,6 +8379,191 @@
       "maxPrice": 3.99
     },
     {
+      "id": "favorina pan speziato forma brezel stella cuore ricoperto cioccolato fondete latte|500g",
+      "canonicalName": "favorina pan speziato forma brezel stella cuore ricoperto cioccolato fondete latte",
+      "canonicalKey": "favorina pan speziato forma brezel stella cuore ricoperto cioccolato fondete latte|500g",
+      "quantity": {
+        "value": 500,
+        "unit": "g",
+        "label": "500 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Pan speziato a forma di brezel, stella e cuore Ricoperto di cioccolato fondete o al latte"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.49,
+      "maxPrice": 4.49
+    },
+    {
+      "id": "favorina pandoro classico",
+      "canonicalName": "favorina pandoro classico",
+      "canonicalKey": "favorina pandoro classico",
+      "quantity": null,
+      "aliases": [
+        "FAVORINA Pandoro classico,"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.79,
+      "maxPrice": 4.79
+    },
+    {
+      "id": "favorina pandoro classico senza glutine|300g",
+      "canonicalName": "favorina pandoro classico senza glutine",
+      "canonicalKey": "favorina pandoro classico senza glutine|300g",
+      "quantity": {
+        "value": 300,
+        "unit": "g",
+        "label": "300 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Pandoro classico senza glutine"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.79,
+      "maxPrice": 3.79
+    },
+    {
+      "id": "favorina pandoro crema limone|800g",
+      "canonicalName": "favorina pandoro crema limone",
+      "canonicalKey": "favorina pandoro crema limone|800g",
+      "quantity": {
+        "value": 800,
+        "unit": "g",
+        "label": "800 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Pandoro con crema al limone"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 5.29,
+      "maxPrice": 5.29
+    },
+    {
+      "id": "favorina pandoro gocce cioccolato|750g",
+      "canonicalName": "favorina pandoro gocce cioccolato",
+      "canonicalKey": "favorina pandoro gocce cioccolato|750g",
+      "quantity": {
+        "value": 750,
+        "unit": "g",
+        "label": "750 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Pandoro con gocce di cioccolato"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 5.49,
+      "maxPrice": 5.49
+    },
+    {
+      "id": "favorina panettone",
+      "canonicalName": "favorina panettone",
+      "canonicalKey": "favorina panettone",
+      "quantity": null,
+      "aliases": [
+        "FAVORINA Panettone"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.29,
+      "maxPrice": 4.29
+    },
+    {
+      "id": "favorina panettone classico",
+      "canonicalName": "favorina panettone classico",
+      "canonicalKey": "favorina panettone classico",
+      "quantity": null,
+      "aliases": [
+        "FAVORINA Panettone classico"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.29,
+      "maxPrice": 4.29
+    },
+    {
+      "id": "favorina panettone gocce cioccolato|750g",
+      "canonicalName": "favorina panettone gocce cioccolato",
+      "canonicalKey": "favorina panettone gocce cioccolato|750g",
+      "quantity": {
+        "value": 750,
+        "unit": "g",
+        "label": "750 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Panettone con gocce di cioccolato"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.49,
+      "maxPrice": 4.49
+    },
+    {
+      "id": "favorina panettone senza canditi|850g",
+      "canonicalName": "favorina panettone senza canditi",
+      "canonicalKey": "favorina panettone senza canditi|850g",
+      "quantity": {
+        "value": 850,
+        "unit": "g",
+        "label": "850 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Panettone senza canditi"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.49,
+      "maxPrice": 3.49
+    },
+    {
+      "id": "favorina panettone senza canditi glutine|350g",
+      "canonicalName": "favorina panettone senza canditi glutine",
+      "canonicalKey": "favorina panettone senza canditi glutine|350g",
+      "quantity": {
+        "value": 350,
+        "unit": "g",
+        "label": "350 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Panettone senza canditi senza glutine"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.79,
+      "maxPrice": 3.79
+    },
+    {
       "id": "favorina praline cioccolato bianco caramello ripiene crema cereali|200g",
       "canonicalName": "favorina praline cioccolato bianco caramello ripiene crema cereali",
       "canonicalKey": "favorina praline cioccolato bianco caramello ripiene crema cereali|200g",
@@ -5736,6 +8584,121 @@
       "maxPrice": 2.99
     },
     {
+      "id": "favorina praline cioccolato bianco ripiene crema cereali|200g",
+      "canonicalName": "favorina praline cioccolato bianco ripiene crema cereali",
+      "canonicalKey": "favorina praline cioccolato bianco ripiene crema cereali|200g",
+      "quantity": {
+        "value": 200,
+        "unit": "g",
+        "label": "200 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Praline di cioccolato bianco ripiene di crema e cereali"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.59,
+      "maxPrice": 1.59
+    },
+    {
+      "id": "favorina praline cioccolato latte ripiene crema caramello|200g",
+      "canonicalName": "favorina praline cioccolato latte ripiene crema caramello",
+      "canonicalKey": "favorina praline cioccolato latte ripiene crema caramello|200g",
+      "quantity": {
+        "value": 200,
+        "unit": "g",
+        "label": "200 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Praline di cioccolato al latte ripiene di crema al caramello"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
+      "id": "favorina praline ripiene pistacchio|200g",
+      "canonicalName": "favorina praline ripiene pistacchio",
+      "canonicalKey": "favorina praline ripiene pistacchio|200g",
+      "quantity": {
+        "value": 200,
+        "unit": "g",
+        "label": "200 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Praline ripiene al pistacchio"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.49,
+      "maxPrice": 2.49
+    },
+    {
+      "id": "favorina sacchetto natalizio soggetti|171g",
+      "canonicalName": "favorina sacchetto natalizio soggetti",
+      "canonicalKey": "favorina sacchetto natalizio soggetti|171g",
+      "quantity": {
+        "value": 171,
+        "unit": "g",
+        "label": "171 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Sacchetto natalizio con soggetti vari"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
+      "id": "favorina scatola puzzle",
+      "canonicalName": "favorina scatola puzzle",
+      "canonicalKey": "favorina scatola puzzle",
+      "quantity": null,
+      "aliases": [
+        "FAVORINA Scatola con puzzle"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
+    },
+    {
+      "id": "favorina set casetta pan speziato costruire|900g",
+      "canonicalName": "favorina set casetta pan speziato costruire",
+      "canonicalKey": "favorina set casetta pan speziato costruire|900g",
+      "quantity": {
+        "value": 900,
+        "unit": "g",
+        "label": "900 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Set Casetta di pan speziato da costruire"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 7.99,
+      "maxPrice": 7.99
+    },
+    {
       "id": "favorina stollen giovedi 11 marzapane uvetta",
       "canonicalName": "favorina stollen giovedi 11 marzapane uvetta",
       "canonicalKey": "favorina stollen giovedi 11 marzapane uvetta",
@@ -5749,6 +8712,26 @@
       "offersCount": 1,
       "minPrice": 4.49,
       "maxPrice": 4.49
+    },
+    {
+      "id": "favorina tartufi cacao|250g",
+      "canonicalName": "favorina tartufi cacao",
+      "canonicalKey": "favorina tartufi cacao|250g",
+      "quantity": {
+        "value": 250,
+        "unit": "g",
+        "label": "250 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Tartufi al cacao"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.29,
+      "maxPrice": 2.29
     },
     {
       "id": "favorina tartufi diversi|250g",
@@ -5789,6 +8772,66 @@
       "offersCount": 1,
       "minPrice": 2.19,
       "maxPrice": 2.19
+    },
+    {
+      "id": "favorina torroncini morbidi friabili mandorle|200g",
+      "canonicalName": "favorina torroncini morbidi friabili mandorle",
+      "canonicalKey": "favorina torroncini morbidi friabili mandorle|200g",
+      "quantity": {
+        "value": 200,
+        "unit": "g",
+        "label": "200 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Torroncini morbidi o friabili alle mandorle"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.19,
+      "maxPrice": 2.19
+    },
+    {
+      "id": "favorina torrone morbido mandorle|200g",
+      "canonicalName": "favorina torrone morbido mandorle",
+      "canonicalKey": "favorina torrone morbido mandorle|200g",
+      "quantity": {
+        "value": 200,
+        "unit": "g",
+        "label": "200 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Torrone morbido con mandorle"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.29,
+      "maxPrice": 2.29
+    },
+    {
+      "id": "favorina torrone morbido nocciole|200g",
+      "canonicalName": "favorina torrone morbido nocciole",
+      "canonicalKey": "favorina torrone morbido nocciole|200g",
+      "quantity": {
+        "value": 200,
+        "unit": "g",
+        "label": "200 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Torrone morbido alle nocciole"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.29,
+      "maxPrice": 2.29
     },
     {
       "id": "felce azzurra ammorbidente classico|12000ml",
@@ -5921,6 +8964,21 @@
       "maxPrice": 15.99
     },
     {
+      "id": "figura decorativa",
+      "canonicalName": "figura decorativa",
+      "canonicalKey": "figura decorativa",
+      "quantity": null,
+      "aliases": [
+        "Figura decorativa"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 9.99,
+      "maxPrice": 9.99
+    },
+    {
       "id": "filetti alici gran mare|200g",
       "canonicalName": "filetti alici gran mare",
       "canonicalKey": "filetti alici gran mare|200g",
@@ -5999,6 +9057,26 @@
       "offersCount": 1,
       "minPrice": 4.09,
       "maxPrice": 4.09
+    },
+    {
+      "id": "filolama chardonnay fiano puglia igp 12 vol|750ml",
+      "canonicalName": "filolama chardonnay fiano puglia igp 12 vol",
+      "canonicalKey": "filolama chardonnay fiano puglia igp 12 vol|750ml",
+      "quantity": {
+        "value": 750,
+        "unit": "ml",
+        "label": "750 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "FILOLAMA Chardonnay-Fiano Puglia IGP 12% Vol."
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.99,
+      "maxPrice": 3.99
     },
     {
       "id": "findus piselli novelli|1000g",
@@ -6094,6 +9172,26 @@
       "offersCount": 1,
       "minPrice": 3.49,
       "maxPrice": 3.49
+    },
+    {
+      "id": "firma data strumenti riserve vernice nelle prossime pagine|390g",
+      "canonicalName": "firma data strumenti riserve vernice nelle prossime pagine",
+      "canonicalKey": "firma data strumenti riserve vernice nelle prossime pagine|390g",
+      "quantity": {
+        "value": 390,
+        "unit": "g",
+        "label": "390 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Firma & Data STRUMENTI E RISERVE DI VERNICE NELLE PROSSIME PAGINE"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
     },
     {
       "id": "flying goose chips gamberi sriracha piccante|80g",
@@ -6704,6 +9802,21 @@
       "offersCount": 3,
       "minPrice": 1.79,
       "maxPrice": 4.59
+    },
+    {
+      "id": "giovedi 12 11",
+      "canonicalName": "giovedi 12 11",
+      "canonicalKey": "giovedi 12 11",
+      "quantity": null,
+      "aliases": [
+        "Da giovedì 12/11"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.49,
+      "maxPrice": 2.49
     },
     {
       "id": "giovedi 29 10 11",
@@ -7908,9 +11021,9 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 1,
-      "minPrice": 4.99,
-      "maxPrice": 4.99
+      "offersCount": 9,
+      "minPrice": 2.5,
+      "maxPrice": 39.99
     },
     {
       "id": "livarno 29 cm portalumini lidl natalizi black|2pz",
@@ -7948,6 +11061,37 @@
       "maxPrice": 3.99
     },
     {
+      "id": "livarno albero",
+      "canonicalName": "livarno albero",
+      "canonicalKey": "livarno albero",
+      "quantity": null,
+      "aliases": [
+        "LIVARNO Albero"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 49,
+      "maxPrice": 49
+    },
+    {
+      "id": "livarno albero natale",
+      "canonicalName": "livarno albero natale",
+      "canonicalKey": "livarno albero natale",
+      "quantity": null,
+      "aliases": [
+        "LIVARNO Albero di Natale in",
+        "LIVARNO Albero di Natale,"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 2,
+      "minPrice": 19.99,
+      "maxPrice": 24.99
+    },
+    {
       "id": "livarno albero natale legno 160 cm 23 rami orientabili",
       "canonicalName": "livarno albero natale legno 160 cm 23 rami orientabili",
       "canonicalKey": "livarno albero natale legno 160 cm 23 rami orientabili",
@@ -7961,6 +11105,21 @@
       "offersCount": 1,
       "minPrice": 19.99,
       "maxPrice": 19.99
+    },
+    {
+      "id": "livarno asciugapiatti canovacci grembiule set presina guanto tema",
+      "canonicalName": "livarno asciugapiatti canovacci grembiule set presina guanto tema",
+      "canonicalKey": "livarno asciugapiatti canovacci grembiule set presina guanto tema",
+      "quantity": null,
+      "aliases": [
+        "LIVARNO Asciugapiatti, canovacci, grembiule o set presina e guanto a tema"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
     },
     {
       "id": "livarno candela led|4pz",
@@ -7996,6 +11155,22 @@
       "offersCount": 1,
       "minPrice": 9.99,
       "maxPrice": 9.99
+    },
+    {
+      "id": "livarno catena luminosa",
+      "canonicalName": "livarno catena luminosa",
+      "canonicalKey": "livarno catena luminosa",
+      "quantity": null,
+      "aliases": [
+        "LIVARNO Catena luminosa",
+        "LIVARNO Catena luminosa,"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 3,
+      "minPrice": 6.99,
+      "maxPrice": 14.99
     },
     {
       "id": "livarno catena luminosa 20 led",
@@ -8108,6 +11283,36 @@
       "maxPrice": 6.99
     },
     {
+      "id": "livarno gnomo natalizio led altezza 56 60 cm",
+      "canonicalName": "livarno gnomo natalizio led altezza 56 60 cm",
+      "canonicalKey": "livarno gnomo natalizio led altezza 56 60 cm",
+      "quantity": null,
+      "aliases": [
+        "LIVARNO Gnomo natalizio a LED Altezza: 56/60 cm"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 5.99,
+      "maxPrice": 5.99
+    },
+    {
+      "id": "livarno gnomo renna omino pan",
+      "canonicalName": "livarno gnomo renna omino pan",
+      "canonicalKey": "livarno gnomo renna omino pan",
+      "quantity": null,
+      "aliases": [
+        "LIVARNO Gnomo, renna o omino di pan"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 6.99,
+      "maxPrice": 6.99
+    },
+    {
       "id": "livarno lampada led tavolo soffitto cm",
       "canonicalName": "livarno lampada led tavolo soffitto cm",
       "canonicalKey": "livarno lampada led tavolo soffitto cm",
@@ -8156,6 +11361,56 @@
       "offersCount": 1,
       "minPrice": 4.99,
       "maxPrice": 4.99
+    },
+    {
+      "id": "livarno luci led decorative picchetto",
+      "canonicalName": "livarno luci led decorative picchetto",
+      "canonicalKey": "livarno luci led decorative picchetto",
+      "quantity": null,
+      "aliases": [
+        "LIVARNO Luci LED decorative con picchetto,"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.99,
+      "maxPrice": 4.99
+    },
+    {
+      "id": "livarno lumini sfere decorative led|3pz",
+      "canonicalName": "livarno lumini sfere decorative led",
+      "canonicalKey": "livarno lumini sfere decorative led|3pz",
+      "quantity": {
+        "value": 3,
+        "unit": "pz",
+        "label": "3 pz",
+        "multipack": null
+      },
+      "aliases": [
+        "LIVARNO Lumini o sfere decorative a LED,"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 14.99,
+      "maxPrice": 14.99
+    },
+    {
+      "id": "livarno paesaggio natalizio",
+      "canonicalName": "livarno paesaggio natalizio",
+      "canonicalKey": "livarno paesaggio natalizio",
+      "quantity": null,
+      "aliases": [
+        "LIVARNO Paesaggio natalizio"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 8.99,
+      "maxPrice": 8.99
     },
     {
       "id": "livarno palline natalizie|4pz",
@@ -8288,6 +11543,21 @@
       "maxPrice": 6.99
     },
     {
+      "id": "livarno statuetta",
+      "canonicalName": "livarno statuetta",
+      "canonicalKey": "livarno statuetta",
+      "quantity": null,
+      "aliases": [
+        "LIVARNO Statuetta"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.99,
+      "maxPrice": 4.99
+    },
+    {
       "id": "livarno stender appendiabiti doppio rotelle",
       "canonicalName": "livarno stender appendiabiti doppio rotelle",
       "canonicalKey": "livarno stender appendiabiti doppio rotelle",
@@ -8301,6 +11571,21 @@
       "offersCount": 1,
       "minPrice": 14.99,
       "maxPrice": 14.99
+    },
+    {
+      "id": "livarno tappeto natalizio",
+      "canonicalName": "livarno tappeto natalizio",
+      "canonicalKey": "livarno tappeto natalizio",
+      "quantity": null,
+      "aliases": [
+        "LIVARNO Tappeto natalizio"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.5,
+      "maxPrice": 2.5
     },
     {
       "id": "livarno tenda rete luminosa led 96 160 luce calda fredda 12 ventose incluse",
@@ -8419,6 +11704,36 @@
       "maxPrice": 39.99
     },
     {
+      "id": "lupilu",
+      "canonicalName": "lupilu",
+      "canonicalKey": "lupilu",
+      "quantity": null,
+      "aliases": [
+        "LUPILU"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 4,
+      "minPrice": 4.99,
+      "maxPrice": 49
+    },
+    {
+      "id": "lupilu banco lavoro bambini",
+      "canonicalName": "lupilu banco lavoro bambini",
+      "canonicalKey": "lupilu banco lavoro bambini",
+      "quantity": null,
+      "aliases": [
+        "LUPILU Banco da lavoro per bambini"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 49,
+      "maxPrice": 49
+    },
+    {
       "id": "lupilu body manica lunga|2pz",
       "canonicalName": "lupilu body manica lunga",
       "canonicalKey": "lupilu body manica lunga|2pz",
@@ -8439,6 +11754,21 @@
       "maxPrice": 5.99
     },
     {
+      "id": "lupilu calze bambini paia grinch",
+      "canonicalName": "lupilu calze bambini paia grinch",
+      "canonicalKey": "lupilu calze bambini paia grinch",
+      "quantity": null,
+      "aliases": [
+        "LUPILU Calze da bambini, 2 paia \"Grinch\""
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.49,
+      "maxPrice": 2.49
+    },
+    {
       "id": "lupilu calzini bambini paia frozen stitch spiderman",
       "canonicalName": "lupilu calzini bambini paia frozen stitch spiderman",
       "canonicalKey": "lupilu calzini bambini paia frozen stitch spiderman",
@@ -8452,6 +11782,66 @@
       "offersCount": 1,
       "minPrice": 1.99,
       "maxPrice": 1.99
+    },
+    {
+      "id": "lupilu castello principesse",
+      "canonicalName": "lupilu castello principesse",
+      "canonicalKey": "lupilu castello principesse",
+      "quantity": null,
+      "aliases": [
+        "LUPILU Castello Principesse"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 29.99,
+      "maxPrice": 29.99
+    },
+    {
+      "id": "lupilu coordinato",
+      "canonicalName": "lupilu coordinato",
+      "canonicalKey": "lupilu coordinato",
+      "quantity": null,
+      "aliases": [
+        "LUPILU Coordinato"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 9.99,
+      "maxPrice": 9.99
+    },
+    {
+      "id": "lupilu costruzioni",
+      "canonicalName": "lupilu costruzioni",
+      "canonicalKey": "lupilu costruzioni",
+      "quantity": null,
+      "aliases": [
+        "LUPILU Costruzioni"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 6.99,
+      "maxPrice": 6.99
+    },
+    {
+      "id": "lupilu domino mem ory gioco pesca equi librio legno",
+      "canonicalName": "lupilu domino mem ory gioco pesca equi librio legno",
+      "canonicalKey": "lupilu domino mem ory gioco pesca equi librio legno",
+      "quantity": null,
+      "aliases": [
+        "LUPILU Domino, mem- ory, gioco della pesca o di equi- librio in legno"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.99,
+      "maxPrice": 3.99
     },
     {
       "id": "lupilu felpa cappuccio",
@@ -8469,6 +11859,21 @@
       "maxPrice": 9.99
     },
     {
+      "id": "lupilu frigorifero",
+      "canonicalName": "lupilu frigorifero",
+      "canonicalKey": "lupilu frigorifero",
+      "quantity": null,
+      "aliases": [
+        "LUPILU Frigorifero"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 24.99,
+      "maxPrice": 24.99
+    },
+    {
       "id": "lupilu giacca lightweight neonati mickey mouse minnie",
       "canonicalName": "lupilu giacca lightweight neonati mickey mouse minnie",
       "canonicalKey": "lupilu giacca lightweight neonati mickey mouse minnie",
@@ -8482,6 +11887,36 @@
       "offersCount": 1,
       "minPrice": 9.99,
       "maxPrice": 9.99
+    },
+    {
+      "id": "lupilu gioco apprendimento legno",
+      "canonicalName": "lupilu gioco apprendimento legno",
+      "canonicalKey": "lupilu gioco apprendimento legno",
+      "quantity": null,
+      "aliases": [
+        "LUPILU Gioco di apprendimento in legno"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.99,
+      "maxPrice": 3.99
+    },
+    {
+      "id": "lupilu macchinetta caffe robot cucina pentola friggitrice ad aria",
+      "canonicalName": "lupilu macchinetta caffe robot cucina pentola friggitrice ad aria",
+      "canonicalKey": "lupilu macchinetta caffe robot cucina pentola friggitrice ad aria",
+      "quantity": null,
+      "aliases": [
+        "LUPILU Macchinetta del caffè, robot da cucina, pentola o friggitrice ad aria"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 17.99,
+      "maxPrice": 17.99
     },
     {
       "id": "lupilu pannolini mutandina taglia|40pz",
@@ -8564,6 +11999,21 @@
       "maxPrice": 9.99
     },
     {
+      "id": "lupilu pantofole bambini grinch",
+      "canonicalName": "lupilu pantofole bambini grinch",
+      "canonicalKey": "lupilu pantofole bambini grinch",
+      "quantity": null,
+      "aliases": [
+        "LUPILU Pantofole da bambini \"Grinch\""
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 5.99,
+      "maxPrice": 5.99
+    },
+    {
       "id": "lupilu pigiama",
       "canonicalName": "lupilu pigiama",
       "canonicalKey": "lupilu pigiama",
@@ -8577,6 +12027,21 @@
       "offersCount": 1,
       "minPrice": 4.99,
       "maxPrice": 4.99
+    },
+    {
+      "id": "lupilu pigiama bambini grinch",
+      "canonicalName": "lupilu pigiama bambini grinch",
+      "canonicalKey": "lupilu pigiama bambini grinch",
+      "quantity": null,
+      "aliases": [
+        "LUPILU Pigiama da bambini \"Grinch\""
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 7.99,
+      "maxPrice": 7.99
     },
     {
       "id": "lupilu pigiama intero",
@@ -8607,6 +12072,81 @@
       "offersCount": 1,
       "minPrice": 3.99,
       "maxPrice": 3.99
+    },
+    {
+      "id": "lupilu pullover natalizio bambini grinch",
+      "canonicalName": "lupilu pullover natalizio bambini grinch",
+      "canonicalKey": "lupilu pullover natalizio bambini grinch",
+      "quantity": null,
+      "aliases": [
+        "LUPILU Pullover natalizio da bambini \"Grinch\""
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 8.99,
+      "maxPrice": 8.99
+    },
+    {
+      "id": "lupilu set alimenti giocattolo",
+      "canonicalName": "lupilu set alimenti giocattolo",
+      "canonicalKey": "lupilu set alimenti giocattolo",
+      "quantity": null,
+      "aliases": [
+        "LUPILU Set alimenti giocattolo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.99,
+      "maxPrice": 4.99
+    },
+    {
+      "id": "lupilu set veicoli gioco",
+      "canonicalName": "lupilu set veicoli gioco",
+      "canonicalKey": "lupilu set veicoli gioco",
+      "quantity": null,
+      "aliases": [
+        "LUPILU Set veicoli per gioco"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 7.99,
+      "maxPrice": 7.99
+    },
+    {
+      "id": "lupilu trattore camion trasporto veicoli",
+      "canonicalName": "lupilu trattore camion trasporto veicoli",
+      "canonicalKey": "lupilu trattore camion trasporto veicoli",
+      "quantity": null,
+      "aliases": [
+        "LUPILU Trattore, camion per trasporto veicoli"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 7.99,
+      "maxPrice": 7.99
+    },
+    {
+      "id": "lupilu trenino",
+      "canonicalName": "lupilu trenino",
+      "canonicalKey": "lupilu trenino",
+      "quantity": null,
+      "aliases": [
+        "LUPILU Trenino"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.99,
+      "maxPrice": 4.99
     },
     {
       "id": "lupilu tuta neonati mickey mouse minnie winnie the pooh",
@@ -8679,6 +12219,21 @@
       "maxPrice": 0.99
     },
     {
+      "id": "macchinina",
+      "canonicalName": "macchinina",
+      "canonicalKey": "macchinina",
+      "quantity": null,
+      "aliases": [
+        "Macchinina"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 6.99,
+      "maxPrice": 6.99
+    },
+    {
       "id": "maestri noci sgusciate grana padano dop stagionato minimo 16 mesi|150g",
       "canonicalName": "maestri noci sgusciate grana padano dop stagionato minimo 16 mesi",
       "canonicalKey": "maestri noci sgusciate grana padano dop stagionato minimo 16 mesi|150g",
@@ -8732,6 +12287,26 @@
       "offersCount": 1,
       "minPrice": 1.11,
       "maxPrice": 1.11
+    },
+    {
+      "id": "marca gewurztraminer elsass 13 vol|750ml",
+      "canonicalName": "marca gewurztraminer elsass 13 vol",
+      "canonicalKey": "marca gewurztraminer elsass 13 vol|750ml",
+      "quantity": {
+        "value": 750,
+        "unit": "ml",
+        "label": "750 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "MARCA Gewürztraminer Elsass 13.5% Vol."
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.99,
+      "maxPrice": 4.99
     },
     {
       "id": "maribel",
@@ -9167,6 +12742,21 @@
       "offersCount": 1,
       "minPrice": 9.99,
       "maxPrice": 9.99
+    },
+    {
+      "id": "mini personaggi funko principesse disney stitch costume dog",
+      "canonicalName": "mini personaggi funko principesse disney stitch costume dog",
+      "canonicalKey": "mini personaggi funko principesse disney stitch costume dog",
+      "quantity": null,
+      "aliases": [
+        "Mini personaggi Funko \"Principesse Disney, Stitch in costume, Dog"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
     },
     {
       "id": "mini rustichella semola|250g",
@@ -9649,7 +13239,7 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 2,
+      "offersCount": 4,
       "minPrice": 1.49,
       "maxPrice": 9.49
     },
@@ -9669,9 +13259,9 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 1,
+      "offersCount": 2,
       "minPrice": 1.99,
-      "maxPrice": 1.99
+      "maxPrice": 3.49
     },
     {
       "id": "novita|160g",
@@ -9769,9 +13359,9 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 1,
+      "offersCount": 2,
       "minPrice": 3.69,
-      "maxPrice": 3.69
+      "maxPrice": 7.99
     },
     {
       "id": "novita|230g",
@@ -9812,6 +13402,81 @@
       "offersCount": 1,
       "minPrice": 1.99,
       "maxPrice": 1.99
+    },
+    {
+      "id": "novita|180g",
+      "canonicalName": "novita",
+      "canonicalKey": "novita|180g",
+      "quantity": {
+        "value": 180,
+        "unit": "g",
+        "label": "180 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Novità"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.39,
+      "maxPrice": 2.39
+    },
+    {
+      "id": "novita|150g",
+      "canonicalName": "novita",
+      "canonicalKey": "novita|150g",
+      "quantity": {
+        "value": 150,
+        "unit": "g",
+        "label": "150 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Novità"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
+      "id": "novita|220g",
+      "canonicalName": "novita",
+      "canonicalKey": "novita|220g",
+      "quantity": {
+        "value": 220,
+        "unit": "g",
+        "label": "220 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Novità"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
+      "id": "novita favorina mini panettone speculoos",
+      "canonicalName": "novita favorina mini panettone speculoos",
+      "canonicalKey": "novita favorina mini panettone speculoos",
+      "quantity": null,
+      "aliases": [
+        "Novità FAVORINA Mini panettone Speculoos"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.99,
+      "maxPrice": 0.99
     },
     {
       "id": "novita gastronomia mare approfittane ora merluzzo nordico croccante|200g",
@@ -11589,6 +15254,26 @@
       "maxPrice": 1.99
     },
     {
+      "id": "piece dragonball|500pz",
+      "canonicalName": "piece dragonball",
+      "canonicalKey": "piece dragonball|500pz",
+      "quantity": {
+        "value": 500,
+        "unit": "pz",
+        "label": "500 pz",
+        "multipack": null
+      },
+      "aliases": [
+        "Piece, Dragonball\""
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 7.99,
+      "maxPrice": 7.99
+    },
+    {
       "id": "pinsa|230g",
       "canonicalName": "pinsa",
       "canonicalKey": "pinsa|230g",
@@ -12179,6 +15864,26 @@
       "maxPrice": 3.99
     },
     {
+      "id": "prosecco spumante conegliano valdobbiadene superiore docg 10 vol|750ml",
+      "canonicalName": "prosecco spumante conegliano valdobbiadene superiore docg 10 vol",
+      "canonicalKey": "prosecco spumante conegliano valdobbiadene superiore docg 10 vol|750ml",
+      "quantity": {
+        "value": 750,
+        "unit": "ml",
+        "label": "750 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "Prosecco Spumante Conegliano Valdobbiadene Superiore DOCG 10.5% Vol."
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.99,
+      "maxPrice": 4.99
+    },
+    {
       "id": "provola dolce scamorza affumicata valbonta|140g",
       "canonicalName": "provola dolce scamorza affumicata valbonta",
       "canonicalKey": "provola dolce scamorza affumicata valbonta|140g",
@@ -12237,6 +15942,191 @@
       "offersCount": 1,
       "minPrice": 1.29,
       "maxPrice": 1.29
+    },
+    {
+      "id": "pyrogiochi bengala merlino|4pz",
+      "canonicalName": "pyrogiochi bengala merlino",
+      "canonicalKey": "pyrogiochi bengala merlino|4pz",
+      "quantity": {
+        "value": 4,
+        "unit": "pz",
+        "label": "4 pz",
+        "multipack": null
+      },
+      "aliases": [
+        "PYROGIOCHI Bengala “MERLINO”"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 5.99,
+      "maxPrice": 5.99
+    },
+    {
+      "id": "pyrogiochi bengala wow 100 merlino colpi|4pz",
+      "canonicalName": "pyrogiochi bengala wow 100 merlino colpi",
+      "canonicalKey": "pyrogiochi bengala wow 100 merlino colpi|4pz",
+      "quantity": {
+        "value": 4,
+        "unit": "pz",
+        "label": "4 pz",
+        "multipack": null
+      },
+      "aliases": [
+        "PYROGIOCHI Bengala WOW 100 “MERLINO” colpi **"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
+      "id": "pyrogiochi farfalle volanti flying ghost|3pz",
+      "canonicalName": "pyrogiochi farfalle volanti flying ghost",
+      "canonicalKey": "pyrogiochi farfalle volanti flying ghost|3pz",
+      "quantity": {
+        "value": 3,
+        "unit": "pz",
+        "label": "3 pz",
+        "multipack": null
+      },
+      "aliases": [
+        "PYROGIOCHI Farfalle volanti \"Flying Ghost\""
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
+    },
+    {
+      "id": "pyrogiochi fontana bongo",
+      "canonicalName": "pyrogiochi fontana bongo",
+      "canonicalKey": "pyrogiochi fontana bongo",
+      "quantity": null,
+      "aliases": [
+        "PYROGIOCHI Fontana “X-Bongo” 1 pezzo**"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 8.99,
+      "maxPrice": 8.99
+    },
+    {
+      "id": "pyrogiochi fontana tesseract|6pz",
+      "canonicalName": "pyrogiochi fontana tesseract",
+      "canonicalKey": "pyrogiochi fontana tesseract|6pz",
+      "quantity": {
+        "value": 6,
+        "unit": "pz",
+        "label": "6 pz",
+        "multipack": null
+      },
+      "aliases": [
+        "PYROGIOCHI Fontana “TESSERACT”"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.99,
+      "maxPrice": 3.99
+    },
+    {
+      "id": "pyrogiochi materia oscura|9pz",
+      "canonicalName": "pyrogiochi materia oscura",
+      "canonicalKey": "pyrogiochi materia oscura|9pz",
+      "quantity": {
+        "value": 9,
+        "unit": "pz",
+        "label": "9 pz",
+        "multipack": null
+      },
+      "aliases": [
+        "PYROGIOCHI Materia Oscura"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
+      "id": "pyrogiochi petardi flash banger magnum pyr|20pz",
+      "canonicalName": "pyrogiochi petardi flash banger magnum pyr",
+      "canonicalKey": "pyrogiochi petardi flash banger magnum pyr|20pz",
+      "quantity": {
+        "value": 20,
+        "unit": "pz",
+        "label": "20 pz",
+        "multipack": null
+      },
+      "aliases": [
+        "PYROGIOCHI Petardi Flash Banger \"Magnum PYR\""
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.99,
+      "maxPrice": 3.99
+    },
+    {
+      "id": "pyrogiochi petardi luce",
+      "canonicalName": "pyrogiochi petardi luce",
+      "canonicalKey": "pyrogiochi petardi luce",
+      "quantity": null,
+      "aliases": [
+        "PYROGIOCHI Petardi con luce"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.99,
+      "maxPrice": 3.99
+    },
+    {
+      "id": "pyrogiochi petardi spinner",
+      "canonicalName": "pyrogiochi petardi spinner",
+      "canonicalKey": "pyrogiochi petardi spinner",
+      "quantity": null,
+      "aliases": [
+        "PYROGIOCHI Petardi spinner &"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
+    },
+    {
+      "id": "pyrogiochi stella maxi|10pz",
+      "canonicalName": "pyrogiochi stella maxi",
+      "canonicalKey": "pyrogiochi stella maxi|10pz",
+      "quantity": {
+        "value": 10,
+        "unit": "pz",
+        "label": "10 pz",
+        "multipack": null
+      },
+      "aliases": [
+        "PYROGIOCHI Stella “MAXI”"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
     },
     {
       "id": "raffo birra approfittane ora grezza vol|450ml",
@@ -12374,9 +16264,9 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 1,
+      "offersCount": 2,
       "minPrice": 2.49,
-      "maxPrice": 2.49
+      "maxPrice": 2.99
     },
     {
       "id": "rispetto 2025",
@@ -12412,6 +16302,26 @@
       "offersCount": 1,
       "minPrice": 4.49,
       "maxPrice": 4.49
+    },
+    {
+      "id": "rispetto 2025|300g",
+      "canonicalName": "rispetto 2025",
+      "canonicalKey": "rispetto 2025|300g",
+      "quantity": {
+        "value": 300,
+        "unit": "g",
+        "label": "300 g",
+        "multipack": null
+      },
+      "aliases": [
+        "rispetto al 2025"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.49,
+      "maxPrice": 2.49
     },
     {
       "id": "rollata allo speck|600g",
@@ -12462,6 +16372,26 @@
       "offersCount": 1,
       "minPrice": 7.99,
       "maxPrice": 7.99
+    },
+    {
+      "id": "rosecco spumante rose 10 vol|750ml",
+      "canonicalName": "rosecco spumante rose 10 vol",
+      "canonicalKey": "rosecco spumante rose 10 vol|750ml",
+      "quantity": {
+        "value": 750,
+        "unit": "ml",
+        "label": "750 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "rosecco spumante rosè 10.5% Vol."
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.29,
+      "maxPrice": 4.29
     },
     {
       "id": "rosso rosa bianco piante verdi appendere azalea",
@@ -12914,6 +16844,21 @@
       "maxPrice": 24.99
     },
     {
+      "id": "scatola mattoncini creativi",
+      "canonicalName": "scatola mattoncini creativi",
+      "canonicalKey": "scatola mattoncini creativi",
+      "quantity": null,
+      "aliases": [
+        "Scatola mattoncini creativi"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 24.99,
+      "maxPrice": 24.99
+    },
+    {
       "id": "scopri tanti articoli negozio",
       "canonicalName": "scopri tanti articoli negozio",
       "canonicalKey": "scopri tanti articoli negozio",
@@ -13029,6 +16974,36 @@
       "maxPrice": 12.99
     },
     {
+      "id": "set gioco",
+      "canonicalName": "set gioco",
+      "canonicalKey": "set gioco",
+      "quantity": null,
+      "aliases": [
+        "Set gioco con"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 9.99,
+      "maxPrice": 9.99
+    },
+    {
+      "id": "set gioco pasta",
+      "canonicalName": "set gioco pasta",
+      "canonicalKey": "set gioco pasta",
+      "quantity": null,
+      "aliases": [
+        "Set gioco pasta"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 14.99,
+      "maxPrice": 14.99
+    },
+    {
       "id": "set graffatrici manuali",
       "canonicalName": "set graffatrici manuali",
       "canonicalKey": "set graffatrici manuali",
@@ -13114,9 +17089,9 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 1,
-      "minPrice": 19.99,
-      "maxPrice": 19.99
+      "offersCount": 4,
+      "minPrice": 14.99,
+      "maxPrice": 39.99
     },
     {
       "id": "silvercrest aspirapolvere ricaricabile",
@@ -13132,6 +17107,111 @@
       "offersCount": 1,
       "minPrice": 89,
       "maxPrice": 89
+    },
+    {
+      "id": "silvercrest forno digitale",
+      "canonicalName": "silvercrest forno digitale",
+      "canonicalKey": "silvercrest forno digitale",
+      "quantity": null,
+      "aliases": [
+        "SILVERCREST Forno digitale"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 89,
+      "maxPrice": 89
+    },
+    {
+      "id": "silvercrest friggitrice",
+      "canonicalName": "silvercrest friggitrice",
+      "canonicalKey": "silvercrest friggitrice",
+      "quantity": null,
+      "aliases": [
+        "SILVERCREST Friggitrice"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 89,
+      "maxPrice": 89
+    },
+    {
+      "id": "silvercrest impastatrice planetaria",
+      "canonicalName": "silvercrest impastatrice planetaria",
+      "canonicalKey": "silvercrest impastatrice planetaria",
+      "quantity": null,
+      "aliases": [
+        "SILVERCREST Impastatrice planetaria"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 39.99,
+      "maxPrice": 39.99
+    },
+    {
+      "id": "silvercrest inserto robot",
+      "canonicalName": "silvercrest inserto robot",
+      "canonicalKey": "silvercrest inserto robot",
+      "quantity": null,
+      "aliases": [
+        "SILVERCREST Inserto per robot"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 29.99,
+      "maxPrice": 29.99
+    },
+    {
+      "id": "silvercrest robot cucina multifunzione",
+      "canonicalName": "silvercrest robot cucina multifunzione",
+      "canonicalKey": "silvercrest robot cucina multifunzione",
+      "quantity": null,
+      "aliases": [
+        "SILVERCREST Robot da cucina multifunzione"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 2,
+      "minPrice": 199,
+      "maxPrice": 399
+    },
+    {
+      "id": "silvercrest stampo natalizio",
+      "canonicalName": "silvercrest stampo natalizio",
+      "canonicalKey": "silvercrest stampo natalizio",
+      "quantity": null,
+      "aliases": [
+        "SILVERCREST Stampo natalizio in"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.49,
+      "maxPrice": 2.49
+    },
+    {
+      "id": "silvercrest tritacarne elettrico",
+      "canonicalName": "silvercrest tritacarne elettrico",
+      "canonicalKey": "silvercrest tritacarne elettrico",
+      "quantity": null,
+      "aliases": [
+        "SILVERCREST Tritacarne elettrico"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 24.99,
+      "maxPrice": 24.99
     },
     {
       "id": "singolo|995g",
@@ -14302,6 +18382,21 @@
       "offersCount": 1,
       "minPrice": 2.19,
       "maxPrice": 2.19
+    },
+    {
+      "id": "veicolo personaggio paw patrol",
+      "canonicalName": "veicolo personaggio paw patrol",
+      "canonicalKey": "veicolo personaggio paw patrol",
+      "quantity": null,
+      "aliases": [
+        "Veicolo con personaggio \"Paw Patrol\""
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 6.99,
+      "maxPrice": 6.99
     },
     {
       "id": "vemondo bevanda mandorla bio senza zuccheri organic",

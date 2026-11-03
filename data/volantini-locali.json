@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T13:28:55.500Z",
+  "generatedAt": "2026-11-03T12:47:02.193Z",
   "familyCode": "FAMIGLIA-EGO78",
   "stores": [
     {
@@ -19,8 +19,8 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 213,
-      "lastCheckedAt": "2026-11-02T13:28:55.499Z",
-      "lastSuccessfulUpdateAt": "2026-11-02T13:28:55.499Z"
+      "lastCheckedAt": "2026-11-03T12:47:02.193Z",
+      "lastSuccessfulUpdateAt": "2026-11-03T12:47:02.193Z"
     },
     {
       "familyCode": "FAMIGLIA-EGO78",
@@ -39,7 +39,7 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 0,
-      "lastCheckedAt": "2026-11-02T13:28:55.499Z",
+      "lastCheckedAt": "2026-11-03T12:47:02.193Z",
       "lastSuccessfulUpdateAt": null
     },
     {
@@ -58,9 +58,9 @@
       "flyerUrl": "https://www.lidl.it/l/it/volantini/offerte-valide-dal-29-10-al-4-11-l-autunno-che-vale-davvero/ar/0",
       "offerScope": "national-chain",
       "promotionId": "",
-      "offersCount": 681,
-      "lastCheckedAt": "2026-11-02T13:28:55.499Z",
-      "lastSuccessfulUpdateAt": "2026-11-02T13:28:55.499Z"
+      "offersCount": 942,
+      "lastCheckedAt": "2026-11-03T12:47:02.193Z",
+      "lastSuccessfulUpdateAt": "2026-11-03T12:47:02.193Z"
     }
   ]
 }
