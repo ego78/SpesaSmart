@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T12:47:02.165Z",
+  "generatedAt": "2026-11-04T12:59:44.897Z",
   "items": [
     {
       "id": "10 rispetto|125g",
@@ -445,26 +445,6 @@
       "offersCount": 1,
       "minPrice": 4.19,
       "maxPrice": 4.19
-    },
-    {
-      "id": "additivo disinfettante|1000ml",
-      "canonicalName": "additivo disinfettante",
-      "canonicalKey": "additivo disinfettante|1000ml",
-      "quantity": {
-        "value": 1000,
-        "unit": "ml",
-        "label": "1 L",
-        "multipack": null
-      },
-      "aliases": [
-        "Additivo disinfettante"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 6.98,
-      "maxPrice": 6.98
     },
     {
       "id": "albero natale legno 160 cm 23 rami orientabili barra metallo all interno materiale montaggio incluso livarno",
@@ -997,26 +977,6 @@
       "maxPrice": 2.89
     },
     {
-      "id": "antipasto salumi piacentini dop|100g",
-      "canonicalName": "antipasto salumi piacentini dop",
-      "canonicalKey": "antipasto salumi piacentini dop|100g",
-      "quantity": {
-        "value": 100,
-        "unit": "g",
-        "label": "100 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Antipasto di salumi Piacentini DOP"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 26.9,
-      "maxPrice": 26.9
-    },
-    {
       "id": "aperitivo",
       "canonicalName": "aperitivo",
       "canonicalKey": "aperitivo",
@@ -1402,26 +1362,6 @@
       "maxPrice": 29.99
     },
     {
-      "id": "bagnodoccia|650ml",
-      "canonicalName": "bagnodoccia",
-      "canonicalKey": "bagnodoccia|650ml",
-      "quantity": {
-        "value": 650,
-        "unit": "ml",
-        "label": "650 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "Bagnodoccia"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.91,
-      "maxPrice": 2.91
-    },
-    {
       "id": "baguette pere fichi nocciole|400g",
       "canonicalName": "baguette pere fichi nocciole",
       "canonicalKey": "baguette pere fichi nocciole|400g",
@@ -1566,26 +1506,6 @@
       "offersCount": 1,
       "minPrice": 3.99,
       "maxPrice": 3.99
-    },
-    {
-      "id": "bevanda vegetale bio|1000ml",
-      "canonicalName": "bevanda vegetale bio",
-      "canonicalKey": "bevanda vegetale bio|1000ml",
-      "quantity": {
-        "value": 1000,
-        "unit": "ml",
-        "label": "1 L",
-        "multipack": null
-      },
-      "aliases": [
-        "Bevanda vegetale Bio"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.11,
-      "maxPrice": 1.11
     },
     {
       "id": "bevande zero san benedetto|1200ml",
@@ -1823,26 +1743,6 @@
       "maxPrice": 6.99
     },
     {
-      "id": "bonarda oltrepo pavese dop|750ml",
-      "canonicalName": "bonarda oltrepo pavese dop",
-      "canonicalKey": "bonarda oltrepo pavese dop|750ml",
-      "quantity": {
-        "value": 750,
-        "unit": "ml",
-        "label": "0,75 L",
-        "multipack": null
-      },
-      "aliases": [
-        "Bonarda Oltrepò Pavese DOP"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.39,
-      "maxPrice": 2.39
-    },
-    {
       "id": "bottiglia termica|700ml",
       "canonicalName": "bottiglia termica",
       "canonicalKey": "bottiglia termica|700ml",
@@ -1966,26 +1866,6 @@
       "offersCount": 1,
       "minPrice": 2.39,
       "maxPrice": 2.39
-    },
-    {
-      "id": "burger vegetali|160g",
-      "canonicalName": "burger vegetali",
-      "canonicalKey": "burger vegetali|160g",
-      "quantity": {
-        "value": 160,
-        "unit": "g",
-        "label": "160 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Burger vegetali"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 8.69,
-      "maxPrice": 8.69
     },
     {
       "id": "burro valbonta 100|125g",
@@ -2436,26 +2316,6 @@
       "offersCount": 1,
       "minPrice": 2.99,
       "maxPrice": 2.99
-    },
-    {
-      "id": "chianti superiore docg|750ml",
-      "canonicalName": "chianti superiore docg",
-      "canonicalKey": "chianti superiore docg|750ml",
-      "quantity": {
-        "value": 750,
-        "unit": "ml",
-        "label": "0,75 L",
-        "multipack": null
-      },
-      "aliases": [
-        "Chianti Superiore DOCG"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.99,
-      "maxPrice": 3.99
     },
     {
       "id": "chilly approfittane detergente ora intimo|400ml",
@@ -6786,26 +6646,6 @@
       "maxPrice": 5.99
     },
     {
-      "id": "detersivo liquido|1400ml",
-      "canonicalName": "detersivo liquido",
-      "canonicalKey": "detersivo liquido|1400ml",
-      "quantity": {
-        "value": 1400,
-        "unit": "ml",
-        "label": "1400 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "Detersivo liquido"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.85,
-      "maxPrice": 2.85
-    },
-    {
       "id": "detersivo liquido lavatrice chanteclair|46pz",
       "canonicalName": "detersivo liquido lavatrice chanteclair",
       "canonicalKey": "detersivo liquido lavatrice chanteclair|46pz",
@@ -8999,26 +8839,6 @@
       "maxPrice": 2.95
     },
     {
-      "id": "filetti tonno pinne gialle|125g",
-      "canonicalName": "filetti tonno pinne gialle",
-      "canonicalKey": "filetti tonno pinne gialle|125g",
-      "quantity": {
-        "value": 125,
-        "unit": "g",
-        "label": "125 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Filetti di tonno a pinne gialle"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 11.96,
-      "maxPrice": 11.96
-    },
-    {
       "id": "filetti tonno pinne gialle gran mare|250g",
       "canonicalName": "filetti tonno pinne gialle gran mare",
       "canonicalKey": "filetti tonno pinne gialle gran mare|250g",
@@ -10374,26 +10194,6 @@
       "offersCount": 1,
       "minPrice": 19.99,
       "maxPrice": 19.99
-    },
-    {
-      "id": "latte parzialmente scremato|1000ml",
-      "canonicalName": "latte parzialmente scremato",
-      "canonicalKey": "latte parzialmente scremato|1000ml",
-      "quantity": {
-        "value": 1000,
-        "unit": "ml",
-        "label": "1 L",
-        "multipack": null
-      },
-      "aliases": [
-        "Latte parzialmente scremato"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.19,
-      "maxPrice": 1.19
     },
     {
       "id": "latte parzialmente scremato sterilgarda|1500ml",
@@ -12344,46 +12144,6 @@
       "maxPrice": 1.39
     },
     {
-      "id": "marmellata confettura extra|425g",
-      "canonicalName": "marmellata confettura extra",
-      "canonicalKey": "marmellata confettura extra|425g",
-      "quantity": {
-        "value": 425,
-        "unit": "g",
-        "label": "425 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Marmellata o confettura extra"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.27,
-      "maxPrice": 3.27
-    },
-    {
-      "id": "marroni serino igp|1000g",
-      "canonicalName": "marroni serino igp",
-      "canonicalKey": "marroni serino igp|1000g",
-      "quantity": {
-        "value": 1000,
-        "unit": "g",
-        "label": "1 kg",
-        "multipack": null
-      },
-      "aliases": [
-        "Marroni di Serino IGP"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 5.99,
-      "maxPrice": 5.99
-    },
-    {
       "id": "marroni serino igp approfittane ora",
       "canonicalName": "marroni serino igp approfittane ora",
       "canonicalKey": "marroni serino igp approfittane ora",
@@ -12707,26 +12467,6 @@
       "offersCount": 2,
       "minPrice": 1.69,
       "maxPrice": 2.49
-    },
-    {
-      "id": "minestrone 16 verdure|1000g",
-      "canonicalName": "minestrone 16 verdure",
-      "canonicalKey": "minestrone 16 verdure|1000g",
-      "quantity": {
-        "value": 1000,
-        "unit": "g",
-        "label": "1 kg",
-        "multipack": null
-      },
-      "aliases": [
-        "Minestrone 16 verdure"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.49,
-      "maxPrice": 1.49
     },
     {
       "id": "mini carrello trasporto",
@@ -13169,26 +12909,6 @@
       "maxPrice": 1.85
     },
     {
-      "id": "novello colli piacentini doc|750ml",
-      "canonicalName": "novello colli piacentini doc",
-      "canonicalKey": "novello colli piacentini doc|750ml",
-      "quantity": {
-        "value": 750,
-        "unit": "ml",
-        "label": "750 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "Novello Colli Piacentini DOC"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.32,
-      "maxPrice": 3.32
-    },
-    {
       "id": "novello colli piacentini doc 14 16 11 vol|750ml",
       "canonicalName": "novello colli piacentini doc 14 16 11 vol",
       "canonicalKey": "novello colli piacentini doc 14 16 11 vol|750ml",
@@ -13207,26 +12927,6 @@
       "offersCount": 1,
       "minPrice": 2.49,
       "maxPrice": 2.49
-    },
-    {
-      "id": "novello veneto igt|750ml",
-      "canonicalName": "novello veneto igt",
-      "canonicalKey": "novello veneto igt|750ml",
-      "quantity": {
-        "value": 750,
-        "unit": "ml",
-        "label": "750 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "Novello Veneto IGT"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.32,
-      "maxPrice": 3.32
     },
     {
       "id": "novita",
@@ -13829,29 +13529,9 @@
       "maxPrice": 1.99
     },
     {
-      "id": "pancetta piacentina dop|90g",
-      "canonicalName": "pancetta piacentina dop",
-      "canonicalKey": "pancetta piacentina dop|90g",
-      "quantity": {
-        "value": 90,
-        "unit": "g",
-        "label": "90 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Pancetta Piacentina DOP"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 18.33,
-      "maxPrice": 18.33
-    },
-    {
-      "id": "pane frumento lievo madre|500g",
-      "canonicalName": "pane frumento lievo madre",
-      "canonicalKey": "pane frumento lievo madre|500g",
+      "id": "pane frumento lievito madre|500g",
+      "canonicalName": "pane frumento lievito madre",
+      "canonicalKey": "pane frumento lievito madre|500g",
       "quantity": {
         "value": 500,
         "unit": "g",
@@ -13859,7 +13539,7 @@
         "multipack": null
       },
       "aliases": [
-        "Pane di Frumento con lievo madre"
+        "Pane di Frumento con Lievito madre"
       ],
       "stores": [
         "Lidl"
@@ -15214,26 +14894,6 @@
       "maxPrice": 1.99
     },
     {
-      "id": "petto tacchino pollo|100g",
-      "canonicalName": "petto tacchino pollo",
-      "canonicalKey": "petto tacchino pollo|100g",
-      "quantity": {
-        "value": 100,
-        "unit": "g",
-        "label": "100 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Petto di tacchino o di pollo"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 11.9,
-      "maxPrice": 11.9
-    },
-    {
       "id": "philadelphia|220g",
       "canonicalName": "philadelphia",
       "canonicalKey": "philadelphia|220g",
@@ -15564,26 +15224,6 @@
       "maxPrice": 2.69
     },
     {
-      "id": "polpettine vegetali|160g",
-      "canonicalName": "polpettine vegetali",
-      "canonicalKey": "polpettine vegetali|160g",
-      "quantity": {
-        "value": 160,
-        "unit": "g",
-        "label": "160 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Polpettine vegetali"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 11.19,
-      "maxPrice": 11.19
-    },
-    {
       "id": "pomodori secchi ortomio|340g",
       "canonicalName": "pomodori secchi ortomio",
       "canonicalKey": "pomodori secchi ortomio|340g",
@@ -15744,26 +15384,6 @@
       "maxPrice": 59
     },
     {
-      "id": "profumatore|8ml",
-      "canonicalName": "profumatore",
-      "canonicalKey": "profumatore|8ml",
-      "quantity": {
-        "value": 8,
-        "unit": "ml",
-        "label": "7,5 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "Profumatore"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 37.2,
-      "maxPrice": 37.2
-    },
-    {
       "id": "prosciutto cotto alta qualita rovagnati|110g",
       "canonicalName": "prosciutto cotto alta qualita rovagnati",
       "canonicalKey": "prosciutto cotto alta qualita rovagnati|110g",
@@ -15782,26 +15402,6 @@
       "offersCount": 1,
       "minPrice": 1.99,
       "maxPrice": 1.99
-    },
-    {
-      "id": "prosciutto cotto arrosto erbe|100g",
-      "canonicalName": "prosciutto cotto arrosto erbe",
-      "canonicalKey": "prosciutto cotto arrosto erbe|100g",
-      "quantity": {
-        "value": 100,
-        "unit": "g",
-        "label": "100 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Prosciutto cotto arrosto alle erbe"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 13.9,
-      "maxPrice": 13.9
     },
     {
       "id": "prosciutto cotto scelto|400g",
@@ -15842,26 +15442,6 @@
       "offersCount": 1,
       "minPrice": 1.65,
       "maxPrice": 1.65
-    },
-    {
-      "id": "prosecco doc rose|750ml",
-      "canonicalName": "prosecco doc rose",
-      "canonicalKey": "prosecco doc rose|750ml",
-      "quantity": {
-        "value": 750,
-        "unit": "ml",
-        "label": "0,75 L",
-        "multipack": null
-      },
-      "aliases": [
-        "Prosecco DOC Rosè"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.99,
-      "maxPrice": 3.99
     },
     {
       "id": "prosecco spumante conegliano valdobbiadene superiore docg 10 vol|750ml",
@@ -16467,26 +16047,6 @@
       "offersCount": 1,
       "minPrice": 1.35,
       "maxPrice": 1.35
-    },
-    {
-      "id": "salame milano|150g",
-      "canonicalName": "salame milano",
-      "canonicalKey": "salame milano|150g",
-      "quantity": {
-        "value": 150,
-        "unit": "g",
-        "label": "150 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Salame Milano"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 7.93,
-      "maxPrice": 7.93
     },
     {
       "id": "salame milano freschette|100g",
@@ -18152,26 +17712,6 @@
       "offersCount": 1,
       "minPrice": 5.99,
       "maxPrice": 5.99
-    },
-    {
-      "id": "tundule|180g",
-      "canonicalName": "tundule",
-      "canonicalKey": "tundule|180g",
-      "quantity": {
-        "value": 180,
-        "unit": "g",
-        "label": "180 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Le Tundule"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 10.5,
-      "maxPrice": 10.5
     },
     {
       "id": "turbo smart sistema vileda",
