@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T11:43:24.256Z",
+  "generatedAt": "2026-11-08T11:56:46.730Z",
   "familyCode": "FAMIGLIA-EGO78",
   "stores": [
     {
@@ -19,8 +19,8 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 213,
-      "lastCheckedAt": "2026-11-07T11:43:24.255Z",
-      "lastSuccessfulUpdateAt": "2026-11-07T11:43:24.255Z"
+      "lastCheckedAt": "2026-11-08T11:56:46.729Z",
+      "lastSuccessfulUpdateAt": "2026-11-08T11:56:46.729Z"
     },
     {
       "familyCode": "FAMIGLIA-EGO78",
@@ -39,7 +39,7 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 0,
-      "lastCheckedAt": "2026-11-07T11:43:24.255Z",
+      "lastCheckedAt": "2026-11-08T11:56:46.729Z",
       "lastSuccessfulUpdateAt": null
     },
     {
@@ -58,9 +58,9 @@
       "flyerUrl": "https://www.lidl.it/l/it/volantini/i",
       "offerScope": "national-chain",
       "promotionId": "",
-      "offersCount": 582,
-      "lastCheckedAt": "2026-11-07T11:43:24.255Z",
-      "lastSuccessfulUpdateAt": "2026-11-07T11:43:24.255Z"
+      "offersCount": 900,
+      "lastCheckedAt": "2026-11-08T11:56:46.729Z",
+      "lastSuccessfulUpdateAt": "2026-11-08T11:56:46.729Z"
     }
   ]
 }
