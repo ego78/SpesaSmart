@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T13:28:32.632Z",
+  "generatedAt": "2026-11-11T12:42:59.012Z",
   "items": [
     {
       "id": "11 cm livarno portalumini natalizi ceramica",
@@ -105,6 +105,26 @@
       "offersCount": 1,
       "minPrice": 79,
       "maxPrice": 79
+    },
+    {
+      "id": "23 girasole soia non|2pz",
+      "canonicalName": "23 girasole soia non",
+      "canonicalKey": "23 girasole soia non|2pz",
+      "quantity": {
+        "value": 2,
+        "unit": "pz",
+        "label": "2 pz",
+        "multipack": null
+      },
+      "aliases": [
+        "-23% Girasole e soia 1 pezzo non in"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.99,
+      "maxPrice": 2.99
     },
     {
       "id": "3m nastro adesivo",
@@ -1477,6 +1497,21 @@
       "maxPrice": 1.39
     },
     {
+      "id": "bellarom",
+      "canonicalName": "bellarom",
+      "canonicalKey": "bellarom",
+      "quantity": null,
+      "aliases": [
+        "BELLAROM"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.29,
+      "maxPrice": 3.29
+    },
+    {
       "id": "bellarom caffe macinato rosso|250g",
       "canonicalName": "bellarom caffe macinato rosso",
       "canonicalKey": "bellarom caffe macinato rosso|250g",
@@ -1492,9 +1527,9 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 2,
+      "offersCount": 1,
       "minPrice": 2.49,
-      "maxPrice": 3.29
+      "maxPrice": 2.49
     },
     {
       "id": "berian fauna toro roble 14 vol|750ml",
@@ -1962,6 +1997,91 @@
       "maxPrice": 3.49
     },
     {
+      "id": "campo largo ceci",
+      "canonicalName": "campo largo ceci",
+      "canonicalKey": "campo largo ceci",
+      "quantity": null,
+      "aliases": [
+        "CAMPO LARGO Ceci con"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.45,
+      "maxPrice": 2.45
+    },
+    {
+      "id": "campo largo ceci easy open|240g",
+      "canonicalName": "campo largo ceci easy open",
+      "canonicalKey": "campo largo ceci easy open|240g",
+      "quantity": {
+        "value": 240,
+        "unit": "g",
+        "label": "240 g",
+        "multipack": null
+      },
+      "aliases": [
+        "CAMPO LARGO Ceci con easy open 4+1"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.96,
+      "maxPrice": 1.96
+    },
+    {
+      "id": "campo largo passata pomodoro italiana",
+      "canonicalName": "campo largo passata pomodoro italiana",
+      "canonicalKey": "campo largo passata pomodoro italiana",
+      "quantity": null,
+      "aliases": [
+        "CAMPO LARGO Passata di pomodoro italiana"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.84,
+      "maxPrice": 0.84
+    },
+    {
+      "id": "campo largo passata pomodoro italiana non",
+      "canonicalName": "campo largo passata pomodoro italiana non",
+      "canonicalKey": "campo largo passata pomodoro italiana non",
+      "quantity": null,
+      "aliases": [
+        "CAMPO LARGO Passata di pomodoro italiana 1 pezzo non in promo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.98,
+      "maxPrice": 1.98
+    },
+    {
+      "id": "campo largo passata pomodoro italiana non|2pz",
+      "canonicalName": "campo largo passata pomodoro italiana non",
+      "canonicalKey": "campo largo passata pomodoro italiana non|2pz",
+      "quantity": {
+        "value": 2,
+        "unit": "pz",
+        "label": "2 pz",
+        "multipack": null
+      },
+      "aliases": [
+        "CAMPO LARGO Passata di pomodoro italiana 1 pezzo non in promo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.69,
+      "maxPrice": 1.69
+    },
+    {
       "id": "candela profumata",
       "canonicalName": "candela profumata",
       "canonicalKey": "candela profumata",
@@ -2072,6 +2192,21 @@
       "maxPrice": 5.69
     },
     {
+      "id": "carosio 23 riso chicco lungo",
+      "canonicalName": "carosio 23 riso chicco lungo",
+      "canonicalKey": "carosio 23 riso chicco lungo",
+      "quantity": null,
+      "aliases": [
+        "CAROSIO 4+1 -23% Riso a chicco lungo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.29,
+      "maxPrice": 1.29
+    },
+    {
       "id": "carote natura|1000g",
       "canonicalName": "carote natura",
       "canonicalKey": "carote natura|1000g",
@@ -2162,9 +2297,9 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 1,
+      "offersCount": 2,
       "minPrice": 1.59,
-      "maxPrice": 1.59
+      "maxPrice": 1.99
     },
     {
       "id": "casette livarno 10 led luce bianca calda decorazione natalizia illuminazione",
@@ -2475,6 +2610,26 @@
       "offersCount": 1,
       "minPrice": 3.39,
       "maxPrice": 3.39
+    },
+    {
+      "id": "combino ditalini mezze maniche rigate conchiglie|500g",
+      "canonicalName": "combino ditalini mezze maniche rigate conchiglie",
+      "canonicalKey": "combino ditalini mezze maniche rigate conchiglie|500g",
+      "quantity": {
+        "value": 500,
+        "unit": "g",
+        "label": "500 g",
+        "multipack": null
+      },
+      "aliases": [
+        "COMBINO Ditalini, Mezze maniche rigate o Conchiglie"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.75,
+      "maxPrice": 2.75
     },
     {
       "id": "condimento insalata riso sotto olio ortomio|280g",
@@ -6766,9 +6921,29 @@
       "maxPrice": 3.99
     },
     {
-      "id": "donut approfittane ora fragola marshmallow|56g",
-      "canonicalName": "donut approfittane ora fragola marshmallow",
-      "canonicalKey": "donut approfittane ora fragola marshmallow|56g",
+      "id": "ditalini mezze maniche rigate conchiglie|500g",
+      "canonicalName": "ditalini mezze maniche rigate conchiglie",
+      "canonicalKey": "ditalini mezze maniche rigate conchiglie|500g",
+      "quantity": {
+        "value": 500,
+        "unit": "g",
+        "label": "500 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Ditalini, Mezze maniche rigate o Conchiglie"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.2,
+      "maxPrice": 2.2
+    },
+    {
+      "id": "donut approfittane fragola marshmallow ora|56g",
+      "canonicalName": "donut approfittane fragola marshmallow ora",
+      "canonicalKey": "donut approfittane fragola marshmallow ora|56g",
       "quantity": {
         "value": 56,
         "unit": "g",
@@ -6776,7 +6951,7 @@
         "multipack": null
       },
       "aliases": [
-        "Donut al gusto di Approfittane ora fragola e marshmallow"
+        "Donut al gusto di Approfittane fragola e marshmallow ora"
       ],
       "stores": [
         "Lidl"
@@ -9106,6 +9281,46 @@
       "maxPrice": 0.95
     },
     {
+      "id": "freshona novita assortimento bietta erbetta cubetti|600g",
+      "canonicalName": "freshona novita assortimento bietta erbetta cubetti",
+      "canonicalKey": "freshona novita assortimento bietta erbetta cubetti|600g",
+      "quantity": {
+        "value": 600,
+        "unit": "g",
+        "label": "600 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FRESHONA Novità in assortimento Bietta Erbetta a cubetti"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.39,
+      "maxPrice": 1.39
+    },
+    {
+      "id": "freshona novita assortimento microfiori spinaci|450g",
+      "canonicalName": "freshona novita assortimento microfiori spinaci",
+      "canonicalKey": "freshona novita assortimento microfiori spinaci|450g",
+      "quantity": {
+        "value": 450,
+        "unit": "g",
+        "label": "450 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FRESHONA Novità in assortimento Microfiori di spinaci"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.19,
+      "maxPrice": 1.19
+    },
+    {
       "id": "freshona ocean sea",
       "canonicalName": "freshona ocean sea",
       "canonicalKey": "freshona ocean sea",
@@ -9569,26 +9784,6 @@
       "offersCount": 4,
       "minPrice": 1.75,
       "maxPrice": 22.99
-    },
-    {
-      "id": "giovedi 12 11 18|750ml",
-      "canonicalName": "giovedi 12 11 18",
-      "canonicalKey": "giovedi 12 11 18|750ml",
-      "quantity": {
-        "value": 750,
-        "unit": "ml",
-        "label": "0,75 L",
-        "multipack": null
-      },
-      "aliases": [
-        "Da giovedì 12/11 al 18/11"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.99,
-      "maxPrice": 1.99
     },
     {
       "id": "giovedi 12 11 18|30pz",
@@ -12188,7 +12383,7 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 4,
+      "offersCount": 5,
       "minPrice": 4.99,
       "maxPrice": 49
     },
@@ -12528,21 +12723,6 @@
       "maxPrice": 4.99
     },
     {
-      "id": "lupilu set veicoli gioco",
-      "canonicalName": "lupilu set veicoli gioco",
-      "canonicalKey": "lupilu set veicoli gioco",
-      "quantity": null,
-      "aliases": [
-        "LUPILU Set veicoli per gioco"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 7.99,
-      "maxPrice": 7.99
-    },
-    {
       "id": "lupilu set veicoli gioco pista legno",
       "canonicalName": "lupilu set veicoli gioco pista legno",
       "canonicalKey": "lupilu set veicoli gioco pista legno",
@@ -12648,12 +12828,12 @@
       "maxPrice": 0.99
     },
     {
-      "id": "macchinina",
-      "canonicalName": "macchinina",
-      "canonicalKey": "macchinina",
+      "id": "macchinina formula diversi",
+      "canonicalName": "macchinina formula diversi",
+      "canonicalKey": "macchinina formula diversi",
       "quantity": null,
       "aliases": [
-        "Macchinina"
+        "Macchinina \"Formula 1\" in diversi"
       ],
       "stores": [
         "Lidl"
@@ -13183,6 +13363,26 @@
       "maxPrice": 2.49
     },
     {
+      "id": "montana carne bovino gelatina|360g",
+      "canonicalName": "montana carne bovino gelatina",
+      "canonicalKey": "montana carne bovino gelatina|360g",
+      "quantity": {
+        "value": 360,
+        "unit": "g",
+        "label": "360 g",
+        "multipack": 4
+      },
+      "aliases": [
+        "MONTANA Carne di bovino in gelatina"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.49,
+      "maxPrice": 3.49
+    },
+    {
       "id": "morsetti vite",
       "canonicalName": "morsetti vite",
       "canonicalKey": "morsetti vite",
@@ -13691,6 +13891,66 @@
       "offersCount": 1,
       "minPrice": 1.99,
       "maxPrice": 1.99
+    },
+    {
+      "id": "novita assortimento freshona friarelli cubetti|400g",
+      "canonicalName": "novita assortimento freshona friarelli cubetti",
+      "canonicalKey": "novita assortimento freshona friarelli cubetti|400g",
+      "quantity": {
+        "value": 400,
+        "unit": "g",
+        "label": "400 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Novità in assortimento FRESHONA Friarelli a cubetti"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
+    },
+    {
+      "id": "novita assortimento freshona zucca cubetti|400g",
+      "canonicalName": "novita assortimento freshona zucca cubetti",
+      "canonicalKey": "novita assortimento freshona zucca cubetti|400g",
+      "quantity": {
+        "value": 400,
+        "unit": "g",
+        "label": "400 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Novità in assortimento FRESHONA Zucca a cubetti"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.49,
+      "maxPrice": 1.49
+    },
+    {
+      "id": "novita assortimento milbona maasdam|350g",
+      "canonicalName": "novita assortimento milbona maasdam",
+      "canonicalKey": "novita assortimento milbona maasdam|350g",
+      "quantity": {
+        "value": 350,
+        "unit": "g",
+        "label": "350 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Novità in assortimento MILBONA Maasdam"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.19,
+      "maxPrice": 3.19
     },
     {
       "id": "novita favorina mini panettone speculoos",
@@ -15153,6 +15413,81 @@
       "maxPrice": 3.49
     },
     {
+      "id": "plasmon novita assortimento omogeneizzato manzo pollo vitello|320g",
+      "canonicalName": "plasmon novita assortimento omogeneizzato manzo pollo vitello",
+      "canonicalKey": "plasmon novita assortimento omogeneizzato manzo pollo vitello|320g",
+      "quantity": {
+        "value": 320,
+        "unit": "g",
+        "label": "320 g",
+        "multipack": null
+      },
+      "aliases": [
+        "PLASMON Novità in assortimento Omogeneizzato Ai gusti manzo, pollo e vitello"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.99,
+      "maxPrice": 3.99
+    },
+    {
+      "id": "plasmon novita assortimento omogeneizzato mela pera frutti|160g",
+      "canonicalName": "plasmon novita assortimento omogeneizzato mela pera frutti",
+      "canonicalKey": "plasmon novita assortimento omogeneizzato mela pera frutti|160g",
+      "quantity": {
+        "value": 160,
+        "unit": "g",
+        "label": "160 g",
+        "multipack": null
+      },
+      "aliases": [
+        "PLASMON Novità in assortimento Omogeneizzato Ai gusti mela, pera e 4 frutti"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.29,
+      "maxPrice": 1.29
+    },
+    {
+      "id": "plasmon novita assortimento paff pomodoro carota|15g",
+      "canonicalName": "plasmon novita assortimento paff pomodoro carota",
+      "canonicalKey": "plasmon novita assortimento paff pomodoro carota|15g",
+      "quantity": {
+        "value": 15,
+        "unit": "g",
+        "label": "15 g",
+        "multipack": null
+      },
+      "aliases": [
+        "PLASMON Novità in assortimento i Paff Gusto pomodoro e carota"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.99,
+      "maxPrice": 0.99
+    },
+    {
+      "id": "plasmon novita frullato 100 frutta assortimento mela pera mista fragola",
+      "canonicalName": "plasmon novita frullato 100 frutta assortimento mela pera mista fragola",
+      "canonicalKey": "plasmon novita frullato 100 frutta assortimento mela pera mista fragola",
+      "quantity": null,
+      "aliases": [
+        "PLASMON Novità in Frullato 100% frutta assortimento Ai gusti mela, pera, frutta mista e mela e fragola"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.99,
+      "maxPrice": 0.99
+    },
+    {
       "id": "platycodon",
       "canonicalName": "platycodon",
       "canonicalKey": "platycodon",
@@ -16533,12 +16868,12 @@
       "maxPrice": 9.99
     },
     {
-      "id": "set gioco pasta",
-      "canonicalName": "set gioco pasta",
-      "canonicalKey": "set gioco pasta",
+      "id": "set gioco pasta modellabile",
+      "canonicalName": "set gioco pasta modellabile",
+      "canonicalKey": "set gioco pasta modellabile",
       "quantity": null,
       "aliases": [
-        "Set gioco pasta"
+        "Set gioco pasta modellabile"
       ],
       "stores": [
         "Lidl"
@@ -17021,6 +17356,21 @@
       "offersCount": 1,
       "minPrice": 2.49,
       "maxPrice": 2.49
+    },
+    {
+      "id": "solo sabato 14 11",
+      "canonicalName": "solo sabato 14 11",
+      "canonicalKey": "solo sabato 14 11",
+      "quantity": null,
+      "aliases": [
+        "Solo sabato 14/11"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.99,
+      "maxPrice": 3.99
     },
     {
       "id": "sottilissime lonza suino|250g",
@@ -18286,6 +18636,41 @@
       "offersCount": 1,
       "minPrice": 2.99,
       "maxPrice": 2.99
+    },
+    {
+      "id": "vita or",
+      "canonicalName": "vita or",
+      "canonicalKey": "vita or",
+      "quantity": null,
+      "aliases": [
+        "VITA D'OR"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.69,
+      "maxPrice": 1.69
+    },
+    {
+      "id": "vita or olio semi|2pz",
+      "canonicalName": "vita or olio semi",
+      "canonicalKey": "vita or olio semi|2pz",
+      "quantity": {
+        "value": 2,
+        "unit": "pz",
+        "label": "2 pz",
+        "multipack": null
+      },
+      "aliases": [
+        "VITA D'OR Olio semi vari"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.58,
+      "maxPrice": 3.58
     },
     {
       "id": "voiello lidl plus spaghetti fusilli trafilati bronzo|500g",
