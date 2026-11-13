@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T13:45:35.260Z",
+  "generatedAt": "2026-11-13T13:05:17.407Z",
   "items": [
     {
       "id": "11 rispetto 2025|75g",
@@ -10464,6 +10464,26 @@
       "offersCount": 1,
       "minPrice": 1.85,
       "maxPrice": 1.85
+    },
+    {
+      "id": "novita|171g",
+      "canonicalName": "novita",
+      "canonicalKey": "novita|171g",
+      "quantity": {
+        "value": 171,
+        "unit": "g",
+        "label": "171 g",
+        "multipack": 6
+      },
+      "aliases": [
+        "Novità"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.49,
+      "maxPrice": 3.49
     },
     {
       "id": "novita|240g",
