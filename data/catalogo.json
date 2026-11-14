@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T13:05:17.407Z",
+  "generatedAt": "2026-11-14T12:10:13.700Z",
   "items": [
     {
       "id": "11 rispetto 2025|75g",
@@ -35,6 +35,26 @@
       "offersCount": 1,
       "minPrice": 1.69,
       "maxPrice": 1.69
+    },
+    {
+      "id": "17 rispetto 2025|75g",
+      "canonicalName": "17 rispetto 2025",
+      "canonicalKey": "17 rispetto 2025|75g",
+      "quantity": {
+        "value": 75,
+        "unit": "g",
+        "label": "75 g",
+        "multipack": null
+      },
+      "aliases": [
+        "-17% rispetto al 2025"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.39,
+      "maxPrice": 1.39
     },
     {
       "id": "18 cm max carico|5000g",
@@ -6009,8 +6029,8 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 1,
-      "minPrice": 1.99,
+      "offersCount": 2,
+      "minPrice": 1.89,
       "maxPrice": 1.99
     },
     {
@@ -7622,26 +7642,6 @@
       "offersCount": 1,
       "minPrice": 2.35,
       "maxPrice": 2.35
-    },
-    {
-      "id": "grimbergen approfittane ora birra assortita|750ml",
-      "canonicalName": "grimbergen approfittane ora birra assortita",
-      "canonicalKey": "grimbergen approfittane ora birra assortita|750ml",
-      "quantity": {
-        "value": 750,
-        "unit": "ml",
-        "label": "750 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "GRIMBERGEN Approfittane ora Birra Assortita"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.89,
-      "maxPrice": 2.89
     },
     {
       "id": "hamburger pollo|400g",
