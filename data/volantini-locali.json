@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T12:44:12.967Z",
+  "generatedAt": "2026-11-16T13:37:25.444Z",
   "familyCode": "FAMIGLIA-EGO78",
   "stores": [
     {
@@ -19,8 +19,8 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 213,
-      "lastCheckedAt": "2026-11-15T12:44:12.966Z",
-      "lastSuccessfulUpdateAt": "2026-11-15T12:44:12.966Z"
+      "lastCheckedAt": "2026-11-16T13:37:25.443Z",
+      "lastSuccessfulUpdateAt": "2026-11-16T13:37:25.443Z"
     },
     {
       "familyCode": "FAMIGLIA-EGO78",
@@ -39,7 +39,7 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 0,
-      "lastCheckedAt": "2026-11-15T12:44:12.966Z",
+      "lastCheckedAt": "2026-11-16T13:37:25.443Z",
       "lastSuccessfulUpdateAt": null
     },
     {
@@ -54,13 +54,13 @@
       "verified": false,
       "officialStoreId": "IT00812",
       "officialStoreAlias": "sava",
-      "flyerId": "i",
-      "flyerUrl": "https://www.lidl.it/l/it/volantini/i",
+      "flyerId": "offerte-valide-dal-23-11-la-black-week-che-vale-davvero/ar/0",
+      "flyerUrl": "https://www.lidl.it/l/it/volantini/offerte-valide-dal-23-11-la-black-week-che-vale-davvero/ar/0",
       "offerScope": "national-chain",
       "promotionId": "",
-      "offersCount": 1004,
-      "lastCheckedAt": "2026-11-15T12:44:12.966Z",
-      "lastSuccessfulUpdateAt": "2026-11-15T12:44:12.966Z"
+      "offersCount": 1045,
+      "lastCheckedAt": "2026-11-16T13:37:25.443Z",
+      "lastSuccessfulUpdateAt": "2026-11-16T13:37:25.443Z"
     }
   ]
 }

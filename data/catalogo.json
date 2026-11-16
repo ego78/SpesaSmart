@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T12:44:12.933Z",
+  "generatedAt": "2026-11-16T13:37:25.411Z",
   "items": [
     {
       "id": "100 30 cm sensiplast scaldapiedi elettrico cintura termica",
@@ -30,6 +30,21 @@
       "offersCount": 1,
       "minPrice": 17.99,
       "maxPrice": 17.99
+    },
+    {
+      "id": "1050 funzione cottura",
+      "canonicalName": "1050 funzione cottura",
+      "canonicalKey": "1050 funzione cottura",
+      "quantity": null,
+      "aliases": [
+        "1050 W (funzione cottura)"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 399,
+      "maxPrice": 399
     },
     {
       "id": "11 rispetto 2025|75g",
@@ -126,6 +141,21 @@
         "label": "25 g",
         "multipack": null
       },
+      "aliases": [
+        "1600 W Ferro da stiro verticale Piastra riscaldante rivestita in ceramica"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 24.99,
+      "maxPrice": 24.99
+    },
+    {
+      "id": "1600 ferro stiro verticale piastra riscaldante rivestita ceramica",
+      "canonicalName": "1600 ferro stiro verticale piastra riscaldante rivestita ceramica",
+      "canonicalKey": "1600 ferro stiro verticale piastra riscaldante rivestita ceramica",
+      "quantity": null,
       "aliases": [
         "1600 W Ferro da stiro verticale Piastra riscaldante rivestita in ceramica"
       ],
@@ -330,6 +360,21 @@
       "offersCount": 1,
       "minPrice": 19.99,
       "maxPrice": 19.99
+    },
+    {
+      "id": "350 silvercrest impastatrice",
+      "canonicalName": "350 silvercrest impastatrice",
+      "canonicalKey": "350 silvercrest impastatrice",
+      "quantity": null,
+      "aliases": [
+        "350 W SILVERCREST Impastatrice"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 39.99,
+      "maxPrice": 39.99
     },
     {
       "id": "3m nastro adesivo",
@@ -1442,6 +1487,21 @@
       "maxPrice": 14.99
     },
     {
+      "id": "asciugacapelli rose shimmer",
+      "canonicalName": "asciugacapelli rose shimmer",
+      "canonicalKey": "asciugacapelli rose shimmer",
+      "quantity": null,
+      "aliases": [
+        "Asciugacapelli Rose Shimmer"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 14.99,
+      "maxPrice": 14.99
+    },
+    {
       "id": "asciugacapelli rose shimmer impostazioni calore velocita",
       "canonicalName": "asciugacapelli rose shimmer impostazioni calore velocita",
       "canonicalKey": "asciugacapelli rose shimmer impostazioni calore velocita",
@@ -1507,12 +1567,62 @@
       "maxPrice": 24.99
     },
     {
+      "id": "aspirapolvere lavapavimenti",
+      "canonicalName": "aspirapolvere lavapavimenti",
+      "canonicalKey": "aspirapolvere lavapavimenti",
+      "quantity": null,
+      "aliases": [
+        "Aspirapolvere- lavapavimenti"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 149,
+      "maxPrice": 149
+    },
+    {
+      "id": "aspirapolvere lavapavimenti sistema gestione anti odore due serbatoi separati acqua pulita sporca|472ml",
+      "canonicalName": "aspirapolvere lavapavimenti sistema gestione anti odore due serbatoi separati acqua pulita sporca",
+      "canonicalKey": "aspirapolvere lavapavimenti sistema gestione anti odore due serbatoi separati acqua pulita sporca|472ml",
+      "quantity": {
+        "value": 472,
+        "unit": "ml",
+        "label": "472 ml",
+        "multipack": 2
+      },
+      "aliases": [
+        "Aspirapolvere-lavapavimenti Sistema di gestione anti-odore Due serbatoi separati per acqua pulita e sporca"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 149,
+      "maxPrice": 149
+    },
+    {
       "id": "aspirapolvere senza sacchetto dotazione tubo telescopico metallo spazzola multifunzione pavimenti",
       "canonicalName": "aspirapolvere senza sacchetto dotazione tubo telescopico metallo spazzola multifunzione pavimenti",
       "canonicalKey": "aspirapolvere senza sacchetto dotazione tubo telescopico metallo spazzola multifunzione pavimenti",
       "quantity": null,
       "aliases": [
         "Aspirapolvere senza sacchetto In dotazione: tubo telescopico in metallo, spazzola multifunzione per pavimenti,"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 59,
+      "maxPrice": 59
+    },
+    {
+      "id": "aspirapolvere senza sacchetto tubo telescopico metallo spazzola multifunzione pavimenti accessorio",
+      "canonicalName": "aspirapolvere senza sacchetto tubo telescopico metallo spazzola multifunzione pavimenti accessorio",
+      "canonicalKey": "aspirapolvere senza sacchetto tubo telescopico metallo spazzola multifunzione pavimenti accessorio",
+      "quantity": null,
+      "aliases": [
+        "Aspirapolvere senza sacchetto Tubo telescopico in metallo, spazzola multifunzione per pavimenti, accessorio"
       ],
       "stores": [
         "Lidl"
@@ -1555,6 +1665,21 @@
       "offersCount": 1,
       "minPrice": 7.99,
       "maxPrice": 7.99
+    },
+    {
+      "id": "attrezzi",
+      "canonicalName": "attrezzi",
+      "canonicalKey": "attrezzi",
+      "quantity": null,
+      "aliases": [
+        "Attrezzi"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 169,
+      "maxPrice": 169
     },
     {
       "id": "avocado",
@@ -1685,6 +1810,21 @@
       "offersCount": 1,
       "minPrice": 3.99,
       "maxPrice": 3.99
+    },
+    {
+      "id": "batteria carica parkside performance set trapano",
+      "canonicalName": "batteria carica parkside performance set trapano",
+      "canonicalKey": "batteria carica parkside performance set trapano",
+      "quantity": null,
+      "aliases": [
+        "Batteria e il carica PARKSIDE PERFORMANCE Set trapano a"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 99,
+      "maxPrice": 99
     },
     {
       "id": "bauli approfittane ora pandoro limonce|750g",
@@ -3572,6 +3712,21 @@
       "maxPrice": 7.99
     },
     {
+      "id": "costruzioni marvel",
+      "canonicalName": "costruzioni marvel",
+      "canonicalKey": "costruzioni marvel",
+      "quantity": null,
+      "aliases": [
+        "Costruzioni “Marvel”"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 12.99,
+      "maxPrice": 12.99
+    },
+    {
       "id": "crelando|6pz",
       "canonicalName": "crelando",
       "canonicalKey": "crelando|6pz",
@@ -3950,6 +4105,21 @@
       "offersCount": 1,
       "minPrice": 9.99,
       "maxPrice": 9.99
+    },
+    {
+      "id": "days parkside set trapano avvitatore ricaricabile livelli selezione coppia",
+      "canonicalName": "days parkside set trapano avvitatore ricaricabile livelli selezione coppia",
+      "canonicalKey": "days parkside set trapano avvitatore ricaricabile livelli selezione coppia",
+      "quantity": null,
+      "aliases": [
+        "Days PARKSIDE Set trapano avvitatore ricaricabile Livelli di selezione della coppia:"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 49,
+      "maxPrice": 49
     },
     {
       "id": "days set trapano avvitatore ricaricabile livelli selezione coppia numero giri 1a velocita",
@@ -9351,6 +9521,26 @@
       "maxPrice": 11.79
     },
     {
+      "id": "ferro stiro vapore piastra rivestimento antiaderente|24g",
+      "canonicalName": "ferro stiro vapore piastra rivestimento antiaderente",
+      "canonicalKey": "ferro stiro vapore piastra rivestimento antiaderente|24g",
+      "quantity": {
+        "value": 24,
+        "unit": "g",
+        "label": "24 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Ferro da stiro a vapore Piastra con rivestimento antiaderente, vapore"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 17.99,
+      "maxPrice": 17.99
+    },
+    {
       "id": "feta dop milkeria|250g",
       "canonicalName": "feta dop milkeria",
       "canonicalKey": "feta dop milkeria|250g",
@@ -10446,6 +10636,26 @@
       "maxPrice": 17.99
     },
     {
+      "id": "incluso livarno umidificatore ultrasuoni aromaterapia|10ml",
+      "canonicalName": "incluso livarno umidificatore ultrasuoni aromaterapia",
+      "canonicalKey": "incluso livarno umidificatore ultrasuoni aromaterapia|10ml",
+      "quantity": {
+        "value": 10,
+        "unit": "ml",
+        "label": "10 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "incluso LIVARNO Umidificatore a ultrasuoni con aromaterapia"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 9.99,
+      "maxPrice": 9.99
+    },
+    {
       "id": "insalata",
       "canonicalName": "insalata",
       "canonicalKey": "insalata",
@@ -11401,6 +11611,56 @@
       "maxPrice": 1.99
     },
     {
+      "id": "lampada decorativa led 110 lm luce bianca calda 24 cm",
+      "canonicalName": "lampada decorativa led 110 lm luce bianca calda 24 cm",
+      "canonicalKey": "lampada decorativa led 110 lm luce bianca calda 24 cm",
+      "quantity": null,
+      "aliases": [
+        "Lampada decorativa LED 110 lm Luce bianca calda, 24,5 x 10,2 x 7,5 cm"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 12.99,
+      "maxPrice": 12.99
+    },
+    {
+      "id": "lampada lavoro led integrata dotazione batteria agli ioni litio 26 bit",
+      "canonicalName": "lampada lavoro led integrata dotazione batteria agli ioni litio 26 bit",
+      "canonicalKey": "lampada lavoro led integrata dotazione batteria agli ioni litio 26 bit",
+      "quantity": null,
+      "aliases": [
+        "Lampada da lavoro LED integrata In dotazione: batteria agli ioni di litio 4 V, 26 bit,"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.99,
+      "maxPrice": 3.99
+    },
+    {
+      "id": "lampadina led|3pz",
+      "canonicalName": "lampadina led",
+      "canonicalKey": "lampadina led|3pz",
+      "quantity": {
+        "value": 3,
+        "unit": "pz",
+        "label": "3 pz",
+        "multipack": null
+      },
+      "aliases": [
+        "Lampadina LED,"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.99,
+      "maxPrice": 3.99
+    },
+    {
       "id": "latte parzialmente scremato sterilgarda|1500ml",
       "canonicalName": "latte parzialmente scremato sterilgarda",
       "canonicalKey": "latte parzialmente scremato sterilgarda|1500ml",
@@ -11419,6 +11679,21 @@
       "offersCount": 1,
       "minPrice": 1.39,
       "maxPrice": 1.39
+    },
+    {
+      "id": "lava",
+      "canonicalName": "lava",
+      "canonicalKey": "lava",
+      "quantity": null,
+      "aliases": [
+        "Lava-"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 99,
+      "maxPrice": 99
     },
     {
       "id": "lavatappezzeria portatile spruzza strofina aspira macchie|430ml",
@@ -11571,8 +11846,8 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 2,
-      "minPrice": 9.99,
+      "offersCount": 3,
+      "minPrice": 5.99,
       "maxPrice": 79
     },
     {
@@ -12052,6 +12327,26 @@
       "maxPrice": 3.39
     },
     {
+      "id": "lidl silvercrest black robot cucina multifunzione days monsieur cuisine smart|3000ml",
+      "canonicalName": "lidl silvercrest black robot cucina multifunzione days monsieur cuisine smart",
+      "canonicalKey": "lidl silvercrest black robot cucina multifunzione days monsieur cuisine smart|3000ml",
+      "quantity": {
+        "value": 3000,
+        "unit": "ml",
+        "label": "3 L",
+        "multipack": null
+      },
+      "aliases": [
+        "Lidl SILVERCREST Black Robot da cucina multifunzione Days “Monsieur Cuisine Smart”"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 399,
+      "maxPrice": 399
+    },
+    {
       "id": "limoni",
       "canonicalName": "limoni",
       "canonicalKey": "limoni",
@@ -12507,6 +12802,21 @@
       "offersCount": 1,
       "minPrice": 0.99,
       "maxPrice": 0.99
+    },
+    {
+      "id": "livarno faro led ad energia solare sensore movimento corrente luminosa 150 lm portata",
+      "canonicalName": "livarno faro led ad energia solare sensore movimento corrente luminosa 150 lm portata",
+      "canonicalKey": "livarno faro led ad energia solare sensore movimento corrente luminosa 150 lm portata",
+      "quantity": null,
+      "aliases": [
+        "LIVARNO Faro LED ad energia solare con sensore di movimento Corrente luminosa: 150 lm Portata sensore di"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 7.99,
+      "maxPrice": 7.99
     },
     {
       "id": "livarno gnomo natalizio led altezza 56 60 cm",
@@ -13976,6 +14286,36 @@
       "maxPrice": 1.29
     },
     {
+      "id": "mini aspirapolvere",
+      "canonicalName": "mini aspirapolvere",
+      "canonicalKey": "mini aspirapolvere",
+      "quantity": null,
+      "aliases": [
+        "Mini aspirapolvere"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 9.99,
+      "maxPrice": 9.99
+    },
+    {
+      "id": "mini aspirapolvere ricaricabile batteria agli ioni litio inclusa lidl black",
+      "canonicalName": "mini aspirapolvere ricaricabile batteria agli ioni litio inclusa lidl black",
+      "canonicalKey": "mini aspirapolvere ricaricabile batteria agli ioni litio inclusa lidl black",
+      "quantity": null,
+      "aliases": [
+        "Mini aspirapolvere ricaricabile 2 in 1 Batteria agli ioni di litio inclusa Lidl Black"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 9.99,
+      "maxPrice": 9.99
+    },
+    {
       "id": "mini aspirapolvere ricaricabile tramite usb batteria agli ioni litio inclusa lidl",
       "canonicalName": "mini aspirapolvere ricaricabile tramite usb batteria agli ioni litio inclusa lidl",
       "canonicalKey": "mini aspirapolvere ricaricabile tramite usb batteria agli ioni litio inclusa lidl",
@@ -14871,6 +15211,21 @@
       "maxPrice": 89
     },
     {
+      "id": "nuovo",
+      "canonicalName": "nuovo",
+      "canonicalKey": "nuovo",
+      "quantity": null,
+      "aliases": [
+        "Nuovo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 229,
+      "maxPrice": 229
+    },
+    {
       "id": "nutella|950g",
       "canonicalName": "nutella",
       "canonicalKey": "nutella|950g",
@@ -15201,6 +15556,56 @@
       "maxPrice": 6.99
     },
     {
+      "id": "parkside|94pz",
+      "canonicalName": "parkside",
+      "canonicalKey": "parkside|94pz",
+      "quantity": {
+        "value": 94,
+        "unit": "pz",
+        "label": "94 pz",
+        "multipack": null
+      },
+      "aliases": [
+        "PARKSIDE"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 39.99,
+      "maxPrice": 39.99
+    },
+    {
+      "id": "parkside avvitatore ricaricabile numero giri vuoto 200 min lampada lavoro led integrata",
+      "canonicalName": "parkside avvitatore ricaricabile numero giri vuoto 200 min lampada lavoro led integrata",
+      "canonicalKey": "parkside avvitatore ricaricabile numero giri vuoto 200 min lampada lavoro led integrata",
+      "quantity": null,
+      "aliases": [
+        "PARKSIDE Avvitatore ricaricabile Numero di giri a vuoto: 200 min-¹ Lampada da lavoro LED integrata"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 9.99,
+      "maxPrice": 9.99
+    },
+    {
+      "id": "parkside berretto lavoro misure xl",
+      "canonicalName": "parkside berretto lavoro misure xl",
+      "canonicalKey": "parkside berretto lavoro misure xl",
+      "quantity": null,
+      "aliases": [
+        "PARKSIDE Berretto da lavoro Misure: S-XL"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.99,
+      "maxPrice": 4.99
+    },
+    {
       "id": "parkside chiave inglese tagliabulloni",
       "canonicalName": "parkside chiave inglese tagliabulloni",
       "canonicalKey": "parkside chiave inglese tagliabulloni",
@@ -15339,6 +15744,21 @@
       "offersCount": 1,
       "minPrice": 29.99,
       "maxPrice": 29.99
+    },
+    {
+      "id": "parkside performance set trapano percussione ricaricabile motore trasmissione",
+      "canonicalName": "parkside performance set trapano percussione ricaricabile motore trasmissione",
+      "canonicalKey": "parkside performance set trapano percussione ricaricabile motore trasmissione",
+      "quantity": null,
+      "aliases": [
+        "PARKSIDE PERFORMANCE Set trapano a percussione ricaricabile Motore con trasmissione"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 99,
+      "maxPrice": 99
     },
     {
       "id": "parkside scarpe antinfortunistiche uomo",
@@ -15861,6 +16281,21 @@
       "maxPrice": 2.29
     },
     {
+      "id": "personaggi funko pop harry potter hello kitty marvel avengers disney",
+      "canonicalName": "personaggi funko pop harry potter hello kitty marvel avengers disney",
+      "canonicalKey": "personaggi funko pop harry potter hello kitty marvel avengers disney",
+      "quantity": null,
+      "aliases": [
+        "Personaggi Funko Pop “Harry Potter, Hello Kitty, Marvel Avengers, Disney,"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 8.99,
+      "maxPrice": 8.99
+    },
+    {
       "id": "perugina baci perle fondente luisa|154g",
       "canonicalName": "perugina baci perle fondente luisa",
       "canonicalKey": "perugina baci perle fondente luisa|154g",
@@ -16094,6 +16529,21 @@
       "offersCount": 1,
       "minPrice": 9.99,
       "maxPrice": 9.99
+    },
+    {
+      "id": "piastra capelli rose shimmer temperature impostabile 150 230 piastre lunghe 11 cm",
+      "canonicalName": "piastra capelli rose shimmer temperature impostabile 150 230 piastre lunghe 11 cm",
+      "canonicalKey": "piastra capelli rose shimmer temperature impostabile 150 230 piastre lunghe 11 cm",
+      "quantity": null,
+      "aliases": [
+        "Piastra per capelli Rose Shimmer Temperature impostabile da 150 a 230°C Piastre lunghe 11 cm"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 17.99,
+      "maxPrice": 17.99
     },
     {
       "id": "piece dragonball|500pz",
@@ -17812,6 +18262,36 @@
       "maxPrice": 5.99
     },
     {
+      "id": "scopa elettrica ricaricabile aspirabriciole spazzola allfloor luce led tutti pavimenti",
+      "canonicalName": "scopa elettrica ricaricabile aspirabriciole spazzola allfloor luce led tutti pavimenti",
+      "canonicalKey": "scopa elettrica ricaricabile aspirabriciole spazzola allfloor luce led tutti pavimenti",
+      "quantity": null,
+      "aliases": [
+        "Scopa elettrica ricaricabile 2 in 1 2 in 1: Aspirabriciole e scopa elettrica Con spazzola AllFloor luce LED: per tutti i tipi di pavimenti"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 119,
+      "maxPrice": 119
+    },
+    {
+      "id": "scopa vapore diverse impostazioni accessorio tappeti panno microfibra lavabile inclusi",
+      "canonicalName": "scopa vapore diverse impostazioni accessorio tappeti panno microfibra lavabile inclusi",
+      "canonicalKey": "scopa vapore diverse impostazioni accessorio tappeti panno microfibra lavabile inclusi",
+      "quantity": null,
+      "aliases": [
+        "Scopa a vapore 3 diverse impostazioni di vapore Accessorio per tappeti e panno in microfibra lavabile inclusi"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 49,
+      "maxPrice": 49
+    },
+    {
       "id": "scopa vapore tutti pavimento diverse impostazioni accessorio tappeti",
       "canonicalName": "scopa vapore tutti pavimento diverse impostazioni accessorio tappeti",
       "canonicalKey": "scopa vapore tutti pavimento diverse impostazioni accessorio tappeti",
@@ -18040,6 +18520,21 @@
       "offersCount": 1,
       "minPrice": 6.49,
       "maxPrice": 6.49
+    },
+    {
+      "id": "set lavapavimenti ultramax one 1600",
+      "canonicalName": "set lavapavimenti ultramax one 1600",
+      "canonicalKey": "set lavapavimenti ultramax one 1600",
+      "quantity": null,
+      "aliases": [
+        "Set lavapavimenti Ultramax ONE 1600 W"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 19.99,
+      "maxPrice": 19.99
     },
     {
       "id": "set lavapavimenti ultramax one adatto tutti pavimento 1600",
@@ -18303,6 +18798,26 @@
       "quantity": null,
       "aliases": [
         "SILVERCREST Impastatrice planetaria"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 39.99,
+      "maxPrice": 39.99
+    },
+    {
+      "id": "silvercrest impastatrice planetaria mescolare montare impastare paraspruzzi apertura riempimento|5000ml",
+      "canonicalName": "silvercrest impastatrice planetaria mescolare montare impastare paraspruzzi apertura riempimento",
+      "canonicalKey": "silvercrest impastatrice planetaria mescolare montare impastare paraspruzzi apertura riempimento|5000ml",
+      "quantity": {
+        "value": 5000,
+        "unit": "ml",
+        "label": "5 L",
+        "multipack": null
+      },
+      "aliases": [
+        "SILVERCREST Impastatrice planetaria 3 in 1: per mescolare, montare e impastare Paraspruzzi con apertura di riempimento,"
       ],
       "stores": [
         "Lidl"
@@ -18637,6 +19152,36 @@
       "maxPrice": 3.69
     },
     {
+      "id": "spazzola ad aria calda rose shimmer tecnologia antistatica",
+      "canonicalName": "spazzola ad aria calda rose shimmer tecnologia antistatica",
+      "canonicalKey": "spazzola ad aria calda rose shimmer tecnologia antistatica",
+      "quantity": null,
+      "aliases": [
+        "Spazzola ad aria calda Rose Shimmer Tecnologia antistatica"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 19.99,
+      "maxPrice": 19.99
+    },
+    {
+      "id": "spazzolino denti elettrico timer minuti modalita pulizia",
+      "canonicalName": "spazzolino denti elettrico timer minuti modalita pulizia",
+      "canonicalKey": "spazzolino denti elettrico timer minuti modalita pulizia",
+      "quantity": null,
+      "aliases": [
+        "Spazzolino da denti elettrico Con timer da 2 minuti e 3 modalità di pulizia"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 19.89,
+      "maxPrice": 19.89
+    },
+    {
       "id": "speaker bluetooth microfono integrato",
       "canonicalName": "speaker bluetooth microfono integrato",
       "canonicalKey": "speaker bluetooth microfono integrato",
@@ -18817,6 +19362,21 @@
       "maxPrice": 6.99
     },
     {
+      "id": "stendibiancheria",
+      "canonicalName": "stendibiancheria",
+      "canonicalKey": "stendibiancheria",
+      "quantity": null,
+      "aliases": [
+        "Stendibiancheria"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 17.99,
+      "maxPrice": 17.99
+    },
+    {
       "id": "straccetti bovino panati",
       "canonicalName": "straccetti bovino panati",
       "canonicalKey": "straccetti bovino panati",
@@ -18987,6 +19547,21 @@
       "maxPrice": 1.99
     },
     {
+      "id": "tagliacapelli regolabarba multiuso rifinitore largo 30mm tagli lineari dettagli mini rasoio naso orecchie",
+      "canonicalName": "tagliacapelli regolabarba multiuso rifinitore largo 30mm tagli lineari dettagli mini rasoio naso orecchie",
+      "canonicalKey": "tagliacapelli regolabarba multiuso rifinitore largo 30mm tagli lineari dettagli mini rasoio naso orecchie",
+      "quantity": null,
+      "aliases": [
+        "Tagliacapelli-regolabarba multiuso Rifinitore largo da 30mm per i tagli lineari Rifinitore per dettagli, mini rasoio e rifinitore per naso e orecchie"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 14.99,
+      "maxPrice": 14.99
+    },
+    {
       "id": "tagliacapelli ricaricabile 5000 silver",
       "canonicalName": "tagliacapelli ricaricabile 5000 silver",
       "canonicalKey": "tagliacapelli ricaricabile 5000 silver",
@@ -19132,6 +19707,26 @@
       "maxPrice": 6.99
     },
     {
+      "id": "temperatura 40 240 silvercrest friggitrice ad aria calda programmi preimpostati 2150|6700ml",
+      "canonicalName": "temperatura 40 240 silvercrest friggitrice ad aria calda programmi preimpostati 2150",
+      "canonicalKey": "temperatura 40 240 silvercrest friggitrice ad aria calda programmi preimpostati 2150|6700ml",
+      "quantity": {
+        "value": 6700,
+        "unit": "ml",
+        "label": "6,7 L",
+        "multipack": null
+      },
+      "aliases": [
+        "Temperatura: 40-240° C SILVERCREST Friggitrice ad aria calda 7 programmi preimpostati 2150 W"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 37.99,
+      "maxPrice": 37.99
+    },
+    {
       "id": "the funny drink|1200ml",
       "canonicalName": "the funny drink",
       "canonicalKey": "the funny drink|1200ml",
@@ -19170,6 +19765,21 @@
       "offersCount": 1,
       "minPrice": 1.79,
       "maxPrice": 1.79
+    },
+    {
+      "id": "timer 1800",
+      "canonicalName": "timer 1800",
+      "canonicalKey": "timer 1800",
+      "quantity": null,
+      "aliases": [
+        "Timer 1800 W"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 39.99,
+      "maxPrice": 39.99
     },
     {
       "id": "tonno naturale gran mare|240g",
@@ -19342,6 +19952,21 @@
       "maxPrice": 0.55
     },
     {
+      "id": "tronic termoventilatore livelli calore 1000 2000",
+      "canonicalName": "tronic termoventilatore livelli calore 1000 2000",
+      "canonicalKey": "tronic termoventilatore livelli calore 1000 2000",
+      "quantity": null,
+      "aliases": [
+        "TRONIC Termoventilatore 2 livelli di calore: 1000/2000 W"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 7.99,
+      "maxPrice": 7.99
+    },
+    {
       "id": "tronic termoventilatore parete temperatura regolabile 18 45 brand name",
       "canonicalName": "tronic termoventilatore parete temperatura regolabile 18 45 brand name",
       "canonicalKey": "tronic termoventilatore parete temperatura regolabile 18 45 brand name",
@@ -19385,6 +20010,21 @@
       "offersCount": 1,
       "minPrice": 19.99,
       "maxPrice": 19.99
+    },
+    {
+      "id": "tuta bambino play station",
+      "canonicalName": "tuta bambino play station",
+      "canonicalKey": "tuta bambino play station",
+      "quantity": null,
+      "aliases": [
+        "Tuta da bambino “Play Station”"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 14.99,
+      "maxPrice": 14.99
     },
     {
       "id": "uhu colla istantanea",
