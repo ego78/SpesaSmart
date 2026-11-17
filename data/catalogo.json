@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T13:37:25.411Z",
+  "generatedAt": "2026-11-17T14:21:38.932Z",
   "items": [
     {
       "id": "100 30 cm sensiplast scaldapiedi elettrico cintura termica",
@@ -5407,7 +5407,7 @@
         "multipack": null
       },
       "aliases": [
-        "DELUXE Girasoli al nero di seppia con ripieno al salmone"
+        "DELUXE Girasoli al nero di seppia Con ripieno al salmone"
       ],
       "stores": [
         "Lidl"
@@ -7340,8 +7340,8 @@
         "Lidl"
       ],
       "offersCount": 1,
-      "minPrice": 2.99,
-      "maxPrice": 2.99
+      "minPrice": 2.69,
+      "maxPrice": 2.69
     },
     {
       "id": "deluxe tartufo cuore pistacchio|190g",
@@ -7562,6 +7562,26 @@
       "offersCount": 1,
       "minPrice": 5.49,
       "maxPrice": 5.49
+    },
+    {
+      "id": "deluxe tortelloni fontina spinaci sacchettini tartufo|250g",
+      "canonicalName": "deluxe tortelloni fontina spinaci sacchettini tartufo",
+      "canonicalKey": "deluxe tortelloni fontina spinaci sacchettini tartufo|250g",
+      "quantity": {
+        "value": 250,
+        "unit": "g",
+        "label": "250 g",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Tortelloni con fontina e spinaci o Sacchettini al tartufo"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.29,
+      "maxPrice": 1.29
     },
     {
       "id": "deluxe tortelloni ricotta spinaci funghi|250g",
