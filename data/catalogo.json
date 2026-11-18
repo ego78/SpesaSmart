@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T14:21:38.932Z",
+  "generatedAt": "2026-11-18T13:56:41.014Z",
   "items": [
     {
       "id": "100 30 cm sensiplast scaldapiedi elettrico cintura termica",
@@ -330,6 +330,26 @@
       "offersCount": 1,
       "minPrice": 2.99,
       "maxPrice": 2.99
+    },
+    {
+      "id": "26 mele gala alto adige trentino igp|2000g",
+      "canonicalName": "26 mele gala alto adige trentino igp",
+      "canonicalKey": "26 mele gala alto adige trentino igp|2000g",
+      "quantity": {
+        "value": 2000,
+        "unit": "g",
+        "label": "2 kg",
+        "multipack": null
+      },
+      "aliases": [
+        "-26% Mele Gala Alto Adige/ del Trentino IGP"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.19,
+      "maxPrice": 2.19
     },
     {
       "id": "2x calze termiche lavoro uomo paia",
