@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T14:24:56.545Z",
+  "generatedAt": "2026-11-20T14:00:30.549Z",
   "items": [
     {
       "id": "100 30 cm sensiplast scaldapiedi elettrico cintura termica",
@@ -4225,26 +4225,6 @@
       "offersCount": 1,
       "minPrice": 2.49,
       "maxPrice": 2.49
-    },
-    {
-      "id": "deluxe jamon serran sgt reserva|7500g",
-      "canonicalName": "deluxe jamon serran sgt reserva",
-      "canonicalKey": "deluxe jamon serran sgt reserva|7500g",
-      "quantity": {
-        "value": 7500,
-        "unit": "g",
-        "label": "7,5 kg",
-        "multipack": null
-      },
-      "aliases": [
-        "DELUXE Jamón Serran SGT Reserva"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 63.89,
-      "maxPrice": 63.89
     },
     {
       "id": "deluxe jamon serrano gran reserva stg prosciutto crudo essiccato all aria|70g",
@@ -12654,6 +12634,26 @@
       "maxPrice": 4.99
     },
     {
+      "id": "prosecco spumante rose 10 vol|750ml",
+      "canonicalName": "prosecco spumante rose 10 vol",
+      "canonicalKey": "prosecco spumante rose 10 vol|750ml",
+      "quantity": {
+        "value": 750,
+        "unit": "ml",
+        "label": "750 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "Prosecco spumante rosè 10.5% Vol."
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 4.29,
+      "maxPrice": 4.29
+    },
+    {
       "id": "provola dolce scamorza affumicata valbonta|140g",
       "canonicalName": "provola dolce scamorza affumicata valbonta",
       "canonicalKey": "provola dolce scamorza affumicata valbonta|140g",
@@ -13202,26 +13202,6 @@
       "offersCount": 1,
       "minPrice": 1.59,
       "maxPrice": 1.59
-    },
-    {
-      "id": "rosecco spumante rose 10 vol|750ml",
-      "canonicalName": "rosecco spumante rose 10 vol",
-      "canonicalKey": "rosecco spumante rose 10 vol|750ml",
-      "quantity": {
-        "value": 750,
-        "unit": "ml",
-        "label": "750 ml",
-        "multipack": null
-      },
-      "aliases": [
-        "rosecco spumante rosè 10.5% Vol."
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 4.29,
-      "maxPrice": 4.29
     },
     {
       "id": "rucola natura|200g",
