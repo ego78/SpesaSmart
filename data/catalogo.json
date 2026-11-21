@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T14:00:30.549Z",
+  "generatedAt": "2026-11-21T13:27:55.342Z",
   "items": [
     {
       "id": "100 30 cm sensiplast scaldapiedi elettrico cintura termica",
@@ -915,6 +915,166 @@
       "offersCount": 1,
       "minPrice": 2.29,
       "maxPrice": 2.29
+    },
+    {
+      "id": "approfittane ora kinder bueno calendario dell avvento|181g",
+      "canonicalName": "approfittane ora kinder bueno calendario dell avvento",
+      "canonicalKey": "approfittane ora kinder bueno calendario dell avvento|181g",
+      "quantity": {
+        "value": 181,
+        "unit": "g",
+        "label": "181 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Approfittane ora KINDER Bueno Calendario dell’ avvento"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 10.99,
+      "maxPrice": 10.99
+    },
+    {
+      "id": "approfittane ora kinder calendario dell avvento|336g",
+      "canonicalName": "approfittane ora kinder calendario dell avvento",
+      "canonicalKey": "approfittane ora kinder calendario dell avvento|336g",
+      "quantity": {
+        "value": 336,
+        "unit": "g",
+        "label": "336 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Approfittane ora KINDER Calendario dell’ avvento"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 13.99,
+      "maxPrice": 13.99
+    },
+    {
+      "id": "approfittane ora kinder calendario dell avvento|218g",
+      "canonicalName": "approfittane ora kinder calendario dell avvento",
+      "canonicalKey": "approfittane ora kinder calendario dell avvento|218g",
+      "quantity": {
+        "value": 218,
+        "unit": "g",
+        "label": "218 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Approfittane ora KINDER Calendario dell’ avvento"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 12.99,
+      "maxPrice": 12.99
+    },
+    {
+      "id": "approfittane ora kinder calendario dell avvento casa 3d|234g",
+      "canonicalName": "approfittane ora kinder calendario dell avvento casa 3d",
+      "canonicalKey": "approfittane ora kinder calendario dell avvento casa 3d|234g",
+      "quantity": {
+        "value": 234,
+        "unit": "g",
+        "label": "234 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Approfittane ora KINDER Calendario dell’avvento Casa 3D"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 12.49,
+      "maxPrice": 12.49
+    },
+    {
+      "id": "approfittane ora kinder calendario dell avvento chalet|184g",
+      "canonicalName": "approfittane ora kinder calendario dell avvento chalet",
+      "canonicalKey": "approfittane ora kinder calendario dell avvento chalet|184g",
+      "quantity": {
+        "value": 184,
+        "unit": "g",
+        "label": "184 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Approfittane ora KINDER Calendario dell’avvento Chalet"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 11.49,
+      "maxPrice": 11.49
+    },
+    {
+      "id": "approfittane ora kinder calendario dell avvento giftbox|214g",
+      "canonicalName": "approfittane ora kinder calendario dell avvento giftbox",
+      "canonicalKey": "approfittane ora kinder calendario dell avvento giftbox|214g",
+      "quantity": {
+        "value": 214,
+        "unit": "g",
+        "label": "214 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Approfittane ora KINDER Calendario dell’Avvento Giftbox"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 12.49,
+      "maxPrice": 12.49
+    },
+    {
+      "id": "approfittane ora kinder calendario dell avvento pop up|123g",
+      "canonicalName": "approfittane ora kinder calendario dell avvento pop up",
+      "canonicalKey": "approfittane ora kinder calendario dell avvento pop up|123g",
+      "quantity": {
+        "value": 123,
+        "unit": "g",
+        "label": "123 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Approfittane ora KINDER Calendario dell’Avvento “pop up”"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 8.49,
+      "maxPrice": 8.49
+    },
+    {
+      "id": "approfittane ora kinder calendario dell avvento slim|141g",
+      "canonicalName": "approfittane ora kinder calendario dell avvento slim",
+      "canonicalKey": "approfittane ora kinder calendario dell avvento slim|141g",
+      "quantity": {
+        "value": 141,
+        "unit": "g",
+        "label": "141 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Approfittane ora KINDER Calendario dell’avvento Slim"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 8.99,
+      "maxPrice": 8.99
     },
     {
       "id": "approfittane ora pata paquita tortilla|200g",
@@ -3167,9 +3327,9 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 1,
+      "offersCount": 2,
       "minPrice": 9.99,
-      "maxPrice": 9.99
+      "maxPrice": 99
     },
     {
       "id": "days parkside set trapano avvitatore ricaricabile livelli selezione coppia",
@@ -9113,6 +9273,26 @@
       "offersCount": 1,
       "minPrice": 1.39,
       "maxPrice": 1.39
+    },
+    {
+      "id": "lidl plus lavatappezzeria portatile spruzza strofina aspira macchie|430ml",
+      "canonicalName": "lidl plus lavatappezzeria portatile spruzza strofina aspira macchie",
+      "canonicalKey": "lidl plus lavatappezzeria portatile spruzza strofina aspira macchie|430ml",
+      "quantity": {
+        "value": 430,
+        "unit": "ml",
+        "label": "430 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "Con Lidl Plus Lavatappezzeria portatile Spruzza, strofina e aspira le macchie"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 79,
+      "maxPrice": 79
     },
     {
       "id": "lidl plus patate",
