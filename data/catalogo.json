@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T13:19:36.695Z",
+  "generatedAt": "2026-11-23T15:56:32.405Z",
   "items": [
     {
       "id": "10 rispetto 2025|125g",
@@ -2175,6 +2175,26 @@
       "offersCount": 1,
       "minPrice": 0.79,
       "maxPrice": 0.79
+    },
+    {
+      "id": "base|250g",
+      "canonicalName": "base",
+      "canonicalKey": "base|250g",
+      "quantity": {
+        "value": 250,
+        "unit": "g",
+        "label": "250 g",
+        "multipack": null
+      },
+      "aliases": [
+        "al Formato Base"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.99,
+      "maxPrice": 1.99
     },
     {
       "id": "base|200g",
@@ -5666,6 +5686,26 @@
       "offersCount": 1,
       "minPrice": 13.99,
       "maxPrice": 13.99
+    },
+    {
+      "id": "deluxe jamon serran sgt reserva|7500g",
+      "canonicalName": "deluxe jamon serran sgt reserva",
+      "canonicalKey": "deluxe jamon serran sgt reserva|7500g",
+      "quantity": {
+        "value": 7500,
+        "unit": "g",
+        "label": "7,5 kg",
+        "multipack": null
+      },
+      "aliases": [
+        "DELUXE Jamón Serran SGT Reserva"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 63.89,
+      "maxPrice": 63.89
     },
     {
       "id": "deluxe jamon serrano gran reserva stg prosciutto crudo essiccato all aria|70g",
@@ -11790,7 +11830,7 @@
       "stores": [
         "Lidl"
       ],
-      "offersCount": 16,
+      "offersCount": 15,
       "minPrice": 0.99,
       "maxPrice": 4.99
     },
@@ -11833,6 +11873,26 @@
       "offersCount": 1,
       "minPrice": 1.69,
       "maxPrice": 1.69
+    },
+    {
+      "id": "lidl plus|2000g",
+      "canonicalName": "lidl plus",
+      "canonicalKey": "lidl plus|2000g",
+      "quantity": {
+        "value": 2000,
+        "unit": "g",
+        "label": "2 kg",
+        "multipack": null
+      },
+      "aliases": [
+        "Con Lidl Plus"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 2.29,
+      "maxPrice": 2.29
     },
     {
       "id": "lidl plus|210g",
@@ -18506,6 +18566,21 @@
       ],
       "offersCount": 2,
       "minPrice": 199,
+      "maxPrice": 399
+    },
+    {
+      "id": "silvercrest robot cucina multifunzione monsieur cuisine smart",
+      "canonicalName": "silvercrest robot cucina multifunzione monsieur cuisine smart",
+      "canonicalKey": "silvercrest robot cucina multifunzione monsieur cuisine smart",
+      "quantity": null,
+      "aliases": [
+        "SILVERCREST Robot da cucina multifunzione “Monsieur Cuisine Smart”"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 399,
       "maxPrice": 399
     },
     {
