@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T15:09:32.536Z",
+  "generatedAt": "2026-11-27T15:01:47.382Z",
   "items": [
     {
       "id": "10 rispetto 2025|125g",
@@ -522,6 +522,26 @@
       "maxPrice": 4.19
     },
     {
+      "id": "agrosan liquore cannella 28 vol|500ml",
+      "canonicalName": "agrosan liquore cannella 28 vol",
+      "canonicalKey": "agrosan liquore cannella 28 vol|500ml",
+      "quantity": {
+        "value": 500,
+        "unit": "ml",
+        "label": "500 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "AGROSAN Liquore alla cannella 28% vol."
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 5.99,
+      "maxPrice": 5.99
+    },
+    {
       "id": "alesto anacardi xxl|200g",
       "canonicalName": "alesto anacardi xxl",
       "canonicalKey": "alesto anacardi xxl|200g",
@@ -892,6 +912,26 @@
       "maxPrice": 2.69
     },
     {
+      "id": "approfittane ora arachidi|330g",
+      "canonicalName": "approfittane ora arachidi",
+      "canonicalKey": "approfittane ora arachidi|330g",
+      "quantity": {
+        "value": 330,
+        "unit": "g",
+        "label": "330 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Approfittane ora M&M’S Arachidi"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 3.19,
+      "maxPrice": 3.19
+    },
+    {
       "id": "approfittane ora bref wc power aktiv|200g",
       "canonicalName": "approfittane ora bref wc power aktiv",
       "canonicalKey": "approfittane ora bref wc power aktiv|200g",
@@ -1110,26 +1150,6 @@
       "offersCount": 1,
       "minPrice": 1.15,
       "maxPrice": 1.15
-    },
-    {
-      "id": "arachidi|330g",
-      "canonicalName": "arachidi",
-      "canonicalKey": "arachidi|330g",
-      "quantity": {
-        "value": 330,
-        "unit": "g",
-        "label": "330 g",
-        "multipack": null
-      },
-      "aliases": [
-        "M&M’S Arachidi"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 3.19,
-      "maxPrice": 3.19
     },
     {
       "id": "arachidi ricoperti snack|150g",
@@ -2362,9 +2382,9 @@
       "maxPrice": 2.65
     },
     {
-      "id": "chef anna cucina|200ml",
-      "canonicalName": "chef anna cucina",
-      "canonicalKey": "chef anna cucina|200ml",
+      "id": "chef approfittane anna ora cucina|200ml",
+      "canonicalName": "chef approfittane anna ora cucina",
+      "canonicalKey": "chef approfittane anna ora cucina|200ml",
       "quantity": {
         "value": 200,
         "unit": "ml",
@@ -2372,7 +2392,7 @@
         "multipack": null
       },
       "aliases": [
-        "CHEF anna da cucina"
+        "CHEF Approfittane anna da ora cucina"
       ],
       "stores": [
         "Lidl"
@@ -7978,21 +7998,6 @@
       "maxPrice": 1.69
     },
     {
-      "id": "galbani santa lucia mozzarella",
-      "canonicalName": "galbani santa lucia mozzarella",
-      "canonicalKey": "galbani santa lucia mozzarella",
-      "quantity": null,
-      "aliases": [
-        "GALBANI Santa Lucia Mozzarella"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.49,
-      "maxPrice": 2.49
-    },
-    {
       "id": "gamberi sgusciati gran mare|125g",
       "canonicalName": "gamberi sgusciati gran mare",
       "canonicalKey": "gamberi sgusciati gran mare|125g",
@@ -10119,6 +10124,26 @@
       "offersCount": 1,
       "minPrice": 3.09,
       "maxPrice": 3.09
+    },
+    {
+      "id": "mazzetti altavilla approfittane ora palline decorative grappa gin|100ml",
+      "canonicalName": "mazzetti altavilla approfittane ora palline decorative grappa gin",
+      "canonicalKey": "mazzetti altavilla approfittane ora palline decorative grappa gin|100ml",
+      "quantity": {
+        "value": 100,
+        "unit": "ml",
+        "label": "100 ml",
+        "multipack": null
+      },
+      "aliases": [
+        "MAZZETTI D’ALTAVILLA Approfittane ora Palline decorative con grappa, gin o"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 5.99,
+      "maxPrice": 5.99
     },
     {
       "id": "mcennedy alette pollo marinate|750g",

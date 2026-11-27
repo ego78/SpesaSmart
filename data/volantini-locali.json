@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T15:09:32.548Z",
+  "generatedAt": "2026-11-27T15:01:47.407Z",
   "familyCode": "FAMIGLIA-EGO78",
   "stores": [
     {
@@ -19,8 +19,8 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 213,
-      "lastCheckedAt": "2026-11-26T15:09:32.547Z",
-      "lastSuccessfulUpdateAt": "2026-11-26T15:09:32.547Z"
+      "lastCheckedAt": "2026-11-27T15:01:47.406Z",
+      "lastSuccessfulUpdateAt": "2026-11-27T15:01:47.406Z"
     },
     {
       "familyCode": "FAMIGLIA-EGO78",
@@ -39,7 +39,7 @@
       "offerScope": "",
       "promotionId": "",
       "offersCount": 0,
-      "lastCheckedAt": "2026-11-26T15:09:32.547Z",
+      "lastCheckedAt": "2026-11-27T15:01:47.406Z",
       "lastSuccessfulUpdateAt": null
     },
     {
@@ -58,9 +58,9 @@
       "flyerUrl": "https://www.lidl.it/l/it/volantini/offerte-valide-dal-23-11-la-black-week-che-vale-davvero/ar/0",
       "offerScope": "national-chain",
       "promotionId": "",
-      "offersCount": 667,
-      "lastCheckedAt": "2026-11-26T15:09:32.547Z",
-      "lastSuccessfulUpdateAt": "2026-11-26T15:09:32.547Z"
+      "offersCount": 668,
+      "lastCheckedAt": "2026-11-27T15:01:47.406Z",
+      "lastSuccessfulUpdateAt": "2026-11-27T15:01:47.406Z"
     }
   ]
 }
