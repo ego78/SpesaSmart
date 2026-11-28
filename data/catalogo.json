@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T15:01:47.382Z",
+  "generatedAt": "2026-11-28T14:10:19.000Z",
   "items": [
     {
       "id": "10 rispetto 2025|125g",
@@ -6818,6 +6818,26 @@
       "maxPrice": 1.99
     },
     {
+      "id": "favorina calendario dell avvento|75g",
+      "canonicalName": "favorina calendario dell avvento",
+      "canonicalKey": "favorina calendario dell avvento|75g",
+      "quantity": {
+        "value": 75,
+        "unit": "g",
+        "label": "75 g",
+        "multipack": null
+      },
+      "aliases": [
+        "FAVORINA Calendario dell'avvento"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 1.39,
+      "maxPrice": 1.39
+    },
+    {
       "id": "favorina cuori pan speziato ripieno|300g",
       "canonicalName": "favorina cuori pan speziato ripieno",
       "canonicalKey": "favorina cuori pan speziato ripieno|300g",
@@ -9049,26 +9069,6 @@
       "maxPrice": 2.79
     },
     {
-      "id": "lidl plus 60 sul|75g",
-      "canonicalName": "lidl plus 60 sul",
-      "canonicalKey": "lidl plus 60 sul|75g",
-      "quantity": {
-        "value": 75,
-        "unit": "g",
-        "label": "75 g",
-        "multipack": null
-      },
-      "aliases": [
-        "Con Lidl Plus -60% sul 2° pezzo"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 2.78,
-      "maxPrice": 2.78
-    },
-    {
       "id": "lidl plus barilla pennette rigate spaghetti fusilli tortiglioni pasta semola",
       "canonicalName": "lidl plus barilla pennette rigate spaghetti fusilli tortiglioni pasta semola",
       "canonicalKey": "lidl plus barilla pennette rigate spaghetti fusilli tortiglioni pasta semola",
@@ -9252,6 +9252,26 @@
       "offersCount": 1,
       "minPrice": 1.89,
       "maxPrice": 1.89
+    },
+    {
+      "id": "lidl plus prodotti 31|75g",
+      "canonicalName": "lidl plus prodotti 31",
+      "canonicalKey": "lidl plus prodotti 31|75g",
+      "quantity": {
+        "value": 75,
+        "unit": "g",
+        "label": "75 g",
+        "multipack": null
+      },
+      "aliases": [
+        "Con Lidl Plus prodotti -31%"
+      ],
+      "stores": [
+        "Lidl"
+      ],
+      "offersCount": 1,
+      "minPrice": 0.95,
+      "maxPrice": 0.95
     },
     {
       "id": "lidl silvercrest black robot cucina multifunzione days monsieur cuisine smart|3000ml",
@@ -12309,21 +12329,6 @@
       "offersCount": 1,
       "minPrice": 2.49,
       "maxPrice": 2.49
-    },
-    {
-      "id": "piu lidl plus",
-      "canonicalName": "piu lidl plus",
-      "canonicalKey": "piu lidl plus",
-      "quantity": null,
-      "aliases": [
-        "Più di Con Lidl Plus"
-      ],
-      "stores": [
-        "Lidl"
-      ],
-      "offersCount": 1,
-      "minPrice": 1.95,
-      "maxPrice": 1.95
     },
     {
       "id": "pizza margherita allegri sapori|960g",
